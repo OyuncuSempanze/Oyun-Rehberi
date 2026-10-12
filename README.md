@@ -1,10 +1,14 @@
-# Oyun-Arsivi-Turkce
-Niş oyunlar hakkında kaynaklı ve düzenli bilgi arşivi.
+# 🎮 Oyun-Arsivi-Turkce
 
-🌐 [Web sitesini ziyaret et](https://oyuncusempanze.github.io/Oyun-Arsivi-Turkce/)
+Oyunlar hakkında kaynaklı, düzenli ve tarafsız bilgi arşivi. Özellikle ana akım medyada gözden kaçan niş ve bağımsız yapımlara odaklanır.
 
-## Sınıflandırma
+🌐 [Web Sitesinde Görüntüle](https://github.io)
 
-**[Resmi Kaynak]:** Bilginin resmî kaynaklardan alındığını belirtir.
 
-**[Oyun İçi Gözlem]:** Bilginin bizzat oyun içinden deneyimlenerek alındığını belirtir. 
+## 📌 Bilgi Standartları (Sınıflandırma)
+
+Arşivdeki bilgilerin güvenilirliğini ve derinliğini korumak adına tüm detaylar **iki ana kategoriye ayrılır**:
+
+*   **[Resmi Kaynak]:** Bilginin oyunun geliştiricisi, yayıncısı veya resmi kanalları tarafından paylaşıldığını belirtir. Genelde oyunun temel özelliklerini içeren genel hatlardaki bilgilerdir.
+  
+*   **[Oyun İçi Gözlem]:** Bilginin bizzat oyun içi deneyim, test ve incelemelerle elde edildiğini belirtir. Resmi kaynaklarda yer almayan derinlemesine detayları barındırır. Bu bilgiler güncellemelerle birlikte sürümden sürüme farklılık gösterebilir.
