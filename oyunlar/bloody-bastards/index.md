@@ -12,6 +12,6 @@ Bloody Bastards hakkında Türkçe bilgi arşivi.
 - [Oynanış](oynanis.md)
 - [Silahlar ve Hasar Türleri](silahlar.md)
 - [Zırhlar](zirhlar.md)
-- [Karakter Özelleştirme](karakter-ozellestirme.md)
+- [Özelleştirme](ozellestirme.md)
 - [Güncellemeler](guncellemeler.md)
 - [Görseller](gorseller.md)
