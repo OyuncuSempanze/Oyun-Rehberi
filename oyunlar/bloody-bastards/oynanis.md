@@ -52,18 +52,6 @@ Genel olarak 500 ve 1000 seviyelerinde boss ortaya çıkar. Bosslar, diğer raki
 
 Ancak bu durum medeniyete göre değişebilir. The British Isles (İngiliz Adaları) medeniyetinde yapılan gözlemlerde yalnızca 500. seviyede boss ortaya çıktığı, 1000. seviyede ise özel bir bossun ortaya çıkmadığı görülmüştür. **[Oyun İçi Gözlem]**
 
-### Oyun İçi Gözlemler
-
-- Bossların genel olarak 500 ve 1000 seviyelerinde ortaya çıktığı gözlemlenmiştir.
-- The British Isles (İngiliz Adaları) medeniyetinde yalnızca 500. seviyede boss ortaya çıktığı gözlemlenmiştir.
-- Saldırının hızı ve hareket yönünün verilen hasarı etkilediği gözlemlenmiştir.
-- Oyuncu ilerledikçe karşılaşılan rakip ve kullanılan ekipmanın değiştiği gözlemlenmiştir.
-- Oyuncu yere yığıldıktan sonra yaklaşık 3-4 saniye boyunca hareket edemez hâle geldiği gözlemlenmiştir.
-
-***Bu bölümdeki bazı bilgiler, oyunun oynanması ve oyun içi testler sonucunda elde edilmiştir. Bilgiler oyunun sürümüne göre değişebilir.***
-
-Test edilen sürüm: 5.0.4 *
-
-## KAYNAKLAR
+## KAYNAK
 
 [Oyunun Resmi Web Sitesi](https://tibith.com/#/bloodybastards/)
