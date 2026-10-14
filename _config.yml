@@ -1,5 +1,6 @@
-title: Türkçe Oyun Arşivi
-description: Türkçe oyunlar hakkında kaynaklandırılmış ve düzenli bilgi arşivi.
+
+title: Oyun-Rehberi
+description: Oyunlar hakkında kaynaklı bilgiler, oynanış rehberleri ve oyuncu tavsiyeleri.
 
 markdown: kramdown
 
@@ -8,3 +9,4 @@ defaults:
       path: ""
     values:
       layout: default
+      
