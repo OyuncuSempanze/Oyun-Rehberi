@@ -2,7 +2,7 @@
 
 Oyunlar hakkında kaynaklı, düzenli ve tarafsız bilgi arşivi. Özellikle ana akım medyada gözden kaçan niş ve bağımsız yapımlara odaklanır.
 
-🌐 [Web Sitesinde Görüntüle](https://github.io)
+🌐 [Web Sitesinde Görüntüle](https://oyuncusempanze.github.io/Oyun-Rehberi/)
 
 
 ## 📌 Bilgi Standartları (Sınıflandırma)
