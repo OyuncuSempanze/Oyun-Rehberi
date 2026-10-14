@@ -1,4 +1,4 @@
-# 🎮 Oyun-Arsivi-Turkce
+# 🎮 Oyun-Rehberi
 
 Oyunlar hakkında kaynaklı, düzenli ve tarafsız bilgi arşivi. Özellikle ana akım medyada gözden kaçan niş ve bağımsız yapımlara odaklanır.
 
