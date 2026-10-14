@@ -113,3 +113,13 @@ nav a:hover {
 .content a:hover {
   color: #64879a;
 }
+
+.content img {
+  display: block;
+  max-width: 100%;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 16px auto;
+}
