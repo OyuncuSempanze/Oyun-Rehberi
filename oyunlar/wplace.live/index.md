@@ -13,3 +13,5 @@ Wplace.live hakkında Türkçe rehber.
 [Mekanikler](mekanikler.md)
 
 [Güncellemeler](guncellemeler.md)
+
+[Tavsiye](tavsiye.md)
