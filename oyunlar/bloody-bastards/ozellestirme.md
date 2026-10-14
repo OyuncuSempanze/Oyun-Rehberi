@@ -17,4 +17,4 @@ Karakterin vücut boyutunu küçültmek veya büyütmek, **hitbox'un boyutunu da
 
 Oyuncu, sahip olduğu zırh, kask, kalkan, kılıç ve diğer eşyalarının rengini değiştirebilir. Bunların yanı sıra oyuncu, isminin rengini ve isminin arkaplan rengini özelleştirebilir. **[Resmî Kaynak](https://play.google.com/store/apps/details?id=com.tibith.badboxing)**
 
-Eşya rengini değiştirmek**hitbox'un boyutunu veya hasarı etkilemez**. [Oyun İçi Gözlem]
+Eşya rengini değiştirmek **hitbox'un boyutunu veya hasarı etkilemez**. [Oyun İçi Gözlem]
