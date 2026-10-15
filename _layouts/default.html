@@ -3,46 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#11120f">
+  <meta name="theme-color" content="#171b17">
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
-
   <title>{{ page.title | default: site.title }}{% if page.title %} — {{ site.title }}{% endif %}</title>
-
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">İçeriğe geç</a>
 
   <div class="site">
+    <div class="facility-topbar">
+      <span class="facility-label"><i aria-hidden="true"></i> OYUN-REHBERİ <span class="topbar-divider">/</span> YER ALTI BİLGİ MERKEZİ</span>
+      <span class="facility-status"><i aria-hidden="true"></i> ARŞİV HATTI AÇIK</span>
+    </div>
 
     <header class="site-header">
-      <div class="brand-row">
-        <a class="brand-mark" href="{{ '/' | relative_url }}" aria-label="Oyun-Rehberi ana sayfası">O/R</a>
-        <div class="brand-copy">
-          <p class="brand-kicker">OYUNCUSEMPANZE <span>/</span> TÜRKÇE ARŞİV</p>
-          <h1>
-            <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-          </h1>
+      <div class="header-main-row">
+        <div class="brand-row">
+          <a class="brand-mark" href="{{ '/' | relative_url }}" aria-label="Oyun-Rehberi ana sayfası">
+            <span class="brand-hatch" aria-hidden="true"><span></span></span>
+          </a>
+          <div class="brand-copy">
+            <p class="brand-kicker">OYUNCUSEMPANZE <span>/</span> ARŞİV TESİSİ</p>
+            <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+          </div>
+        </div>
+
+        <div class="header-side" aria-label="Arşiv erişim bilgisi">
+          <span class="header-side-label">ERİŞİM SEVİYESİ</span>
+          <strong>GENEL</strong>
+          <span class="header-side-bottom"><i aria-hidden="true"></i> KAYITLAR AÇIK</span>
         </div>
       </div>
 
       <p class="site-description">{{ site.description }}</p>
 
       <nav aria-label="Ana gezinme">
-        <a href="{{ '/' | relative_url }}">Ana Sayfa <span aria-hidden="true">↗</span></a>
+        <a class="nav-link" href="{{ '/' | relative_url }}"><i aria-hidden="true"></i> Ana kontrol</a>
+        <a class="nav-link" href="{{ '/' | relative_url }}#archive"><i aria-hidden="true"></i> Arşiv koridoru <span class="nav-arrow" aria-hidden="true">↘</span></a>
       </nav>
     </header>
 
-    <main class="content">
+    <div class="header-pipe" aria-hidden="true"><span></span><i></i><span></span></div>
+
+    <main class="content" id="main-content">
       {{ content }}
     </main>
 
     <footer class="site-footer">
-      <span>Oyun-Rehberi</span>
-      <span class="footer-note">Kaynaklı oyun bilgileri <span aria-hidden="true">·</span> TR</span>
+      <div class="footer-brand">
+        <span class="footer-hatch" aria-hidden="true"></span>
+        <span>OYUNCUSEMPANZE <b>/</b> OYUN-REHBERİ</span>
+      </div>
+      <span class="footer-note">Kaynaklı oyun bilgileri <i aria-hidden="true"></i> Türkçe arşiv</span>
+      <span class="footer-vents" aria-hidden="true"></span>
     </footer>
-
   </div>
-
 </body>
 </html>
