@@ -1,23 +1,21 @@
 # Kurallar
 
+*Bu özet, Wplace'in resmî topluluk kurallarına dayanır. Kurallar değişebilir; son kontrol: 15 Ekim 2026.*
 
-## ⚠️ Anında Kalıcı Yasaklanmaya Sebep Olan Davranışlar:
+## Kalıcı Yasağa Yol Açabilecek Davranışlar
 
-**1) +18 İçerikler Yasaktır:** Oyunda +18 içeriklerin (vahşet, cinsellik v.b) çizilmesinin yasak olduğunu, tespit edilirse hesabın kalıcı olarak banlanacağı belirtiliyor. [Resmî Kaynak](https://wplace.live/) Ayrıca bu tarz çizimlerin diğer oyuncular tarafından bozulabileceğinin yasak olmadığı belirtiliyor. Yani bu tarz resimleri her oyuncu istediği gibi bozabiliyor.
+**1) Uygunsuz İçerikler:** Açık cinsel içerik, çocukların cinselleştirilmesi, aşırı gerçekçi şiddet, nefret söylemi, kişisel bilgilerin ifşası ve hedefli taciz gibi içerikler kalıcı yasağa yol açabilir. [Resmî Kaynak](https://wplace.live/terms/community-guidelines)
 
-**2) Irkçı, Nefret Söylemi ve Kişisel Bilgilerin İfşasını İçeren İçerikler Yasaktır:** Bu içeriklerin de yasak olduğu, kalıcı banlanılacağı ve diğerleri tarafından bozulabileceği belirtiliyor. [Resmî Kaynak](https://wplace.live/)
+**2) Birden Fazla Hesap, Bot ve Otomasyon:** Kişi başına tek hesap kuralı vardır. Bot, komut dosyası veya haksız avantaj sağlayan otomasyon kullanımı kalıcı yasağa yol açabilir. [Resmî Kaynak](https://wplace.live/terms/community-guidelines)
 
-**3) Bir Çizimi Hiç Bir Değer İçermeyen Şekilde Bozmak Yasaktır:** Herhangi bir çizimi sebepsiz yere karalamanın, değiştirmenin, bozmanın yasak olduğu belirtiliyor. Bu davranış tekrar tekrar devam ettirilirse kalıcı banlanacağı söyleniyor. [Resmî Kaynak](https://wplace.live/)
+## Geçici Uzaklaştırmaya Yol Açabilecek Davranışlar
 
-**4) Birden Fazla Hesap ve Bot Kullanımı Yasaktır:** Herkesin maksimum 1 hesap kullanabileceği ve resimleri otomatik boyayan botların kullananların edenler tespit edildiğinde anında kalıcı olarak banlanacağı belirtilmiş. [Resmî Kaynak](https://wplace.live/)
+**1) Kasıtlı Çizim Bozma (Griefing):** Bir oyuncunun çizimini yaratıcı, stratejik veya düzeltici bir amaç olmadan bozmak, geçici uzaklaştırmaya neden olabilir. [Resmî Kaynak](https://wplace.live/terms/community-guidelines)
 
-## ⛔ Geçici Uzaklaşmaya Sebep Olan Davranış:
+**2) Gri Alandaki Davranışlar:** Başka bir çizimin üzerine bayrak veya tekrarlayan desen koymak, bağlama göre değerlendirilebilir. Bu davranışlar otomatik olarak ihlal sayılmaz; aşırı, hedefli veya sürekli şekilde rahatsız edici hâle gelirse moderasyon müdahale edebilir. [Resmî Kaynak](https://wplace.live/terms/community-guidelines)
 
-**1) Bir Resmin Üzerine Bayrak/Tekrarlayan Desen Çizerek Kapatmak:** Resmi kapatacak şekilde üstüne bayrak veya tekrarlayan desen çizmek geçici uzaklaştırmaya sebep olabileceği belirtiliyor. [Resmî Kaynak](https://wplace.live/)
+## İzin Verilen Davranışlar
 
-## ✅ İzin Verilen Davranış:
+**1) Bölge Mücadelesi:** Alan kazanmak veya başka çizimlerin üzerine çizmek, tek başına kural ihlali sayılmaz. [Resmî Kaynak](https://wplace.live/terms/community-guidelines)
 
-**1) Müstehcen İçerikli v.b Görseli Kapatmak:** Oyunda müstehcen veya kişisel bilgilerin ifşası, nefret, ırkçı gibi resimlerin her oyuncu tarafından silinebileceği ve bunun yasak olmadığı belirtiliyor. [Resmî Kaynak](https://wplace.live/)
-
-**2) Büyük Bir Bayrağı/Tekrarlayan Deseni Küçültmek:** Büyük bir bayrağı veya tekrarlayan deseni küçültmek ceza sebebi değildir. [Resmî Kaynak](https://wplace.live/)
-
+**2) Harita Temizliği:** Şeffaf pikseller kullanarak spam, uygunsuz veya çağrışımlı içerikleri ya da tekrarlayan desenleri temizlemek izin verilen bir davranıştır. [Resmî Kaynak](https://wplace.live/terms/community-guidelines)
