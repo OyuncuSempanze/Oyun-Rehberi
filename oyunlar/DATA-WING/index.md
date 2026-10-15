@@ -3,7 +3,7 @@ layout: default
 title: DATA WING
 ---
 
-# Bloody Bastards
+# Data Wing
 
 Data Wing hakkında Türkçe rehber.
 
