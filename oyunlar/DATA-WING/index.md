@@ -1,6 +1,7 @@
 ---
 layout: default
 title: DATA WING
+description: "DATA WING için temel bilgiler ve Türkçe oynanış rehberleri."
 ---
 
 # Data Wing

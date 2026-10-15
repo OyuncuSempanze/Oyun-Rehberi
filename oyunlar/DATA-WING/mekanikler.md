@@ -1,3 +1,9 @@
+---
+layout: default
+title: DATA WING Mekanikleri
+description: "DATA WING hareket, momentum, yerçekimi ve seviye mekanikleri hakkında gözlemler."
+---
+
 # Mekanikler
 
 Oyunda, Mother (Anne) adlı yapay zekânın emirlerini yerine getiren bir DATA WING'i kontrol ediyoruz. Mekanikler oldukça basittir. [Oyun İçi Gözlem]
@@ -8,7 +14,7 @@ Ekranın sağ ve sol tarafında büyük butonlar var. Bu butonlara bastığımı
 
 ## Fizik ve Momentum
 
-Yaptığım gözlemlere göre karakter düz bir doğrultuda ilerlerken hız kaybetmez; ancak aniden uzun süre sağa veya sola döndürüldüğünde hızı önemli ölçüde azalır. Dönüşleri daha yavaş yapmak, kaybedilen hızı azaltır. [Oyun İçi Gözlem]
+Yaptığım gözlemlere göre karakter düz bir doğrultuda ilerlerken hız kaybetmez. Ancak aniden uzun süre sağa veya sola döndürüldüğünde hızı önemli ölçüde azalır. Dönüşleri daha yavaş yapmak, kaybedilen hızı azaltır. [Oyun İçi Gözlem]
 
 ## Seviyelere Özgü Etkenler
 

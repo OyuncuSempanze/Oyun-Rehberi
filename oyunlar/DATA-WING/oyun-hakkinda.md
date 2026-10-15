@@ -1,5 +1,7 @@
 ---
 layout: default
+title: DATA WING Hakkında
+description: "DATA WING geliştiricisi, çıkış tarihi, platformları ve resmî kaynakları."
 ---
 
 # Oyun Hakkında
