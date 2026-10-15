@@ -1,3 +1,9 @@
+---
+layout: default
+title: Wplace Tavsiyeleri
+description: "Wplace için oyun içi gözlemlere dayalı başlangıç ve kaynak yönetimi tavsiyeleri."
+---
+
 # Tavsiye
 
 *Bu belgedeki tüm tavsiyeler oyun içi gözleme dayalıdır ve tamamen özneldir. Güncellemelerle birlikte farklılıklar olabilir.*
