@@ -5,9 +5,9 @@ title: Bloody Bastards
 
 # Bloody Bastards
 
-Bloody Bastards hakkında Türkçe bilgi arşivi.
+Bloody Bastards hakkında Türkçe rehber.
 
-## İçerik
+## İçerikler
 
 - [Oyun Hakkında](oyun-hakkinda.md)
 - [Oynanış](oynanis.md)
