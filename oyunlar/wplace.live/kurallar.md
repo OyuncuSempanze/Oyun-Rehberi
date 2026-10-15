@@ -19,5 +19,5 @@
 
 **1) Müstehcen İçerikli v.b Görseli Kapatmak:** Oyunda müstehcen veya kişisel bilgilerin ifşası, nefret, ırkçı gibi resimlerin her oyuncu tarafından silinebileceği ve bunun yasak olmadığı belirtiliyor. [Resmî Kaynak](https://wplace.live/)
 
-**2) Büyük Bir Bayrağı/Tekrarlayan Deseni Küçültmek:** Büyük bir bayrağı veya tekrarlayan deseni küçültmek kabul edilir. [Resmî Kaynak](https://wplace.live/)
+**2) Büyük Bir Bayrağı/Tekrarlayan Deseni Küçültmek:** Büyük bir bayrağı veya tekrarlayan deseni küçültmek ceza sebebi değildir. [Resmî Kaynak](https://wplace.live/)
 
