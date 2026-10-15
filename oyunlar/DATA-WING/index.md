@@ -5,7 +5,7 @@ title: DATA WING
 
 # Bloody Bastards
 
-Data Wing Oyunu hakkında Türkçe rehber.
+Data Wing hakkında Türkçe rehber.
 
 ## İçerikler
 
