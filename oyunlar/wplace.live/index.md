@@ -15,3 +15,5 @@ Wplace.live hakkında Türkçe rehber.
 [Güncellemeler](guncellemeler.md)
 
 [Tavsiye](tavsiye.md)
+
+[Görseller](gorseller.md)
