@@ -7,7 +7,7 @@ Oyunlar hakkında kaynaklı, düzenli bilgi arşivi. Özellikle ana akım medyad
 
 ## 📌 Bilgi Standartları (Sınıflandırma)
 
-Arşivdeki bilgilerin güvenilirliğini ve derinliğini korumak adına tüm detaylar **iki ana kategoriye ayrılır**:
+Arşivdeki bilgilerin güvenilirliğini ve derinliğini korumak adına tüm detaylar **üç ana kategoriye ayrılır**:
 
 *   **[Resmi Kaynak]:** Bilginin oyunun geliştiricisi, yayıncısı veya resmi kanalları tarafından paylaşıldığını belirtir. Genelde oyunun temel özelliklerini içeren genel hatlardaki bilgilerdir.
   
