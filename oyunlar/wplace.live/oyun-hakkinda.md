@@ -10,7 +10,7 @@ description: "Wplace.live işletmecisi, çıkış tarihi, desteklenen platformla
 
 Yayınlanma Tarihi: 21 Temmuz 2025 [Kaynak](https://apnews.com/article/345b5ca144417050ab5c455fa984643d)
 
-Platformlar: Web, Android ve iOS. [Resmî Kaynak](https://wplace.live/) [Resmî Kaynak](https://play.google.com/store/apps/details?id=live.wplace.twa)
+Platformlar: Web, Android ve iOS. [Resmî Site](https://wplace.live/) · [Google Play](https://play.google.com/store/apps/details?id=live.wplace.twa) · [App Store](https://apps.apple.com/tr/app/wplace-paint-the-world/id6792942987)
 
 Tür: Gerçek dünya haritası üzerinde çalışan, çok oyunculu ve gerçek zamanlı ortak piksel sanatı platformu. [Resmî Kaynak](https://wplace.live/terms/terms-of-service) [Resmî Kaynak](https://play.google.com/store/apps/details?id=live.wplace.twa)
 

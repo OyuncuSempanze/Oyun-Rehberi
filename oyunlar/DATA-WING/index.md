@@ -4,9 +4,9 @@ title: DATA WING
 description: "DATA WING için temel bilgiler ve Türkçe oynanış rehberleri."
 ---
 
-# Data Wing
+# DATA WING
 
-Data Wing hakkında Türkçe rehber.
+DATA WING hakkında Türkçe rehber.
 
 ## İçerikler
 
