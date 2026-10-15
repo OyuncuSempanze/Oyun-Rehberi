@@ -58,4 +58,10 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
   
 - **Otomatik Boyama Yok:** Şablonlar kendi kendine piksel boyamazlar, sadece referans amaçlıdır. Yani şablon, hangi koordinattaki pikselin hangi renge boyanacağını göstererek oyuncuya kolaylık sağlar [Oyun İçi Gözlem]. Böylece katılımcılar referans görsel üzerinde rehber alarak daha hızlı ve hatasız çizebilirler.
 
+## Report (Bildirme) Sistemi:
+
+- Eğer bir kişinin platform kurallarını ihlal eden bir çizim yaptığını veya çoklu hesap kullandığını düşünüyorsanız ilgili pikselin üstüne tıklayarak şüphelendiğiniz oyuncuyu bulursunuz, daha sonra hemen sağda bulunan 3 nokta ile "Report" butonuna tıklarsınız. Önünüzde birden fazla bildirme gerekçesi bulunur, ilgili gerekçeyi seçtikten sonra açıklamanızı yaparsınız. Açıklamada şunların olması **tavsiye edilir:**
+• Pikselin bulunduğu konum
+• Sebebi detaylıca açıklama
+
 Kaynaklar: Wplace resmî yama notları ve topluluk rehberleri. Oyun içi gözlemler, yukarıdaki mekaniklerin uygulamadaki durumunu desteklemektedir.
