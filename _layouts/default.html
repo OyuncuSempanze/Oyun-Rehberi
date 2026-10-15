@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
 
-  <title>{{ page.title | default: site.title }}</title>
+  <title>{{ page.title | default: site.title }}{% if page.title %} — {{ site.title }}{% endif %}</title>
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
@@ -14,14 +16,20 @@
   <div class="site">
 
     <header class="site-header">
-      <h1>
-        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      </h1>
+      <div class="brand-row">
+        <a class="brand-mark" href="{{ '/' | relative_url }}" aria-label="Oyun-Rehberi ana sayfası">O/R</a>
+        <div class="brand-copy">
+          <p class="brand-kicker">OYUNCUSEMPANZE <span>/</span> TÜRKÇE ARŞİV</p>
+          <h1>
+            <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          </h1>
+        </div>
+      </div>
 
-      <p>{{ site.description }}</p>
+      <p class="site-description">{{ site.description }}</p>
 
-      <nav>
-        <a href="{{ '/' | relative_url }}">Ana Sayfa</a>
+      <nav aria-label="Ana gezinme">
+        <a href="{{ '/' | relative_url }}">Ana Sayfa <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
 
@@ -30,7 +38,8 @@
     </main>
 
     <footer class="site-footer">
-      Oyun-Rehberi • Kaynaklı oyun rehberleri
+      <span>Oyun-Rehberi</span>
+      <span class="footer-note">Kaynaklı oyun bilgileri <span aria-hidden="true">·</span> TR</span>
     </footer>
 
   </div>
