@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Bloody Bastards Silah ve Hasar Türleri
+description: "Bloody Bastards oyun içi ekipman sınıfları ve kaynak işaretleri."
 ---
 
 # Silah ve Hasar Türleri
@@ -17,7 +19,7 @@ layout: default
 
 **Kalkanlar:**
 * Silahlara göre daha fazla koruma sağlar ve kolunuzun/elinizin kırılmasını veya kesilmesini **büyük ölçüde absorbe eder.** [Oyun İçi Gözlem]
-* Hasarı **çok çok düşüktür**, rakibinizi adeta **"gıdıklarsınız."** [Oyun İçi Gözlem]
+* Hasarı **çok çok düşüktür**, rakibinizi adeta **\"gıdıklarsınız.\"** [Oyun İçi Gözlem]
 * Başka bir **tek elli silah** veya **kalkan** kuşanabilirsiniz. (Yani **toplamda 2** silah/kalkan kuşanabiliyorsunuz.) [Oyun İçi Gözlem]
 
 ## Hasar Türleri

@@ -12,4 +12,6 @@ Her bilgiye, dayandığı kanıtı açıklayan uygun bir etiket eklenir. Bu etik
 - **[Oyun İçi Gözlem]** Bilginin oyun deneyimi, test veya inceleme sırasında doğrudan gözlemlendiğini belirtir. Bu tür bilgiler sürüm ve platform değişiklikleriyle farklılaşabilir.
 - **[Kaynak]** Bir iddianın dayanağını incelemek için kullanılan bağlantıyı veya bağımsız başvuru kaynağını belirtir.
 
-Bir kaynak bağlantısının bulunması, iddianın tek başına kesin olarak doğrulandığı anlamına gelmez. Resmî kaynak etiketi yalnızca bağlantı resmî olduğunda kullanılmalı. İddia oyun içinde sınanmışsa gözlem etiketi ayrıca belirtilmeli.
+Bir kaynak bağlantısının bulunması, iddianın tek başına kesin olarak doğrulandığı anlamına gelmez. Resmî kaynak etiketi yalnızca bağlantı resmî olduğunda kullanılmalı. İddia oyun içinde sınanmışsa gözlem etiketi de belirtilmeli.
+
+Zamana duyarlı bilgilerde son kontrol tarihi yazılır. Sürüm numarası veya özellik yalnızca oyun içinde gözlemlendiyse resmî yayın bilgisi gibi sunulmaz. Platform ve sürüm bilgisi biliniyorsa gözlemle birlikte kaydedilir.
