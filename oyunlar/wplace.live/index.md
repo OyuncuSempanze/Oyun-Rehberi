@@ -1,5 +1,7 @@
 ---
-title: Wplace
+title: Wplace.live
+layout: default
+description: "Wplace.live hakkında temel bilgiler, mekanikler, kurallar ve güncelleme kayıtları."
 ---
 
 # Wplace.live
@@ -15,5 +17,7 @@ Wplace.live hakkında Türkçe rehber.
 [Güncellemeler](guncellemeler.md)
 
 [Tavsiye](tavsiye.md)
+
+[Kurallar](kurallar.md)
 
 [Görseller](gorseller.md)
