@@ -28,7 +28,7 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 - **Kozmetik Ürünler:** Avatar veya kilitli renk gibi öğelerdir. Örneğin avatar özelleştirme 20.000, premium renkler ise 2.000 Droplets’tır [Kaynak](https://placepixels.com/wplace-droplets). Bu ürünler yalnızca görsel amaçlıdır ve oynanışı etkilemez.
 
-- **Özel Kozmetik Ürünler:** Özel kozmetik ürünler, normal kozmetik ürünlerine kıyasla sadece **prism** ile satın alınabilir. Ayrıca normale göre daha fazla görsel efektleri mevcuttur. [Oyun İçi Gözlem] [Resmî Kaynak](https://wplace.live/patch-notes/1.5.0)
+- **Özel Kozmetik Ürünler:** Özel kozmetik ürünler, normal kozmetik ürünlerine kıyasla sadece **prism** ile satın alınabilir. Ayrıca normale göre daha fazla görsel efektleri mevcuttur. [Resmî Kaynak](https://wplace.live/patch-notes/1.5.0)
 
 ## Damlacık Kazanma
 
@@ -40,9 +40,8 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 ## Prism Kazanma
 
-- **Gerçek Parayla Satın Alarak:** Prism, mevcut sürümde (1.7.7) sadece **gerçek para** ile satın alınabiliyor. Gelecekteki sürümlerde farklılıklar **olabilir.** [Oyun İçi Gözlem] [Resmî Sürüm Notları](https://wplace.live/patch-notes) [Prism ile premium kozmetiklerin ilişkisi](https://wplace.live/patch-notes/1.5.0)
+- **Gerçek Parayla Satın Alarak:** Prism, mevcut sürümde (1.7.7) sadece **gerçek para** ile satın alınabiliyor. Gelecekteki sürümlerde farklılıklar **olabilir.** [Resmî Sürüm Notları](https://wplace.live/patch-notes) [Prism ile premium kozmetiklerin ilişkisi](https://wplace.live/patch-notes/1.5.0)
 
-- **Açıklama:** Buradaki “sadece gerçek para ile satın alınabiliyor” ifadesi mağazadan satın alma yöntemini anlatır; Prism'in tek elde edilme yolunun para olduğu anlamına gelmez. Resmî 1.7.3 yama notları, bazı hata bildirimleri ve geri bildirimlerin ödül olarak Prism kazandırabileceğini söylüyor. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.3)
 
 ## Klan (Alliance)
 
@@ -69,8 +68,4 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 Bildirim formunda raporlanan kullanıcı, konum ve yakınlaştırma bilgileri, gerekçe, açıklama ve ekran görüntüsü gibi veriler kullanılabiliyor. Bu teknik ayrıntılar resmî olmayan Wplace-Protocol topluluk belgesinde açıklanmıştır. [Topluluk Teknik Kaynağı](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
 
-Resmî 1.6.13 yama notları, oyuncu adlarının ve profil resimlerinin skor tablolarından ve klan kullanıcı listelerinden de bildirilebildiğini doğruluyor; ancak bu kaynak piksele tıklayıp üç nokta menüsünden ilerlenen adımları tek başına doğrulamıyor. [Resmî Kaynak](https://wplace.live/patch-notes/1.6.13)
-
 Kaynaklar: Wplace resmî yama notları ve topluluk rehberleri. Oyun içi gözlemler, yukarıdaki mekaniklerin uygulamadaki durumunu desteklemektedir.
-
-Not: Rapor ekranında piksele tıklama ve üç nokta menüsü üzerinden ilerleme adımları için doğrudan resmî bir kaynak bulamadım; bu adımlar oyun içi gözlem olarak işaretlendi.
