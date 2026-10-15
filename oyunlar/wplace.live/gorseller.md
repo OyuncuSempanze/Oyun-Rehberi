@@ -17,4 +17,8 @@ Bir Resmi Bayrakla veya Tekrarlayan Desen İle Silmek/Üstünden Geçmek
 
 ## ✅ Yasak Olmayan Çizimler:
 
-![Uygun Çizim](
+![Uygun Çizim](gorseller/borde6.CtRHeorl.png)
+
+![Uygun Çizim](gorseller/ngriefing3.l-WuAkT6.png)
+Bir Resmin Üzerine Değer Katan (Bir Şeyi İfade Eden) Çizim Yapmak
+
