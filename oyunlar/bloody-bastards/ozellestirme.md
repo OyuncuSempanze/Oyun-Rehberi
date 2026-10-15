@@ -1,8 +1,10 @@
 ---
 layout: default
+title: Bloody Bastards Özelleştirme
+description: "Bloody Bastards karakter ve eşya görünümü için özelleştirme seçenekleri."
 ---
 
-# ÖZELLEŞTİRME 
+# Özelleştirme
 
 ## Karakter Özelleştirme
 

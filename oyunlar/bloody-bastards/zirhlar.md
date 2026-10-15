@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Bloody Bastards Zırhları
+description: "Bloody Bastards oyunundaki zırh türleri ve belgelenmiş etkileri."
 ---
 
 # Zırhlar Hakkında
@@ -11,7 +13,7 @@ layout: default
 ## Zırh Ağırlığı
 
 * Her zırhın, silah ve kalkanlarda olduğu gibi **kendi ağırlığı vardır**. [Oyun İçi Gözlem] Bazı zırhlar ağır ve savunması yüksekken bazıları daha hafif ve daha az koruyucudur. [Oyun İçi Gözlem]
-* Bir zırh ne kadar ağırsa savunması o kadar yüksek olabilir; ancak **enerjinizi** (stamina) tüketir. [Resmî Kaynak](https://tibith.com/bloodybastards)
+* Bir zırh ne kadar ağırsa savunması o kadar yüksek olabilir, ancak **enerjinizi** (stamina) tüketir. [Resmî Kaynak](https://tibith.com/bloodybastards)
 
 ## Zırh Türleri
 
