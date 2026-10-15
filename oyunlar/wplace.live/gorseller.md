@@ -1,3 +1,6 @@
+*Buradaki tüm görseller [Resmî Siteden](
+https://wplace.live/) alınmıştır. Sürümden sürüme farklılık gösterebilir. Sadece bunlarla sınırlı kalmayıp farklı ihlaller de bulunabilir (doxing v.b)* 
+
 ## ⛔ Banlanmaya Sebep Olabilecek Çizimler:
 
 ![Uygunsuz Görsel](gorseller/borde1.2HTtxzDt.png) 
