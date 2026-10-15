@@ -1,5 +1,18 @@
 *Bu belgedeki örnekler [Wplace'in resmî topluluk kurallarından](https://wplace.live/terms/community-guidelines) alınmıştır. Kurallar ve görsel örnekleri zamanla değişebilir.*
 
+## ⛔ Kalıcı Yasağa Yol Açabilecek İçerikler
+
+*Resmî kurallara göre aşağıdaki içerikler kalıcı yasağa yol açabilir. Bu bölümde ayrıca görsel örnek bulunmuyor; kategoriler resmî kural metninden özetlenmiştir.*
+
+- Açık cinsel içerik.
+- Çocukların cinselleştirilmesi.
+- Aşırı gerçekçi şiddet veya grafik şiddet içerikleri.
+- Açık nefret söylemi veya nefret sembolleri.
+- Başkalarının özel kişisel bilgilerini paylaşmak.
+- Aşırı düşmanlık veya belirli kişileri hedef alan taciz.
+
+[Resmî Kaynak: Wplace Topluluk Kuralları](https://wplace.live/terms/community-guidelines)
+
 ## ⚠️ Çağrışımlı İçerik Örnekleri
 
 *Resmî kurallara göre bu kategorideki çizimler tek başına uzaklaştırmaya yol açmamalıdır. Topluluk üyeleri bu çizimleri temizleyebilir veya üzerlerini çizebilir.*
