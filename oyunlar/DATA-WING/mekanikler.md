@@ -1,6 +1,6 @@
 # Mekanikler
 
-Oyunda, Mother (Anne) adlı yapay zekânın oluşturduğu bir komut dosyasını kontrol ediyoruz. Mekanikler oldukça basittir. [Oyun İçi Gözlem]
+Oyunda, Mother (Anne) adlı yapay zekânın emirlerini yerine getiren bir DATA WING'i kontrol ediyoruz. Mekanikler oldukça basittir. [Oyun İçi Gözlem]
 
 ## Temel Hareket
 
