@@ -4,29 +4,35 @@ layout: default
 
 # Zırhlar Hakkında
 
- ## Zırhlar Ne İşe Yarar?
- * Zırhlar, aldığınız hasarı **önemli ölçüde** azaltır. [Oyun İçi Gözlem]
+## Zırhlar Ne İşe Yarar?
 
- ## Zırh Ağırlığı:
- * Her zırhın tıpkı silah ve kalkanlarda olduğu gibi **kendi ağırlığı vardır**. [Oyun İçi Gözlem] Bazıları çok ağır olup savunması yüksekken, bazıları daha hafif olup savunması azdır. [Oyun İçi Gözlem]
- * Bir zırh ne kadar ağırsa savunması o kadar yüksektir ancak **enerjinizi** (stamina) tüketir. [Resmi Kaynak](https://tibith.com/bloodybastards)
+* Zırhlar, aldığınız hasarı **önemli ölçüde** azaltır. [Oyun İçi Gözlem]
 
- ## Zırh Türleri:
- ### Birden fazla zırh türü vardır, işte:
+## Zırh Ağırlığı
 
- #### Bot:
- * **Ayağa alınan** hasarı azaltır. [Oyun İçi Gözlem]
+* Her zırhın, silah ve kalkanlarda olduğu gibi **kendi ağırlığı vardır**. [Oyun İçi Gözlem] Bazı zırhlar ağır ve savunması yüksekken bazıları daha hafif ve daha az koruyucudur. [Oyun İçi Gözlem]
+* Bir zırh ne kadar ağırsa savunması o kadar yüksek olabilir; ancak **enerjinizi** (stamina) tüketir. [Resmî Kaynak](https://tibith.com/bloodybastards)
 
- #### Bacak Zırhı:
- * **Bacağa alınan** hasarı azaltır.  [Oyun İçi Gözlem]
- 
- #### Gövde Zırhı: 
- * **Gövdeye alınan** hasarı azaltır. [Oyun İçi Gözlem]
+## Zırh Türleri
 
- #### Kask:
- * **Kafaya alınan** hasarı azaltır. [Oyun İçi Gözlem]
+Birden fazla zırh türü vardır:
 
- #### Eldiven: 
- * **Ele** alınan hasarı azaltır. [Oyun İçi Gözlem]
- 
-   
+### Bot
+
+* **Ayağa alınan hasarı** azaltır. [Oyun İçi Gözlem]
+
+### Bacak Zırhı
+
+* **Bacağa alınan hasarı** azaltır. [Oyun İçi Gözlem]
+
+### Gövde Zırhı
+
+* **Gövdeye alınan hasarı** azaltır. [Oyun İçi Gözlem]
+
+### Kask
+
+* **Kafaya alınan hasarı** azaltır. [Oyun İçi Gözlem]
+
+### Eldiven
+
+* **Ele alınan hasarı** azaltır. [Oyun İçi Gözlem]
