@@ -11,6 +11,6 @@
 
 ## Özellikle Dikkat Edilmesi Gereken Yer:
 
-**Oyun Kurallarına Uymak:** Oyunda kesin olarak belirtilmiş kurallar vardır. Bu kurallara uymadığınız takdirde hesabınız kalıcı olarak kapatılır ve o mail üzerinden başka bir hesap açılamaz.
+**Oyun Kurallarına Uymak:** Oyunda kesin olarak belirtilmiş bazı kurallar vardır. Bu kurallara uymadığınız takdirde hesabınız kapatılabilir veya geçici olarak uzaklaştırılabilir.
 
 *[Kurallar Hakkında Daha Fazla Bilgi Edinmek İçin Tıklayınız](kurallar.md)*
