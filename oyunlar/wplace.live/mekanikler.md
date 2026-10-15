@@ -40,7 +40,7 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 ## Prism Kazanma
 
-- **Gerçek Parayla Satın Alarak:** Prism, mevcut sürümde (1.7.7) sadece **gerçek para** ile satın alınabiliyor. Gelecekteki sürümlerde farklılıklar **olabilir.** [Resmî Kaynak](https://wplace.live/patch-notes/1.5.0)
+- **Gerçek Parayla Satın Alarak:** Prism, mevcut sürümde (1.7.7) sadece **gerçek para** ile satın alınabiliyor. Gelecekteki sürümlerde farklılıklar **olabilir.** [Oyun İçi Gözlem] [Resmî Sürüm Notları](https://wplace.live/patch-notes) [Prism ile premium kozmetiklerin ilişkisi](https://wplace.live/patch-notes/1.5.0)
 
 - **Açıklama:** Buradaki “sadece gerçek para ile satın alınabiliyor” ifadesi mağazadan satın alma yöntemini anlatır; Prism'in tek elde edilme yolunun para olduğu anlamına gelmez. Resmî 1.7.3 yama notları, bazı hata bildirimleri ve geri bildirimlerin ödül olarak Prism kazandırabileceğini söylüyor. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.3)
 
