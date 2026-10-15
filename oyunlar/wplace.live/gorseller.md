@@ -22,3 +22,5 @@ Bir Resmi Bayrakla veya Tekrarlayan Desen İle Silmek/Üstünden Geçmek
 ![Uygun Çizim](gorseller/ngriefing3.l-WuAkT6.png)
 Bir Resmin Üzerine Değer Katan (Bir Şeyi İfade Eden) Çizim Yapmak
 
+![Uygun Çizim](gorseller/mapclean1.CXzD9GTn.png)
+Tekrarlayan Deseni Silip Üstüne Yeni Bir Şey Çizmek
