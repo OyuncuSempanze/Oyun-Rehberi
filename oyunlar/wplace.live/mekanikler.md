@@ -16,7 +16,7 @@ description: "Wplace.live piksel yenilenmesi, Droplets, mağaza, klan merkezi ve
 
 ## Droplets ve Prism
 
-Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine bağlı olarak Droplets veya Prism ödülü verilebildiğini belirtiyor. Prism'in tüm kazanım yolları ve kullanım alanları burada kesin olarak belgelenmediği için bu ayrıntılar oyun içinden ayrıca kontrol edilmelidir. [Resmî 1.7.3 yama notları](https://wplace.live/patch-notes/1.7.3)
+Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine bağlı olarak Droplets veya Prism ödülü verilebildiğini belirtiyor.
 
 ## Dükkan
 
@@ -26,7 +26,9 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 - **Bayrak (Ulusal Bölge):** 20.000 Droplets karşılığında satın alınır. Aktifleştirilen ülke bayrağı altında boyanan her pikselin %10’u anında geri gelir [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md). Bayrak bir defa satın alındığında **kalıcı olarak** hesaba eklenir. **(Yani örneğin Türkiye bayrağı alınıp seçildiğinde, Türkiye sınırları içinde boyanan piksellerin %10’u anında geri kazanılır.)**
 
-- **Kozmetik Ürünler:** Özel avatar veya kilitli renk gibi öğelerdir. Örneğin özel avatar 20.000, premium renkler ise 2.000 Droplets’tır [Kaynak](https://placepixels.com/wplace-droplets). Bu ürünler yalnızca görsel amaçlıdır ve oynanışı etkilemez.
+- **Kozmetik Ürünler:** Avatar veya kilitli renk gibi öğelerdir. Örneğin avatar özelleştirme 20.000, premium renkler ise 2.000 Droplets’tır [Kaynak](https://placepixels.com/wplace-droplets). Bu ürünler yalnızca görsel amaçlıdır ve oynanışı etkilemez.
+
+- **Özel Kozmetik Ürünler:** Özel kozmetik ürünler, normal kozmetik ürünlerine kıyasla sadece **prism** ile satın alınabilir. Ayrıca normale göre daha fazla görsel efektleri mevcuttur. [Oyun İçi Gözlem]
 
 ## Damlacık Kazanma
 
@@ -35,6 +37,10 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 - **Seviye Atlayarak:** Hesap seviyesi yükseldiğinde 500 Droplets kazanılır [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md).
 
 - **Gerçek Parayla Satın Alarak:** Droplets, mağaza üzerinden **gerçek para** karşılığında da satın alınabilir [Kaynak](https://apps.apple.com/tr/app/wplace-paint-the-world/id6792942987).
+
+## Prism Kazanma
+
+- **Gerçek Parayla Satın Alarak:** Prism, mevcut sürümde (1.77) sadece **gerçek para** ile satın alınabiliyor. Gelecekteki sürümlerde farklılıklar **olabilir.**
 
 ## Klan (Alliance)
 
