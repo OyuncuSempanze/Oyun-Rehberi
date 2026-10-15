@@ -1,16 +1,17 @@
 :root {
   color-scheme: dark;
   --background: #121713;
-  --surface: #1a211b;
-  --surface-soft: #202820;
-  --surface-hover: #242f25;
-  --border: #354337;
-  --border-light: #465847;
-  --text: #e3e8dc;
-  --muted: #a5afa1;
-  --quiet: #81907e;
-  --accent: #abc391;
-  --accent-warm: #cbb583;
+  --wall: #1a211b;
+  --panel: #202920;
+  --panel-hover: #242f25;
+  --line: #354337;
+  --line-light: #4a5c46;
+  --text: #e4e7dc;
+  --muted: #a5afa0;
+  --quiet: #83907f;
+  --sage: #aec39a;
+  --brass: #c8b487;
+  --white: #f2f1e7;
 }
 
 * {
@@ -20,18 +21,19 @@
 html {
   min-width: 280px;
   scroll-behavior: smooth;
-  scroll-padding-top: 18px;
+  scroll-padding-top: 20px;
 }
 
 body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(ellipse at 50% 0, rgb(99 127 88 / 10%), transparent 54%),
+    radial-gradient(ellipse at 50% 0, rgb(104 128 91 / 9%), transparent 55%),
+    repeating-linear-gradient(90deg, transparent 0 89px, rgb(255 255 255 / 1%) 90px, transparent 91px),
     var(--background);
-  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 a {
@@ -40,12 +42,12 @@ a {
 
 .skip-link {
   position: fixed;
-  z-index: 10;
+  z-index: 20;
   top: 10px;
   left: 10px;
   padding: 9px 13px;
   color: var(--background);
-  background: var(--accent);
+  background: var(--sage);
   transform: translateY(-150%);
 }
 
@@ -54,40 +56,30 @@ a {
 }
 
 .site {
-  width: min(980px, calc(100% - 32px));
-  margin: 26px auto;
+  width: min(1000px, calc(100% - 32px));
+  margin: 28px auto;
   overflow: hidden;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  box-shadow: 0 18px 55px rgb(0 0 0 / 24%);
+  background: var(--wall);
+  border: 1px solid #344034;
+  border-top: 2px solid #718666;
+  box-shadow: 0 22px 65px rgb(0 0 0 / 23%);
 }
 
-/* Başlık */
+/* Üst bölüm */
 .site-header {
   position: relative;
-  padding: 23px clamp(18px, 3.5vw, 34px) 20px;
+  padding: 24px clamp(19px, 3.8vw, 36px) 20px;
   background:
-    linear-gradient(120deg, rgb(134 158 111 / 6%), transparent 52%),
+    linear-gradient(110deg, rgb(137 158 115 / 5%), transparent 54%),
     #1b221c;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--line);
 }
 
-.site-header::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 3px;
-  background: var(--accent);
-  content: "";
-  opacity: 0.75;
-}
-
-.header-top {
+.header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 20px;
 }
 
 .brand {
@@ -101,20 +93,20 @@ a {
 
 .brand-mark {
   display: grid;
-  width: 42px;
-  height: 42px;
-  flex: 0 0 42px;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
   place-items: center;
   background: #202a21;
-  border: 1px solid #52654f;
+  border: 1px solid #53654d;
 }
 
 .brand-hatch {
   position: relative;
   display: block;
-  width: 25px;
-  height: 25px;
-  border: 1.5px solid var(--accent);
+  width: 27px;
+  height: 27px;
+  border: 1.5px solid var(--sage);
   border-radius: 50%;
 }
 
@@ -123,16 +115,16 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 15px;
+  width: 17px;
   height: 2px;
-  background: var(--accent);
+  background: var(--sage);
   content: "";
   transform: translate(-50%, -50%);
 }
 
 .brand-hatch::after {
   width: 2px;
-  height: 15px;
+  height: 17px;
 }
 
 .brand-copy {
@@ -142,7 +134,8 @@ a {
 }
 
 .brand-kicker {
-  color: var(--accent-warm);
+  margin-bottom: 1px;
+  color: var(--brass);
   font-size: 0.62rem;
   font-weight: 750;
   letter-spacing: 0.13em;
@@ -150,67 +143,94 @@ a {
 }
 
 .brand-title {
-  color: #f1f3e9;
-  font-size: clamp(1.27rem, 3vw, 1.7rem);
-  font-weight: 700;
-  letter-spacing: -0.045em;
-  line-height: 1.25;
+  color: var(--white);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
 }
 
 nav {
+  display: flex;
   flex: 0 0 auto;
+  align-items: center;
+  gap: 20px;
 }
 
 nav a {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 7px 0 7px 12px;
-  color: #c7d2c2;
-  border-left: 1px solid var(--border-light);
-  font-size: 0.81rem;
+  gap: 7px;
+  color: #c3cdbd;
+  font-size: 0.82rem;
   text-decoration: none;
   transition: color 160ms ease;
 }
 
 nav a span {
-  color: var(--accent);
+  color: var(--sage);
   transition: transform 160ms ease;
 }
 
 nav a:hover {
-  color: #f4f6ee;
+  color: var(--white);
 }
 
 nav a:hover span {
-  transform: translate(2px, 2px);
+  transform: translate(2px, -2px);
 }
 
 .site-description {
-  max-width: 660px;
-  margin: 15px 0 0 54px;
+  max-width: 680px;
+  margin: 15px 0 0 56px;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   line-height: 1.6;
 }
 
 a:focus-visible {
-  outline: 2px solid var(--accent-warm);
+  outline: 2px solid var(--brass);
   outline-offset: 4px;
 }
 
-/* İçerik ve rehber sayfaları */
+/* Yol gösterici */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px clamp(19px, 3.8vw, 36px);
+  color: var(--quiet);
+  background: #161d17;
+  border-bottom: 1px solid #2b382d;
+  font-size: 0.78rem;
+}
+
+.breadcrumbs a {
+  color: #c2cdbb;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--sage);
+}
+
+.breadcrumbs span {
+  color: var(--brass);
+}
+
+/* Rehber sayfaları */
 .content {
   min-height: 360px;
-  padding: clamp(20px, 4vw, 36px);
+  padding: clamp(22px, 4vw, 38px);
   overflow-wrap: anywhere;
   background:
-    linear-gradient(90deg, rgb(255 255 255 / 1%), transparent 2%, transparent 98%, rgb(0 0 0 / 8%)),
-    var(--surface);
+    linear-gradient(90deg, rgb(255 255 255 / 0.6%), transparent 1.5%, transparent 98.5%, rgb(0 0 0 / 7%)),
+    var(--wall);
 }
 
 .content p {
-  margin: 0 0 1.1rem;
+  max-width: 790px;
+  margin: 0 0 1.15rem;
 }
 
 .content h1,
@@ -219,59 +239,68 @@ a:focus-visible {
 .content h4,
 .content h5,
 .content h6 {
-  color: #f0f2e8;
-  font-weight: 700;
+  max-width: 790px;
+  color: var(--white);
+  font-weight: 650;
   line-height: 1.35;
   letter-spacing: -0.025em;
 }
 
 .content h1 {
-  margin: 0 0 22px;
-  font-size: clamp(1.75rem, 4vw, 2.2rem);
+  margin: 0 0 25px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.9rem, 4.2vw, 2.55rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.18;
 }
 
 .content h2 {
-  margin: 32px 0 15px;
+  margin: 34px 0 15px;
   padding-bottom: 9px;
-  font-size: clamp(1.28rem, 3vw, 1.55rem);
-  border-bottom: 1px solid var(--border);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.4rem, 3vw, 1.7rem);
+  font-weight: 500;
+  border-bottom: 1px solid var(--line);
 }
 
 .content h3 {
-  margin: 25px 0 10px;
+  margin: 27px 0 10px;
   font-size: 1.15rem;
 }
 
 .content h4 {
-  margin: 20px 0 9px;
+  margin: 21px 0 9px;
   font-size: 1.03rem;
 }
 
-.content a:not(.game-card) {
-  color: var(--accent);
+.content ul,
+.content ol {
+  max-width: 790px;
+  margin: 0 0 1.3rem;
+  padding-left: 1.5rem;
+}
+
+.content li {
+  margin-bottom: 0.42rem;
+  padding-left: 0.15rem;
+}
+
+.content li::marker {
+  color: var(--brass);
+}
+
+.content a:not(.game-entry) {
+  color: var(--sage);
   text-decoration: underline;
+  text-decoration-color: #75896b;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   overflow-wrap: anywhere;
 }
 
-.content a:not(.game-card):hover {
-  color: #d5e5c7;
-}
-
-.content ul,
-.content ol {
-  margin: 0 0 1.25rem;
-  padding-left: 1.55rem;
-}
-
-.content li {
-  margin-bottom: 0.4rem;
-  padding-left: 0.15rem;
-}
-
-.content li::marker {
-  color: var(--accent-warm);
+.content a:not(.game-entry):hover {
+  color: #e0e8d5;
 }
 
 .content img {
@@ -279,17 +308,17 @@ a:focus-visible {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: min(600px, 75vh);
-  margin: 20px auto;
+  max-height: min(650px, 78vh);
+  margin: 22px auto;
   object-fit: contain;
-  background: var(--background);
-  border: 1px solid var(--border);
+  background: #111611;
+  border: 1px solid var(--line);
 }
 
 .content table {
   display: block;
   max-width: 100%;
-  margin: 20px 0;
+  margin: 22px 0;
   overflow-x: auto;
   border-collapse: collapse;
   font-size: 0.93rem;
@@ -297,14 +326,14 @@ a:focus-visible {
 
 .content th,
 .content td {
-  padding: 9px 12px;
-  border: 1px solid var(--border);
+  padding: 10px 12px;
+  border: 1px solid var(--line);
   text-align: left;
 }
 
 .content th {
-  color: #eef2e8;
-  background: var(--surface-soft);
+  color: var(--white);
+  background: #263127;
 }
 
 .content tr:nth-child(even) {
@@ -312,11 +341,12 @@ a:focus-visible {
 }
 
 .content blockquote {
-  margin: 20px 0;
+  max-width: 790px;
+  margin: 22px 0;
   padding: 13px 17px;
   color: var(--muted);
-  background: var(--surface-soft);
-  border-left: 3px solid var(--accent-warm);
+  background: #202820;
+  border-left: 2px solid var(--brass);
 }
 
 .content blockquote p:last-child {
@@ -325,18 +355,19 @@ a:focus-visible {
 
 .content code {
   padding: 2px 5px;
-  color: #d9e7ce;
-  background: var(--background);
-  border: 1px solid var(--border);
+  color: #d9e4d0;
+  background: #131914;
+  border: 1px solid var(--line);
   font-size: 0.9em;
   overflow-wrap: anywhere;
 }
 
 .content pre {
+  max-width: 100%;
   padding: 15px;
   overflow-x: auto;
-  background: var(--background);
-  border: 1px solid var(--border);
+  background: #131914;
+  border: 1px solid var(--line);
   line-height: 1.55;
 }
 
@@ -348,307 +379,310 @@ a:focus-visible {
 }
 
 .content hr {
-  margin: 28px 0;
+  max-width: 790px;
+  margin: 30px 0;
   border: 0;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--line);
 }
 
 /* Ana sayfa */
-.intro-panel {
+.welcome {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 94px;
+  grid-template-columns: minmax(0, 1fr) 220px;
   align-items: center;
-  gap: 22px;
-  padding: clamp(20px, 3.5vw, 31px);
+  gap: 26px;
+  min-height: 270px;
+  padding: clamp(23px, 3.5vw, 34px);
   overflow: hidden;
   background:
-    linear-gradient(110deg, rgb(117 146 100 / 9%), transparent 60%),
-    #202920;
-  border: 1px solid #405040;
-  animation: fade-in 420ms ease both;
+    linear-gradient(105deg, rgb(119 146 101 / 10%), transparent 64%),
+    #202820;
+  border: 1px solid #3c4b3a;
+  animation: appear 420ms ease both;
 }
 
-.intro-panel::before {
+.welcome::before {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   width: 3px;
-  background: var(--accent);
+  background: var(--sage);
   content: "";
-  opacity: 0.8;
+  opacity: 0.75;
+}
+
+.welcome-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 590px;
 }
 
 .eyebrow {
   display: flex;
   align-items: center;
   gap: 9px;
-  margin: 0 0 12px !important;
-  color: var(--accent-warm);
+  margin: 0 0 14px;
+  color: var(--brass);
   font-size: 0.65rem;
   font-weight: 750;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.12em;
   line-height: 1.5;
 }
 
-.signal-lamp,
-.note-lamp {
+.status-dot {
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   flex: 0 0 auto;
-  background: var(--accent);
+  background: var(--sage);
   border-radius: 50%;
-  box-shadow: 0 0 7px rgb(171 195 145 / 18%);
+  animation: light-breathe 4.5s ease-in-out infinite;
 }
 
-.signal-lamp {
-  animation: lamp-glow 4s ease-in-out infinite;
-}
-
-.content .intro-panel h2 {
-  margin: 0 0 12px;
+.content .welcome h1 {
+  margin: 0 0 15px;
   padding: 0;
   border: 0;
-  color: #f2f4eb;
-  font-size: clamp(1.95rem, 4.5vw, 2.8rem);
-  font-weight: 720;
-  letter-spacing: -0.06em;
-  line-height: 1.12;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.25rem, 4.6vw, 3.4rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 1.03;
 }
 
-.intro-panel h2 span {
-  color: var(--accent);
-}
-
-.intro-description {
-  max-width: 590px;
-  margin: 0 !important;
-  color: #b3bdb0;
-  font-size: 0.94rem;
-  line-height: 1.75;
-}
-
-.intro-hatch {
-  display: grid;
-  width: 88px;
-  height: 88px;
-  place-items: center;
-  background: linear-gradient(145deg, #2c392d, #1b231c);
-  border: 1px solid #53684f;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 4px rgb(0 0 0 / 12%);
-}
-
-.hatch-ring {
-  position: relative;
+.welcome h1 em {
   display: block;
-  width: 58px;
-  height: 58px;
-  border: 2px solid #9bb58a;
-  border-radius: 50%;
+  color: var(--sage);
+  font-style: normal;
 }
 
-.hatch-ring::before,
-.hatch-ring::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 38px;
-  height: 3px;
-  background: #9bb58a;
-  content: "";
-  transform: translate(-50%, -50%);
+.welcome-description {
+  max-width: 520px;
+  margin: 0 !important;
+  color: #b8c2b2;
+  font-size: 0.93rem;
+  line-height: 1.78;
 }
 
-.hatch-ring::after {
-  width: 3px;
-  height: 38px;
+.door-art {
+  display: block;
+  width: min(100%, 218px);
+  height: auto;
+  justify-self: center;
+  overflow: visible;
+}
+
+.door-light {
+  animation: light-breathe 4.5s ease-in-out infinite;
+}
+
+/* Arşiv listesi */
+.archive {
+  margin-top: 35px;
 }
 
 .section-heading {
   display: flex;
-  align-items: center;
-  gap: 18px;
-  margin: 30px 0 16px;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 17px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid var(--line);
+}
+
+.section-kicker {
+  margin: 0 0 2px !important;
+  color: var(--brass);
+  font-size: 0.62rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
 }
 
 .content .section-heading h2 {
-  flex: 0 0 auto;
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 1.28rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 500;
   letter-spacing: -0.035em;
 }
 
-.section-rule {
-  height: 1px;
-  flex: 1;
-  background: var(--border);
+.section-description {
+  margin: 0 0 2px !important;
+  color: var(--quiet);
+  font-size: 0.8rem;
+  text-align: right;
 }
 
-/* Oyun kartları */
-.game-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
+.game-list {
+  border-top: 1px solid #2d392e;
+  border-bottom: 1px solid #2d392e;
 }
 
-.game-card {
+.game-entry {
   position: relative;
   display: grid;
-  grid-template-columns: 28px minmax(0, 1fr);
-  align-content: start;
-  align-items: start;
-  gap: 12px;
+  grid-template-columns: 49px minmax(0, 1fr) 105px;
+  align-items: center;
+  gap: 17px;
   min-width: 0;
-  min-height: 198px;
-  padding: 18px 15px 15px;
+  min-height: 117px;
+  padding: 17px 16px;
   color: var(--text) !important;
-  background: #1e271f;
-  border: 1px solid #364538;
+  background: transparent;
+  border-bottom: 1px solid #2d392e;
   text-decoration: none !important;
-  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
-  animation: fade-in 420ms ease both;
+  transition: background 180ms ease, padding-left 180ms ease;
 }
 
-.game-card:nth-child(2) {
-  animation-delay: 60ms;
+.game-entry:last-child {
+  border-bottom: 0;
 }
 
-.game-card:nth-child(3) {
-  animation-delay: 120ms;
+.game-entry:hover {
+  padding-left: 20px;
+  background: rgb(168 193 149 / 4%);
 }
 
-.game-card:hover {
-  background: var(--surface-hover);
-  border-color: #627b5d;
-  transform: translateY(-2px);
+.entry-emblem {
+  display: grid;
+  width: 48px;
+  height: 50px;
+  place-items: center;
+  background: #202920;
+  border: 1px solid #40513e;
+  transition: border-color 180ms ease;
 }
 
-.game-mark {
+.game-entry:hover .entry-emblem {
+  border-color: #7c916f;
+}
+
+.entry-door {
   position: relative;
   display: block;
-  width: 27px;
-  height: 36px;
-  margin-top: 2px;
-  background: #253127;
-  border: 1px solid #63775d;
-  border-radius: 2px;
+  width: 22px;
+  height: 32px;
+  background: #263328;
+  border: 1px solid #8b9c7b;
+  box-shadow: inset 0 0 0 3px rgb(0 0 0 / 13%);
 }
 
-.game-mark::before {
+.entry-door::before {
   position: absolute;
-  top: 4px;
-  bottom: 4px;
+  top: 3px;
+  bottom: 3px;
   left: 50%;
   width: 1px;
-  background: #60745a;
+  background: #53664c;
   content: "";
 }
 
-.game-mark::after {
+.entry-door::after {
   position: absolute;
   top: 50%;
-  right: 4px;
+  right: 3px;
   width: 3px;
   height: 3px;
-  background: var(--accent-warm);
+  background: var(--brass);
   border-radius: 50%;
   content: "";
-  transform: translateY(-50%);
 }
 
-.game-card-copy {
+.entry-copy {
   display: flex;
   min-width: 0;
-  height: 100%;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.game-category {
-  display: block;
-  min-height: 30px;
-  margin-bottom: 5px;
-  color: #a4b29d;
-  font-size: 0.58rem;
-  font-weight: 750;
-  letter-spacing: 0.075em;
-  line-height: 1.45;
+.entry-category {
+  margin-bottom: 3px;
+  color: #a4b19b;
+  font-size: 0.65rem;
+  font-weight: 650;
+  letter-spacing: 0.025em;
 }
 
-.content .game-card h3 {
-  margin: 0 0 8px;
-  color: #f0f2e9;
-  font-size: 1.08rem;
-  letter-spacing: -0.035em;
-  line-height: 1.35;
+.entry-title {
+  color: var(--white);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.3;
 }
 
-.game-card p {
-  margin: 0 0 16px;
+.entry-description {
+  max-width: 650px;
+  margin-top: 4px;
   color: var(--muted);
-  font-size: 0.82rem;
-  line-height: 1.65;
+  font-size: 0.83rem;
+  line-height: 1.6;
 }
 
-.card-link {
+.entry-action {
   display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-top: auto;
-  padding-top: 10px;
-  color: var(--accent);
-  border-top: 1px solid #354337;
-  font-size: 0.78rem;
-  font-weight: 700;
+  justify-content: flex-end;
+  gap: 10px;
+  color: #b5c4a8;
+  font-size: 0.77rem;
+  white-space: nowrap;
 }
 
-.card-link span {
-  font-size: 0.95rem;
-  transition: transform 160ms ease;
+.entry-action b {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  color: var(--brass);
+  border: 1px solid #40503e;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: transform 180ms ease, border-color 180ms ease;
 }
 
-.game-card:hover .card-link span {
+.game-entry:hover .entry-action b {
+  border-color: #75896b;
   transform: translate(2px, -2px);
 }
 
-/* Kaynak ilkesi */
+/* Arşiv ilkesi */
 .archive-note {
   display: grid;
   grid-template-columns: 8px minmax(0, 1fr);
   align-items: start;
-  gap: 13px;
+  gap: 12px;
   margin-top: 22px;
-  padding: 15px 17px;
-  background: #171e18;
-  border: 1px solid #313f33;
+  padding: 3px 0 0 2px;
 }
 
-.note-lamp {
-  margin-top: 8px;
-  background: var(--accent-warm);
-  box-shadow: none;
-}
-
-.content .archive-note h2 {
-  margin: 0 0 4px;
-  padding: 0;
-  border: 0;
-  font-size: 0.96rem;
-  letter-spacing: -0.015em;
+.note-mark {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  margin-top: 9px;
+  background: var(--brass);
+  transform: rotate(45deg);
 }
 
 .archive-note p {
   margin: 0 !important;
   color: var(--muted);
-  font-size: 0.83rem;
+  font-size: 0.82rem;
   line-height: 1.7;
+}
+
+.archive-note strong {
+  margin-right: 5px;
+  color: #d8dfd0;
+  font-weight: 650;
 }
 
 /* Alt bilgi */
@@ -656,37 +690,37 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  padding: 15px clamp(18px, 3.5vw, 34px);
-  background: #141a15;
-  border-top: 1px solid var(--border);
+  gap: 14px;
+  padding: 16px clamp(19px, 3.8vw, 36px);
+  background: #151b16;
+  border-top: 1px solid var(--line);
   color: var(--quiet);
-  font-size: 0.74rem;
+  font-size: 0.73rem;
 }
 
 .footer-brand {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  color: #bdc8b8;
+  color: #bac5b2;
   font-weight: 650;
 }
 
 .footer-mark {
   display: inline-block;
-  width: 9px;
-  height: 9px;
-  background: var(--accent);
-  border: 2px solid #334431;
-  outline: 1px solid #68805f;
+  width: 8px;
+  height: 8px;
+  background: var(--sage);
+  border: 2px solid #344333;
+  outline: 1px solid #68805e;
 }
 
 .footer-note {
   text-align: right;
 }
 
-/* Hafif hareketler ve duyarlı görünüm */
-@keyframes fade-in {
+/* Hareketler ve mobil görünüm */
+@keyframes appear {
   from {
     opacity: 0;
     transform: translateY(5px);
@@ -698,9 +732,9 @@ a:focus-visible {
   }
 }
 
-@keyframes lamp-glow {
+@keyframes light-breathe {
   0%, 100% {
-    opacity: 0.72;
+    opacity: 0.7;
   }
 
   50% {
@@ -708,22 +742,46 @@ a:focus-visible {
   }
 }
 
-@media (max-width: 800px) {
-  .game-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (max-width: 760px) {
+  .welcome {
+    grid-template-columns: minmax(0, 1fr) 150px;
+    gap: 17px;
+    min-height: 245px;
   }
 
-  .game-card:last-child {
-    grid-column: 1 / -1;
-    min-height: 145px;
+  .door-art {
+    width: min(100%, 150px);
   }
 
-  .game-card:last-child .game-category {
-    min-height: 0;
+  .game-entry {
+    grid-template-columns: 45px minmax(0, 1fr) 88px;
+    gap: 13px;
+    padding-right: 10px;
+    padding-left: 12px;
+  }
+
+  .game-entry:hover {
+    padding-left: 15px;
+  }
+
+  .entry-emblem {
+    width: 44px;
+    height: 47px;
+  }
+
+  .entry-action {
+    gap: 6px;
+    font-size: 0.72rem;
   }
 }
 
 @media (max-width: 560px) {
+  body {
+    background-image:
+      radial-gradient(ellipse at 50% 0, rgb(104 128 91 / 8%), transparent 55%),
+      var(--background);
+  }
+
   .site {
     width: calc(100% - 12px);
     margin: 6px auto;
@@ -733,9 +791,9 @@ a:focus-visible {
     padding: 18px 15px 16px;
   }
 
-  .header-top {
-    flex-wrap: wrap;
-    gap: 10px 14px;
+  .header-inner {
+    align-items: center;
+    gap: 12px;
   }
 
   .brand {
@@ -743,157 +801,179 @@ a:focus-visible {
   }
 
   .brand-mark {
-    width: 36px;
-    height: 36px;
-    flex-basis: 36px;
+    width: 37px;
+    height: 37px;
+    flex-basis: 37px;
   }
 
   .brand-hatch {
-    width: 21px;
-    height: 21px;
+    width: 23px;
+    height: 23px;
   }
 
   .brand-hatch::before {
-    width: 13px;
+    width: 15px;
   }
 
   .brand-hatch::after {
-    height: 13px;
+    height: 15px;
   }
 
   .brand-kicker {
-    font-size: 0.55rem;
-    letter-spacing: 0.1em;
+    font-size: 0.52rem;
+    letter-spacing: 0.09em;
   }
 
   .brand-title {
     font-size: 1.25rem;
   }
 
+  nav {
+    gap: 11px;
+  }
+
   nav a {
-    padding: 5px 0 5px 9px;
-    font-size: 0.75rem;
+    gap: 4px;
+    font-size: 0.7rem;
+    white-space: nowrap;
   }
 
   .site-description {
-    margin: 12px 0 0;
-    font-size: 0.82rem;
+    margin: 11px 0 0 46px;
+    font-size: 0.77rem;
+    line-height: 1.55;
+  }
+
+  .breadcrumbs {
+    gap: 8px;
+    padding: 10px 15px;
+    font-size: 0.73rem;
   }
 
   .content {
     min-height: 280px;
-    padding: 15px 13px 21px;
+    padding: 15px 13px 22px;
   }
 
   .content h1 {
-    font-size: 1.7rem;
+    margin-bottom: 20px;
+    font-size: 1.85rem;
   }
 
   .content h2 {
-    margin-top: 27px;
+    margin-top: 28px;
   }
 
-  .intro-panel {
-    grid-template-columns: minmax(0, 1fr) 57px;
-    gap: 10px;
-    padding: 20px 15px;
+  .welcome {
+    grid-template-columns: minmax(0, 1fr) 76px;
+    gap: 8px;
+    min-height: 0;
+    padding: 22px 14px;
   }
 
   .eyebrow {
     gap: 7px;
-    margin-bottom: 11px !important;
-    font-size: 0.56rem;
-    letter-spacing: 0.09em;
+    margin-bottom: 11px;
+    font-size: 0.53rem;
+    letter-spacing: 0.07em;
   }
 
-  .content .intro-panel h2 {
-    margin-bottom: 10px;
-    font-size: clamp(1.7rem, 7.7vw, 2.15rem);
+  .content .welcome h1 {
+    margin-bottom: 11px;
+    font-size: clamp(1.85rem, 8vw, 2.2rem);
+    letter-spacing: -0.05em;
   }
 
-  .intro-description {
-    font-size: 0.83rem;
-    line-height: 1.68;
+  .welcome-description {
+    font-size: 0.82rem;
+    line-height: 1.65;
   }
 
-  .intro-hatch {
-    width: 54px;
-    height: 54px;
-    align-self: center;
+  .door-art {
+    width: 82px;
+    max-width: 100%;
   }
 
-  .hatch-ring {
-    width: 36px;
-    height: 36px;
-    border-width: 1.5px;
-  }
-
-  .hatch-ring::before {
-    width: 24px;
-    height: 2px;
-  }
-
-  .hatch-ring::after {
-    width: 2px;
-    height: 24px;
+  .archive {
+    margin-top: 27px;
   }
 
   .section-heading {
-    gap: 12px;
-    margin: 25px 0 13px;
+    align-items: end;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+  }
+
+  .section-kicker {
+    font-size: 0.57rem;
   }
 
   .content .section-heading h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-description {
+    max-width: 118px;
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+
+  .game-entry {
+    grid-template-columns: 37px minmax(0, 1fr) 22px;
+    gap: 10px;
+    min-height: 0;
+    padding: 14px 3px;
+  }
+
+  .game-entry:hover {
+    padding-left: 6px;
+  }
+
+  .entry-emblem {
+    width: 36px;
+    height: 43px;
+  }
+
+  .entry-door {
+    width: 19px;
+    height: 29px;
+  }
+
+  .entry-title {
     font-size: 1.16rem;
   }
 
-  .game-grid {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 9px;
+  .entry-category {
+    font-size: 0.61rem;
   }
 
-  .game-card,
-  .game-card:last-child {
-    grid-column: auto;
-    grid-template-columns: 25px minmax(0, 1fr);
-    gap: 11px;
-    min-height: 0;
-    padding: 15px 13px 12px;
+  .entry-description {
+    margin-top: 3px;
+    font-size: 0.78rem;
+    line-height: 1.55;
   }
 
-  .game-mark {
-    width: 24px;
-    height: 32px;
+  .entry-action {
+    justify-content: flex-end;
   }
 
-  .game-category {
-    min-height: 0;
-    margin-bottom: 5px;
-    font-size: 0.55rem;
+  .entry-action > span {
+    display: none;
   }
 
-  .content .game-card h3 {
-    margin-bottom: 5px;
-    font-size: 1.04rem;
-  }
-
-  .game-card p {
-    margin-bottom: 12px;
-    font-size: 0.8rem;
-  }
-
-  .card-link {
-    padding-top: 8px;
+  .entry-action b {
+    width: 21px;
+    height: 21px;
   }
 
   .archive-note {
     gap: 10px;
     margin-top: 17px;
-    padding: 13px 12px;
   }
 
   .archive-note p {
-    font-size: 0.79rem;
+    font-size: 0.77rem;
   }
 
   .site-footer {
@@ -901,7 +981,7 @@ a:focus-visible {
     flex-direction: column;
     gap: 5px;
     padding: 13px 15px;
-    font-size: 0.7rem;
+    font-size: 0.69rem;
   }
 
   .footer-note {
@@ -909,7 +989,7 @@ a:focus-visible {
   }
 
   .content img {
-    max-height: min(500px, 70vh);
+    max-height: min(540px, 72vh);
     margin: 17px auto;
   }
 

@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#151b16">
+  <meta name="theme-color" content="#141a15">
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
-  <title>{{ page.title | default: site.title }}{% if page.title %} — {{ site.title }}{% endif %}</title>
+  {% if page.url == '/' %}
+  <title>{{ site.title | escape }}</title>
+  {% else %}
+  <title>{{ page.title | default: 'Oyun rehberi' | escape }} — {{ site.title | escape }}</title>
+  {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
@@ -13,7 +17,7 @@
 
   <div class="site">
     <header class="site-header">
-      <div class="header-top">
+      <div class="header-inner">
         <a class="brand" href="{{ '/' | relative_url }}" aria-label="Oyun-Rehberi ana sayfası">
           <span class="brand-mark" aria-hidden="true"><span class="brand-hatch"></span></span>
           <span class="brand-copy">
@@ -23,12 +27,34 @@
         </a>
 
         <nav aria-label="Ana gezinme">
-          <a href="{{ '/' | relative_url }}#archive">Arşivdeki oyunlar <span aria-hidden="true">↘</span></a>
+          <a href="{{ '/' | relative_url }}">Ana sayfa</a>
+          <a href="{{ '/' | relative_url }}#arsiv">Oyun arşivi <span aria-hidden="true">↗</span></a>
         </nav>
       </div>
 
       <p class="site-description">{{ site.description }}</p>
     </header>
+
+    {% assign game_label = '' %}
+    {% assign game_path = '' %}
+    {% if page.url contains '/oyunlar/bloody-bastards/' %}
+      {% assign game_label = 'Bloody Bastards' %}
+      {% assign game_path = '/oyunlar/bloody-bastards/' %}
+    {% elsif page.url contains '/oyunlar/wplace.live/' %}
+      {% assign game_label = 'Wplace.live' %}
+      {% assign game_path = '/oyunlar/wplace.live/' %}
+    {% elsif page.url contains '/oyunlar/DATA-WING/' %}
+      {% assign game_label = 'DATA WING' %}
+      {% assign game_path = '/oyunlar/DATA-WING/' %}
+    {% endif %}
+
+    {% if game_path != '' and page.name != 'index.md' %}
+    <div class="breadcrumbs" aria-label="İçerik yolu">
+      <a href="{{ '/' | relative_url }}">Ana sayfa</a>
+      <span aria-hidden="true">›</span>
+      <a href="{{ game_path | relative_url }}">{{ game_label }} arşivi</a>
+    </div>
+    {% endif %}
 
     <main class="content" id="main-content">
       {{ content }}
@@ -36,7 +62,7 @@
 
     <footer class="site-footer">
       <span class="footer-brand"><span class="footer-mark" aria-hidden="true"></span> OyuncuSempanze</span>
-      <span class="footer-note">Kaynaklı oyun bilgileri <span aria-hidden="true">·</span> Türkçe arşiv</span>
+      <span class="footer-note">Kaynaklı bilgiler, oyun içi gözlemler ve notlar</span>
     </footer>
   </div>
 </body>
