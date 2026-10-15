@@ -18,4 +18,4 @@ description: "Wplace için oyun içi gözlemlere dayalı başlangıç ve kaynak 
 
 **Oyun Kurallarına Uymak:** Oyunda açıkça belirtilmiş bazı kurallar vardır. Bu kurallara uymadığınız takdirde hesabınız kapatılabilir veya geçici olarak uzaklaştırılabilir.
 
-*[Kurallar hakkında daha fazla bilgi edinmek için tıklayın](kurallar.md)*
+*[Kurallar hakkında daha fazla bilgi edinmek için tıklayın](kurallar.html)*

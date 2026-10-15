@@ -10,9 +10,9 @@ Wplace.live, gerçek dünya haritası üzerinde oyuncuların birlikte piksel çi
 
 ## İçerikler
 
-- [Oyun Hakkında](oyun-hakkinda.md)
-- [Mekanikler](mekanikler.md)
-- [Güncellemeler](guncellemeler.md)
-- [Tavsiye](tavsiye.md)
-- [Kurallar](kurallar.md)
-- [Görseller](gorseller.md)
+- [Oyun Hakkında](oyun-hakkinda.html)
+- [Mekanikler](mekanikler.html)
+- [Güncellemeler](guncellemeler.html)
+- [Tavsiye](tavsiye.html)
+- [Kurallar](kurallar.html)
+- [Görseller](gorseller.html)

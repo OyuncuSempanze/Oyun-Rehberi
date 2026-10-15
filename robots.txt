@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oyuncusempanze.github.io/Oyun-Rehberi/sitemap.xml

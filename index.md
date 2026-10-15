@@ -48,7 +48,7 @@ description: Niş ve bağımsız oyunlar için Türkçe rehberler. Oynanış mek
   </div>
 
   <div class="game-list">
-    <a class="game-entry" href="oyunlar/bloody-bastards/" aria-label="Bloody Bastards rehberini aç">
+    <a class="game-entry" href="{{ '/oyunlar/bloody-bastards/' | relative_url }}" aria-label="Bloody Bastards rehberini aç">
       <span class="entry-emblem" aria-hidden="true">
         <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
           <path d="M13 10L35 37 M35 10L13 37" fill="none" stroke="#aec39a" stroke-width="2.3" stroke-linecap="round"/>
@@ -64,7 +64,7 @@ description: Niş ve bağımsız oyunlar için Türkçe rehberler. Oynanış mek
       <span class="entry-action"><span>Rehberi aç</span><b aria-hidden="true">↗</b></span>
     </a>
 
-    <a class="game-entry" href="oyunlar/wplace.live/" aria-label="Wplace.live rehberini aç">
+    <a class="game-entry" href="{{ '/oyunlar/wplace.live/' | relative_url }}" aria-label="Wplace.live rehberini aç">
       <span class="entry-emblem" aria-hidden="true">
         <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
           <rect x="9" y="9" width="8" height="8" fill="#aec39a"/>
@@ -86,7 +86,7 @@ description: Niş ve bağımsız oyunlar için Türkçe rehberler. Oynanış mek
       <span class="entry-action"><span>Rehberi aç</span><b aria-hidden="true">↗</b></span>
     </a>
 
-    <a class="game-entry" href="oyunlar/DATA-WING/" aria-label="DATA WING rehberini aç">
+    <a class="game-entry" href="{{ '/oyunlar/DATA-WING/' | relative_url }}" aria-label="DATA WING rehberini aç">
       <span class="entry-emblem" aria-hidden="true">
         <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
           <path d="M7 24L25 10V19H41V29H25V38Z" fill="#aec39a"/>

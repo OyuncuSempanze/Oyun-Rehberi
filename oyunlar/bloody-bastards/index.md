@@ -10,10 +10,10 @@ Bloody Bastards, fizik tabanlı 2D bir dövüş oyunudur. Bu arşivde oyunun tem
 
 ## İçerikler
 
-- [Oyun Hakkında](oyun-hakkinda.md)
-- [Oynanış](oynanis.md)
-- [Silahlar ve Hasar Türleri](silahlar.md)
-- [Zırhlar](zirhlar.md)
-- [Özelleştirme](ozellestirme.md)
-- [Güncellemeler](guncellemeler.md)
-- [Görseller](gorseller.md)
+- [Oyun Hakkında](oyun-hakkinda.html)
+- [Oynanış](oynanis.html)
+- [Silahlar ve Hasar Türleri](silahlar.html)
+- [Zırhlar](zirhlar.html)
+- [Özelleştirme](ozellestirme.html)
+- [Güncellemeler](guncellemeler.html)
+- [Görseller](gorseller.html)

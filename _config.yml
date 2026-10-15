@@ -4,11 +4,23 @@ url: "https://oyuncusempanze.github.io"
 baseurl: "/Oyun-Rehberi"
 lang: tr_TR
 
+author:
+  name: OyuncuSempanze
+  url: "https://github.com/OyuncuSempanze"
+
+social:
+  name: OyuncuSempanze
+  links:
+    - "https://github.com/OyuncuSempanze"
+
 markdown: kramdown
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+exclude:
+  - README.md
 
 defaults:
   - scope:

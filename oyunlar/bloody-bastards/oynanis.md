@@ -34,8 +34,8 @@ Kullanılan ekipman, karakterin savaş sırasında sahip olduğu özellikleri ve
 
 #### Daha ayrıntılı bilgiler için
 
-- [Silahlar](silahlar.md)
-- [Zırhlar](zirhlar.md)
+- [Silahlar](silahlar.html)
+- [Zırhlar](zirhlar.html)
 
 ## İlerleme
 
