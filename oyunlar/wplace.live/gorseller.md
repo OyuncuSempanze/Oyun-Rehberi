@@ -1,29 +1,35 @@
-*Buradaki tüm görseller [Resmî Siteden](
-https://wplace.live/) alınmıştır. Sürümden sürüme farklılık gösterebilir. Sadece bunlarla sınırlı kalmayıp farklı ihlaller de bulunabilir (doxing v.b)* 
+*Bu belgedeki örnekler [Wplace'in resmî topluluk kurallarından](https://wplace.live/terms/community-guidelines) alınmıştır. Kurallar ve görsel örnekleri zamanla değişebilir.*
 
-## ⛔ Banlanmaya Sebep Olabilecek Çizimler:
+## ⚠️ Çağrışımlı İçerik Örnekleri
 
-![Uygunsuz Görsel](gorseller/borde1.2HTtxzDt.png) 
+*Resmî kurallara göre bu kategorideki çizimler tek başına uzaklaştırmaya yol açmamalıdır. Topluluk üyeleri bu çizimleri temizleyebilir veya üzerlerini çizebilir.*
 
-![Uygunsuz Görsel](gorseller/borde2.CN89IOz0.png)
+![Çağrışımlı içerik örneği](gorseller/borde1.2HTtxzDt.png)
 
-![Uygunsuz Görsel](gorseller/borde4.D9VfQfkE.png)
-Müstehcen ve Vahşet İçerikleri Çizmek
+![Çağrışımlı içerik örneği](gorseller/borde2.CN89IOz0.png)
 
-## ⚠️ Uzaklaştırmaya Sebep Olabilecek Çizimler:
+![Çağrışımlı içerik örneği](gorseller/borde4.D9VfQfkE.png)
 
-![Gri Alanda Duran Çizim](gorseller/griefing1.mrf_QTk2.png)
-Bir Resmi Sebepsiz Yere Karalamak
+![Çağrışımlı içerik örneği](gorseller/borde6.CtRHeorl.png)
 
-![Gri Alanda Duran Çizim](gorseller/pgriefing1.Cxw7Oxbm.png)
-Bir Resmi Bayrakla veya Tekrarlayan Desen İle Silmek/Üstünden Geçmek
+## ⛔ Geçici Uzaklaştırma Riski Taşıyan Davranış
 
-## ✅ Yasak Olmayan Çizimler:
+*Başka bir oyuncunun çizimini yaratıcı bir amaç olmadan bozmak, kasıtlı çizim bozma (griefing) olarak değerlendirilebilir.*
 
-![Uygun Çizim](gorseller/borde6.CtRHeorl.png)
+![Başka bir çizimi karalama örneği](gorseller/griefing1.mrf_QTk2.png)
 
-![Uygun Çizim](gorseller/ngriefing3.l-WuAkT6.png)
-Bir Resmin Üzerine Değer Katan (Bir Şeyi İfade Eden) Çizim Yapmak
+## ⚠️ Bağlama Göre Değerlendirilebilecek Davranış
 
-![Uygun Çizim](gorseller/mapclean1.CXzD9GTn.png)
-Tekrarlayan Deseni Silip Üstüne Yeni Bir Şey Çizmek
+*Bir çizimin üzerine bayrak veya tekrarlayan desen çizmek her durumda otomatik olarak ihlal sayılmaz. Davranışın amacı ve devamlılığı önemlidir.*
+
+![Gri alandaki davranış örneği](gorseller/pgriefing1.Cxw7Oxbm.png)
+
+## ✅ İzin Verilen Davranış Örnekleri
+
+*Bölge mücadelesi kapsamında başka bir çizimin üzerine çizim yapmak, tek başına kural ihlali sayılmaz.*
+
+![Bölge mücadelesi örneği](gorseller/ngriefing3.l-WuAkT6.png)
+
+*Şeffaf piksellerle tekrarlayan desenleri veya uygun olmayan içerikleri temizlemek izin verilen bir davranıştır.*
+
+![Harita temizliği örneği](gorseller/mapclean1.CXzD9GTn.png)
