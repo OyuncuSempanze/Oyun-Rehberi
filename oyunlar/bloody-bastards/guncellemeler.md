@@ -10,12 +10,17 @@ Bu sayfada Bloody Bastards için yayımlanan en son güncelleme ve oyuna eklenen
 
 # En Son Gelen Güncelleme
 
-## 5.0.5 (10 Ekim 2026)
+## 5.0.4 (7 Eylül 2026)
 
-* Multiplayer modundaki gecikmeler düzeltildi.
-* Yeni bir para birimi **"Diamond (Elmas)"** eklendi.
-* Oyundaki tüm eşyalara ve oyuncu ismine renk özelleştirme seçeneği eklendi. (Diamond ile satın alınır.)
-* Ekstra karakter slotları eklendi. (Diamond ile satın alınır.)
+* El hareketi giriş hassasiyeti ayarlandı.
+* Hasar ve silah dengesi üzerinde ayarlamalar yapıldı.
+* Giriş sahnelerine isim banner'ları eklendi.
+* Phantom Square Smeg görsel hatası düzeltildi.
+* Kontrolcü avantajına yol açan sorun giderildi.
+* Saç ve sakaldaki morarmalar düzeltildi.
+* Practice modundaki ortam seslerinin kapalı kalması sorunu düzeltildi.
+* Küçük ayarlamalar ve hata düzeltmeleri yapıldı.
+* Çok oyunculu modda yalnızca aynı sürümdeki (5.0.4) oyuncularla oynanabilir.
 
 ## Kaynaklar
 
