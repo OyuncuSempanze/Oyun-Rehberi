@@ -27,7 +27,9 @@
         </a>
 
         <nav aria-label="Ana gezinme">
+          {% unless page.url == '/' %}
           <a href="{{ '/' | relative_url }}">Ana sayfa</a>
+          {% endunless %}
           <a href="{{ '/' | relative_url }}#arsiv">Oyun arşivi <span aria-hidden="true">↗</span></a>
         </nav>
       </div>
@@ -61,8 +63,7 @@
     </main>
 
     <footer class="site-footer">
-      <span class="footer-brand"><span class="footer-mark" aria-hidden="true"></span> OyuncuSempanze</span>
-      <span class="footer-note">Kaynaklı bilgiler, oyun içi gözlemler ve notlar</span>
+      <span class="footer-note">Kaynaklar ve oyun içi gözlemler birbirinden ayrı tutulur.</span>
     </footer>
   </div>
 </body>

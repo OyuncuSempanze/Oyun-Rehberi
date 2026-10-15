@@ -107,7 +107,8 @@ a {
   width: 27px;
   height: 27px;
   border: 1.5px solid var(--sage);
-  border-radius: 50%;
+  border-radius: 2px;
+  transform: rotate(45deg);
 }
 
 .brand-hatch::before,
@@ -466,7 +467,7 @@ a:focus-visible {
   line-height: 1.78;
 }
 
-.door-art {
+.archive-core-art {
   display: block;
   width: min(100%, 218px);
   height: auto;
@@ -474,8 +475,10 @@ a:focus-visible {
   overflow: visible;
 }
 
-.door-light {
-  animation: light-breathe 4.5s ease-in-out infinite;
+.signal-scan {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: scan-sweep 5.4s ease-in-out infinite;
 }
 
 /* Arşiv listesi */
@@ -563,35 +566,11 @@ a:focus-visible {
   border-color: #7c916f;
 }
 
-.entry-door {
-  position: relative;
+.entry-icon {
   display: block;
-  width: 22px;
-  height: 32px;
-  background: #263328;
-  border: 1px solid #8b9c7b;
-  box-shadow: inset 0 0 0 3px rgb(0 0 0 / 13%);
-}
-
-.entry-door::before {
-  position: absolute;
-  top: 3px;
-  bottom: 3px;
-  left: 50%;
-  width: 1px;
-  background: #53664c;
-  content: "";
-}
-
-.entry-door::after {
-  position: absolute;
-  top: 50%;
-  right: 3px;
-  width: 3px;
-  height: 3px;
-  background: var(--brass);
-  border-radius: 50%;
-  content: "";
+  width: 31px;
+  height: 31px;
+  overflow: visible;
 }
 
 .entry-copy {
@@ -698,25 +677,8 @@ a:focus-visible {
   font-size: 0.73rem;
 }
 
-.footer-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  color: #bac5b2;
-  font-weight: 650;
-}
-
-.footer-mark {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: var(--sage);
-  border: 2px solid #344333;
-  outline: 1px solid #68805e;
-}
-
 .footer-note {
-  text-align: right;
+  text-align: left;
 }
 
 /* Hareketler ve mobil görünüm */
@@ -742,6 +704,18 @@ a:focus-visible {
   }
 }
 
+@keyframes scan-sweep {
+  0%, 100% {
+    opacity: 0.28;
+    transform: translateY(-27px);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: translateY(27px);
+  }
+}
+
 @media (max-width: 760px) {
   .welcome {
     grid-template-columns: minmax(0, 1fr) 150px;
@@ -749,7 +723,7 @@ a:focus-visible {
     min-height: 245px;
   }
 
-  .door-art {
+  .archive-core-art {
     width: min(100%, 150px);
   }
 
@@ -889,8 +863,8 @@ a:focus-visible {
     line-height: 1.65;
   }
 
-  .door-art {
-    width: 82px;
+  .archive-core-art {
+    width: 76px;
     max-width: 100%;
   }
 
@@ -933,11 +907,6 @@ a:focus-visible {
   .entry-emblem {
     width: 36px;
     height: 43px;
-  }
-
-  .entry-door {
-    width: 19px;
-    height: 29px;
   }
 
   .entry-title {
