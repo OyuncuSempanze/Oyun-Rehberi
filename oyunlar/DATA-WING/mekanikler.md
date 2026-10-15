@@ -4,29 +4,28 @@ Oyunda, Mother (Anne) adlı yapay zekânın oluşturduğu bir komut dosyasını 
 
 ## Temel Hareket
 
-Ekranın sağ ve sol kısmında büyük butonlar var, bu butonlara bastığımızda karakterimiz sağa veya sola hareket eder. [Oyun İçi Gözlem]
+Ekranın sağ ve sol tarafında büyük butonlar var. Bu butonlara bastığımızda karakterimiz sağa veya sola hareket eder. [Oyun İçi Gözlem]
 
 ## Fizik ve Momentum
 
-Oyundaki incelediğim fiziğe göre karakter bir pozisyonda doğrusal ilerlerken hız kaybetmez, ancak bir anda sağa veya sola uzun şekilde döndürüldüğünde hız önemli ölçüde azalır. Dönüşler biraz daha yavaş yapılması kaybedilen hızı azaltır. [Oyun İçi Gözlem]
+Yaptığım gözlemlere göre karakter düz bir doğrultuda ilerlerken hız kaybetmez; ancak aniden uzun süre sağa veya sola döndürüldüğünde hızı önemli ölçüde azalır. Dönüşleri daha yavaş yapmak, kaybedilen hızı azaltır. [Oyun İçi Gözlem]
 
 ## Seviyelere Özgü Etkenler
 
 ### Yerçekimi
 
-Oyunda bazı seviyelerde yerçekimi artabilir/azalabilir. Yerçekimi, karakterin hızını belirler. [Oyun İçi Gözlem]
+Oyunun bazı seviyelerinde yerçekimi artabilir veya azalabilir. Yerçekimi, karakterin hareketini etkiler. [Oyun İçi Gözlem]
 
-Örneğin, çok fazla yerçekimine sahip bir seviyede karakter olduğundan daha yavaş hareket eder. [Oyun İçi Gözlem]
- 
+Örneğin, yerçekiminin yüksek olduğu bir seviyede karakter daha yavaş hareket eder. [Oyun İçi Gözlem]
+
 ### Engeller ve Anahtarlar
 
-Bazı seviyelerde ise karşımıza engeller veya anahtar çıkar. Kapıyı açmak için anahtarı bulmalıyız. [Oyun İçi Gözlem]
+Bazı seviyelerde engeller veya anahtarlarla karşılaşırız. Kapıyı açmak için anahtarı bulmamız gerekir. [Oyun İçi Gözlem]
 
 ### Yavaşlatıcı Duvarlar
 
-Her duvarlar aynı değildir, bazılarının rengi kırmızıdır ve oraya sürtündüğünüzde sizi yavaşlatır. [Oyun İçi Gözlem]
-
+Her duvar aynı değildir. Bazı duvarlar kırmızıdır ve karakter bu duvarlara sürtündüğünde yavaşlar. [Oyun İçi Gözlem]
 
 ## İpucu
 
-Duvarlara sürtünerek gidildiğinde karakter ekstra hız kazanır [Resmî Kaynak](https://apps.apple.com/tr/app/data-wing/id1206723870) , eğer duvara yanlış pozisyonda sürtülür/çarpılırsa karakter yavaşlar. [Oyun İçi Gözlem]
+Duvarlara sürtünerek hareket edildiğinde karakter ekstra hız kazanır. [Resmî Kaynak](https://apps.apple.com/tr/app/data-wing/id1206723870) Ancak duvara yanlış pozisyonda sürtünülür veya çarpılırsa karakter yavaşlar. [Oyun İçi Gözlem]
