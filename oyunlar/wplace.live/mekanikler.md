@@ -31,7 +31,7 @@ title: Mekanikler
 
 ## Klan (Alliance)
 
-- **Klan Oluşturma:** Yeni bir klan kurmak için 20.000 Droplet gereklidir [Oyun içi gözlem]. Klan kurulduğunda bir Alliance Profile (topluluk profili) oluşturulur ve lider/kurucusu belirlenir.
+- **Klan Oluşturma:** Yeni bir klan kurmak için 25.000 Droplet gereklidir [Oyun içi gözlem]. Klan kurulduğunda bir Alliance Profile (topluluk profili) oluşturulur ve lider/kurucusu belirlenir.
 
 - **Ortak Kanvas (Klan Merkezi):** Her klanın oyun haritası dışında özel bir boyama alanı (Headquarters) vardır. Klan üyeleri bu alanda kendi piksel havuzlarından harcama yaparak boyama yapabilirler. [Resmi Kaynak](https://wplace.live/patch-notes). Bu “HQ” kanvası ana haritadan tamamen ayrıdır; üyeler burada boyama yaptığında ana kanvadaki hakları etkilenmez.
   
