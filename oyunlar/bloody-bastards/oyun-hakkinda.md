@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Oyun Hakkında
-description: "Bloody Bastards geliştiricisi, çıkış tarihi, platformları ve resmî kaynakları."
+title: Bloody Bastards: Oyun Hakkında
+description: Bloody Bastards geliştiricisi Tibith, Android çıkış tarihi, desteklenen platformlar ve resmî kaynaklar hakkında temel bilgiler.
 ---
 
 # Oyun Hakkında

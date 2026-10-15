@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Oyun Hakkında
-description: "Wplace.live işletmecisi, çıkış tarihi, desteklenen platformları ve kaynak bağlantıları."
+title: Wplace.live: Oyun Hakkında
+description: Wplace.live işletmecisi, çıkış tarihi, web ve mobil platform desteği ile resmî bağlantıları hakkında temel bilgiler.
 ---
 
 # Oyun Hakkında

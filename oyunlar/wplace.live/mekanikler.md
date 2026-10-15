@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Mekanikler
-description: "Wplace piksel yenilenmesi, mağaza, Droplets, klanlar ve şablon mekanikleri."
+title: Wplace.live Mekanikleri
+description: "Wplace.live piksel yenilenmesi, Droplets, mağaza, klan merkezi ve şablon sistemi hakkında Türkçe açıklamalar."
 ---
 
 # Mekanikler

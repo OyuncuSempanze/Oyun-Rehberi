@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Wplace Görsel Örnekleri
-description: "Wplace topluluk kurallarında yer alan çizim ve moderasyon örnekleri."
+title: Wplace.live Topluluk Kuralları ve Görsel Örnekler
+description: Wplace.live resmî topluluk kurallarındaki çizim, moderasyon ve harita temizliği örnekleri.
 ---
+
+# Görseller
 
 *Bu belgedeki örnekler [Wplace'in resmî topluluk kurallarından](https://wplace.live/terms/community-guidelines) alınmıştır. Kurallar ve görsel örnekleri zamanla değişebilir.*
 
@@ -10,32 +12,32 @@ description: "Wplace topluluk kurallarında yer alan çizim ve moderasyon örnek
 
 *Resmî kurallara göre bu kategorideki çizimler tek başına uzaklaştırmaya yol açmamalıdır. Topluluk üyeleri bu çizimleri temizleyebilir veya üzerlerini çizebilir.*
 
-![Çağrışımlı içerik örneği](gorseller/borde1.2HTtxzDt.png)
+![Wplace topluluk kurallarındaki çağrışımlı çizim örneği 1](gorseller/borde1.2HTtxzDt.png){: loading="lazy" decoding="async" }
 
-![Çağrışımlı içerik örneği](gorseller/borde2.CN89IOz0.png)
+![Wplace topluluk kurallarındaki çağrışımlı çizim örneği 2](gorseller/borde2.CN89IOz0.png){: loading="lazy" decoding="async" }
 
-![Çağrışımlı içerik örneği](gorseller/borde4.D9VfQfkE.png)
+![Wplace topluluk kurallarındaki çağrışımlı çizim örneği 3](gorseller/borde4.D9VfQfkE.png){: loading="lazy" decoding="async" }
 
-![Çağrışımlı içerik örneği](gorseller/borde6.CtRHeorl.png)
+![Wplace topluluk kurallarındaki çağrışımlı çizim örneği 4](gorseller/borde6.CtRHeorl.png){: loading="lazy" decoding="async" }
 
 ## ⛔ Geçici Uzaklaştırma Riski Taşıyan Davranış
 
 *Başka bir oyuncunun çizimini yaratıcı bir amaç olmadan bozmak, kasıtlı çizim bozma (griefing) olarak değerlendirilebilir.*
 
-![Başka bir çizimi karalama örneği](gorseller/griefing1.mrf_QTk2.png)
+![Wplace üzerinde başka bir çizimi karalama örneği](gorseller/griefing1.mrf_QTk2.png){: loading="lazy" decoding="async" }
 
 ## ⚠️ Bağlama Göre Değerlendirilebilecek Davranış
 
 *Bir çizimin üzerine bayrak veya tekrarlayan desen çizmek her durumda otomatik olarak ihlal sayılmaz. Davranışın amacı ve devamlılığı önemlidir.*
 
-![Gri alandaki davranış örneği](gorseller/pgriefing1.Cxw7Oxbm.png)
+![Wplace topluluk kurallarındaki gri alana giren çizim örneği](gorseller/pgriefing1.Cxw7Oxbm.png){: loading="lazy" decoding="async" }
 
 ## ✅ İzin Verilen Davranış Örnekleri
 
 *Bölge mücadelesi kapsamında başka bir çizimin üzerine çizim yapmak, tek başına kural ihlali sayılmaz.*
 
-![Bölge mücadelesi örneği](gorseller/ngriefing3.l-WuAkT6.png)
+![Wplace üzerinde bölge mücadelesi örneği](gorseller/ngriefing3.l-WuAkT6.png){: loading="lazy" decoding="async" }
 
 *Şeffaf piksellerle tekrarlayan desenleri veya uygun olmayan içerikleri temizlemek izin verilen bir davranıştır.*
 
-![Harita temizliği örneği](gorseller/mapclean1.CXzD9GTn.png)
+![Wplace haritasında şeffaf piksellerle temizlik örneği](gorseller/mapclean1.CXzD9GTn.png){: loading="lazy" decoding="async" }

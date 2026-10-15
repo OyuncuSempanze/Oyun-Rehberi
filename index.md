@@ -1,6 +1,6 @@
 ---
-title: Oyun Rehberi
-description: Kaynaklı Türkçe oyun bilgileri, mekanikler ve oynanış rehberleri.
+title: Kaynaklı Türkçe Oyun Arşivi
+description: Niş ve bağımsız oyunlar için Türkçe rehberler. Oynanış mekanikleri, güncellemeler, resmî kaynaklar ve oyun içi gözlemler.
 ---
 
 <section class="welcome" aria-labelledby="page-heading">

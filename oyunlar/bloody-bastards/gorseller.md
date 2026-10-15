@@ -1,33 +1,23 @@
 ---
 layout: default
 title: Bloody Bastards Görselleri
-description: "Bloody Bastards oyun içi arayüzlerinden ve karakter özelleştirmesinden görsel örnekler."
+description: Bloody Bastards oyun içi arayüzü, medeniyet seçimi, kasklar ve karakter özelleştirmesinden görsel örnekler.
 ---
 
 # Görseller
 
-![Medeniyetler](Screenshot_20260930_224042_com_tibith_badboxing_UnityPlayerActivity.jpg)
-
+![Bloody Bastards oyunundaki medeniyet seçimi ekranı](Screenshot_20260930_224042_com_tibith_badboxing_UnityPlayerActivity.jpg){: loading="lazy" decoding="async" }
 
 Medeniyetler.
 
-
-
-![Kasklar](Screenshot_20260930_224052_com_tibith_badboxing_UnityPlayerActivity.jpg)
-
+![Bloody Bastards oyunundaki farklı kask örnekleri](Screenshot_20260930_224052_com_tibith_badboxing_UnityPlayerActivity.jpg){: loading="lazy" decoding="async" }
 
 Bazı kasklar.
 
-
-
-![Karakter Özelleştirme](Screenshot_20260930_224112_com_tibith_badboxing_UnityPlayerActivity.jpg)
-
+![Bloody Bastards karakter özelleştirme menüsü](Screenshot_20260930_224112_com_tibith_badboxing_UnityPlayerActivity.jpg){: loading="lazy" decoding="async" }
 
 Karakter özelleştirme menüsü.
 
+![Bloody Bastards savaşında iki kolu da etkisiz hâle gelmiş rakip karakter](Screenshot_20260930_224145_com_tibith_badboxing_UnityPlayerActivity.jpg){: loading="lazy" decoding="async" }
 
-
-![Rakip](Screenshot_20260930_224145_com_tibith_badboxing_UnityPlayerActivity.jpg)
-
-
-Kolları etkisiz hale gelmiş rakip.
+Kolları etkisiz hâle gelmiş rakip.
