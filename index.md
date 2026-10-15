@@ -1,5 +1,5 @@
 ---
-title: Türkçe Oyun Arşivi
+title: Oyun Rehberi
 ---
 
 ## Oyunlar
