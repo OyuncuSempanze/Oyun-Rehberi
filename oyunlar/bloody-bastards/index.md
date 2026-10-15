@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Bloody Bastards
+description: "Bloody Bastards hakkında temel bilgiler ve Türkçe oynanış rehberleri."
 ---
 
 # Bloody Bastards

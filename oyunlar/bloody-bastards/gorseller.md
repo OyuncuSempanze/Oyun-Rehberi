@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Bloody Bastards Görselleri
+description: "Bloody Bastards oyun içi arayüzlerinden ve karakter özelleştirmesinden görsel örnekler."
 ---
 
 # Görseller
