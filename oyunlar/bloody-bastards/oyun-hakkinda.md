@@ -1,6 +1,7 @@
 ---
-
 layout: default
+title: Oyun Hakkında
+---
 
 # Oyun Hakkında
 
