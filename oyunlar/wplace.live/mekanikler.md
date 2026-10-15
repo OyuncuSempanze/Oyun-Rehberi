@@ -1,15 +1,22 @@
 ---
 layout: default
 title: Mekanikler
+description: "Wplace piksel yenilenmesi, mağaza, Droplets, klanlar ve şablon mekanikleri."
 ---
 
 # Mekanikler
+
+*Doğrulama notu (15 Ekim 2026): Bazı sayısal değerler, mağaza ücretleri ve ilerleme bilgileri topluluk kaynaklarına veya oyun içi gözleme dayanır. Bunların tamamı resmî yama notlarında doğrulanamıyor. Güncel ücretlerde oyun içindeki mağaza ve resmî yama notları esas alınmalıdır.*
 
 ## Temel Mekanikler
 
 - Oyuncular başlangıçta 30 piksel hakkıyla başlar ve harcanan her piksel her 30 saniyede bir yenilenir. Bu yenileme süresi normal kanvas için sabittir. Oyuncular bu hızı **ana haritada** kısaltamaz [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md) [Resmî Kaynak](https://wplace.live/patch-notes). (Not: Klan merkezlerinde şarj yenileme süresi, “Alliance Headquarters” yükseltmeleriyle klana özel haritada 10 ya da 5 saniyeye indirilebilir.)
 
 - Oyuncular Damla (Droplets) adı verilen puanları biriktirir ve bunları mağazada çeşitli kozmetik eşyalar ile oyun içi geliştirmeler için harcayabilir [Kaynak](https://placepixels.com/wplace-droplets). Örneğin profil resimleri, avatarlar, bayraklar veya renk paketleri Droplets’le satın alınır.
+
+## Droplets ve Prism
+
+Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine bağlı olarak Droplets veya Prism ödülü verilebildiğini belirtiyor. Prism'in tüm kazanım yolları ve kullanım alanları burada kesin olarak belgelenmediği için bu ayrıntılar oyun içinden ayrıca kontrol edilmelidir. [Resmî 1.7.3 yama notları](https://wplace.live/patch-notes/1.7.3)
 
 ## Dükkan
 
@@ -33,7 +40,7 @@ title: Mekanikler
 
 - **Klan Oluşturma:** Yeni bir klan kurmak için 25.000 Droplet gereklidir [Oyun İçi Gözlem]. Klan kurulduğunda bir Alliance Profile (topluluk profili) oluşturulur ve lider/kurucusu belirlenir.
 
-- **Ortak Kanvas (Klan Merkezi):** Her klanın oyun haritası dışında özel bir boyama alanı (Headquarters) vardır. Klan üyeleri bu alanda kendi piksel havuzlarından harcama yaparak boyama yapabilirler. [Resmî Kaynak](https://wplace.live/patch-notes). Bu “HQ” kanvası ana haritadan tamamen ayrıdır; üyeler burada boyama yaptığında ana kanvastaki hakları etkilenmez.
+- **Ortak Kanvas (Klan Merkezi):** Her klanın oyun haritası dışında özel bir boyama alanı (Headquarters) vardır. Klan üyeleri bu alanda kendi piksel havuzlarından harcama yaparak boyama yapabilirler. [Resmî Kaynak](https://wplace.live/patch-notes). Bu “HQ” kanvası ana haritadan tamamen ayrıdır. Üyeler burada boyama yaptığında ana kanvastaki hakları etkilenmez.
   
 - **Şablon Paylaşımı:** Klan liderleri veya yöneticileri, klana özel ortak şablonlar (overlays) ekleyebilir. Bu şablonlar klan üyelerine sunulur ve herkes tarafından kullanılabilir [Resmî Kaynak](https://wplace.live/patch-notes). (Örneğin bir turnuva veya proje şablonu klan ile paylaşılarak bütün üyelerin aynı referans üzerinde çalışması sağlanabilir.)
   

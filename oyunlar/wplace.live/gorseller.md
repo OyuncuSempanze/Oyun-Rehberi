@@ -1,3 +1,9 @@
+---
+layout: default
+title: Wplace Görsel Örnekleri
+description: "Wplace topluluk kurallarında yer alan çizim ve moderasyon örnekleri."
+---
+
 *Bu belgedeki örnekler [Wplace'in resmî topluluk kurallarından](https://wplace.live/terms/community-guidelines) alınmıştır. Kurallar ve görsel örnekleri zamanla değişebilir.*
 
 ## ⚠️ Çağrışımlı İçerik Örnekleri

@@ -1,6 +1,12 @@
+---
+layout: default
+title: Wplace Kuralları
+description: "Wplace topluluk kurallarının Türkçe özeti ve resmî kaynak bağlantıları."
+---
+
 # Kurallar
 
-*Bu özet, Wplace'in resmî topluluk kurallarına dayanır. Kurallar değişebilir; son kontrol: 15 Ekim 2026.*
+*Bu özet, Wplace'in resmî topluluk kurallarına dayanır. Kurallar değişebilir. Son kontrol: 15 Ekim 2026.*
 
 ## Kalıcı Yasağa Yol Açabilecek Davranışlar
 
@@ -12,7 +18,7 @@
 
 **1) Kasıtlı Çizim Bozma (Griefing):** Bir oyuncunun çizimini yaratıcı, stratejik veya düzeltici bir amaç olmadan bozmak, geçici uzaklaştırmaya neden olabilir. [Resmî Kaynak](https://wplace.live/terms/community-guidelines)
 
-**2) Gri Alandaki Davranışlar:** Başka bir çizimin üzerine bayrak veya tekrarlayan desen koymak, bağlama göre değerlendirilebilir. Bu davranışlar otomatik olarak ihlal sayılmaz; aşırı, hedefli veya sürekli şekilde rahatsız edici hâle gelirse moderasyon müdahale edebilir. [Resmî Kaynak](https://wplace.live/terms/community-guidelines)
+**2) Gri Alandaki Davranışlar:** Başka bir çizimin üzerine bayrak veya tekrarlayan desen koymak, bağlama göre değerlendirilebilir. Bu davranışlar otomatik olarak ihlal sayılmaz. Aşırı, hedefli veya sürekli şekilde rahatsız edici hâle gelirse moderasyon müdahale edebilir. [Resmî Kaynak](https://wplace.live/terms/community-guidelines)
 
 ## İzin Verilen Davranışlar
 
