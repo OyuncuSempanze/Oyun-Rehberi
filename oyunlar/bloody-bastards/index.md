@@ -18,3 +18,4 @@ Bloody Bastards, fizik tabanlı 2D bir dövüş oyunudur. Bu arşivde oyunun tem
 - [Özelleştirme](ozellestirme.html)
 - [Güncellemeler](guncellemeler.html)
 - [Görseller](gorseller.html)
+- [Sık Sorulan Sorular](sik-sorulan-sorular.html)
