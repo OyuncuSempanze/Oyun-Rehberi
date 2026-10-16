@@ -16,6 +16,8 @@ description: "Wplace için oyun içi gözlemlere dayalı başlangıç ve kaynak 
 
 ## Özellikle Dikkat Edilmesi Gereken Yer
 
-**Oyun Kurallarına Uymak:** Oyunda açıkça belirtilmiş bazı kurallar vardır. Bu kurallara uymadığınız takdirde hesabınız kapatılabilir veya geçici olarak uzaklaştırılabilir. [Resmî Kaynak](https://wplace.live/terms/community-guidelines) [Öneri]
+**Oyun Kurallarına Uymak:** Oyunda açıkça belirtilmiş bazı kurallar vardır. Bu kuralları ihlal etmek hesabın kapanmasına veya geçici olarak uzaklaştırılmaya yol açabilir. [Resmî Kaynak](https://wplace.live/terms/community-guidelines)
+
+Kurallara uymak, uzaklaştırma riskinden kaçınmak için temel bir önlemdir. [Öneri]
 
 *[Kurallar hakkında daha fazla bilgi edinmek için tıklayın](kurallar.html)*
