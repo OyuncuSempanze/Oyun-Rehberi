@@ -16,14 +16,9 @@ Bir bağlantının bulunması, iddianın kesin olarak doğrulandığını tek ba
 
 Sürüme göre değişebilen bilgilerde son kontrol tarihi belirtilir. Yalnızca oyun içinde görülen sürüm ve özellikler resmî yayın bilgisi gibi sunulmaz. Biliniyorsa platform ve sürüm de yazılır.
 
-## Rehber yapısı ve kalite standardı
+## Rehber yapısı
 
-- Her oyunun `index.md` sayfası kısa bir tanıtım ve yalnızca mevcut içeriklere giden bağlantılar içerir.
-- `oyun-hakkinda.md`, oyunun temel bilgilerini ve ilgili kaynaklarını toplar. Mekanikler veya oynanış için oyun hakkında yeterli özgün bilgi varsa ayrı sayfa açılır.
-- Güncellemeler, kurallar, görseller, silahlar ve benzeri konular için yalnızca kendi başına yararlı olacak kadar içerik varsa ayrı `.md` dosyası oluşturulur. Boş şablonlar, tekrarlanan bilgiler ve sırf her oyunda aynı sayıda dosya olsun diye açılan sayfalar eklenmez.
-- **[Resmî Kaynak]**, **[Oyun İçi Gözlem]** ve **[Kaynak]** etiketleri birbirinin yerine kullanılmaz. Oyun içi gözlem resmî açıklama gibi gösterilmez.
-- Fiyat, kural, sürüm veya başka bir bilgi zamanla değişebiliyorsa mümkün olduğunda son kontrol tarihi yazılır. Sonuç platforma ya da sürüme göre değişebiliyorsa bu bilgi de belirtilir. Kesin olarak bilinmeyen kontrol tarihi veya sürüm tahmin edilmez.
-- Cihazın tam model adı yalnızca sonucu anlamlı biçimde etkiliyorsa belirtilir. Genel oyun rehberlerinde platform bilgisi genellikle yeterlidir.
+Her oyunun `index.md` sayfası ilgili rehberlere bağlantı verir. `oyun-hakkinda.md` temel bilgileri toplar. Mekanikler, güncellemeler, kurallar veya görseller için ayrı dosya, konu yeterince kapsamlıysa açılır. Boş ya da tekrarlayan sayfalar eklenmez.
 
 ## Lisans
 

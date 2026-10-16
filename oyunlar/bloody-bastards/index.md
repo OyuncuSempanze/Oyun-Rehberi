@@ -8,7 +8,6 @@ description: Bloody Bastards için Türkçe oynanış, dövüş sistemi, karakte
 
 Bloody Bastards, fizik tabanlı 2D bir dövüş oyunudur. Bu arşivde oyunun temel bilgileri, oynanış sistemi, ekipmanlar, karakter özelleştirme ve güncellemeler hakkında rehberler bulunur.
 
-**Gözlem platformu:** Android. Oyun içi gözlemler bu platformda edinilen deneyime dayanır; sürüme göre değişebilen ayrıntılar ilgili içerikte belirtilir.
 
 ## İçerikler
 
