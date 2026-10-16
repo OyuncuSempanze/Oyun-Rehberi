@@ -17,3 +17,4 @@ Wplace.live, gerçek dünya haritası üzerinde birlikte piksel çizimleri yapı
 - [Tavsiye](tavsiye.html)
 - [Kurallar](kurallar.html)
 - [Görseller](gorseller.html)
+- [Sık Sorulan Sorular](sik-sorulan-sorular.html)
