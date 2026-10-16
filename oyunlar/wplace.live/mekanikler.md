@@ -28,7 +28,7 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 - **Kozmetik Ürünler:** Avatar veya kilitli renk gibi öğelerdir. Örneğin avatar özelleştirme 20.000, premium renkler ise 2.000 Droplets’tır [Kaynak](https://placepixels.com/wplace-droplets). Bu ürünler yalnızca görsel amaçlıdır ve oynanışı etkilemez.
 
-- **Özel Kozmetik Ürünler:** Özel kozmetik ürünler, normal kozmetik ürünlerine kıyasla sadece **prism** ile satın alınabilir. Ayrıca normale göre daha fazla görsel efektleri mevcuttur. [Resmî Kaynak](https://wplace.live/patch-notes/1.5.0)
+- **Özel Kozmetik Ürünler:** Normal kozmetiklerden farklı olarak yalnızca **Prism** ile satın alınabilir ve daha fazla görsel efekt içerir. [Resmî Kaynak](https://wplace.live/patch-notes/1.5.0)
 
 ## Damlacık Kazanma
 
@@ -51,11 +51,11 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
   
 - **Şablon Paylaşımı:** Klan liderleri veya yöneticileri, klana özel ortak şablonlar (overlays) ekleyebilir. Bu şablonlar klan üyelerine sunulur ve herkes tarafından kullanılabilir [Resmî Kaynak](https://wplace.live/patch-notes). (Örneğin bir turnuva veya proje şablonu klan ile paylaşılarak bütün üyelerin aynı referans üzerinde çalışması sağlanabilir.)
   
-- **Klan İlerleme:** Klanlar, üyelerinin ana haritaya attığı her geçerli piksel için Alliance Coin kazanır (bu sistem yama notlarında belirtilmiştir). Klan liderleri bu puanlarla başlık, bayrak, yeni renkler ve HQ yükseltmeleri gibi klan geliştirmeleri satın alabilir. Klan içi puan kazanımı büyük ölçüde üyelerin ana kanvas çalışmasıyla sağlanır [Resmî Kaynak](https://wplace.live/patch-notes). Klan yükseltmeleri ise klan merkezindeki araçlar ve kişiselleştirme (profil resmi, açıklama vb.) ile ilgilidir [Resmî Kaynak](https://wplace.live/patch-notes).
+- **Klan İlerlemesi:** Klanlar, üyelerinin ana haritaya yerleştirdiği her geçerli piksel için Alliance Coin kazanır. Liderler bu puanları başlık, bayrak, yeni renkler ve HQ yükseltmeleri gibi geliştirmelerde kullanabilir. Klan merkezinde profil resmi ve açıklama gibi kişiselleştirme seçenekleri de bulunur. [Resmî Kaynak](https://wplace.live/patch-notes)
 
 ## Şablon (Overlay)
 
-- Oyuncular kendi şablon (overlay) görsellerini yükleyebilir. Desteklenen formatlar arasında PNG, JPEG, WebP, PSD ve ORA bulunur [Resmî Kaynak](https://wplace.live/patch-notes). Wplace’te PSD ve ORA projeleri katmanlarını koruyacak şekilde içe aktarılabilir. (PNG/JPEG/WebP dosyaları da doğrudan yüklenebilir.) Yüklenen şablon üzerinde oyuncu döndürme, ölçekleme veya katman ekleme gibi düzenlemeler yapabilir.
+- Oyuncular şablon (overlay) olarak PNG, JPEG, WebP, PSD ve ORA dosyaları yükleyebilir [Resmî Kaynak](https://wplace.live/patch-notes). PSD ve ORA dosyaları katmanlarını koruyarak içe aktarılabilir. Yüklenen şablonlar döndürülebilir, ölçeklenebilir ve yeni katmanlarla düzenlenebilir.
   
 - **Otomatik Boyama Yok:** Şablonlar kendi kendine piksel boyamazlar, sadece referans amaçlıdır. Yani şablon, hangi koordinattaki pikselin hangi renge boyanacağını göstererek oyuncuya kolaylık sağlar [Oyun İçi Gözlem]. Böylece katılımcılar referans görsel üzerinde rehber alarak daha hızlı ve hatasız çizebilirler.
 
