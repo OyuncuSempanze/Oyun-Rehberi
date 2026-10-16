@@ -28,6 +28,8 @@ Bir dosyada veya içerikte ayrı bir lisans ya da hak bildirimi bulunuyorsa o bi
 
 ## Önerilen atıf biçimi
 
+Aşağıdaki biçim, yeniden kullanımda kaynağı açıkça belirtmek için sunulan pratik bir öneridir. Hukuken zorunlu tek atıf biçimi olduğu anlamına gelmez. [Öneri]
+
 İçeriği yeniden paylaşırken aşağıdaki bilgileri ekle:
 
 - **Kaynak:** Oyun-Rehberi — OyuncuSempanze
