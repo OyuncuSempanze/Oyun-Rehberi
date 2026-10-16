@@ -30,7 +30,9 @@ Her duvardan aynı şekilde hız kazanılmıyor. Bazı duvarlar itiş gücü sa�
 
 Oyunun bazı seviyelerinde yerçekimi artabilir veya azalabilir. Yerçekimi, karakterin hareketini etkiler. [Oyun İçi Gözlem]
 
-Örneğin, yerçekiminin yüksek olduğu bir seviyede karakterin yukarı çıkması zorlaşabilir. Bu tür bölümlerde duvarlardan hız kazanmak daha önemli hâle gelir. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef)
+Örneğin, yerçekiminin yüksek olduğu bir seviyede karakterin yukarı çıkması zorlaşabilir. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef)
+
+Bu tür bölümlerde duvarlardan hız kazanmayı denemek yararlı olabilir. [Öneri]
 
 ### Rüzgâr Bölgeleri
 
@@ -52,7 +54,7 @@ Bazı bölümlerde ana hedefin yanında daha zor süre hedefleri de bulunabiliyo
 
 ## Hayalet Yarışçılar
 
-Bazı seviyelerde önden giden hayalet yarışçılar bulunuyor. Onların izlediği yolu takip ederek dönüşlerde nasıl hız kazanılacağı konusunda fikir edinebiliriz. Bazı seviyelerde ise hayalet yarışçılar doğrudan rakip olarak karşımıza çıkıyor. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef)
+Bazı seviyelerde önden giden hayalet yarışçılar bulunuyor. Onların izlediği yolu takip ederek dönüşlerde nasıl hız kazanılacağı konusunda fikir edinebiliriz. [Öneri] Bazı seviyelerde ise hayalet yarışçılar doğrudan rakip olarak karşımıza çıkıyor. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef)
 
 ## İpucu
 
