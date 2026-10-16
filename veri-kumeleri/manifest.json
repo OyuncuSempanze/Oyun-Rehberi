@@ -1,0 +1,57 @@
+{
+  "name": "Oyun-Rehberi SSS Veri Kümesi",
+  "dataset_version": "1.0.0",
+  "schema_version": "1.0",
+  "language": "tr",
+  "record_type": "faq",
+  "format": "JSON Lines (UTF-8), one JSON object per line",
+  "license": "CC-BY-4.0",
+  "source_repository": "https://github.com/OyuncuSempanze/Oyun-Rehberi",
+  "website": "https://oyuncusempanze.github.io/Oyun-Rehberi/",
+  "description": "Mevcut oyun SSS sayfalarından üretilen Türkçe soru-cevap kayıtları. Kaynak bağlantıları ve bilgi türü etiketleri kayıtlarda korunur.",
+  "record_count": 17,
+  "source_files": [
+    "oyunlar/bloody-bastards/sik-sorulan-sorular.md",
+    "oyunlar/DATA-WING/sik-sorulan-sorular.md",
+    "oyunlar/wplace.live/sik-sorulan-sorular.md"
+  ],
+  "files": [
+    {
+      "path": "oyun-rehberi-sss-v1.jsonl",
+      "scope": "all_games",
+      "format": "jsonl",
+      "records": 17
+    },
+    {
+      "path": "bloody-bastards-sss-v1.jsonl",
+      "scope": "game",
+      "game": "Bloody Bastards",
+      "game_slug": "bloody-bastards",
+      "format": "jsonl",
+      "records": 8
+    },
+    {
+      "path": "data-wing-sss-v1.jsonl",
+      "scope": "game",
+      "game": "DATA WING",
+      "game_slug": "data-wing",
+      "format": "jsonl",
+      "records": 4
+    },
+    {
+      "path": "wplace-live-sss-v1.jsonl",
+      "scope": "game",
+      "game": "Wplace.live",
+      "game_slug": "wplace-live",
+      "format": "jsonl",
+      "records": 5
+    }
+  ],
+  "schema_url": "https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/schema-v1.json",
+  "rights_notice": "CC BY 4.0 lisansı yalnızca arşivin lisanslama yetkisine sahip olduğu özgün metin ve düzenleme unsurlarına uygulanır. Kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.",
+  "limitations": [
+    "This is an FAQ export, not a claim that the dataset is ready for every model-training task.",
+    "Empty headings and sections without a curated question are omitted.",
+    "Source URLs identify references, but do not independently prove that a claim is correct."
+  ]
+}

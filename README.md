@@ -21,6 +21,24 @@ Sürüme göre değişebilen bilgilerde son kontrol tarihi belirtilir. Yalnızca
 
 Her oyunun `index.md` sayfası ilgili rehberlere bağlantı verir. `oyun-hakkinda.md` temel bilgileri toplar. Mekanikler, güncellemeler, kurallar veya görseller için ayrı dosya, konu yeterince kapsamlıysa açılır. Boş ya da tekrarlayan sayfalar eklenmez.
 
+## Veri kümeleri
+
+Sitedeki [Veri kümeleri sayfasından](https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/) indirilebilir JSONL dosyaları sunulur. İlk sürüm, oyunların SSS sayfalarındaki soru ve cevaplardan üretilir. Kayıtlar kaynak bağlantılarını, bilgi türü etiketlerini ve asıl rehber sayfasını korur.
+
+SSS içeriğini düzenledikten sonra veri kümesi dosyalarını yeniden üret:
+
+```bash
+python scripts/build_dataset.py
+```
+
+Üretilmiş dosyaların güncel içerikle eşleştiğini kontrol etmek için:
+
+```bash
+python scripts/build_dataset.py --check
+```
+
+GitHub Actions bu kontrolü SSS veya veri kümesi dosyaları değiştiğinde otomatik çalıştırır.
+
 ## Lisans
 
 OyuncuSempanze tarafından oluşturulan özgün rehber metinleri, oyun içi gözlem yazıları ve arşivin özgün seçim ve düzenlemesi [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) kapsamında lisanslanır. Lisans bütün depoya otomatik olarak uygulanmaz. Site kaynak kodu ve arayüzü, oyun ekran görüntüleri, üçüncü taraf görseller ve başka hak sahiplerine ait içerikler kapsam dışındadır.

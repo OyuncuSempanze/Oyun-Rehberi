@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/schema-v1.json",
+  "title": "Oyun-Rehberi FAQ dataset record",
+  "description": "JSONL kaydında bulunan tek bir Türkçe sık sorulan soru ve cevabı.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "language",
+    "game",
+    "game_slug",
+    "record_type",
+    "question",
+    "answer",
+    "answer_markdown",
+    "evidence_types",
+    "sources",
+    "content_url",
+    "license",
+    "schema_version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Kayıtlar arasında benzersiz ve kararlı kimlik."
+    },
+    "language": {
+      "const": "tr"
+    },
+    "game": {
+      "type": "string"
+    },
+    "game_slug": {
+      "type": "string"
+    },
+    "record_type": {
+      "const": "faq"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "answer": {
+      "type": "string",
+      "description": "Markdown biçimlendirmesi kaldırılmış, kolay işlenebilir cevap."
+    },
+    "answer_markdown": {
+      "type": "string",
+      "description": "Kaynak etiketlerini ve bağlantılarını koruyan özgün Markdown cevap bölümü."
+    },
+    "evidence_types": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "official_source",
+          "in_game_observation",
+          "reference_source",
+          "recommendation"
+        ]
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "url"],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "content_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "İlgili cevabın arşivdeki asıl Markdown sayfası."
+    },
+    "license": {
+      "const": "CC-BY-4.0"
+    },
+    "schema_version": {
+      "const": "1.0"
+    }
+  }
+}
