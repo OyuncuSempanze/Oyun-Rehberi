@@ -6,7 +6,7 @@ description: Wplace.live için piksel boyama mekanikleri, Droplets, klanlar, kur
 
 # Wplace.live
 
-Wplace.live, gerçek dünya haritası üzerinde oyuncuların birlikte piksel çizimleri yaptığı çok oyunculu bir platformdur. Bu arşivde oyun mekanikleri, kurallar, güncelleme notları ve oyuncu tavsiyeleri Türkçe olarak ele alınır.
+Wplace.live, gerçek dünya haritası üzerinde birlikte piksel çizimleri yapılan çok oyunculu bir platformdur. Bu rehberde mekanikler, kurallar, güncellemeler ve oyuncu tavsiyeleri bulunur.
 
 ## İçerikler
 
