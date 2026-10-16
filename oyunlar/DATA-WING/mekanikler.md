@@ -54,7 +54,9 @@ Bazı bölümlerde ana hedefin yanında daha zor süre hedefleri de bulunabiliyo
 
 ## Hayalet Yarışçılar
 
-Bazı seviyelerde önden giden hayalet yarışçılar bulunuyor. Onların izlediği yolu takip ederek dönüşlerde nasıl hız kazanılacağı konusunda fikir edinebiliriz. [Öneri] Bazı seviyelerde ise hayalet yarışçılar doğrudan rakip olarak karşımıza çıkıyor. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef)
+Bazı seviyelerde önden giden hayalet yarışçılar bulunuyor. Bazı seviyelerde ise hayalet yarışçılar doğrudan rakip olarak karşımıza çıkıyor. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef)
+
+Hayalet yarışçıların izlediği yolu takip etmek, dönüşlerde nasıl hız kazanılacağı konusunda fikir verebilir. [Öneri]
 
 ## İpucu
 
