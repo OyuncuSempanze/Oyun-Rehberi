@@ -39,13 +39,19 @@ Kullanılan ekipman, karakterin savaş sırasında sahip olduğu özellikleri ve
 
 ## İlerleme
 
-Oyuncu savaşları tamamlayarak oyunda ilerler ve farklı ekipmanlara erişebilir.
+Oyuncu, savaşlarda düşmanları öldürerek ilerler ve seviye tamamladığında altın kazanır. **[Oyun İçi Gözlem]**
 
-İlerledikçe karşılaşılan rakiplerin ve kullanılan ekipmanların çeşitliliği artabilir. **[Oyun İçi Gözlem]**
+Bölgeler ve medeniyetler ilerledikçe ayrıca açılmaz; oyuncu bunlara baştan erişebilir. İlerleme, düşmanları yenerek sonraki seviyelere geçmeye dayanır. **[Oyun İçi Gözlem]**
 
 Geliştiricinin resmî tanıtımı, oyunda farklı tarihî bölgelerde çok sayıda seviye bulunduğunu ve yeni bölgelerin düzenli olarak eklendiğini belirtiyor. **[Resmî Kaynak](https://tibith.com/bloodybastards)**
 
 Google Play'deki resmî açıklama da farklı konumlarda çok sayıda seviye ve her seviyede farklı, zorlu düşmanlar bulunduğunu belirtiyor. **[Resmî Kaynak](https://play.google.com/store/apps/details?id=com.tibith.badboxing)**
+
+### Açık kalan soru
+
+Kampanya modunda ilerleme konusunda yeni başlayanların bilmesi gereken, mevcut rehberde yer almayan başka bir ayrıntı var mı? Yalnızca emin olduğun veya oyun içinde gözlemlediğin bilgileri yaz.
+
+**Cevabın:**
  
 
 ## Spooky / Snow Mode
