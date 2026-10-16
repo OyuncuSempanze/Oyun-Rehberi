@@ -6,7 +6,9 @@ description: "Wplace.live piksel yenilenmesi, Droplets, mağaza, klan merkezi ve
 
 # Mekanikler
 
-*Doğrulama notu (15 Ekim 2026): Bazı sayısal değerler, mağaza ücretleri ve ilerleme bilgileri topluluk kaynaklarına veya oyun içi gözleme dayanır. Bunların tamamı resmî yama notlarında doğrulanamıyor. Güncel ücretlerde oyun içindeki mağaza ve resmî yama notları esas alınmalıdır.*
+*Doğrulama notu (15 Ekim 2026): Bazı sayısal değerler, mağaza ücretleri ve ilerleme bilgileri topluluk kaynaklarına veya oyun içi gözleme dayanır. Bunların tamamı resmî yama notlarında doğrulanamıyor.*
+
+Güncel ücretlerde oyun içindeki mağaza ve resmî yama notları esas alınmalıdır. [Öneri]
 
 ## Temel Mekanikler
 
