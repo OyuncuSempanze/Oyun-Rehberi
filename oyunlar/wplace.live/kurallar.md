@@ -6,7 +6,7 @@ description: "Wplace topluluk kurallarının Türkçe özeti ve resmî kaynak ba
 
 # Kurallar
 
-*Bu özet, Wplace'in resmî topluluk kurallarına dayanır. Kurallar değişebilir. Son kontrol: 15 Ekim 2026.*
+*Bu özet, Wplace'in resmî topluluk kurallarına dayanır. Kurallar değişebilir. Son kontrol: 16 Ekim 2026.*
 
 ## Kalıcı Yasağa Yol Açabilecek Davranışlar
 
