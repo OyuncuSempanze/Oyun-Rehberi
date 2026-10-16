@@ -82,8 +82,12 @@ def read_meta(md:str)->tuple[dict[str,str],str]:
     return meta,md[m.end():]
 
 def base_record(path:Path,kind:str,version:str)->dict[str,Any]:
-    g=game_for(path);relative=path.relative_to(ROOT).with_suffix("").as_posix()
-    return {"id":"","language":"tr","game":g["name"],"game_slug":g["slug"],"record_type":kind,"evidence_types":[],"sources":[],"content_url":f"{SITE_BASE}{relative}/","license":"CC-BY-4.0","schema_version":version}
+    g=game_for(path)
+    return {"id":"","language":"tr","game":g["name"],"game_slug":g["slug"],"record_type":kind}
+
+def content_url_for(path:Path)->str:
+    relative=path.relative_to(ROOT).with_suffix("").as_posix()
+    return f"{SITE_BASE}{relative}/"
 
 def faq_question(folder:str,heading:str)->str|None:
     if "?" in heading or "？" in heading:return heading
@@ -96,7 +100,7 @@ def extract_faq(path:Path)->list[dict[str,Any]]:
         answer_md=md[m.end():end].strip();question=faq_question(path.parent.name,heading)
         if not question or not plain_text(answer_md):continue
         links=extract_links(answer_md,path);record=base_record(path,"faq",FAQ_VERSION)
-        record.update({"id":f"{record['game_slug']}-{slugify(question)}","question":question,"answer":plain_text(answer_md),"answer_markdown":answer_md,"evidence_types":evidence_types(answer_md,links),"sources":links})
+        record.update({"id":f"{record['game_slug']}-{slugify(question)}","question":question,"answer":plain_text(answer_md),"answer_markdown":answer_md,"evidence_types":evidence_types(answer_md,links),"sources":links,"content_url":content_url_for(path),"license":"CC-BY-4.0","schema_version":FAQ_VERSION})
         out.append(record)
     return out
 
@@ -119,7 +123,7 @@ def extract_guides(path:Path)->list[dict[str,Any]]:
         section_md=IMAGE_RE.sub("",raw).strip();content=plain_text(section_md)
         if not content:continue
         links=extract_links(section_md,path);record=base_record(path,"guide_section",GUIDE_VERSION)
-        record.update({"id":f"{record['game_slug']}-{slugify(path.stem)}-{slugify(title)}","article_title":article_title,"section_title":title,"content":content,"content_markdown":section_md,"evidence_types":evidence_types(section_md,links),"sources":links})
+        record.update({"id":f"{record['game_slug']}-{slugify(path.stem)}-{slugify(title)}","article_title":article_title,"section_title":title,"content":content,"content_markdown":section_md,"evidence_types":evidence_types(section_md,links),"sources":links,"content_url":content_url_for(path),"license":"CC-BY-4.0","schema_version":GUIDE_VERSION})
         out.append(record)
     return out
 
