@@ -6,7 +6,7 @@ description: "DATA WING hareket, momentum, bölüm hedefleri ve seviye mekanikle
 
 # Mekanikler
 
-Oyunda, Mother (Anne) adlı yapay zekânın emirlerini yerine getiren bir DATA WING'i kontrol ediyoruz. Mekanikler oldukça basittir. [Oyun İçi Gözlem]
+Oyunda Mother (Anne) adlı yapay zekânın verdiği görevleri yerine getiren bir DATA WING'i kontrol ediyoruz. [Oyun İçi Gözlem]
 
 ## Temel Hareket
 
@@ -28,11 +28,11 @@ Her duvardan aynı şekilde hız kazanılmıyor. Bazı duvarlar itiş gücü sa�
 
 Oyunun bazı seviyelerinde yerçekimi artabilir veya azalabilir. Yerçekimi, karakterin hareketini etkiler. [Oyun İçi Gözlem]
 
-Örneğin, yerçekiminin yüksek olduğu bir seviyede karakterin yukarı çıkması zorlaşabilir. Bu tür bölümlerde duvarlardan hız kazanmak daha önemli hâle gelir. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef)
+Örneğin, yerçekiminin yüksek olduğu bir seviyede yukarı çıkmak zorlaşabilir. Bu tür bölümlerde duvarlardan hız kazanmak daha önemli hâle gelir. [Oyun İçi Gözlem]
 
 ### Rüzgâr Bölgeleri
 
-Bazı bölümlerde rüzgâr bölgeleri bulunuyor. Bu alanlar aracı yukarı doğru taşıyarak yüksek yerlere çıkmayı kolaylaştırabiliyor. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef)
+Bazı bölümlerde rüzgâr bölgeleri bulunur. Bu alanlar aracı yukarı taşıyarak yüksek yerlere çıkmayı kolaylaştırabilir. [Oyun İçi Gözlem]
 
 ### Engeller ve Anahtarlar
 
@@ -44,13 +44,13 @@ Her duvar aynı değildir. Bazı duvarlar kırmızıdır ve karakter bu duvarlar
 
 ## Bölüm Hedefleri
 
-Bölümlerin hedefleri birbirinden farklı. Bazılarında çıkışa ulaşmak, bazılarında belirli sayıda tur tamamlamak veya süre dolmadan bitirmek gerekiyor. Bazı yarışlarda diğer DATA WING araçlarından önce çıkışa ulaşmak da isteniyor. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef)
+Bölümlerin hedefleri birbirinden farklı. Bazılarında çıkışa ulaşmak, belirli sayıda tur tamamlamak veya süre dolmadan bitirmek gerekiyor. Bazı yarışlarda diğer DATA WING araçlarından önce çıkışa ulaşmak da isteniyor. [Oyun İçi Gözlem]
 
-Bazı bölümlerde ana hedefin yanında daha zor süre hedefleri de bulunabiliyor. Belirli mücadelelerde taç sistemi ve sıralamalar da var. [Resmî Kaynak](https://play.google.com/store/apps/details?id=com.DanVogt.DATAWING) [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef)
+Bazı bölümlerde ana hedefin yanında daha zor süre hedefleri de bulunabiliyor. [Oyun İçi Gözlem] Oyunda ayrıca taç sistemi ve sıralamalar var. [Resmî Kaynak](https://www.danvogt.info/datawing.html)
 
 ## Hayalet Yarışçılar
 
-Bazı seviyelerde önden giden hayalet yarışçılar bulunuyor. Onların izlediği yolu takip ederek dönüşlerde nasıl hız kazanılacağı konusunda fikir edinebiliriz. Bazı seviyelerde ise hayalet yarışçılar doğrudan rakip olarak karşımıza çıkıyor. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef)
+Bazı seviyelerde önden giden hayalet yarışçılar bulunur. İzledikleri yolu takip etmek, dönüşlerde nasıl hız kazanabileceğimizi anlamaya yardımcı olur. Bazı seviyelerde ise hayalet yarışçılar doğrudan rakip olarak karşımıza çıkar. [Oyun İçi Gözlem]
 
 ## İpucu
 
