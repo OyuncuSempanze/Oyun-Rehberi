@@ -4,13 +4,13 @@ from __future__ import annotations
 import argparse,json,re,sys,unicodedata
 from pathlib import Path
 from typing import Any
-from urllib.parse import urljoin
+from urllib.parse import urlparse
 ROOT=Path(__file__).resolve().parents[1]
 OUTPUT_DIR=ROOT/"veri-kumeleri"
 SITE_BASE="https://oyuncusempanze.github.io/Oyun-Rehberi/"
 FAQ_VERSION="1.0"
 GUIDE_VERSION="1.1"
-DATASET_VERSION="1.1.0"
+DATASET_VERSION="1.2.0"
 GAMES={"bloody-bastards":{"slug":"bloody-bastards","name":"Bloody Bastards"},"DATA-WING":{"slug":"data-wing","name":"DATA WING"},"wplace.live":{"slug":"wplace-live","name":"Wplace.live"}}
 ORDER={"bloody-bastards":0,"DATA-WING":1,"wplace.live":2}
 LABELS={"Resmî Kaynak":"official_source","Oyun İçi Gözlem":"in_game_observation","Kaynak":"reference_source","Öneri":"recommendation"}
@@ -142,6 +142,19 @@ def validate(records:list[dict[str,Any]])->None:
         else:raise ValueError(f"unknown record type: {r['record_type']}")
         if required-r.keys():raise ValueError(f"{r['id']}: missing {sorted(required-r.keys())}")
         if any(not r[k].strip() for k in text_fields):raise ValueError(f"{r['id']}: empty text field")
+        if not isinstance(r["evidence_types"],list) or any(x not in LABELS.values() for x in r["evidence_types"]):
+            raise ValueError(f"{r['id']}: invalid evidence_types")
+        if not isinstance(r["sources"],list):
+            raise ValueError(f"{r['id']}: sources must be a list")
+        for source in r["sources"]:
+            if not isinstance(source,dict) or not isinstance(source.get("label"),str) or not isinstance(source.get("url"),str):
+                raise ValueError(f"{r['id']}: malformed source entry")
+            parsed=urlparse(source["url"])
+            if parsed.scheme not in {"https","http"} or not parsed.netloc:
+                raise ValueError(f"{r['id']}: source URL must be an absolute HTTP(S) URL")
+        parsed_content=urlparse(r["content_url"])
+        if parsed_content.scheme not in {"https","http"} or not parsed_content.netloc:
+            raise ValueError(f"{r['id']}: content_url must be an absolute HTTP(S) URL")
 
 def build_outputs()->dict[str,str]:
     faq_paths=sorted(ROOT.glob("oyunlar/*/sik-sorulan-sorular.md"),key=lambda p:(ORDER.get(p.parent.name,99),p.as_posix()))
@@ -157,8 +170,16 @@ def build_outputs()->dict[str,str]:
         if rows:guide_by_game.setdefault(game_for(p)["slug"],[]).extend(rows);guides.extend(rows)
     all_records=faqs+guides;validate(all_records)
     outputs={"oyun-rehberi-sss-v1.jsonl":jsonl(faqs),"oyun-rehberi-rehber-bolumleri-v1.jsonl":jsonl(guides),"oyun-rehberi-tam-arsiv-v1.jsonl":jsonl(all_records)}
+    game_slugs=list(dict.fromkeys(r["game_slug"] for r in all_records))
+    for slug in game_slugs:
+        game_records=[r for r in all_records if r["game_slug"]==slug]
+        outputs[f"{slug}-tam-arsiv-v1.jsonl"]=jsonl(game_records)
     for slug,rows in faq_by_game.items():outputs[f"{slug}-sss-v1.jsonl"]=jsonl(rows)
     file_entries=[{"path":"oyun-rehberi-tam-arsiv-v1.jsonl","scope":"all_records","format":"jsonl","records":len(all_records)},{"path":"oyun-rehberi-rehber-bolumleri-v1.jsonl","scope":"guide_sections","format":"jsonl","records":len(guides)},{"path":"oyun-rehberi-sss-v1.jsonl","scope":"faq","format":"jsonl","records":len(faqs)}]
+    for slug in game_slugs:
+        game_records=[r for r in all_records if r["game_slug"]==slug]
+        name=next((r["game"] for r in all_records if r["game_slug"]==slug),slug)
+        file_entries.append({"path":f"{slug}-tam-arsiv-v1.jsonl","scope":"game_archive","game":name,"game_slug":slug,"format":"jsonl","records":len(game_records)})
     for slug,rows in faq_by_game.items():
         name=next((g["name"] for g in GAMES.values() if g["slug"]==slug),slug)
         file_entries.append({"path":f"{slug}-sss-v1.jsonl","scope":"game_faq","game":name,"game_slug":slug,"format":"jsonl","records":len(rows)})
@@ -205,7 +226,7 @@ def main()->int:
                 stale.append(filename)
         wanted={x for x in outputs if x.endswith(".jsonl")}
         if OUTPUT_DIR.exists():
-            for path in OUTPUT_DIR.glob("*-sss-v1.jsonl"):
+            for path in OUTPUT_DIR.glob("*.jsonl"):
                 if path.name not in wanted:stale.append(path.name+" (stale file)")
         if stale:
             print("Generated dataset files are out of date. Run python scripts/build_dataset.py.",file=sys.stderr)

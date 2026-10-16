@@ -3,13 +3,13 @@ name: Validate dataset
 on:
   push:
     paths:
-      - "oyunlar/**/sik-sorulan-sorular.md"
+      - "oyunlar/**/*.md"
       - "scripts/build_dataset.py"
       - "veri-kumeleri/**"
       - ".github/workflows/validate-dataset.yml"
   pull_request:
     paths:
-      - "oyunlar/**/sik-sorulan-sorular.md"
+      - "oyunlar/**/*.md"
       - "scripts/build_dataset.py"
       - "veri-kumeleri/**"
       - ".github/workflows/validate-dataset.yml"

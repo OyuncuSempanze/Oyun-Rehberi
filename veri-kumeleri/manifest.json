@@ -1,6 +1,6 @@
 {
   "name": "Oyun-Rehberi Türkçe Oyun Bilgisi Veri Kümesi",
-  "dataset_version": "1.1.0",
+  "dataset_version": "1.2.0",
   "schema_version": "1.1",
   "language": "tr",
   "format": "JSON Lines (UTF-8), one JSON object per line",
@@ -45,6 +45,30 @@
       "scope": "all_records",
       "format": "jsonl",
       "records": 72
+    },
+    {
+      "path": "bloody-bastards-tam-arsiv-v1.jsonl",
+      "scope": "game_archive",
+      "game": "Bloody Bastards",
+      "game_slug": "bloody-bastards",
+      "format": "jsonl",
+      "records": 27
+    },
+    {
+      "path": "data-wing-tam-arsiv-v1.jsonl",
+      "scope": "game_archive",
+      "game": "DATA WING",
+      "game_slug": "data-wing",
+      "format": "jsonl",
+      "records": 13
+    },
+    {
+      "path": "wplace-live-tam-arsiv-v1.jsonl",
+      "scope": "game_archive",
+      "game": "Wplace.live",
+      "game_slug": "wplace-live",
+      "format": "jsonl",
+      "records": 32
     },
     {
       "path": "oyun-rehberi-rehber-bolumleri-v1.jsonl",

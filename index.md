@@ -40,12 +40,15 @@ description: Niş ve bağımsız oyunlar için Türkçe rehberler. Oynanış mek
 
 <section class="dataset-promo" aria-labelledby="dataset-promo-heading">
   <div>
-    <p class="section-kicker">AÇIK VERİ · SÜRÜM 1.1</p>
+    <p class="section-kicker">AÇIK VERİ · SÜRÜM 1.2</p>
     <h2 id="dataset-promo-heading">Türkçe oyun bilgisi, indirilebilir veri kümelerinde</h2>
     <p>SSS kayıtlarıyla birlikte mekanikler, oynanış, kurallar ve güncellemeler. Kaynak bağlantıları ile bilgi türü etiketleri korunur.</p>
     <div class="dataset-promo-meta"><span>SSS + rehber bölümleri</span><span>İndirilebilir JSONL</span><span>Kaynak bilgisiyle</span></div>
   </div>
-  <a class="dataset-promo-link" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümelerini keşfet <span aria-hidden="true">↗</span></a>
+  <div class="dataset-promo-actions">
+    <a class="dataset-promo-download" href="{{ '/veri-kumeleri/oyun-rehberi-tam-arsiv-v1.jsonl' | relative_url }}" download>Tam veri kümesini indir <span aria-hidden="true">↓</span></a>
+    <a class="dataset-promo-link" href="{{ '/veri-kumeleri/' | relative_url }}">Tüm dosyaları gör <span aria-hidden="true">↗</span></a>
+  </div>
 </section>
 
 <section class="archive" id="arsiv" aria-labelledby="archive-heading">

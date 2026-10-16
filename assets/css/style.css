@@ -1343,3 +1343,78 @@ nav a.nav-cta:hover {
     max-width: 100%;
   }
 }
+
+
+/* Bir tıkla tüm arşive ulaşım */
+.dataset-promo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+.content a.dataset-promo-download {
+  display: inline-flex;
+  min-width: max-content;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 15px;
+  color: var(--background);
+  background: var(--sage);
+  border: 1px solid var(--sage);
+  font-size: 0.83rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.content a.dataset-promo-download span {
+  color: #263127;
+  font-size: 1rem;
+}
+
+.content a.dataset-promo-download:hover {
+  color: var(--background);
+  background: #c7d6b7;
+  border-color: #c7d6b7;
+}
+
+.dataset-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 13px;
+  margin-top: auto;
+}
+
+.content .dataset-card-links a.dataset-download {
+  margin-top: 0;
+}
+
+.content a.dataset-secondary-link {
+  color: #becbb6;
+  font-size: 0.77rem;
+  text-decoration: underline;
+  text-decoration-color: #65795d;
+  text-underline-offset: 3px;
+}
+
+.content a.dataset-secondary-link:hover {
+  color: var(--white);
+}
+
+@media (max-width: 560px) {
+  .dataset-promo-actions {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content a.dataset-promo-download,
+  .content a.dataset-promo-link {
+    min-width: 0;
+    max-width: 100%;
+  }
+}

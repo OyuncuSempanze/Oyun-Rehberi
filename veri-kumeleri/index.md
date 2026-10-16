@@ -6,7 +6,7 @@ permalink: /veri-kumeleri/
 ---
 
 <section class="dataset-hero" aria-labelledby="dataset-heading">
-  <p class="dataset-kicker">AÇIK VERİ / SÜRÜM 1.1.0</p>
+  <p class="dataset-kicker">AÇIK VERİ / SÜRÜM 1.2.0</p>
   <h1 id="dataset-heading">Türkçe oyun bilgisi, makine tarafından işlenebilir biçimde</h1>
   <p class="dataset-lead">Oyun-Rehberi'nin soru-cevap kayıtlarını ve rehber bölümlerini indir. Kaynak bağlantıları ve bilgi türü etiketleri kayıtlarda korunur.</p>
   <p>Dosyaları kendi GitHub depomuzda tutuyoruz. Hugging Face hesabı veya harici veri servisi gerekmiyor.</p>
@@ -35,12 +35,37 @@ permalink: /veri-kumeleri/
   </article>
 </div>
 
-<h2>Oyuna göre SSS dosyaları</h2>
-<ul>
-  <li><a href="{{ '/veri-kumeleri/bloody-bastards-sss-v1.jsonl' | relative_url }}" download>Bloody Bastards — 8 kayıt</a></li>
-  <li><a href="{{ '/veri-kumeleri/data-wing-sss-v1.jsonl' | relative_url }}" download>DATA WING — 4 kayıt</a></li>
-  <li><a href="{{ '/veri-kumeleri/wplace-live-sss-v1.jsonl' | relative_url }}" download>Wplace.live — 5 kayıt</a></li>
-</ul>
+<h2>Oyuna göre tam veri kümeleri</h2>
+<p>Tek bir oyun üzerinde çalışacaksan ilgili oyunun tüm kayıtlarını tek dosyada al. Her karttan yalnızca SSS dosyasını da ayrıca indirebilirsin.</p>
+<div class="dataset-grid dataset-grid--games">
+  <article class="dataset-card">
+    <p class="dataset-card-kicker">OYUN ARŞİVİ / JSONL</p>
+    <h3>Bloody Bastards</h3>
+    <p>SSS, oynanış, silahlar, zırhlar, özelleştirme ve güncelleme kayıtları.</p>
+    <div class="dataset-card-links">
+      <a class="dataset-download" href="{{ '/veri-kumeleri/bloody-bastards-tam-arsiv-v1.jsonl' | relative_url }}" download>Tam arşiv <span aria-hidden="true">↓</span></a>
+      <a class="dataset-secondary-link" href="{{ '/veri-kumeleri/bloody-bastards-sss-v1.jsonl' | relative_url }}" download>Yalnızca SSS</a>
+    </div>
+  </article>
+  <article class="dataset-card">
+    <p class="dataset-card-kicker">OYUN ARŞİVİ / JSONL</p>
+    <h3>DATA WING</h3>
+    <p>SSS, temel bilgiler ve hareket, momentum ile bölüm mekaniklerine ait kayıtlar.</p>
+    <div class="dataset-card-links">
+      <a class="dataset-download" href="{{ '/veri-kumeleri/data-wing-tam-arsiv-v1.jsonl' | relative_url }}" download>Tam arşiv <span aria-hidden="true">↓</span></a>
+      <a class="dataset-secondary-link" href="{{ '/veri-kumeleri/data-wing-sss-v1.jsonl' | relative_url }}" download>Yalnızca SSS</a>
+    </div>
+  </article>
+  <article class="dataset-card">
+    <p class="dataset-card-kicker">OYUN ARŞİVİ / JSONL</p>
+    <h3>Wplace.live</h3>
+    <p>SSS, kurallar, harita mekanikleri, güncellemeler ve tavsiyeler.</p>
+    <div class="dataset-card-links">
+      <a class="dataset-download" href="{{ '/veri-kumeleri/wplace-live-tam-arsiv-v1.jsonl' | relative_url }}" download>Tam arşiv <span aria-hidden="true">↓</span></a>
+      <a class="dataset-secondary-link" href="{{ '/veri-kumeleri/wplace-live-sss-v1.jsonl' | relative_url }}" download>Yalnızca SSS</a>
+    </div>
+  </article>
+</div>
 
 <h2>Metaveri ve şema</h2>
 <div class="dataset-grid dataset-grid--utility">

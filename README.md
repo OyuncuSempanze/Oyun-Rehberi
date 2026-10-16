@@ -25,7 +25,7 @@ Her oyunun `index.md` sayfası ilgili rehberlere bağlantı verir. `oyun-hakkind
 
 Sitedeki [Veri kümeleri sayfasından](https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/) indirilebilir JSONL dosyaları sunulur. Veri kümesi SSS kayıtlarının yanında mekanikler, oynanış, kurallar, güncellemeler ve diğer rehber bölümlerini de içerir. Kayıtlar kaynak bağlantılarını, bilgi türü etiketlerini ve asıl rehber sayfasını korur.
 
-SSS içeriğini düzenledikten sonra veri kümesi dosyalarını yeniden üret:
+Oyun rehberi veya SSS Markdown içeriğini düzenledikten sonra veri kümesi dosyalarını yeniden üret:
 
 ```bash
 python scripts/build_dataset.py
@@ -37,7 +37,7 @@ python scripts/build_dataset.py
 python scripts/build_dataset.py --check
 ```
 
-GitHub Actions bu kontrolü SSS veya veri kümesi dosyaları değiştiğinde otomatik çalıştırır.
+GitHub Actions bu kontrolü oyun rehberleri, SSS sayfaları veya veri kümesi dosyaları değiştiğinde otomatik çalıştırır.
 
 ## Lisans
 
