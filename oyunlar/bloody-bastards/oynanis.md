@@ -49,9 +49,11 @@ Oyuncu savaşları tamamlayarak oyunda ilerler ve farklı ekipmanlara erişebili
 
 **Snow Mode (Karlı Mod):** Arka plan beyaz tonlarına bürünür, kar yağar ve karakter nefes alıp verdiğinde ağzından duman çıkar. **[Resmî Kaynak](https://tibith.com/news)**
 
-## Bosslar
+## Boss seviyeleri
 
 Genel olarak 500 ve 1000 seviyelerinde boss ortaya çıkar. Bosslar, diğer rakiplere kıyasla daha güçlü zırh ve ekipmanlar kuşanır ve daha agresif davranır. **[Oyun İçi Gözlem]**
+
+## Bossların medeniyete göre değişmesi
 
 Ancak bu durum medeniyete göre değişebilir. The British Isles (İngiliz Adaları) medeniyetinde yapılan gözlemlerde yalnızca 500. seviyede boss ortaya çıktığı, 1000. seviyede ise özel bir bossun ortaya çıkmadığı görülmüştür. **[Oyun İçi Gözlem]**
 

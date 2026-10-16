@@ -6,32 +6,34 @@ description: "Bloody Bastards oyun içi ekipman sınıfları ve hasar türleri h
 
 # Silah ve Hasar Türleri
 
-## Silahlar
+## Çift Elli Silahlar
 
 **Çift Elli Silahlar:**
 * Bu silahlar diğerlerine nazaran daha ağırdır ve **enerjinizi** (stamina) çabuk tüketir. [Oyun İçi Gözlem]
 * Tek elli silahlara göre **daha fazla hasar** verir ve **uzundur**.
 * Ek bir **silah** veya **kalkan** kuşanamazsınız. [Oyun İçi Gözlem]
 
+## Tek Elli Silahlar
+
 **Tek Elli Silahlar:**
 * Bu silahlar enerjinizi **daha az** tüketir ancak **daha kısadır** ve **daha az** hasar verir. [Oyun İçi Gözlem]
 * Başka bir **tek elli silah** veya **kalkan** kuşanabilirsiniz. (Yani **2** silah/kalkan kuşanabiliyorsunuz.) [Oyun İçi Gözlem]
+
+## Kalkanlar
 
 **Kalkanlar:**
 * Silahlara göre daha fazla koruma sağlar ve kolunuzun/elinizin kırılmasını veya kesilmesini **büyük ölçüde absorbe eder.** [Oyun İçi Gözlem]
 * Hasarı **çok çok düşüktür**, rakibinizi adeta **\"gıdıklarsınız.\"** [Oyun İçi Gözlem]
 * Başka bir **tek elli silah** veya **kalkan** kuşanabilirsiniz. (Yani **toplamda 2** silah/kalkan kuşanabiliyorsunuz.) [Oyun İçi Gözlem]
 
-## Hasar Türleri
-
-### Kesici Hasar
+## Kesici Hasar
 
 * **Bıçak, kılıç, mızrak** gibi kesici silahlar kullanarak ***kesici*** hasar verirsiniz. [Oyun İçi Gözlem]
 * **Kesici hasar**, rakibinizin kolunu parçalayabileceğiniz anlamına gelir. [Oyun İçi Gözlem]
 * **Çok sert** veya **sürekli aynı bölgeye hasar** verdiyseniz bir süre sonra o uzuv **parçalanır**. [Oyun İçi Gözlem]
 * Parçalanan uzuv **kullanılamaz** hâle gelir ve rakibiniz **saniye başına hasar** alır. [Oyun İçi Gözlem]
 
-### Künt (Ezici) Hasar
+## Künt (Ezici) Hasar
 
 * **Balyoz, çekiç, topuz** gibi silahlar kullanarak ***künt*** hasar verirsiniz. [Oyun İçi Gözlem]
 * **Künt hasar**, rakibinizin kolunu kırabileceğiniz anlamına gelir. [Oyun İçi Gözlem]

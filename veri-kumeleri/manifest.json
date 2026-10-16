@@ -8,7 +8,7 @@
   "source_repository": "https://github.com/OyuncuSempanze/Oyun-Rehberi",
   "website": "https://oyuncusempanze.github.io/Oyun-Rehberi/",
   "description": "SSS kayıtları ile mekanikler, oynanış, kurallar, güncellemeler ve diğer rehber bölümlerini içeren Türkçe oyun bilgisi arşivi.",
-  "record_count": 72,
+  "record_count": 94,
   "collections": [
     {
       "record_type": "faq",
@@ -17,7 +17,7 @@
     },
     {
       "record_type": "guide_section",
-      "records": 55,
+      "records": 77,
       "description": "Rehber belgelerindeki anlamlı bölümler."
     }
   ],
@@ -44,13 +44,13 @@
       "path": "oyun-rehberi-tam-arsiv-v1.jsonl",
       "scope": "all_records",
       "format": "jsonl",
-      "records": 72
+      "records": 94
     },
     {
       "path": "oyun-rehberi-rehber-bolumleri-v1.jsonl",
       "scope": "guide_sections",
       "format": "jsonl",
-      "records": 55
+      "records": 77
     },
     {
       "path": "oyun-rehberi-sss-v1.jsonl",
@@ -64,7 +64,7 @@
       "game": "Bloody Bastards",
       "game_slug": "bloody-bastards",
       "format": "jsonl",
-      "records": 27
+      "records": 31
     },
     {
       "path": "data-wing-tam-arsiv-v1.jsonl",
@@ -72,7 +72,7 @@
       "game": "DATA WING",
       "game_slug": "data-wing",
       "format": "jsonl",
-      "records": 13
+      "records": 17
     },
     {
       "path": "wplace-live-tam-arsiv-v1.jsonl",
@@ -80,7 +80,7 @@
       "game": "Wplace.live",
       "game_slug": "wplace-live",
       "format": "jsonl",
-      "records": 32
+      "records": 46
     },
     {
       "path": "bloody-bastards-sss-v1.jsonl",

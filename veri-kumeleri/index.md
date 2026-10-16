@@ -8,9 +8,15 @@ permalink: /veri-kumeleri/
 <section class="dataset-hero" aria-labelledby="dataset-heading">
   <p class="dataset-kicker">AÇIK VERİ / SÜRÜM 1.2.0</p>
   <h1 id="dataset-heading">Türkçe oyun bilgisi, makine tarafından işlenebilir biçimde</h1>
-  <p class="dataset-lead">Oyun-Rehberi'nin soru-cevap kayıtlarını ve rehber bölümlerini indir. Kaynak bağlantıları ve bilgi türü etiketleri kayıtlarda korunur.</p>
+  <p class="dataset-lead">Oyun-Rehberi'nin soru-cevap kayıtlarını ve daha dar konu başlıklarına ayrılmış rehber bölümlerini indir. Kaynak bağlantıları ve bilgi türü etiketleri kayıtlarda korunur.</p>
   <p>Dosyaları kendi GitHub depomuzda tutuyoruz. Hugging Face hesabı veya harici veri servisi gerekmiyor.</p>
 </section>
+
+<div class="dataset-overview" aria-label="Veri kümesi özellikleri">
+  <div class="dataset-overview-item"><span class="dataset-overview-value">3</span><span class="dataset-overview-label">oyun arşivi</span></div>
+  <div class="dataset-overview-item"><span class="dataset-overview-value">2</span><span class="dataset-overview-label">kayıt türü: SSS ve rehber</span></div>
+  <div class="dataset-overview-item"><span class="dataset-overview-value">JSONL</span><span class="dataset-overview-label">satır tabanlı, UTF-8 veri</span></div>
+</div>
 
 <h2>Veri dosyaları</h2>
 <div class="dataset-grid">
