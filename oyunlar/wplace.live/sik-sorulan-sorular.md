@@ -16,7 +16,7 @@ Resmî yama notlarına göre destek menüsü üzerinden hata bildirimi, geri bil
 
 ## Hesap uzaklaştırmasına nasıl itiraz edilir?
 
-Resmî yama notlarında, reddedilen bir itirazdan sonra etkin ceza ekranı üzerinden destek başvurusu açılabildiği belirtiliyor. Reddedilen bir oyuncu bildirimi için de bildirim üzerinden yeniden inceleme isteği sunulabiliyor. Ancak yama notlarında bazı destek başvuru türlerinin bakım nedeniyle geçici olarak devre dışı bırakıldığı da belirtilmiş. Bu nedenle kullanılabilir seçenekleri oyun içindeki destek menüsünden kontrol etmek gerekir. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.0) [Resmî Kaynak](https://wplace.live/patch-notes/1.7.4)
+Resmî yama notlarında, reddedilen bir itirazdan sonra etkin ceza ekranı üzerinden destek başvurusu açılabildiği belirtiliyor. Reddedilen bir oyuncu bildirimi için de bildirim üzerinden yeniden inceleme isteği sunulabiliyor. Ancak yama notlarında bazı destek başvuru türlerinin bakım nedeniyle geçici olarak devre dışı bırakıldığı da belirtilmiş. Bu nedenle kullanılabilir seçenekleri oyun içindeki destek menüsünden kontrol etmek gerekir. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.0) [Resmî Kaynak](https://wplace.live/patch-notes/1.7.4) [Öneri]
 
 ## Türkçe arayüz desteği
 
@@ -24,5 +24,4 @@ Oyunun içinde doğrudan Türkçe dil desteği **bulunmuyor.** Ancak harici tara
 
 ## Destek veya itiraz başvurusunda hangi bilgiler verilmeli?
 
-Resmi olarak belirtilmese de, **kullanıcı adı, hesap id'si** ve **sorunun nedeninin** açıklanması önerilir. [Oyun İçi Gözlem]
-
+Resmî olarak zorunlu tutulduğu belirtilmemiştir. Başvurunun anlaşılmasını kolaylaştırmak için kullanıcı adını, varsa hesap kimliğini ve sorunun nedenini açıkça anlatmanı öneririm. Bu, resmî bir gereklilik değil, başvuruyu daha anlaşılır hâle getirmeye yönelik bir tavsiyedir. [Öneri]
