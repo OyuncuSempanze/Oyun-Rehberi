@@ -24,10 +24,23 @@ Geliştirici, oyunda yüzlerce farklı silah, kalkan, gövde, bacak ve baş ekip
 
 ## Çevrim dışı oynanabilir mi?
 
+**Hayır,** çevrim dışı olunduğu sürece oyuna giriş yapılamaz. [Oyun İçi Gözlem]
 ## Oyundaki para birimleri ve kazanma yolları
 
 ## İlerleme ve seviye sistemi
 
+**Kampanya (Tek Oyunculu):** Bu modda her seviye düşmanlarınızı alt ederek seviye atlarsınız. Her seviyede daha güçlü düşmanlar çıkar. Bazı seviyelerde medeniyete özgü eşyaların kilidi açılır. [Oyun İçi Gözlem]
+
+**Hayatta Kalma (Tek Oyunculu):** Bu modda aldığınız hasar kalıcıdır. Bir sonraki seviyede kalan canınızla oynarsınız. 1 kere alt edildiğinizde en baştaki seviyeye geri dönersiniz. [Oyun İçi Gözlem]
+
+**Aşamalı (Çok Oyunculu):** Bu modda **gerçek oyuncularla** oynarsınız. Her maç 3 tur sürer. 3 kere rakibini alt eden kazanır. Her kazanıldığında mevcut rütbenize bir miktar puan verir. Rütbe atlandığında yeni eşyaların kilidi açılır. Bu moddaki eşyaların kilidini açtığınız gibi kullanabiliyorsunuz. Oyun içi para harcamanıza gerek kalmıyor. [Oyun İçi Gözlem]
+*Her rütbe atlandığında eşya kazanma garantisi yoktur, güncellemeden güncellemeye değişir.* [Oyun İçi Gözlem]
+
+
 ## Türkçe dil desteği
 
+Oyunda Türkçe dil desteği **vardır.** [Oyun İçi Gözlem]
+
 ## Çok oyunculu eşleştirme ve sürüm koşulları
+
+Mevcut sürümünüzdeki oyuncularla eşleşirsiniz. Sunucu seçimi sistem tarafından otomatik atanıyor. [Oyun İçi Gözlem]
