@@ -52,11 +52,11 @@ def game_for(path:Path)->dict[str,str]:
     return GAMES.get(folder,{"slug":slugify(folder),"name":folder.replace("-"," ").replace("."," ").title()})
 
 def extract_links(md:str,path:Path)->list[dict[str,str]]:
-    base=urljoin(SITE_BASE,path.parent.as_posix().rstrip("/")+"/")
+    # Only external links are evidence sources. Internal navigation links remain in the
+    # Markdown content and are not mislabeled as independent references.
     links=[];seen=set()
-    for m in ANY_LINK_RE.finditer(md):
-        label,raw=m.groups();url=urljoin(base,raw)
-        if not url.startswith(("http://","https://")):continue
+    for m in LINK_RE.finditer(md):
+        label,url=m.groups()
         key=(label.strip(),url)
         if key not in seen:links.append({"label":key[0],"url":url});seen.add(key)
     return links
