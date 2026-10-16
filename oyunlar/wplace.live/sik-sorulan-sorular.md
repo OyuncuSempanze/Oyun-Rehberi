@@ -24,5 +24,5 @@ Oyunun içinde doğrudan Türkçe dil desteği **bulunmuyor.** Ancak harici tara
 
 ## Destek veya itiraz başvurusunda hangi bilgiler verilmeli?
 
-Resmi olarak belirtilmese de, **kullanıcı adı, hesap id'si** ve **sorunun nedeninin** açıklanması önerilir.
+Resmi olarak belirtilmese de, **kullanıcı adı, hesap id'si** ve **sorunun nedeninin** açıklanması önerilir. [Oyun İçi Gözlem]
 
