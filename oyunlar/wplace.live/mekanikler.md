@@ -16,7 +16,7 @@ description: "Wplace.live piksel yenilenmesi, Droplets, mağaza, klan merkezi ve
 
 ## Droplets ve Prism
 
-Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine bağlı olarak Droplets veya Prism ödülü verilebildiğini belirtiyor. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.3)
+Resmî 1.7.3 yama notlarına göre, bazı hata bildirimleri ve geri bildirimler karşılığında katkının etkisine bağlı olarak Droplets veya Prism ödülü verilebiliyor. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.3)
 
 ## Dükkan
 
@@ -28,7 +28,7 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 - **Kozmetik Ürünler:** Avatar veya kilitli renk gibi öğelerdir. Örneğin avatar özelleştirme 20.000, premium renkler ise 2.000 Droplets’tır [Kaynak](https://placepixels.com/wplace-droplets). Bu ürünler yalnızca görsel amaçlıdır ve oynanışı etkilemez.
 
-- **Özel Kozmetik Ürünler:** Özel kozmetik ürünler, normal kozmetik ürünlerine kıyasla sadece **prism** ile satın alınabilir. Ayrıca normale göre daha fazla görsel efektleri mevcuttur. [Resmî Kaynak](https://wplace.live/patch-notes/1.5.0)
+- **Özel Kozmetik Ürünler:** Normal kozmetiklerden farklı olarak Prism ile satın alınırlar. Nadirlik derecelerine göre görsel efektleri de bulunur. [Resmî Kaynak](https://wplace.live/patch-notes/1.5.0)
 
 ## Damlacık Kazanma
 
@@ -40,7 +40,11 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 ## Prism Kazanma
 
-- **Gerçek Parayla Satın Alarak:** Prism, mevcut sürümde (1.7.7) sadece **gerçek para** ile satın alınabiliyor. Gelecekteki sürümlerde farklılıklar **olabilir.** [Resmî Sürüm Notları](https://wplace.live/patch-notes) [Prism ile premium kozmetiklerin ilişkisi](https://wplace.live/patch-notes/1.5.0)
+- **Gerçek parayla satın alma:** 1.7.7 sürümündeki mağazada Prism gerçek parayla satın alınabiliyor. Bu bilgi oyun içi gözleme dayanıyor. [Oyun İçi Gözlem]
+
+- Prism'i mağazadan satın almak, tek elde etme yolu değil. 1.7.3 yama notlarına göre bazı geri bildirim ve hata bildirimleri karşılığında da Prism ödülü verilebiliyor. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.3)
+
+- Prism, özel kozmetikler için kullanılan premium para birimidir. [Resmî Kaynak](https://wplace.live/patch-notes/1.5.0)
 
 
 ## Klan (Alliance)
@@ -59,13 +63,12 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
   
 - **Otomatik Boyama Yok:** Şablonlar kendi kendine piksel boyamazlar, sadece referans amaçlıdır. Yani şablon, hangi koordinattaki pikselin hangi renge boyanacağını göstererek oyuncuya kolaylık sağlar [Oyun İçi Gözlem]. Böylece katılımcılar referans görsel üzerinde rehber alarak daha hızlı ve hatasız çizebilirler.
 
-## Report (Bildirme) Sistemi:
+## Report (Bildirme) Sistemi
 
-- Eğer bir kişinin platform kurallarını ihlal eden bir çizim yaptığını veya çoklu hesap kullandığını düşünüyorsanız ilgili pikselin üstüne tıklayarak şüphelendiğiniz oyuncuyu bulursunuz, daha sonra hemen sağda bulunan 3 nokta ile "Report" butonuna tıklarsınız. Önünüzde birden fazla bildirme gerekçesi bulunur, ilgili gerekçeyi seçtikten sonra açıklamanızı yaparsınız. Açıklamada şunların olması **tavsiye edilir:**
-• Pikselin bulunduğu konum
-• Sebebi detaylıca açıklama
-[Oyun İçi Gözlem]
+Bir çizimin veya kullanıcının kuralları ihlal ettiğini düşünüyorsanız, ilgili piksele tıklayıp sağdaki üç nokta menüsünden **Report** seçeneğini açın. Gerekçeyi seçip kısa bir açıklama yazın. [Oyun İçi Gözlem]
 
-Bildirim formunda raporlanan kullanıcı, konum ve yakınlaştırma bilgileri, gerekçe, açıklama ve ekran görüntüsü gibi veriler kullanılabiliyor. Bu teknik ayrıntılar resmî olmayan Wplace-Protocol topluluk belgesinde açıklanmıştır. [Topluluk Teknik Kaynağı](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
+Açıklamada pikselin konumunu ve şüphe nedeninizi belirtin. Bildirim formunda raporlanan kullanıcı, konum ve yakınlaştırma bilgileri, gerekçe, açıklama ve ekran görüntüsü gibi alanlar da bulunabilir. Bu teknik ayrıntılar resmî olmayan Wplace-Protocol belgesinde anlatılıyor. [Topluluk Teknik Kaynağı](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
 
-Kaynaklar: Wplace resmî yama notları ve topluluk rehberleri. Oyun içi gözlemler, yukarıdaki mekaniklerin uygulamadaki durumunu desteklemektedir.
+Raporlama adımlarını doğrulayan doğrudan bir resmî kaynak bulamadım. Bu yüzden adımlar oyun içi gözlem olarak işaretlendi.
+
+Kaynaklar: Wplace resmî yama notları ve topluluk rehberleri.
