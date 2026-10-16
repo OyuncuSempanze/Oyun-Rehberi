@@ -174,7 +174,35 @@ def main()->int:
         stale=[]
         for filename,expected in outputs.items():
             path=OUTPUT_DIR/filename
-            if not path.is_file() or path.read_text(encoding="utf-8")!=expected:stale.append(filename)
+            if not path.is_file():
+                stale.append(filename)
+                continue
+            actual_text=path.read_text(encoding="utf-8")
+            if filename.endswith(".jsonl"):
+                try:
+                    expected_rows=[json.loads(line) for line in expected.splitlines() if line.strip()]
+                    actual_rows=[json.loads(line) for line in actual_text.splitlines() if line.strip()]
+                except json.JSONDecodeError:
+                    stale.append(filename)
+                    print(f"Invalid JSONL in {filename}.",file=sys.stderr)
+                    continue
+                if actual_rows!=expected_rows:
+                    stale.append(filename)
+                    for index,(actual_row,expected_row) in enumerate(zip(actual_rows,expected_rows),start=1):
+                        if actual_row!=expected_row:
+                            changed=[key for key in set(actual_row)|set(expected_row) if actual_row.get(key)!=expected_row.get(key)]
+                            print(f"{filename}:{index}: record {expected_row.get('id',actual_row.get('id','?'))} differs in {sorted(changed)}.",file=sys.stderr)
+                            break
+                    if len(actual_rows)!=len(expected_rows):
+                        print(f"{filename}: expected {len(expected_rows)} records, found {len(actual_rows)}.",file=sys.stderr)
+            elif filename.endswith(".json"):
+                try:
+                    if json.loads(actual_text)!=json.loads(expected):
+                        stale.append(filename)
+                except json.JSONDecodeError:
+                    stale.append(filename)
+            elif actual_text!=expected:
+                stale.append(filename)
         wanted={x for x in outputs if x.endswith(".jsonl")}
         if OUTPUT_DIR.exists():
             for path in OUTPUT_DIR.glob("*-sss-v1.jsonl"):
