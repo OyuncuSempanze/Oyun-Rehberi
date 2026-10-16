@@ -6,7 +6,7 @@ description: DATA WING için temel bilgiler, hareket kontrolleri, momentum, duva
 
 # DATA WING
 
-DATA WING, hikâye odaklı 2D neon temalı bir yarış ve arcade oyunudur. Bu arşivde oyunun temel bilgileri ve hareket, momentum, bölüm hedefleri gibi oynanış mekanikleri bulunur.
+DATA WING, hikâye odaklı, neon görselli 2D bir yarış ve arcade oyunudur. Bu arşivde temel bilgiler ve oynanış mekanikleri yer alır.
 
 ## İçerikler
 
