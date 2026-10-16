@@ -47,6 +47,18 @@
       "records": 72
     },
     {
+      "path": "oyun-rehberi-rehber-bolumleri-v1.jsonl",
+      "scope": "guide_sections",
+      "format": "jsonl",
+      "records": 55
+    },
+    {
+      "path": "oyun-rehberi-sss-v1.jsonl",
+      "scope": "faq",
+      "format": "jsonl",
+      "records": 17
+    },
+    {
       "path": "bloody-bastards-tam-arsiv-v1.jsonl",
       "scope": "game_archive",
       "game": "Bloody Bastards",
@@ -69,18 +81,6 @@
       "game_slug": "wplace-live",
       "format": "jsonl",
       "records": 32
-    },
-    {
-      "path": "oyun-rehberi-rehber-bolumleri-v1.jsonl",
-      "scope": "guide_sections",
-      "format": "jsonl",
-      "records": 55
-    },
-    {
-      "path": "oyun-rehberi-sss-v1.jsonl",
-      "scope": "faq",
-      "format": "jsonl",
-      "records": 17
     },
     {
       "path": "bloody-bastards-sss-v1.jsonl",
