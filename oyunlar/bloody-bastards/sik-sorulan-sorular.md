@@ -8,11 +8,11 @@ description: Bloody Bastards oyun modları, kontrolleri ve ekipman çeşitliliğ
 
 ## Oyun ücretsiz mi?
 
-Google Play sayfasında oyunun reklam içerdiği ve uygulama içi satın alımlar sunduğu belirtiliyor. [Resmî Kaynak](https://play.google.com/store/apps/details?id=com.tibith.badboxing)
+Evet, oyun ücretsiz indirilebilir. App Store sayfasında ücretsiz olarak listeleniyor. Ancak reklam içeriyor ve uygulama içi satın alımlar sunuyor. [Resmî Kaynak](https://apps.apple.com/tr/app/bloody-bastards/id1593430099) [Resmî Kaynak](https://play.google.com/store/apps/details?id=com.tibith.badboxing)
 
 ## Hangi oyun modları bulunuyor?
 
-Google Play sayfasında hem tek oyunculu hem de çok oyunculu oyun özellikleri listeleniyor. [Resmî Kaynak](https://play.google.com/store/apps/details?id=com.tibith.badboxing)
+Google Play sayfasında hem tek oyunculu hem de çok oyunculu özellikler listeleniyor. Arşivdeki oyun içi gözlemlere göre tek oyunculu modlar Kampanya ve Hayatta Kalma, çok oyunculu mod ise Aşamalı olarak adlandırılıyor. [Resmî Kaynak](https://play.google.com/store/apps/details?id=com.tibith.badboxing) [Oyun İçi Gözlem]
 
 ## Kontroller nasıl çalışıyor?
 
