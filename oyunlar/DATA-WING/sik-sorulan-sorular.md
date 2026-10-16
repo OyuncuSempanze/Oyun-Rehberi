@@ -18,12 +18,6 @@ Geliştiricinin açıklamasına göre oyunda 40'tan fazla bölüm bulunuyor ve h
 
 Oyunda rekabetçi bir taç sistemi ve liderlik tabloları bulunuyor. Resmî açıklama, taçların hangi koşullarda kazanıldığını ayrıntılı olarak açıklamıyor. [Resmî Kaynak](https://play.google.com/store/apps/details?id=com.DanVogt.DATAWING)
 
-### Taç kazanma koşulları
+## Türkçe dil desteği var mı?
 
-## Türkçe dil desteği
-
-## Bölüm bölüm geçiş rehberi
-
-## Hikâyenin ayrıntılı açıklaması
-
-## Gizli içerikler
+**Evet,** oyunda Türkçe dil desteği **vardır.** [Oyun İçi Gözlem]
