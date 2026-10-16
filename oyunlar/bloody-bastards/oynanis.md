@@ -46,28 +46,7 @@ Oyuncu savaşları tamamlayarak oyunda ilerler ve farklı ekipmanlara erişebili
 Geliştiricinin resmî tanıtımı, oyunda farklı tarihî bölgelerde çok sayıda seviye bulunduğunu ve yeni bölgelerin düzenli olarak eklendiğini belirtiyor. **[Resmî Kaynak](https://tibith.com/bloodybastards)**
 
 Google Play'deki resmî açıklama da farklı konumlarda çok sayıda seviye ve her seviyede farklı, zorlu düşmanlar bulunduğunu belirtiyor. **[Resmî Kaynak](https://play.google.com/store/apps/details?id=com.tibith.badboxing)**
-
-### Geçici derinleştirme soruları
-
-Bu sorular cevaplandıktan sonra taslak sorular, açıklayıcı içerikle değiştirilecek. Resmî kaynaklarda cevabını bulamadığım kısımları senin oyun içi gözleminle tamamlayacağız.
-
-**1. Kampanya modunda bir seviyeyi tamamladığında tam olarak ne kazanıyorsun?**
-
-Mevcut resmî tanıtımlar ödüllerin türünü, miktarını veya hangi koşullarda verildiğini açıklamıyor.
-
-**Cevabın:**
-
-**2. Yeni seviyeler veya bölgeler hangi koşullarla açılıyor?**
-
-Resmî kaynaklar çok sayıda bölge bulunduğunu ve yeni bölgelerin eklendiğini söylüyor ancak oyuncunun bunlara oyun içinde hangi koşullarla eriştiğini açıklamıyor.
-
-**Cevabın:**
-
-**3. Kampanya modunda ilerleme konusunda yeni başlayanların bilmesi gereken, mevcut rehberde yer almayan bir ayrıntı var mı?**
-
-Resmî açıklamalarda bu soruya yeterli ayrıntı bulamadım. Yalnızca bizzat gözlemlediğin veya emin olduğun bilgileri yaz.
-
-**Cevabın:**
+ 
 
 ## Spooky / Snow Mode
 
