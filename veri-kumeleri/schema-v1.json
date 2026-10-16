@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/schema-v1.json",
-  "title": "Oyun-Rehberi FAQ dataset record",
-  "description": "JSONL kaydında bulunan tek bir Türkçe sık sorulan soru ve cevabı.",
+  "title": "Oyun-Rehberi record schema",
+  "description": "SSS ve rehber bölümü kayıtları için JSON Schema.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -11,9 +11,6 @@
     "game",
     "game_slug",
     "record_type",
-    "question",
-    "answer",
-    "answer_markdown",
     "evidence_types",
     "sources",
     "content_url",
@@ -23,19 +20,24 @@
   "properties": {
     "id": {
       "type": "string",
-      "description": "Kayıtlar arasında benzersiz ve kararlı kimlik."
+      "minLength": 1
     },
     "language": {
       "const": "tr"
     },
     "game": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "game_slug": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "record_type": {
-      "const": "faq"
+      "enum": [
+        "faq",
+        "guide_section"
+      ]
     },
     "question": {
       "type": "string",
@@ -43,17 +45,30 @@
     },
     "answer": {
       "type": "string",
-      "description": "Markdown biçimlendirmesi kaldırılmış, kolay işlenebilir cevap."
+      "minLength": 1
     },
     "answer_markdown": {
+      "type": "string"
+    },
+    "article_title": {
       "type": "string",
-      "description": "Kaynak etiketlerini ve bağlantılarını koruyan özgün Markdown cevap bölümü."
+      "minLength": 1
+    },
+    "section_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content_markdown": {
+      "type": "string"
     },
     "evidence_types": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "type": "string",
         "enum": [
           "official_source",
           "in_game_observation",
@@ -67,7 +82,10 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["label", "url"],
+        "required": [
+          "label",
+          "url"
+        ],
         "properties": {
           "label": {
             "type": "string"
@@ -81,14 +99,67 @@
     },
     "content_url": {
       "type": "string",
-      "format": "uri",
-      "description": "İlgili cevabın arşivdeki asıl Markdown sayfası."
+      "format": "uri"
     },
     "license": {
       "const": "CC-BY-4.0"
     },
     "schema_version": {
-      "const": "1.0"
+      "enum": [
+        "1.0",
+        "1.1"
+      ]
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "faq"
+          }
+        },
+        "required": [
+          "record_type"
+        ]
+      },
+      "then": {
+        "required": [
+          "question",
+          "answer",
+          "answer_markdown"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "1.0"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "guide_section"
+          }
+        },
+        "required": [
+          "record_type"
+        ]
+      },
+      "then": {
+        "required": [
+          "article_title",
+          "section_title",
+          "content",
+          "content_markdown"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          }
+        }
+      }
+    }
+  ]
 }

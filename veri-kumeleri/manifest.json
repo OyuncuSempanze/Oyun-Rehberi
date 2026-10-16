@@ -1,30 +1,66 @@
 {
-  "name": "Oyun-Rehberi SSS Veri Kümesi",
-  "dataset_version": "1.0.0",
-  "schema_version": "1.0",
+  "name": "Oyun-Rehberi Türkçe Oyun Bilgisi Veri Kümesi",
+  "dataset_version": "1.1.0",
+  "schema_version": "1.1",
   "language": "tr",
-  "record_type": "faq",
   "format": "JSON Lines (UTF-8), one JSON object per line",
   "license": "CC-BY-4.0",
   "source_repository": "https://github.com/OyuncuSempanze/Oyun-Rehberi",
   "website": "https://oyuncusempanze.github.io/Oyun-Rehberi/",
-  "description": "Mevcut oyun SSS sayfalarından üretilen Türkçe soru-cevap kayıtları. Kaynak bağlantıları ve bilgi türü etiketleri kayıtlarda korunur.",
-  "record_count": 17,
+  "description": "SSS kayıtları ile mekanikler, oynanış, kurallar, güncellemeler ve diğer rehber bölümlerini içeren Türkçe oyun bilgisi arşivi.",
+  "record_count": 72,
+  "collections": [
+    {
+      "record_type": "faq",
+      "records": 17,
+      "description": "Soru-cevap biçimindeki sık sorulan sorular."
+    },
+    {
+      "record_type": "guide_section",
+      "records": 55,
+      "description": "Rehber belgelerindeki anlamlı bölümler."
+    }
+  ],
   "source_files": [
     "oyunlar/bloody-bastards/sik-sorulan-sorular.md",
     "oyunlar/DATA-WING/sik-sorulan-sorular.md",
-    "oyunlar/wplace.live/sik-sorulan-sorular.md"
+    "oyunlar/wplace.live/sik-sorulan-sorular.md",
+    "oyunlar/bloody-bastards/guncellemeler.md",
+    "oyunlar/bloody-bastards/oynanis.md",
+    "oyunlar/bloody-bastards/oyun-hakkinda.md",
+    "oyunlar/bloody-bastards/ozellestirme.md",
+    "oyunlar/bloody-bastards/silahlar.md",
+    "oyunlar/bloody-bastards/zirhlar.md",
+    "oyunlar/DATA-WING/mekanikler.md",
+    "oyunlar/DATA-WING/oyun-hakkinda.md",
+    "oyunlar/wplace.live/guncellemeler.md",
+    "oyunlar/wplace.live/kurallar.md",
+    "oyunlar/wplace.live/mekanikler.md",
+    "oyunlar/wplace.live/oyun-hakkinda.md",
+    "oyunlar/wplace.live/tavsiye.md"
   ],
   "files": [
     {
+      "path": "oyun-rehberi-tam-arsiv-v1.jsonl",
+      "scope": "all_records",
+      "format": "jsonl",
+      "records": 72
+    },
+    {
+      "path": "oyun-rehberi-rehber-bolumleri-v1.jsonl",
+      "scope": "guide_sections",
+      "format": "jsonl",
+      "records": 55
+    },
+    {
       "path": "oyun-rehberi-sss-v1.jsonl",
-      "scope": "all_games",
+      "scope": "faq",
       "format": "jsonl",
       "records": 17
     },
     {
       "path": "bloody-bastards-sss-v1.jsonl",
-      "scope": "game",
+      "scope": "game_faq",
       "game": "Bloody Bastards",
       "game_slug": "bloody-bastards",
       "format": "jsonl",
@@ -32,7 +68,7 @@
     },
     {
       "path": "data-wing-sss-v1.jsonl",
-      "scope": "game",
+      "scope": "game_faq",
       "game": "DATA WING",
       "game_slug": "data-wing",
       "format": "jsonl",
@@ -40,7 +76,7 @@
     },
     {
       "path": "wplace-live-sss-v1.jsonl",
-      "scope": "game",
+      "scope": "game_faq",
       "game": "Wplace.live",
       "game_slug": "wplace-live",
       "format": "jsonl",
@@ -48,10 +84,10 @@
     }
   ],
   "schema_url": "https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/schema-v1.json",
-  "rights_notice": "CC BY 4.0 lisansı yalnızca arşivin lisanslama yetkisine sahip olduğu özgün metin ve düzenleme unsurlarına uygulanır. Kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.",
+  "rights_notice": "CC BY 4.0 yalnızca arşivin lisanslama yetkisine sahip olduğu özgün metin ve düzenleme unsurlarına uygulanır. Kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.",
   "limitations": [
-    "This is an FAQ export, not a claim that the dataset is ready for every model-training task.",
-    "Empty headings and sections without a curated question are omitted.",
-    "Source URLs identify references, but do not independently prove that a claim is correct."
+    "Guide-section records preserve meaningful document sections; they are not guaranteed to be atomic single claims.",
+    "This dataset is a starting point for retrieval and evaluation, not a claim of readiness for every model-training task.",
+    "Source links identify references but do not independently prove that each claim is correct."
   ]
 }
