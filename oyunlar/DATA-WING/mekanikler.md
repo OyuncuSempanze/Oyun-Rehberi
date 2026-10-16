@@ -14,7 +14,9 @@ Ekranın sağ ve sol tarafına dokunarak aracı sağa veya sola döndürüyoruz.
 
 ## Fizik ve Momentum
 
-Yaptığım gözlemlere göre araç düz bir doğrultuda ilerlerken hız kaybetmiyor. Ancak aniden uzun süre sağa veya sola döndürüldüğünde hızı önemli ölçüde azalabiliyor. Dönüşleri daha yavaş yapmak, kaybedilen hızı azaltıyor. [Oyun İçi Gözlem]
+Yaptığım gözlemlere göre araç düz bir doğrultuda ilerlerken hız kaybetmiyor. Ancak aniden uzun süre sağa veya sola döndürüldüğünde hızı önemli ölçüde azalabiliyor. [Oyun İçi Gözlem]
+
+Dönüşleri daha yavaş yapmak, kaybedilen hızı azaltmaya yardımcı olabilir. [Öneri]
 
 ## Duvarlardan Hız Kazanma
 
@@ -54,7 +56,7 @@ Bazı seviyelerde önden giden hayalet yarışçılar bulunuyor. Onların izledi
 
 ## İpucu
 
-Duvarlara sürterek ilerlemek, özellikle süre hedeflerinde işe yarıyor. Ama amaç duvara mümkün olduğunca sert çarpmak değil, doğru açıyla yanından ilerleyip itiş kazanmak. Yanlış açıyla çarpmak hız kaybettirebiliyor. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef) [Oyun İçi Gözlem]
+Duvarlara sürterek ilerlemek, özellikle süre hedeflerinde işe yarıyor. Ama amaç duvara mümkün olduğunca sert çarpmak değil, doğru açıyla yanından ilerleyip itiş kazanmak. Yanlış açıyla çarpmak hız kaybettirebiliyor. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef) [Oyun İçi Gözlem] [Öneri]
 
 ## Kaynaklar
 
