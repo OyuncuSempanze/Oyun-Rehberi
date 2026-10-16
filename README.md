@@ -15,3 +15,9 @@ Her bilgiye, dayandığı kanıtı açıklayan uygun bir etiket eklenir. Bu etik
 Bir bağlantının bulunması, iddianın kesin olarak doğrulandığını tek başına göstermez. **[Resmî Kaynak]** etiketi yalnızca resmî bağlantılar için kullanılmalı. Bilgi oyun içinde test edildiyse **[Oyun İçi Gözlem]** etiketi de eklenmeli.
 
 Sürüme göre değişebilen bilgilerde son kontrol tarihi belirtilir. Yalnızca oyun içinde görülen sürüm ve özellikler resmî yayın bilgisi gibi sunulmaz. Biliniyorsa platform ve sürüm de yazılır.
+
+## Lisans
+
+OyuncuSempanze tarafından oluşturulan özgün rehber metinleri, oyun içi gözlem yazıları ve arşivin özgün seçim ve düzenlemesi [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) kapsamında lisanslanır. Lisans bütün depoya otomatik olarak uygulanmaz. Site kaynak kodu ve arayüzü, oyun ekran görüntüleri, üçüncü taraf görseller ve başka hak sahiplerine ait içerikler kapsam dışındadır.
+
+Ayrıntılar için [lisans kapsamı sayfasına](lisans.md) ve depodaki [LICENSE dosyasına](LICENSE) bak.
