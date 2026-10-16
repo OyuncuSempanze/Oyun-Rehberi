@@ -20,6 +20,9 @@ Resmî yama notlarında, reddedilen bir itirazdan sonra etkin ceza ekranı üzer
 
 ## Türkçe arayüz desteği
 
+Oyunun içinde doğrudan Türkçe dil desteği **bulunmuyor.** Ancak harici tarayıcı özellikleriyle Türkçe oynanabilir. [Oyun İçi Gözlem]
+
 ## Destek veya itiraz başvurusunda hangi bilgiler verilmeli?
 
-## Harita ve boyama hataları için başka çözümler
+Resmi olarak belirtilmese de, **kullanıcı adı, hesap id'si** ve **sorunun nedeninin** açıklanması önerilir.
+
