@@ -24,7 +24,7 @@ QUESTION_OVERRIDES={
 ("bloody-bastards","İlerleme ve seviye sistemi"):"Oyunda ilerleme ve seviye sistemi nasıl çalışıyor?",
 ("bloody-bastards","Türkçe dil desteği"):"Oyunda Türkçe dil desteği var mı?",
 ("bloody-bastards","Çok oyunculu eşleştirme ve sürüm koşulları"):"Çok oyunculu eşleştirme ve sürüm koşulları nasıl işliyor?",
-("wplace.live","Türkçe arayüz desteği"):"Oyunda Türkçe arayüz desteği var?"
+("wplace.live","Türkçe arayüz desteği"):"Oyunda Türkçe arayüz desteği var mı?"
 }
 COMMON={"id","language","game","game_slug","record_type","evidence_types","sources","content_url","license","schema_version"}
 

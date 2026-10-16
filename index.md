@@ -38,6 +38,16 @@ description: Niş ve bağımsız oyunlar için Türkçe rehberler. Oynanış mek
   </svg>
 </section>
 
+<section class="dataset-promo" aria-labelledby="dataset-promo-heading">
+  <div>
+    <p class="section-kicker">AÇIK VERİ · SÜRÜM 1.1</p>
+    <h2 id="dataset-promo-heading">Türkçe oyun bilgisi, indirilebilir veri kümelerinde</h2>
+    <p>SSS kayıtlarıyla birlikte mekanikler, oynanış, kurallar ve güncellemeler. Kaynak bağlantıları ile bilgi türü etiketleri korunur.</p>
+    <div class="dataset-promo-meta"><span>SSS + rehber bölümleri</span><span>İndirilebilir JSONL</span><span>Kaynak bilgisiyle</span></div>
+  </div>
+  <a class="dataset-promo-link" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümelerini keşfet <span aria-hidden="true">↗</span></a>
+</section>
+
 <section class="archive" id="arsiv" aria-labelledby="archive-heading">
   <div class="section-heading">
     <div>
@@ -108,12 +118,3 @@ description: Niş ve bağımsız oyunlar için Türkçe rehberler. Oynanış mek
   <span class="note-mark" aria-hidden="true"></span>
   <p><strong>Arşiv ilkesi</strong> Bilgiler mümkün olduğunda kaynaklarla desteklenir. Resmî açıklamalar ve oyun içi gözlemler birbirinden ayrılır.</p>
 </aside>
-
-<section class="dataset-promo" aria-labelledby="dataset-promo-heading">
-  <div>
-    <p class="section-kicker">AÇIK VERİ</p>
-    <h2 id="dataset-promo-heading">Rehberler makineler tarafından da işlenebilir</h2>
-    <p>Kaynak bağlantıları ve bilgi türleri korunmuş Türkçe soru-cevap kayıtlarını JSONL biçiminde indir.</p>
-  </div>
-  <a class="dataset-promo-link" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümelerine git <span aria-hidden="true">↗</span></a>
-</section>

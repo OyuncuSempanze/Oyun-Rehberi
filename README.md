@@ -23,7 +23,7 @@ Her oyunun `index.md` sayfası ilgili rehberlere bağlantı verir. `oyun-hakkind
 
 ## Veri kümeleri
 
-Sitedeki [Veri kümeleri sayfasından](https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/) indirilebilir JSONL dosyaları sunulur. İlk sürüm, oyunların SSS sayfalarındaki soru ve cevaplardan üretilir. Kayıtlar kaynak bağlantılarını, bilgi türü etiketlerini ve asıl rehber sayfasını korur.
+Sitedeki [Veri kümeleri sayfasından](https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/) indirilebilir JSONL dosyaları sunulur. Veri kümesi SSS kayıtlarının yanında mekanikler, oynanış, kurallar, güncellemeler ve diğer rehber bölümlerini de içerir. Kayıtlar kaynak bağlantılarını, bilgi türü etiketlerini ve asıl rehber sayfasını korur.
 
 SSS içeriğini düzenledikten sonra veri kümesi dosyalarını yeniden üret:
 
