@@ -16,7 +16,9 @@ Resmî yama notlarına göre destek menüsü üzerinden hata bildirimi, geri bil
 
 ## Hesap uzaklaştırmasına nasıl itiraz edilir?
 
-Resmî yama notlarında, reddedilen bir itirazdan sonra etkin ceza ekranı üzerinden destek başvurusu açılabildiği belirtiliyor. Reddedilen bir oyuncu bildirimi için de bildirim üzerinden yeniden inceleme isteği sunulabiliyor. Ancak yama notlarında bazı destek başvuru türlerinin bakım nedeniyle geçici olarak devre dışı bırakıldığı da belirtilmiş. Bu nedenle kullanılabilir seçenekleri oyun içindeki destek menüsünden kontrol etmek gerekir. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.0) [Resmî Kaynak](https://wplace.live/patch-notes/1.7.4) [Öneri]
+Resmî yama notlarında, reddedilen bir itirazdan sonra etkin ceza ekranı üzerinden destek başvurusu açılabildiği belirtiliyor. Reddedilen bir oyuncu bildirimi için de bildirim üzerinden yeniden inceleme isteği sunulabiliyor. Yama notlarında bazı destek başvuru türlerinin bakım nedeniyle geçici olarak devre dışı bırakıldığı da belirtilmiş. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.0) [Resmî Kaynak](https://wplace.live/patch-notes/1.7.4)
+
+Bu nedenle kullanılabilir seçenekleri oyun içindeki destek menüsünden kontrol etmeni öneririm. [Öneri]
 
 ## Türkçe arayüz desteği
 
