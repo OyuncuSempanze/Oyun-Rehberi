@@ -13,3 +13,4 @@ DATA WING, hikâye odaklı, neon görselli 2D bir yarış ve arcade oyunudur. Bu
 
 - [Oyun Hakkında](oyun-hakkinda.html)
 - [Mekanikler](mekanikler.html)
+- [Sık Sorulan Sorular](sik-sorulan-sorular.html)
