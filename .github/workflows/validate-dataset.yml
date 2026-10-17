@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   validate:
-    name: Check generated JSONL files
+    name: Validate dataset exports and local Markdown links and source links
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
