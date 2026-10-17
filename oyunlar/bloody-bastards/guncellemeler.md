@@ -8,6 +8,8 @@ description: "Bloody Bastards için güncelleme notları ve kaynak kontrolü."
 
 Bu sayfa resmî güncelleme notlarıyla oyun içi gözlemleri ayrı kaydeder. Resmî sürüm bilgisi olarak yalnızca geliştirici veya mağaza tarafından doğrulanan bilgiler sunulur.
 
+Google Play sayfasının “Yenilikler” bölümü, mağaza tarafından yayımlanan sürüm bilgisini kontrol etmek için kullanılabilir. [Resmî Kaynak](https://play.google.com/store/apps/details?id=com.tibith.badboxing)
+
 *Güncellemelerde yeni içerikler, oynanış değişiklikleri, hata düzeltmeleri ve diğer değişiklikler yer alabilir.*
 
 ## Oyun İçinde Gözlemlenen Sürüm
