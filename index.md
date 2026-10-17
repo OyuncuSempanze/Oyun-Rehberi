@@ -1,123 +1,156 @@
 ---
 title: Kaynaklı Türkçe Oyun Arşivi
-description: Niş ve bağımsız oyunlar için Türkçe rehberler. Oynanış mekanikleri, güncellemeler, resmî kaynaklar ve oyun içi gözlemler.
+description: Niş ve bağımsız oyunlar için kaynaklı Türkçe rehberler, oyun içi gözlemler ve güncelleme kayıtları.
 ---
 
 <section class="welcome" aria-labelledby="page-heading">
   <div class="welcome-copy">
     <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> KAYNAKLI TÜRKÇE OYUN ARŞİVİ</p>
     <h1 id="page-heading">Oyunların <em>derinine in.</em></h1>
-    <p class="welcome-description">Oynanış, mekanikler ve güncellemeler için Türkçe rehberler. Kaynaklar ile oyun içi gözlemler birbirinden ayrılır.</p>
+    <p class="welcome-description">Oyun mekaniklerini, kuralları ve güncellemeleri Türkçe öğren. Bilginin kaynağını gör, resmî açıklamalarla oyun içi gözlemleri birbirine karıştırma.</p>
+    <div class="welcome-actions">
+      <a class="action-primary" href="#arsiv">Oyun arşivini keşfet <span aria-hidden="true">↓</span></a>
+      <a class="action-secondary" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümelerini incele <span aria-hidden="true">↗</span></a>
+    </div>
   </div>
 
-  <svg class="archive-core-art" viewBox="0 0 240 240" aria-hidden="true" focusable="false">
-    <path d="M52 27H188L213 52V188L188 213H52L27 188V52Z" fill="#1b241c" stroke="#52644d" stroke-width="2"/>
-    <path d="M62 41H178L199 62V178L178 199H62L41 178V62Z" fill="none" stroke="#344333" stroke-width="3"/>
-    <path d="M79 62H161L178 79V161L161 178H79L62 161V79Z" fill="#172019" stroke="#78896d" stroke-width="1.5"/>
-    <path d="M91 96L120 78L149 96L120 115Z" fill="#263729" stroke="#aec39a" stroke-width="1.5"/>
-    <path d="M91 125L120 106L149 125L120 144Z" fill="#202b21" stroke="#52694d" stroke-width="1.5"/>
-    <path d="M103 111L120 100L137 111L120 122Z" fill="#aec39a"/>
-    <circle cx="120" cy="111" r="4" fill="#c8b487"/>
-    <path d="M82 151H107 M114 151H158 M82 160H139" stroke="#687e5e" stroke-width="2"/>
-    <g fill="#c8b487">
-      <rect x="81" y="181" width="6" height="6"/>
-      <rect x="92" y="181" width="6" height="6" opacity=".7"/>
-      <rect x="103" y="181" width="6" height="6" opacity=".45"/>
-    </g>
-    <g fill="#aec39a">
-      <circle cx="120" cy="20" r="3"/>
-      <circle cx="120" cy="220" r="3"/>
-      <circle cx="20" cy="120" r="3"/>
-      <circle cx="220" cy="120" r="3"/>
-    </g>
-    <path d="M120 20V31 M120 209V220 M20 120H31 M209 120H220" stroke="#52644d" stroke-width="1.5"/>
-    <g class="signal-scan">
-      <rect x="57" y="89" width="126" height="6" fill="#aec39a" opacity=".13"/>
-      <path d="M57 92H183" stroke="#aec39a" stroke-width="1.5" opacity=".85"/>
-    </g>
-  </svg>
-</section>
-
-<section class="dataset-promo" aria-labelledby="dataset-promo-heading">
-  <div>
-    <p class="section-kicker">AÇIK VERİ · SÜRÜM 1.2</p>
-    <h2 id="dataset-promo-heading">Türkçe oyun bilgisi, indirilebilir veri kümelerinde</h2>
-    <p>SSS kayıtlarıyla birlikte mekanikler, oynanış, kurallar ve güncellemeler. Kaynak bağlantıları ile bilgi türü etiketleri korunur.</p>
-    <div class="dataset-promo-meta"><span>SSS + rehber bölümleri</span><span>İndirilebilir JSONL</span><span>Kaynak bilgisiyle</span></div>
-  </div>
-  <div class="dataset-promo-actions">
-    <a class="dataset-promo-download" href="{{ '/veri-kumeleri/oyun-rehberi-tam-arsiv-v1.jsonl' | relative_url }}" download>Tam veri kümesini indir <span aria-hidden="true">↓</span></a>
-    <a class="dataset-promo-link" href="{{ '/veri-kumeleri/' | relative_url }}">Tüm dosyaları gör <span aria-hidden="true">↗</span></a>
-  </div>
+  <aside class="welcome-aside" aria-label="Arşivin yaklaşımı">
+    <p class="aside-kicker">ARŞİVİN YAKLAŞIMI</p>
+    <div class="approach-row">
+      <span class="approach-number">01</span>
+      <span><strong>Kaynak görünür</strong><small>Bilginin dayanağına ulaş.</small></span>
+    </div>
+    <div class="approach-row">
+      <span class="approach-number">02</span>
+      <span><strong>Bilgi türü belirtilir</strong><small>Resmî açıklama ve oyun içi gözlem ayrılır.</small></span>
+    </div>
+    <div class="approach-row">
+      <span class="approach-number">03</span>
+      <span><strong>Veri dışa aktarılabilir</strong><small>İnsanlar ve araçlar için açık dosyalar.</small></span>
+    </div>
+  </aside>
 </section>
 
 <section class="archive" id="arsiv" aria-labelledby="archive-heading">
   <div class="section-heading">
     <div>
-      <p class="section-kicker">ARŞİV</p>
-      <h2 id="archive-heading">Oyun rehberleri</h2>
+      <p class="section-kicker">OYUN KÜTÜPHANESİ</p>
+      <h2 id="archive-heading">Oyun arşivi</h2>
     </div>
-    <p class="section-description">İncelemek istediğin oyunu seç.</p>
+    <p class="section-description">Rehberini aç, konuya göre ilerle.</p>
   </div>
 
-  <div class="game-list">
-    <a class="game-entry" href="{{ '/oyunlar/bloody-bastards/' | relative_url }}" aria-label="Bloody Bastards rehberini aç">
-      <span class="entry-emblem" aria-hidden="true">
-        <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
-          <path d="M13 10L35 37 M35 10L13 37" fill="none" stroke="#aec39a" stroke-width="2.3" stroke-linecap="round"/>
-          <path d="M8 8L17 17 M31 30L40 40 M40 8L31 17 M17 30L8 40" fill="none" stroke="#c8b487" stroke-width="2.3" stroke-linecap="square"/>
-          <circle cx="24" cy="24" r="3" fill="#c8b487"/>
-        </svg>
+  <div class="archive-tools">
+    <label class="archive-search">
+      <span class="visually-hidden">Oyunlarda ara</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
+      <input id="archive-search" type="search" placeholder="Oyun, tür veya konu ara..." autocomplete="off" aria-describedby="archive-count">
+    </label>
+    <p id="archive-count" class="archive-count" aria-live="polite">3 oyun</p>
+  </div>
+
+  <div class="game-grid" id="game-grid">
+    <a class="game-card" href="{{ '/oyunlar/bloody-bastards/' | relative_url }}" data-search="Bloody Bastards fizik tabanlı dövüş silah zırh özelleştirme mekanik" aria-label="Bloody Bastards rehberini aç">
+      <span class="game-card-top">
+        <span class="game-emblem game-emblem--combat" aria-hidden="true">
+          <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
+            <path d="M13 10L35 37 M35 10L13 37" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+            <path d="M8 8L17 17 M31 30L40 40 M40 8L31 17 M17 30L8 40" fill="none" stroke="#f2ba72" stroke-width="2.3" stroke-linecap="square"/>
+            <circle cx="24" cy="24" r="3" fill="#f2ba72"/>
+          </svg>
+        </span>
+        <span class="game-category">FİZİK TABANLI DÖVÜŞ</span>
+        <span class="game-index">01</span>
       </span>
-      <span class="entry-copy">
-        <span class="entry-category">01 / Fizik tabanlı dövüş</span>
-        <strong class="entry-title">Bloody Bastards</strong>
-        <span class="entry-description">Silahlar, zırhlar, dövüş sistemi ve karakter özelleştirme hakkında bilgiler.</span>
-      </span>
-      <span class="entry-action"><span>Rehberi aç</span><b aria-hidden="true">↗</b></span>
+      <span class="game-card-title">Bloody Bastards</span>
+      <span class="game-card-description">Dövüş sistemi, silahlar, zırhlar ve karakter özelleştirme hakkında Türkçe rehberler.</span>
+      <span class="game-tags"><span>Dövüş</span><span>Ekipman</span><span>SSS</span></span>
+      <span class="game-card-footer"><strong>Rehberi aç</strong><span aria-hidden="true">↗</span></span>
     </a>
 
-    <a class="game-entry" href="{{ '/oyunlar/wplace.live/' | relative_url }}" aria-label="Wplace.live rehberini aç">
-      <span class="entry-emblem" aria-hidden="true">
-        <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
-          <rect x="9" y="9" width="8" height="8" fill="#aec39a"/>
-          <rect x="20" y="9" width="8" height="8" fill="#53694d"/>
-          <rect x="31" y="9" width="8" height="8" fill="#c8b487"/>
-          <rect x="9" y="20" width="8" height="8" fill="#53694d"/>
-          <rect x="20" y="20" width="8" height="8" fill="#aec39a"/>
-          <rect x="31" y="20" width="8" height="8" fill="#53694d"/>
-          <rect x="9" y="31" width="8" height="8" fill="#c8b487"/>
-          <rect x="20" y="31" width="8" height="8" fill="#53694d"/>
-          <rect x="31" y="31" width="8" height="8" fill="#aec39a"/>
-        </svg>
+    <a class="game-card" href="{{ '/oyunlar/wplace.live/' | relative_url }}" data-search="Wplace.live wplace live ortak piksel haritası çizim kurallar harita mekanikleri güncelleme" aria-label="Wplace.live rehberini aç">
+      <span class="game-card-top">
+        <span class="game-emblem game-emblem--pixel" aria-hidden="true">
+          <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
+            <rect x="8" y="8" width="9" height="9" fill="currentColor"/>
+            <rect x="20" y="8" width="9" height="9" fill="#f2ba72"/>
+            <rect x="32" y="8" width="9" height="9" fill="currentColor" opacity=".45"/>
+            <rect x="8" y="20" width="9" height="9" fill="#f2ba72" opacity=".65"/>
+            <rect x="20" y="20" width="9" height="9" fill="currentColor"/>
+            <rect x="32" y="20" width="9" height="9" fill="currentColor" opacity=".45"/>
+            <rect x="8" y="32" width="9" height="9" fill="currentColor" opacity=".45"/>
+            <rect x="20" y="32" width="9" height="9" fill="#f2ba72" opacity=".7"/>
+            <rect x="32" y="32" width="9" height="9" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="game-category">ORTAK PİKSEL HARİTASI</span>
+        <span class="game-index">02</span>
       </span>
-      <span class="entry-copy">
-        <span class="entry-category">02 / Ortak piksel haritası</span>
-        <strong class="entry-title">Wplace.live</strong>
-        <span class="entry-description">Harita mekanikleri, kurallar, güncellemeler ve oyuncu tavsiyeleri.</span>
-      </span>
-      <span class="entry-action"><span>Rehberi aç</span><b aria-hidden="true">↗</b></span>
+      <span class="game-card-title">Wplace.live</span>
+      <span class="game-card-description">Harita mekanikleri, kurallar, güncellemeler ve oyuncu tavsiyeleri.</span>
+      <span class="game-tags"><span>Harita</span><span>Kurallar</span><span>Güncellemeler</span></span>
+      <span class="game-card-footer"><strong>Rehberi aç</strong><span aria-hidden="true">↗</span></span>
     </a>
 
-    <a class="game-entry" href="{{ '/oyunlar/DATA-WING/' | relative_url }}" aria-label="DATA WING rehberini aç">
-      <span class="entry-emblem" aria-hidden="true">
-        <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
-          <path d="M7 24L25 10V19H41V29H25V38Z" fill="#aec39a"/>
-          <path d="M6 15H15 M4 24H15 M6 33H15" stroke="#c8b487" stroke-width="2" stroke-linecap="round"/>
-          <path d="M25 19V29" stroke="#53694d" stroke-width="1.5"/>
-        </svg>
+    <a class="game-card" href="{{ '/oyunlar/DATA-WING/' | relative_url }}" data-search="DATA WING hikâye odaklı arcade yarış momentum hareket seviyeler bölüm mekanikleri" aria-label="DATA WING rehberini aç">
+      <span class="game-card-top">
+        <span class="game-emblem game-emblem--arcade" aria-hidden="true">
+          <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
+            <path d="M7 24L25 10V19H41V29H25V38Z" fill="currentColor"/>
+            <path d="M6 15H15 M4 24H15 M6 33H15" fill="none" stroke="#f2ba72" stroke-width="2" stroke-linecap="round"/>
+            <path d="M25 19V29" stroke="#0c1115" stroke-width="1.5"/>
+          </svg>
+        </span>
+        <span class="game-category">HİKÂYE ODAKLI ARCADE</span>
+        <span class="game-index">03</span>
       </span>
-      <span class="entry-copy">
-        <span class="entry-category">03 / Hikâye odaklı arcade</span>
-        <strong class="entry-title">DATA WING</strong>
-        <span class="entry-description">Hareket, momentum ve seviyelerin oynanışa etkisi üzerine notlar.</span>
-      </span>
-      <span class="entry-action"><span>Rehberi aç</span><b aria-hidden="true">↗</b></span>
+      <span class="game-card-title">DATA WING</span>
+      <span class="game-card-description">Hareket, momentum ve bölüm mekaniklerine odaklanan rehberler.</span>
+      <span class="game-tags"><span>Momentum</span><span>Bölümler</span><span>SSS</span></span>
+      <span class="game-card-footer"><strong>Rehberi aç</strong><span aria-hidden="true">↗</span></span>
     </a>
+  </div>
+
+  <p class="archive-empty" id="archive-empty" hidden>Bu aramayla eşleşen oyun bulunamadı. Farklı bir ad veya konu dene.</p>
+</section>
+
+<section class="dataset-promo" aria-labelledby="dataset-promo-heading">
+  <div class="dataset-promo-copy">
+    <p class="section-kicker">AÇIK VERİ · SÜRÜM 1.3.0</p>
+    <h2 id="dataset-promo-heading">Aynı arşiv, makine tarafından da işlenebilir</h2>
+    <p>SSS, rehber bölümleri ve daha küçük iddia birimleri indirilebilir JSONL dosyalarında sunulur. Kaynak bağlantıları ve bilgi türü etiketleri kayıtlarda korunur.</p>
+    <div class="dataset-promo-meta"><span>JSONL</span><span>Kaynak bilgisi</span><span>İddia birimleri</span></div>
+  </div>
+  <div class="dataset-promo-actions">
+    <a class="dataset-promo-download" href="{{ '/veri-kumeleri/oyun-rehberi-tam-arsiv-v1.jsonl' | relative_url }}" download>Tam veri kümesini indir <span aria-hidden="true">↓</span></a>
+    <a class="dataset-promo-link" href="{{ '/veri-kumeleri/' | relative_url }}">Tüm veri dosyaları <span aria-hidden="true">↗</span></a>
   </div>
 </section>
 
-<aside class="archive-note">
-  <span class="note-mark" aria-hidden="true"></span>
-  <p><strong>Arşiv ilkesi</strong> Bilgiler mümkün olduğunda kaynaklarla desteklenir. Resmî açıklamalar ve oyun içi gözlemler birbirinden ayrılır.</p>
-</aside>
+<section class="archive-principles" id="ilkeler" aria-labelledby="principles-heading">
+  <div class="section-heading">
+    <div>
+      <p class="section-kicker">BİLGİ STANDARTLARI</p>
+      <h2 id="principles-heading">Bilgi kadar dayanağı da önemli</h2>
+    </div>
+  </div>
+  <div class="principle-grid">
+    <article class="principle-card">
+      <span class="principle-mark" aria-hidden="true">01</span>
+      <h3>Kaynağı takip et</h3>
+      <p>Mevcut olduğunda bilginin dayandığı resmî açıklama veya başvuru bağlantısı sunulur.</p>
+    </article>
+    <article class="principle-card">
+      <span class="principle-mark" aria-hidden="true">02</span>
+      <h3>Bilgi türünü ayırt et</h3>
+      <p>Resmî açıklamalar, oyun içi gözlemler ve yazar tavsiyeleri aynı şeymiş gibi gösterilmez.</p>
+    </article>
+    <article class="principle-card">
+      <span class="principle-mark" aria-hidden="true">03</span>
+      <h3>Veriyi yeniden kullan</h3>
+      <p>İçerikler, uygun kullanım alanları ve lisans sınırları açıklanan açık dosyalarla paylaşılır.</p>
+    </article>
+  </div>
+</section>
+
+<script src="{{ '/assets/js/archive-search.js' | relative_url }}" defer></script>
