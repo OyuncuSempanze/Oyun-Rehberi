@@ -6,7 +6,7 @@ description: Wplace için resmî yama notlarından hazırlanan güncelleme özet
 
 # Güncellemeler
 
-*Son kontrol: 15 Ekim 2026. Resmî yama notlarında listelenen en güncel sürüm 1.7.7. Aşağıda önemli değişikliklerin kısa bir özeti bulunur. Her sürümün bağlantısından ayrıntılı notlara ulaşılabilir.*
+*Son kontrol 17 Ekim 2026. [Resmî Kaynak](https://wplace.live/patch-notes) sayfasında listelenen en güncel sürüm 1.7.7. Aşağıda önemli değişikliklerin kısa bir özeti bulunur. Her sürümün bağlantısından ayrıntılı notlara ulaşılabilir.*
 
 ## 1.7.7 — Arayüz ve erişilebilirlik
 

@@ -144,6 +144,8 @@ def validate(records:list[dict[str,Any]])->None:
         if any(not r[k].strip() for k in text_fields):raise ValueError(f"{r['id']}: empty text field")
         if not isinstance(r["evidence_types"],list) or any(x not in LABELS.values() for x in r["evidence_types"]):
             raise ValueError(f"{r['id']}: invalid evidence_types")
+        if not r["evidence_types"]:
+            raise ValueError(f"{r['id']}: evidence_types must not be empty")
         if not isinstance(r["sources"],list):
             raise ValueError(f"{r['id']}: sources must be a list")
         for source in r["sources"]:

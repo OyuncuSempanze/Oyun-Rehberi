@@ -6,13 +6,13 @@ description: "Wplace.live piksel yenilenmesi, Droplets, mağaza, klan merkezi ve
 
 # Mekanikler
 
-*Doğrulama notu (15 Ekim 2026): Bazı sayısal değerler, mağaza ücretleri ve ilerleme bilgileri topluluk kaynaklarına veya oyun içi gözleme dayanır. Bunların tamamı resmî yama notlarında doğrulanamıyor.*
+*Kaynak kontrolü 17 Ekim 2026 tarihinde yapıldı. [Resmî Kaynak](https://wplace.live/patch-notes) ve topluluk kaynakları ayrı değerlendirildi. Bazı sayısal değerler, mağaza ücretleri ve ilerleme bilgileri topluluk kaynaklarına veya oyun içi gözleme dayanır. Bunların tamamı resmî yama notlarında doğrulanamıyor. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md) [Kaynak](https://placepixels.com/wplace-droplets)*
 
 Güncel ücretlerde oyun içindeki mağaza ve resmî yama notları esas alınmalıdır. [Öneri]
 
 ## Piksel kapasitesi ve yenilenmesi
 
-- Oyuncular başlangıçta 30 piksel hakkıyla başlar ve harcanan her piksel her 30 saniyede bir yenilenir. Bu yenileme süresi normal kanvas için sabittir. Oyuncular bu hızı **ana haritada** kısaltamaz [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md) [Resmî Kaynak](https://wplace.live/patch-notes). (Not: Klan merkezlerinde şarj yenileme süresi, “Alliance Headquarters” yükseltmeleriyle klana özel haritada 10 ya da 5 saniyeye indirilebilir.)
+- TeamRealB/Wplace-Protocol topluluk teknik belgesi, başlangıç kapasitesinin 30 piksel olduğunu ve her pikselin 30 saniyede bir yenilendiğini belirtiyor. Bu aralık resmî kaynakta doğrudan doğrulanmış değildir. Wplace'in resmî oynama rehberi, mevcut kapasite ve yenilenme süresinin oyun içinden kontrol edilmesini, yükseltmelerin ve kanvasın sınırları etkileyebileceğini söylüyor. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md) [Resmî Kaynak](https://wplace.live/how-to-play). Klan merkezlerinde yenilenmenin 10 ya da 5 saniyeye düşürülebildiği bilgisi de topluluk teknik belgesine dayalıdır ve resmî kaynakta ayrı doğrulanmamıştır. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
 
 ## Droplets para birimi
 
@@ -24,19 +24,27 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 ## Dükkan: Anında +30 Piksel
 
-- **Anında +30 Piksel:** Mevcut piksel hakkına 30 adet ekler. Maliyet: 500 Droplets [Kaynak](https://placepixels.com/wplace-droplets).
+- **Anında +30 Piksel:** Mevcut piksel hakkına 30 adet ekler. Maliyeti 500 Droplets olarak listelenmiştir. [Kaynak](https://placepixels.com/wplace-droplets)
+
+*Fiyat bilgisinin açık kaynaklardaki son kontrol tarihi 4 Eylül 2026 olarak belirtiliyor. Bu fiyat 17 Ekim 2026 tarihinde oyun içi mağazadan bağımsız doğrulanamadı. Güncel tutar için oyun içi mağazayı kontrol et.* [Kaynak](https://placepixels.com/wplace-droplets)
 
 ## Dükkan: Kalıcı +5 Kapasite
 
-- **Kalıcı +5 Kapasite:** Piksel havuzu maksimumunu 5 artırır. Maliyet: 500 Droplets [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md).
+- **Kalıcı +5 Kapasite:** Piksel havuzu maksimumunu 5 artırır. Maliyeti topluluk teknik belgesinde 500 Droplets olarak listelenmiştir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
+
+*Place Pixels sayfası da bu fiyat için son kontrol tarihini 4 Eylül 2026 olarak veriyor. Fiyat 17 Ekim 2026 tarihinde oyun içi mağazadan bağımsız doğrulanamadı. Güncel tutar için oyun içi mağazayı kontrol et.* [Kaynak](https://placepixels.com/wplace-droplets)
 
 ## Dükkan: Bayrak (Ulusal Bölge)
 
-- **Bayrak (Ulusal Bölge):** 20.000 Droplets karşılığında satın alınır. Aktifleştirilen ülke bayrağı altında boyanan her pikselin %10’u anında geri gelir [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md). Bayrak bir defa satın alındığında **kalıcı olarak** hesaba eklenir. **(Yani örneğin Türkiye bayrağı alınıp seçildiğinde, Türkiye sınırları içinde boyanan piksellerin %10’u anında geri kazanılır.)**
+- **Bayrak (Ulusal Bölge):** 20.000 Droplets karşılığında satın alınır. Aktifleştirilen ülke bayrağı altında boyanan her pikselin %10’u anında geri gelir. Bu fiyat ve oran topluluk teknik belgesinde açıklanmıştır. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md) Bayrak bir defa satın alındığında **kalıcı olarak** hesaba eklenir. **(Yani örneğin Türkiye bayrağı alınıp seçildiğinde, Türkiye sınırları içinde boyanan piksellerin %10’u anında geri kazanılır.)**
+
+*Fiyat ve oran 17 Ekim 2026 tarihinde oyun içi mağazadan bağımsız doğrulanamadı. Güncel bilgi için oyun içindeki mağazayı kontrol et.* [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
 
 ## Dükkan: Kozmetik Ürünler
 
-- **Kozmetik Ürünler:** Avatar veya kilitli renk gibi öğelerdir. Örneğin avatar özelleştirme 20.000, premium renkler ise 2.000 Droplets’tır [Kaynak](https://placepixels.com/wplace-droplets). Bu ürünler yalnızca görsel amaçlıdır ve oynanışı etkilemez.
+- **Kozmetik Ürünler:** Avatar veya kilitli renk gibi öğelerdir. Örneğin avatar özelleştirme 20.000, premium renkler ise 2.000 Droplets’tır. [Kaynak](https://placepixels.com/wplace-droplets) Bu ürünlerin yalnızca görsel amaçlı olduğu ve oynanışı etkilemediği oyun içinde gözlemlenmiştir. [Oyun İçi Gözlem]
+
+*Fiyat bilgisinin açık kaynaklardaki son kontrol tarihi 4 Eylül 2026 olarak belirtiliyor. Bu fiyatlar 17 Ekim 2026 tarihinde oyun içi mağazadan bağımsız doğrulanamadı. Güncel tutar için oyun içi mağazayı kontrol et.* [Kaynak](https://placepixels.com/wplace-droplets)
 
 ## Dükkan: Özel Kozmetik Ürünler
 
@@ -44,11 +52,11 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 ## Damlacık kazanma: piksel boyayarak
 
-- **Piksel Boyayarak:** Ana haritaya her yerleştirilen piksel için 1 Droplet verilir [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md).
+- **Piksel Boyayarak:** Topluluk teknik belgesine göre ana haritaya her yerleştirilen piksel için 1 Droplet verilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
 
 ## Damlacık kazanma: seviye atlayarak
 
-- **Seviye Atlayarak:** Hesap seviyesi yükseldiğinde 500 Droplets kazanılır [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md).
+- **Seviye Atlayarak:** Topluluk teknik belgesine göre hesap seviyesi yükseldiğinde 500 Droplets kazanılır. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
 
 ## Damlacık kazanma: gerçek parayla satın alarak
 
@@ -61,7 +69,9 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 ## Klan oluşturma
 
-- **Klan Oluşturma:** Yeni bir klan kurmak için 25.000 Droplet gereklidir [Oyun İçi Gözlem]. Klan kurulduğunda bir Alliance Profile (topluluk profili) oluşturulur ve lider/kurucusu belirlenir.
+- **Klan Oluşturma:** Yeni bir klan kurmak için 25.000 Droplet gereklidir. [Oyun İçi Gözlem] Klan kurulduğunda bir Alliance Profile (topluluk profili) oluşturulur ve lider/kurucusu belirlenir.
+
+*Bu maliyete ilişkin gözlem tarihi arşivde belirtilmemiştir. Güncel tutarı oyun içinden yeniden kontrol etmek gerekir.* [Oyun İçi Gözlem]
 
 ## Klan merkezi: ortak kanvas
 

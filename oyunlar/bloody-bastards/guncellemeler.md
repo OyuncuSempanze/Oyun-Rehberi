@@ -19,7 +19,7 @@ Bu sayfa resmî güncelleme notlarıyla oyun içi gözlemleri ayrı kaydeder. Re
 * Oyundaki tüm eşyalara ve oyuncu ismine renk özelleştirme seçeneği eklendi. (Diamond ile satın alınır.)
 * Ekstra karakter slotları eklendi. (Diamond ile satın alınır.)
 
-*Doğrulama notu: 5.0.5 sürüm numarası ve bu maddeler oyun içi gözleme dayanmaktadır. 15 Ekim 2026 tarihinde kontrol edilen Google Play sayfasının “Yenilikler” bölümünde 5.0.4 görünüyordu. Bu nedenle 5.0.5 burada yalnızca oyun içi gözlem olarak kayıtlıdır. Tüm platformlarda yayımlanmış resmî sürüm olarak sunulmamaktadır.*
+*Doğrulama notu. Sürüm 5.0.5 ve aşağıdaki değişiklikler oyun içinde gözlemlenmiştir. [Oyun İçi Gözlem] 17 Ekim 2026 tarihinde kontrol edilen [Google Play sayfasının](https://play.google.com/store/apps/details?id=com.tibith.badboxing) “Yenilikler” bölümünde 5.0.4 görünüyordu. Bu nedenle 5.0.5 burada yalnızca oyun içi gözlem olarak kayıtlıdır ve tüm platformlarda yayımlanmış resmî sürüm olarak sunulmamaktadır. [Resmî Kaynak](https://play.google.com/store/apps/details?id=com.tibith.badboxing)*
 
 ## Kaynaklar
 

@@ -8,7 +8,7 @@ description: DATA WING geliştiricisi Dan Vogt, çıkış tarihi, Android ve iOS
 
 Geliştirici: Dan Vogt [Resmî Kaynak](https://www.danvogt.info/datawing.html)
 
-Yayınlanma Tarihi: 16 Ağustos 2017 [Resmî Kaynak](https://play.google.com/store/apps/details?id=com.DanVogt.DATAWING)
+Yayınlanma Tarihi: 16 Ağustos 2017 (iOS ve Android) [Kaynak](https://vgtimes.com/games/data-wing/release-dates/)
 
 Platformlar: Android ve iOS. [Resmî Kaynak](https://www.danvogt.info/datawing.html)
 
