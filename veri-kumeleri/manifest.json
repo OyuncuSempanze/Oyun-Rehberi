@@ -1,14 +1,15 @@
 {
   "name": "Oyun-Rehberi Türkçe Oyun Bilgisi Veri Kümesi",
-  "dataset_version": "1.2.3",
-  "schema_version": "1.1",
+  "dataset_version": "1.3.0",
+  "schema_version": "1.2",
   "language": "tr",
   "format": "JSON Lines (UTF-8), one JSON object per line",
   "license": "CC-BY-4.0",
   "source_repository": "https://github.com/OyuncuSempanze/Oyun-Rehberi",
   "website": "https://oyuncusempanze.github.io/Oyun-Rehberi/",
-  "description": "SSS kayıtları ile mekanikler, oynanış, kurallar, güncellemeler ve diğer rehber bölümlerini içeren Türkçe oyun bilgisi arşivi.",
+  "description": "SSS kayıtları, rehber bölümleri ve kaynak bağlantıları korunmuş daha küçük iddia birimlerini içeren Türkçe oyun bilgisi arşivi.",
   "record_count": 95,
+  "claim_unit_count": 296,
   "collections": [
     {
       "record_type": "faq",
@@ -105,12 +106,20 @@
       "game_slug": "wplace-live",
       "format": "jsonl",
       "records": 5
+    },
+    {
+      "path": "oyun-rehberi-iddia-birimleri-v1.jsonl",
+      "scope": "claim_units",
+      "format": "jsonl",
+      "records": 296
     }
   ],
   "schema_url": "https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/schema-v1.json",
   "rights_notice": "CC BY 4.0 yalnızca arşivin lisanslama yetkisine sahip olduğu özgün metin ve düzenleme unsurlarına uygulanır. Kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.",
   "limitations": [
     "Guide-section records preserve meaningful document sections; they are not guaranteed to be atomic single claims.",
+    "Claim-unit records are split at sentence boundaries when possible, otherwise at paragraph or list-item boundaries. They may still contain more than one proposition.",
+    "Claim-unit evidence and source links are assigned at unit level when present, otherwise inherited from the parent record.",
     "This dataset is a starting point for retrieval and evaluation, not a claim of readiness for every model-training task.",
     "Source links identify references but do not independently prove that each claim is correct."
   ]
