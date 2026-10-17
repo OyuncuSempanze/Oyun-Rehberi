@@ -16,6 +16,12 @@ description: "Wplace için oyun içi gözlemlere dayalı başlangıç ve kaynak 
 
 **2) İlk Zamanlarda Hemen Bayrak Satın Almak:** Her ne kadar %10 piksel iadesi sağlasa da, bu iadenin tek bir boyama işlemi üzerinden hesaplandığı ("Paint" butonuna bastıktan sonra işlem hesaplanır ve diğer işlemlerle birikmez) gözlemlenmiştir. [Oyun İçi Gözlem] Yani henüz kapasiteniz düşükken bunu almak fazla kârlı değildir. Çünkü düşük kapasite, daha az piksel ve dolayısıyla daha az geri iade demektir. [Öneri]
 
+## Büyük Çizimleri Aşamalara Bölmek
+
+[Oyun İçi Gözlem]
+
+[Öneri]
+
 ## Özellikle Dikkat Edilmesi Gereken Yer
 
 **Oyun Kurallarına Uymak:** Oyunda açıkça belirtilmiş bazı kurallar vardır. Bu kuralları ihlal etmek hesabın kapanmasına veya geçici olarak uzaklaştırılmaya yol açabilir. [Resmî Kaynak](https://wplace.live/terms/community-guidelines)

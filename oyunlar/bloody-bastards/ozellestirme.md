@@ -20,3 +20,7 @@ Karakterin vücut boyutunu küçültmek veya büyütmek, **hitbox'un boyutunu da
 Oyuncu, sahip olduğu zırh, kask, kalkan, kılıç ve diğer eşyalarının rengini değiştirebilir. Bunların yanı sıra oyuncu, isminin rengini ve isminin arkaplan rengini özelleştirebilir. **[Oyun İçi Gözlem]**
 
 Eşya rengini değiştirmek **hitbox'un boyutunu veya hasarı etkilemez**. [Oyun İçi Gözlem]
+
+## Görünüm Değişikliklerinin Kaydedilmesi
+
+[Oyun İçi Gözlem]

@@ -62,6 +62,10 @@ Genel olarak 500 ve 1000 seviyelerinde boss ortaya çıkar. Bosslar, diğer raki
 
 Ancak bu durum medeniyete göre değişebilir. The British Isles (İngiliz Adaları) medeniyetinde yapılan gözlemlerde yalnızca 500. seviyede boss ortaya çıktığı, 1000. seviyede ise özel bir bossun ortaya çıkmadığı görülmüştür. **[Oyun İçi Gözlem]**
 
+## Maç Sonu ve Sonuç Ekranı
+
+[Oyun İçi Gözlem]
+
 ## Kaynak
 
 [Oyunun Resmî Web Sitesi](https://tibith.com/#/bloodybastards/)

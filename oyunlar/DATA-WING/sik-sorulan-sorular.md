@@ -21,3 +21,7 @@ Oyunda rekabetçi bir taç sistemi ve liderlik tabloları bulunuyor. Resmî aç�
 ## Türkçe dil desteği var mı?
 
 **Evet,** oyunda Türkçe dil desteği **vardır.** [Oyun İçi Gözlem]
+
+## Oyunu kapatıp yeniden açınca ilerleme korunuyor mu?
+
+[Oyun İçi Gözlem]

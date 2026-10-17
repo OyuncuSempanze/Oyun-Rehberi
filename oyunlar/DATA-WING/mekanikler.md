@@ -62,6 +62,10 @@ Hayalet yarışçıların izlediği yolu takip etmek, dönüşlerde nasıl hız 
 
 Duvarlara sürterek ilerlemek, özellikle süre hedeflerinde işe yarıyor. Ama amaç duvara mümkün olduğunca sert çarpmak değil, doğru açıyla yanından ilerleyip itiş kazanmak. Yanlış açıyla çarpmak hız kaybettirebiliyor. [Resmî Kaynak](https://medium.com/@davogt/welcoming-players-into-data-wing-92c6587091ef) [Oyun İçi Gözlem] [Öneri]
 
+## Bölüm Yeniden Başlatma ve Tekrar Deneme
+
+[Oyun İçi Gözlem]
+
 ## Kaynaklar
 
 - [DATA WING - Google Play](https://play.google.com/store/apps/details?id=com.DanVogt.DATAWING) [Resmî Kaynak]

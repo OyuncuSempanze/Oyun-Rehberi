@@ -10,6 +10,18 @@ description: "Wplace.live piksel yenilenmesi, Droplets, mağaza, klan merkezi ve
 
 Güncel fiyatları oyun içi mağazadan kontrol et. [Öneri]
 
+## Haritada Gezinme ve Yön Kontrolü
+
+[Oyun İçi Gözlem]
+
+## Piksel Yerleştirme Akışı
+
+[Oyun İçi Gözlem]
+
+## Favori Konumları Kaydetme ve Bulma
+
+[Oyun İçi Gözlem]
+
 ## Piksel yenilenmesi
 
 - Ana kanvasta harcanan her piksel 30 saniye sonra yenilenir. [Oyun İçi Gözlem]
