@@ -6,7 +6,7 @@ permalink: /veri-kumeleri/
 ---
 
 <section class="dataset-hero" aria-labelledby="dataset-heading">
-  <p class="dataset-kicker">AÇIK VERİ / SÜRÜM 1.2.2</p>
+  <p class="dataset-kicker">AÇIK VERİ / SÜRÜM 1.2.3</p>
   <h1 id="dataset-heading">Türkçe oyun bilgisi, makine tarafından işlenebilir biçimde</h1>
   <p class="dataset-lead">Oyun-Rehberi'nin soru-cevap kayıtlarını ve daha dar konu başlıklarına ayrılmış rehber bölümlerini indir. Kaynak bağlantıları ve bilgi türü etiketleri kayıtlarda korunur.</p>
   <p>Dosyaları kendi GitHub depomuzda tutuyoruz. Hugging Face hesabı veya harici veri servisi gerekmiyor.</p>

@@ -6,60 +6,54 @@ description: "Wplace.live piksel yenilenmesi, Droplets, mağaza, klan merkezi ve
 
 # Mekanikler
 
-*Kaynak kontrolü 17 Ekim 2026 tarihinde yapıldı. [Resmî Kaynak](https://wplace.live/patch-notes) ve topluluk kaynakları ayrı değerlendirildi. Bazı sayısal değerler, mağaza ücretleri ve ilerleme bilgileri topluluk kaynaklarına veya oyun içi gözleme dayanır. Bunların tamamı resmî yama notlarında doğrulanamıyor. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md) [Kaynak](https://placepixels.com/wplace-droplets)*
+*Kaynak kontrolü 17 Ekim 2026. Resmî kaynaklar, topluluk kaynakları ve oyun içi gözlemler ayrı etiketlenir. Bazı sayısal değerler resmî kaynaklarda doğrulanmıyor. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md) [Kaynak](https://placepixels.com/wplace-droplets)*
 
-Güncel fiyatı oyun içi mağazadan kontrol et. [Öneri]
+Güncel fiyatları oyun içi mağazadan kontrol et. [Öneri]
 
 ## Piksel yenilenmesi
 
-- Normal kanvasta harcanan her piksel 30 saniyede yenilenir. [Oyun İçi Gözlem]
-- Başlangıç kapasitesi topluluk teknik belgesinde 30 piksel olarak belirtilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
-- Klan merkezlerinde yenilenme süresi yükseltmelere göre 10 ya da 5 saniyeye indirilebilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
-- Wplace'in resmî oynama rehberi, mevcut kapasite ve yenilenme süresinin oyun içinden kontrol edilmesini, yükseltmelerin ve kanvasın sınırları etkileyebileceğini söylüyor. [Resmî Kaynak](https://wplace.live/how-to-play)
+- Ana kanvasta harcanan her piksel 30 saniye sonra yenilenir. [Oyun İçi Gözlem]
+- Ana kanvasta bu süreyi kısaltan bir seviye yükseltmesi yoktur. [Oyun İçi Gözlem]
+- Başlangıç kapasitesi 30 piksel olarak belirtilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
+- Klan HQ'sunda bekleme süresi ilgili klan yükseltmesiyle kısaltılabilir. Teknik belgede 10 ve 5 saniyelik süreler belirtilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
+- Güncel kapasite ve yenilenme süresini oyun içinden kontrol et. [Resmî Kaynak](https://wplace.live/how-to-play)
 
 ## Droplets
 
-- Droplets, kozmetik eşyalar ve oyun içi geliştirmeler için kullanılan puanlardır. Örnekler arasında profil resimleri, avatarlar, bayraklar ve renk paketleri bulunur. [Kaynak](https://placepixels.com/wplace-droplets)
+- Droplets, kozmetik eşyalar ve oyun içi geliştirmelerde kullanılan puanlardır. [Kaynak](https://placepixels.com/wplace-droplets)
 
 ## Droplets ve Prism
 
-Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine bağlı olarak Droplets veya Prism ödülü verilebildiğini belirtiyor. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.3)
+Resmî 1.7.3 yama notlarına göre bazı geri bildirim ve hata bildirimleri için Droplets veya Prism ödülü verilebilir. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.3)
 
 ## +30 piksel
 
-- Mevcut piksel hakkına 30 piksel ekler. Fiyat 500 Droplets. [Oyun İçi Gözlem]
-
-*Fiyat değişebilir.* [Oyun İçi Gözlem]
+- Mevcut piksel hakkına 30 piksel ekler. Ücreti 500 Droplets. [Oyun İçi Gözlem]
 
 ## +5 kapasite
 
-- Piksel havuzu kapasitesini kalıcı olarak 5 artırır. Fiyat 500 Droplets. [Oyun İçi Gözlem]
-
-*Fiyat değişebilir.* [Oyun İçi Gözlem]
+- Piksel havuzu kapasitesini kalıcı olarak 5 artırır. Ücreti 500 Droplets. [Oyun İçi Gözlem]
 
 ## Ülke bayrağı
 
-- Fiyat 20.000 Droplets. [Oyun İçi Gözlem] Aktif ülke bayrağı altında boyanan her pikselin %10’u anında geri gelir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md) Satın alınan bayrak kalıcı olarak hesaba eklenir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
-
-*Fiyat değişebilir.* [Oyun İçi Gözlem]
+- Ücreti 20.000 Droplets. [Oyun İçi Gözlem]
+- Aktif bayrakla boyanan piksellerin %10’u geri gelir ve satın alınan bayrak kalıcıdır. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
 
 ## Kozmetik ürünler
 
-- Avatar özelleştirme 20.000 Droplets, premium renkler 2.000 Droplets. [Oyun İçi Gözlem] Bu ürünler yalnızca görünümü değiştirir. [Oyun İçi Gözlem]
-
-*Fiyatlar değişebilir.* [Oyun İçi Gözlem]
+- Avatar özelleştirme 20.000 Droplets, premium renkler 2.000 Droplets. [Oyun İçi Gözlem]
 
 ## Özel kozmetikler
 
-- **Özel Kozmetik Ürünler:** Normal kozmetiklerden farklı olarak yalnızca **Prism** ile satın alınabilir ve daha fazla görsel efekt içerir. [Resmî Kaynak](https://wplace.live/patch-notes/1.5.0)
+- Prism ile satın alınır ve normal kozmetiklerden daha fazla görsel efekt içerir. [Resmî Kaynak](https://wplace.live/patch-notes/1.5.0)
 
 ## Piksel boyama ödülü
 
-- Ana haritaya yerleştirilen her piksel için 1 Droplet verildiği topluluk teknik belgesinde belirtilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
+- Ana haritaya yerleştirilen her pikselin 1 Droplet kazandırdığı belirtilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
 
 ## Seviye atlama ödülü
 
-- Hesap seviyesi yükseldiğinde 500 Droplets kazanıldığı topluluk teknik belgesinde belirtilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
+- Seviye atlayınca 500 Droplets verildiği belirtilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
 
 ## Droplets satın alma
 
@@ -67,43 +61,40 @@ Resmî 1.7.3 yama notları, bazı geri bildirim ve hata bildirimlerinin etkisine
 
 ## Prism satın alma
 
-- **Gerçek Parayla Satın Alarak:** Prism, mevcut sürümde (1.7.7) sadece **gerçek para** ile satın alınabiliyor. Gelecekteki sürümlerde farklılıklar **olabilir.** [Resmî Sürüm Notları](https://wplace.live/patch-notes) [Prism ile premium kozmetiklerin ilişkisi](https://wplace.live/patch-notes/1.5.0)
-
+Prism, 1.7.7 sürümünde yalnızca gerçek parayla satın alınabiliyor. Sonraki sürümlerde değişebilir. [Resmî Sürüm Notları](https://wplace.live/patch-notes) [Prism ile premium kozmetiklerin ilişkisi](https://wplace.live/patch-notes/1.5.0)
 
 ## Klan kurma
 
-- Klan kurma maliyeti 25.000 Droplet. [Oyun İçi Gözlem] Klan kurulduğunda bir Alliance Profile oluşturulur ve kurucusu belirlenir.
-
-*Maliyet değişebilir.* [Oyun İçi Gözlem]
+- Klan kurma maliyeti 25.000 Droplet. [Oyun İçi Gözlem] Klan kurulunca bir Alliance Profile oluşturulur ve kurucusu belirlenir.
 
 ## Klan kanvası
 
-- **Ortak Kanvas (Klan Merkezi):** Her klanın oyun haritası dışında özel bir boyama alanı (Headquarters) vardır. Klan üyeleri bu alanda kendi piksel havuzlarından harcama yaparak boyama yapabilirler. [Resmî Kaynak](https://wplace.live/patch-notes). Bu “HQ” kanvası ana haritadan tamamen ayrıdır. Üyeler burada boyama yaptığında ana kanvastaki hakları etkilenmez.
-  
+- Her klanın ana haritadan ayrı bir HQ kanvası vardır. Üyeler burada kendi piksel havuzlarını kullanır ve bu boyamalar ana kanvas haklarını etkilemez. [Resmî Kaynak](https://wplace.live/patch-notes)
+
 ## Klan şablonları
 
-- **Şablon Paylaşımı:** Klan liderleri veya yöneticileri, klana özel ortak şablonlar (overlays) ekleyebilir. Bu şablonlar klan üyelerine sunulur ve herkes tarafından kullanılabilir [Resmî Kaynak](https://wplace.live/patch-notes). (Örneğin bir turnuva veya proje şablonu klan ile paylaşılarak bütün üyelerin aynı referans üzerinde çalışması sağlanabilir.)
-  
+- Klan liderleri ve yöneticileri ortak şablon ekleyebilir. Şablonlar tüm klan üyelerince kullanılabilir. [Resmî Kaynak](https://wplace.live/patch-notes)
+
 ## Klan ilerlemesi
 
-- **Klan İlerlemesi:** Klanlar, üyelerinin ana haritaya yerleştirdiği her geçerli piksel için Alliance Coin kazanır. Liderler bu puanları başlık, bayrak, yeni renkler ve HQ yükseltmeleri gibi geliştirmelerde kullanabilir. Klan merkezinde profil resmi ve açıklama gibi kişiselleştirme seçenekleri de bulunur. [Resmî Kaynak](https://wplace.live/patch-notes)
+- Klanlar ana haritaya yerleştirilen her geçerli üye pikseli için Alliance Coin kazanır. Puanlar başlık, bayrak, renk ve HQ yükseltmelerinde kullanılabilir. Klan profili de özelleştirilebilir. [Resmî Kaynak](https://wplace.live/patch-notes)
 
 ## Şablon dosyaları
 
-- Oyuncular şablon (overlay) olarak PNG, JPEG, WebP, PSD ve ORA dosyaları yükleyebilir [Resmî Kaynak](https://wplace.live/patch-notes). PSD ve ORA dosyaları katmanlarını koruyarak içe aktarılabilir. Yüklenen şablonlar döndürülebilir, ölçeklenebilir ve yeni katmanlarla düzenlenebilir.
-  
+- PNG, JPEG, WebP, PSD ve ORA dosyaları yüklenebilir. PSD ve ORA katmanları korunarak içe aktarılabilir. Şablonlar döndürülebilir, ölçeklenebilir ve yeni katmanlarla düzenlenebilir. [Resmî Kaynak](https://wplace.live/patch-notes)
+
 ## Şablonlar otomatik boyamaz
 
 - Şablonlar otomatik boyama yapmaz, yalnızca referans görseli sunar. [Oyun İçi Gözlem]
 
 ## Oyuncu bildirimi
 
-İhlal şüphesi olan piksele tıklayıp oyuncu profilini aç. Üç nokta menüsünden Report seçeneğini seç ve gerekçeyi belirt. Bu işlem akışı oyun içinde gözlemlenmiştir. [Oyun İçi Gözlem]
+İhlal şüphesi olan piksele tıkla, profili aç ve üç nokta menüsünden Report seçeneğini seç. Gerekçeyi belirt. [Oyun İçi Gözlem]
 
 ## Bildirim açıklaması
 
-Başvuruya piksel konumunu ve şüphe nedenini eklemek yararlı olabilir. [Öneri]
+Başvuruya piksel konumunu ve ihlal nedenini eklemek yararlı olabilir. [Öneri]
 
 ## Bildirim formu
 
-Wplace-Protocol topluluk belgesine göre bildirim formu kullanıcı, konum ve yakınlaştırma bilgileri, gerekçe, açıklama ve ekran görüntüsü içerebilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
+Wplace-Protocol belgesine göre form kullanıcı, konum ve yakınlaştırma bilgileri, gerekçe, açıklama ve ekran görüntüsü içerebilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
