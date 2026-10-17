@@ -12,6 +12,7 @@ on:
     paths:
       - "oyunlar/**/*.md"
       - "scripts/build_dataset.py"
+      - "scripts/validate_dataset_schema.py"
       - "veri-kumeleri/**"
       - ".github/workflows/validate-dataset.yml"
 
