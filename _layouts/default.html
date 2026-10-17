@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#141a15">
+  <meta name="theme-color" content="#0b1116">
   {% seo %}
   {% if page.robots %}
   <meta name="robots" content="{{ page.robots | escape }}">
@@ -49,11 +49,19 @@
       {% assign game_path = '/oyunlar/DATA-WING/' %}
     {% endif %}
 
-    {% if game_path != '' and page.name != 'index.md' %}
+    {% if game_path != '' %}
     <div class="breadcrumbs" aria-label="İçerik yolu">
       <a href="{{ '/' | relative_url }}">Ana sayfa</a>
       <span aria-hidden="true">›</span>
-      <a href="{{ game_path | relative_url }}">{{ game_label }} arşivi</a>
+      {% if page.name == 'index.md' %}
+      <a href="{{ '/' | relative_url }}#arsiv">Oyun arşivi</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">{{ game_label }}</span>
+      {% else %}
+      <a href="{{ game_path | relative_url }}">{{ game_label }} rehberi</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">{{ page.title | default: page.name | escape }}</span>
+      {% endif %}
     </div>
     {% endif %}
 
@@ -63,7 +71,10 @@
 
     <footer class="site-footer">
       <span class="footer-note">Kaynaklar ve oyun içi gözlemler birbirinden ayrı tutulur.</span>
-      <a href="{{ '/lisans/' | relative_url }}">Lisans: CC BY 4.0</a>
+      <div class="footer-links">
+        <a href="https://github.com/OyuncuSempanze/Oyun-Rehberi">Kaynak depo ↗</a>
+        <a href="{{ '/lisans/' | relative_url }}">Lisans: CC BY 4.0</a>
+      </div>
     </footer>
   </div>
 </body>
