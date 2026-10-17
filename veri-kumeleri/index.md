@@ -61,7 +61,7 @@ permalink: /veri-kumeleri/
   <article class="dataset-card">
     <p class="dataset-card-kicker">OYUN ARŞİVİ / JSONL</p>
     <h3>Bloody Bastards</h3>
-    <p>SSS, oynanış, silahlar, zırhlar, özelleştirme ve güncelleme kayıtları.</p>
+    <p>SSS, oynanış, ekipman, özelleştirme ve güncelleme kayıtları.</p>
     <div class="dataset-card-links">
       <a class="dataset-download" href="{{ '/veri-kumeleri/bloody-bastards-tam-arsiv-v1.jsonl' | relative_url }}" download>Tam arşiv <span aria-hidden="true">↓</span></a>
       <a class="dataset-secondary-link" href="{{ '/veri-kumeleri/bloody-bastards-sss-v1.jsonl' | relative_url }}" download>Yalnızca SSS</a>
