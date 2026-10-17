@@ -6,9 +6,9 @@ permalink: /veri-kumeleri/
 ---
 
 <section class="dataset-hero" aria-labelledby="dataset-heading">
-  <p class="dataset-kicker">AÇIK VERİ / SÜRÜM 1.2.3</p>
+  <p class="dataset-kicker">AÇIK VERİ / SÜRÜM 1.3.0</p>
   <h1 id="dataset-heading">Türkçe oyun bilgisi, makine tarafından işlenebilir biçimde</h1>
-  <p class="dataset-lead">Oyun-Rehberi'nin soru-cevap kayıtlarını ve daha dar konu başlıklarına ayrılmış rehber bölümlerini indir. Kaynak bağlantıları ve bilgi türü etiketleri kayıtlarda korunur.</p>
+  <p class="dataset-lead">Oyun-Rehberi'nin soru-cevap kayıtlarını, rehber bölümlerini ve arama için daha küçük iddia birimlerini indir. Kaynak bağlantıları ve bilgi türü etiketleri kayıtlarda korunur.</p>
   <p>Dosyaları kendi GitHub depomuzda tutuyoruz. Hugging Face hesabı veya harici veri servisi gerekmiyor.</p>
 </section>
 
@@ -32,6 +32,12 @@ permalink: /veri-kumeleri/
     <h3>Konulara göre bilgi kayıtları</h3>
     <p>Mekanik, kural, güncelleme, oynanış ve tavsiye içerikleri. Her kayıt asıl başlığını ve rehber bağlantısını korur.</p>
     <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-rehber-bolumleri-v1.jsonl' | relative_url }}" download>Rehber bölümlerini indir <span aria-hidden="true">↓</span></a>
+  </article>
+  <article class="dataset-card">
+    <p class="dataset-card-kicker">İDDİA BİRİMLERİ / JSONL</p>
+    <h3>Arama için daha küçük kayıtlar</h3>
+    <p>SSS yanıtları ve rehber bölümleri mümkün olduğunda cümlelere, aksi durumda paragraf veya madde düzeyine ayrılır. Her kayıt kaynak kaydına, kanıt türüne ve kaynak bağlantılarına bağlanır. Her satırın mutlaka tek bir bağımsız iddia içerdiği garanti edilmez.</p>
+    <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-iddia-birimleri-v1.jsonl' | relative_url }}" download>İddia birimlerini indir <span aria-hidden="true">↓</span></a>
   </article>
   <article class="dataset-card">
     <p class="dataset-card-kicker">SSS / JSONL</p>
@@ -76,7 +82,7 @@ permalink: /veri-kumeleri/
 <h2>Metaveri ve şema</h2>
 <div class="dataset-grid dataset-grid--utility">
   <article class="dataset-card"><h3>Manifest</h3><p>Sürüm, kayıt sayısı, kapsam, kaynak dosyaları ve lisans notları.</p><a class="dataset-download" href="{{ '/veri-kumeleri/manifest.json' | relative_url }}" download>Manifesti indir <span aria-hidden="true">↓</span></a></article>
-  <article class="dataset-card"><h3>JSON Schema</h3><p>SSS ve rehber bölümlerinin alanlarını, türlerini ve zorunlu değerlerini açıklar.</p><a class="dataset-download" href="{{ '/veri-kumeleri/schema-v1.json' | relative_url }}" download>Şemayı indir <span aria-hidden="true">↓</span></a></article>
+  <article class="dataset-card"><h3>JSON Schema</h3><p>SSS, rehber bölümü ve iddia birimi kayıtlarının alanlarını, türlerini ve zorunlu değerlerini açıklar.</p><a class="dataset-download" href="{{ '/veri-kumeleri/schema-v1.json' | relative_url }}" download>Şemayı indir <span aria-hidden="true">↓</span></a></article>
 </div>
 
 <h2>Kayıt türleri</h2>
@@ -84,8 +90,9 @@ permalink: /veri-kumeleri/
 <ul>
   <li><code>faq</code>: <code>question</code>, <code>answer</code> ve <code>answer_markdown</code> alanlarını içerir.</li>
   <li><code>guide_section</code>: <code>article_title</code>, <code>section_title</code>, <code>content</code> ve <code>content_markdown</code> alanlarını içerir.</li>
+  <li><code>claim</code>: <code>claim_text</code>, <code>source_record_id</code>, <code>source_title</code>, <code>section_title</code> ve birim türü alanlarını içerir.</li>
 </ul>
-<p>Her iki tür de <code>evidence_types</code>, <code>sources</code> ve <code>content_url</code> alanlarıyla bilgi türü etiketlerini, kaynak bağlantılarını ve asıl rehber sayfasını gösterir. Rehber bölümleri başlıklarına göre gruplanır, her satırın tek bir bağımsız iddia olduğu garanti edilmez.</p>
+<p>Tüm kayıt türleri <code>evidence_types</code>, <code>sources</code> ve <code>content_url</code> alanlarıyla bilgi türü etiketlerini, kaynak bağlantılarını ve asıl rehber sayfasını gösterir. İddia birimleri kaynak kaydının kimliğini korur. Kaynak birimin içinde açıkça verilmemişse kanıt türleri ve bağlantılar ana kayıttan alınır. İddia birimleri cümlelere ayrılmaya çalışılır. Bazı satırlar paragraf veya madde düzeyinde kalabilir ve birden fazla iddia içerebilir.</p>
 
 <h2>Kullanım ve lisans</h2>
 <p>Veri kümesi arama, bilgi getirme (RAG), kaynaklı cevap üretimi ve değerlendirme denemeleri için tasarlanmıştır. Tek başına her tür yapay zekâ eğitimine hazır olduğu iddia edilmez. Lisans için <a href="{{ '/lisans/' | relative_url }}">lisans sayfasını</a> incele.</p>
