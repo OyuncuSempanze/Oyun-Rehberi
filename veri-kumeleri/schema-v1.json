@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/schema-v1.json",
   "title": "Oyun-Rehberi record schema",
-  "description": "SSS ve rehber bölümü kayıtları için JSON Schema.",
+  "description": "SSS, rehber bölümü ve iddia birimi kayıtları için JSON Schema.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -36,7 +36,8 @@
     "record_type": {
       "enum": [
         "faq",
-        "guide_section"
+        "guide_section",
+        "claim"
       ]
     },
     "question": {
@@ -107,7 +108,52 @@
     "schema_version": {
       "enum": [
         "1.0",
-        "1.1"
+        "1.1",
+        "1.2"
+      ]
+    },
+    "claim_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_markdown": {
+      "type": "string"
+    },
+    "source_record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_record_type": {
+      "enum": [
+        "faq",
+        "guide_section"
+      ]
+    },
+    "source_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unit_index": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "unit_type": {
+      "enum": [
+        "sentence",
+        "paragraph",
+        "list_item"
+      ]
+    },
+    "source_unit_type": {
+      "enum": [
+        "paragraph",
+        "list_item"
+      ]
+    },
+    "evidence_scope": {
+      "enum": [
+        "unit",
+        "parent_record"
       ]
     }
   },
@@ -157,6 +203,37 @@
         "properties": {
           "schema_version": {
             "const": "1.1"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "claim"
+          }
+        },
+        "required": [
+          "record_type"
+        ]
+      },
+      "then": {
+        "required": [
+          "claim_text",
+          "claim_markdown",
+          "source_record_id",
+          "source_record_type",
+          "source_title",
+          "section_title",
+          "unit_index",
+          "unit_type",
+          "source_unit_type",
+          "evidence_scope"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "1.2"
           }
         }
       }
