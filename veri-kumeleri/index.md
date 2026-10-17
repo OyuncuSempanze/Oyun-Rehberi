@@ -14,7 +14,7 @@ permalink: /veri-kumeleri/
 
 <div class="dataset-overview" aria-label="Veri kümesi özellikleri">
   <div class="dataset-overview-item"><span class="dataset-overview-value">3</span><span class="dataset-overview-label">oyun arşivi</span></div>
-  <div class="dataset-overview-item"><span class="dataset-overview-value">2</span><span class="dataset-overview-label">kayıt türü: SSS ve rehber</span></div>
+  <div class="dataset-overview-item"><span class="dataset-overview-value">3</span><span class="dataset-overview-label">kayıt türü: SSS, rehber ve iddia birimi</span></div>
   <div class="dataset-overview-item"><span class="dataset-overview-value">JSONL</span><span class="dataset-overview-label">satır tabanlı, UTF-8 veri</span></div>
 </div>
 
