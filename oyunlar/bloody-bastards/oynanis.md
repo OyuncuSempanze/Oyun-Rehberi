@@ -64,7 +64,11 @@ Ancak bu durum medeniyete göre değişebilir. The British Isles (İngiliz Adala
 
 ## Maç Sonu ve Sonuç Ekranı
 
-[Oyun İçi Gözlem]
+**Kampanya Modu'nda:** Sonuç ekranında kalan canınız hesaplanarak seviye için yıldız kazanırsınız. Ne kadar yüksek canla bitirilirse (maksimum 3, minimum 1 yıldız olmak üzere) o kadar fazla yıldız kazanılır. Yıldız sayısına göre para kazanırsınız. Seviyeyi tekrar oynama, önceki seviye, sonraki seviye ve mağaza seçenekleri vardır. [Oyun İçi Gözlem]
+
+**Hayatta Kalma Modu'nda:** Yıldızdan ziyade seviye geçildiğinde para kazanılır. Sonraki seviye, ana menü seçenekleri vardır. [Oyun İçi Gözlem]
+
+**Ranked ve Rastgele Modu'nda:** Sonraki seviye, ana menü seçenekleri vardır. Ranked'ın farkı para, diamond ve rütbe seviyesi kazanabilmenizdir. [Oyun İçi Gözlem]
 
 ## Kaynak
 
