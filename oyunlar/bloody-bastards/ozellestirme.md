@@ -23,4 +23,4 @@ Eşya rengini değiştirmek **hitbox'un boyutunu veya hasarı etkilemez**. [Oyun
 
 ## Görünüm Değişikliklerinin Kaydedilmesi
 
-[Oyun İçi Gözlem]
+Seçilen renk, vücut boyutu anında kaydedilir. Ekstra bir butona ihtiyaç yoktur. [Oyun İçi Gözlem]
