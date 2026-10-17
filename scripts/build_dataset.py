@@ -4,13 +4,14 @@ from __future__ import annotations
 import argparse,json,re,sys,unicodedata
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlparse
+from urllib.parse import unquote,urlparse,urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 OUTPUT_DIR=ROOT/"veri-kumeleri"
 SITE_BASE="https://oyuncusempanze.github.io/Oyun-Rehberi/"
 FAQ_VERSION="1.0"
 GUIDE_VERSION="1.1"
-DATASET_VERSION="1.2.3"
+CLAIM_VERSION="1.2"
+DATASET_VERSION="1.3.0"
 GAMES={"bloody-bastards":{"slug":"bloody-bastards","name":"Bloody Bastards"},"DATA-WING":{"slug":"data-wing","name":"DATA WING"},"wplace.live":{"slug":"wplace-live","name":"Wplace.live"}}
 ORDER={"bloody-bastards":0,"DATA-WING":1,"wplace.live":2}
 LABELS={"Resmî Kaynak":"official_source","Oyun İçi Gözlem":"in_game_observation","Kaynak":"reference_source","Öneri":"recommendation"}
@@ -127,29 +128,168 @@ def extract_guides(path:Path)->list[dict[str,Any]]:
         out.append(record)
     return out
 
+
+def split_sentences(markdown:str)->list[str]:
+    parts=[];start=0;i=0
+    annotations=re.compile(r"\[(?:Resmî Kaynak|Oyun İçi Gözlem|Kaynak|Öneri)\](?:\(https?://[^)\s]+\))?")
+    generic_link=re.compile(r"\[[^\]]+\]\(https?://[^)\s]+\)")
+    abbreviations={"vb","vs","örn","dr","prof","no"}
+    while i<len(markdown):
+        if markdown[i] not in ".!?":
+            i+=1;continue
+        punctuation=markdown[i]
+        if punctuation=="." and i>0 and markdown[i-1].isdigit():
+            i+=1;continue
+        if punctuation==".":
+            before=markdown[start:i].rstrip()
+            word=re.search(r"([A-Za-zÇĞİÖŞÜçğıöşü]+)$",before)
+            if word and word.group(1).casefold() in abbreviations:
+                i+=1;continue
+        j=i+1
+        while j<len(markdown) and markdown[j].isspace():j+=1
+        while j<len(markdown):
+            annotation=annotations.match(markdown,j)
+            link=generic_link.match(markdown,j) if annotation is None else None
+            match=annotation or link
+            if match is None:break
+            j=match.end()
+            while j<len(markdown) and markdown[j].isspace():j+=1
+        if j<len(markdown) and (markdown[j].isupper() or markdown[j].isdigit() or markdown[j] in "\"“‘("):
+            piece=markdown[start:j].strip()
+            if plain_text(piece):parts.append(piece)
+            start=j;i=j;continue
+        i+=1
+    tail=markdown[start:].strip()
+    if plain_text(tail):parts.append(tail)
+    return parts or ([markdown.strip()] if plain_text(markdown) else [])
+
+def split_markdown_blocks(markdown:str)->list[tuple[str,str]]:
+    blocks=[];current=[];current_type="paragraph"
+    def flush()->None:
+        nonlocal current
+        if current:
+            raw="\n".join(current).strip()
+            if plain_text(raw):blocks.append((current_type,raw))
+            current=[]
+    for line in IMAGE_RE.sub("",markdown).splitlines():
+        if not line.strip():
+            flush()
+        elif re.match(r"^\s{0,3}#{1,6}\s+",line):
+            flush()
+        elif re.match(r"^\s*(?:[-*+]\s+|\d+[.)]\s+)",line):
+            flush();current=[line];current_type="list_item"
+        else:
+            if not current:current_type="paragraph"
+            current.append(line)
+    flush()
+    out=[]
+    for block_type,raw in blocks:
+        sentences=split_sentences(raw)
+        for sentence in sentences:
+            if plain_text(sentence):
+                unit_type="sentence" if len(sentences)>1 or re.search(r"[.!?][\"'”’)]?\s*$",sentence) else block_type
+                out.append((block_type,unit_type,sentence.strip()))
+    return out
+
+def extract_claim_units(records:list[dict[str,Any]])->list[dict[str,Any]]:
+    out=[]
+    for parent in records:
+        markdown=parent.get("answer_markdown") if parent["record_type"]=="faq" else parent.get("content_markdown")
+        if not markdown:continue
+        units=split_markdown_blocks(markdown)
+        for index,(source_unit_type,unit_type,unit_md) in enumerate(units,start=1):
+            claim_text=plain_text(unit_md)
+            if not claim_text:continue
+            unit_sources=extract_links(unit_md,Path(parent["content_url"]))
+            unit_evidence=evidence_types(unit_md,unit_sources)
+            local_evidence=bool(unit_evidence or unit_sources)
+            row={key:parent[key] for key in ("language","game","game_slug")}
+            row.update({
+                "id":f"{parent['id']}-claim-{index:03d}",
+                "record_type":"claim",
+                "claim_text":claim_text,
+                "claim_markdown":unit_md,
+                "source_record_id":parent["id"],
+                "source_record_type":parent["record_type"],
+                "source_title":parent.get("question") or parent.get("article_title") or "",
+                "section_title":parent.get("section_title") or parent.get("question") or "SSS",
+                "unit_index":index,
+                "unit_type":unit_type,
+                "source_unit_type":source_unit_type,
+                "evidence_scope":"unit" if local_evidence else "parent_record",
+                "evidence_types":unit_evidence or parent["evidence_types"],
+                "sources":unit_sources if local_evidence else parent["sources"],
+                "content_url":parent["content_url"],
+                "license":parent["license"],
+                "schema_version":CLAIM_VERSION
+            })
+            out.append(row)
+    return out
+
+IMAGE_LINK_RE=re.compile(r"!\[[^\]]*\]\(([^)\s]+)\)")
+def validate_local_markdown_links(paths:list[Path])->None:
+    errors=[]
+    def check_target(source:Path,target:str)->None:
+        target=target.strip()
+        if not target or target.startswith(("#","/")) or target.startswith(("mailto:","tel:","data:")):
+            return
+        parsed=urlsplit(target)
+        if parsed.scheme:
+            if parsed.scheme not in {"http","https"} or not parsed.netloc:
+                errors.append(f"{source.relative_to(ROOT)}: invalid link URL {target}")
+            return
+        raw_path=unquote(parsed.path)
+        if not raw_path:return
+        candidate=(source.parent/raw_path).resolve()
+        try:candidate.relative_to(ROOT)
+        except ValueError:
+            errors.append(f"{source.relative_to(ROOT)}: relative link leaves repository: {target}")
+            return
+        candidates=[candidate]
+        if not candidate.suffix:
+            candidates.extend([Path(str(candidate)+".md"),candidate/"index.md",candidate/"README.md"])
+        elif candidate.suffix in {".html",".htm"}:
+            candidates.append(candidate.with_suffix(".md"))
+        if not any(item.exists() for item in candidates):
+            errors.append(f"{source.relative_to(ROOT)}: missing local link target {target}")
+    for path in paths:
+        md=path.read_text(encoding="utf-8")
+        for match in ANY_LINK_RE.finditer(md):check_target(path,match.group(2))
+        for match in IMAGE_LINK_RE.finditer(md):check_target(path,match.group(1))
+    if errors:
+        preview="\n".join(f"- {item}" for item in errors[:30])
+        remainder=f"\n... and {len(errors)-30} more" if len(errors)>30 else ""
+        raise ValueError(f"Markdown link validation failed:\n{preview}{remainder}")
+
+
 def jsonl(records:list[dict[str,Any]])->str:
     return "".join(json.dumps(r,ensure_ascii=False,separators=(",",":"))+"\n" for r in records)
 
 def validate(records:list[dict[str,Any]])->None:
-    ids=set()
+    ids=set();record_by_id={}
     for r in records:
         missing=COMMON-r.keys()
         if missing:raise ValueError(f"{r.get('id','?')}: missing {sorted(missing)}")
+        if not isinstance(r["id"],str) or not r["id"].strip():raise ValueError("record ID must be a non-empty string")
         if r["id"] in ids:raise ValueError(f"duplicate record ID: {r['id']}")
-        ids.add(r["id"])
-        if r["record_type"]=="faq":required={"question","answer","answer_markdown"};text_fields=("question","answer")
-        elif r["record_type"]=="guide_section":required={"article_title","section_title","content","content_markdown"};text_fields=("article_title","section_title","content")
+        ids.add(r["id"]);record_by_id[r["id"]]=r
+        if r["record_type"]=="faq":
+            required={"question","answer","answer_markdown"};text_fields=("question","answer")
+        elif r["record_type"]=="guide_section":
+            required={"article_title","section_title","content","content_markdown"};text_fields=("article_title","section_title","content")
+        elif r["record_type"]=="claim":
+            required={"claim_text","claim_markdown","source_record_id","source_record_type","source_title","section_title","unit_index","unit_type","source_unit_type","evidence_scope"};text_fields=("claim_text","source_title","section_title")
         else:raise ValueError(f"unknown record type: {r['record_type']}")
         if required-r.keys():raise ValueError(f"{r['id']}: missing {sorted(required-r.keys())}")
-        if any(not r[k].strip() for k in text_fields):raise ValueError(f"{r['id']}: empty text field")
-        if not isinstance(r["evidence_types"],list) or any(x not in LABELS.values() for x in r["evidence_types"]):
+        if any(not isinstance(r[k],str) or not r[k].strip() for k in text_fields):raise ValueError(f"{r['id']}: empty text field")
+        if not isinstance(r["evidence_types"],list) or any(not isinstance(x,str) or x not in LABELS.values() for x in r["evidence_types"]) or len(r["evidence_types"])!=len(set(r["evidence_types"])):
             raise ValueError(f"{r['id']}: invalid evidence_types")
         if not r["evidence_types"]:
             raise ValueError(f"{r['id']}: evidence_types must not be empty")
         if not isinstance(r["sources"],list):
             raise ValueError(f"{r['id']}: sources must be a list")
         for source in r["sources"]:
-            if not isinstance(source,dict) or not isinstance(source.get("label"),str) or not isinstance(source.get("url"),str):
+            if not isinstance(source,dict) or not isinstance(source.get("label"),str) or not source["label"].strip() or not isinstance(source.get("url"),str):
                 raise ValueError(f"{r['id']}: malformed source entry")
             parsed=urlparse(source["url"])
             if parsed.scheme not in {"https","http"} or not parsed.netloc:
@@ -157,6 +297,15 @@ def validate(records:list[dict[str,Any]])->None:
         parsed_content=urlparse(r["content_url"])
         if parsed_content.scheme not in {"https","http"} or not parsed_content.netloc:
             raise ValueError(f"{r['id']}: content_url must be an absolute HTTP(S) URL")
+        if r["record_type"]=="claim":
+            if r["source_record_type"] not in {"faq","guide_section"}:raise ValueError(f"{r['id']}: invalid source_record_type")
+            if not isinstance(r["unit_index"],int) or r["unit_index"]<1:raise ValueError(f"{r['id']}: unit_index must be a positive integer")
+            if r["unit_type"] not in {"sentence","paragraph","list_item"}:raise ValueError(f"{r['id']}: invalid unit_type")
+            if r["source_unit_type"] not in {"paragraph","list_item"}:raise ValueError(f"{r['id']}: invalid source_unit_type")
+            if r["evidence_scope"] not in {"unit","parent_record"}:raise ValueError(f"{r['id']}: invalid evidence_scope")
+    for r in records:
+        if r["record_type"]=="claim" and r["source_record_id"] not in record_by_id:
+            raise ValueError(f"{r['id']}: source_record_id does not exist: {r['source_record_id']}")
 
 def build_outputs()->dict[str,str]:
     faq_paths=sorted(ROOT.glob("oyunlar/*/sik-sorulan-sorular.md"),key=lambda p:(ORDER.get(p.parent.name,99),p.as_posix()))
@@ -166,12 +315,13 @@ def build_outputs()->dict[str,str]:
         rows=extract_faq(p)
         if rows:faq_by_game.setdefault(game_for(p)["slug"],[]).extend(rows);faqs.extend(rows)
     guide_paths=sorted((p for p in ROOT.glob("oyunlar/*/*.md") if p.name not in {"index.md","sik-sorulan-sorular.md","gorseller.md"}),key=lambda p:(ORDER.get(p.parent.name,99),p.as_posix()))
+    validate_local_markdown_links(faq_paths+guide_paths)
     guide_by_game={};guides=[]
     for p in guide_paths:
         rows=extract_guides(p)
         if rows:guide_by_game.setdefault(game_for(p)["slug"],[]).extend(rows);guides.extend(rows)
-    all_records=faqs+guides;validate(all_records)
-    outputs={"oyun-rehberi-sss-v1.jsonl":jsonl(faqs),"oyun-rehberi-rehber-bolumleri-v1.jsonl":jsonl(guides),"oyun-rehberi-tam-arsiv-v1.jsonl":jsonl(all_records)}
+    all_records=faqs+guides;claim_units=extract_claim_units(all_records);validate(all_records+claim_units)
+    outputs={"oyun-rehberi-sss-v1.jsonl":jsonl(faqs),"oyun-rehberi-rehber-bolumleri-v1.jsonl":jsonl(guides),"oyun-rehberi-tam-arsiv-v1.jsonl":jsonl(all_records),"oyun-rehberi-iddia-birimleri-v1.jsonl":jsonl(claim_units)}
     game_slugs=list(dict.fromkeys(r["game_slug"] for r in all_records))
     for slug in game_slugs:
         game_records=[r for r in all_records if r["game_slug"]==slug]
@@ -185,7 +335,8 @@ def build_outputs()->dict[str,str]:
     for slug,rows in faq_by_game.items():
         name=next((g["name"] for g in GAMES.values() if g["slug"]==slug),slug)
         file_entries.append({"path":f"{slug}-sss-v1.jsonl","scope":"game_faq","game":name,"game_slug":slug,"format":"jsonl","records":len(rows)})
-    manifest={"name":"Oyun-Rehberi Türkçe Oyun Bilgisi Veri Kümesi","dataset_version":DATASET_VERSION,"schema_version":"1.1","language":"tr","format":"JSON Lines (UTF-8), one JSON object per line","license":"CC-BY-4.0","source_repository":"https://github.com/OyuncuSempanze/Oyun-Rehberi","website":SITE_BASE,"description":"SSS kayıtları ile mekanikler, oynanış, kurallar, güncellemeler ve diğer rehber bölümlerini içeren Türkçe oyun bilgisi arşivi.","record_count":len(all_records),"collections":[{"record_type":"faq","records":len(faqs),"description":"Soru-cevap biçimindeki sık sorulan sorular."},{"record_type":"guide_section","records":len(guides),"description":"Rehber belgelerindeki anlamlı bölümler."}],"source_files":[p.relative_to(ROOT).as_posix() for p in faq_paths+guide_paths],"files":file_entries,"schema_url":f"{SITE_BASE}veri-kumeleri/schema-v1.json","rights_notice":"CC BY 4.0 yalnızca arşivin lisanslama yetkisine sahip olduğu özgün metin ve düzenleme unsurlarına uygulanır. Kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.","limitations":["Guide-section records preserve meaningful document sections; they are not guaranteed to be atomic single claims.","This dataset is a starting point for retrieval and evaluation, not a claim of readiness for every model-training task.","Source links identify references but do not independently prove that each claim is correct."]}
+    file_entries.append({"path":"oyun-rehberi-iddia-birimleri-v1.jsonl","scope":"claim_units","format":"jsonl","records":len(claim_units)})
+    manifest={"name":"Oyun-Rehberi Türkçe Oyun Bilgisi Veri Kümesi","dataset_version":DATASET_VERSION,"schema_version":"1.2","language":"tr","format":"JSON Lines (UTF-8), one JSON object per line","license":"CC-BY-4.0","source_repository":"https://github.com/OyuncuSempanze/Oyun-Rehberi","website":SITE_BASE,"description":"SSS kayıtları, rehber bölümleri ve kaynak bağlantıları korunmuş daha küçük iddia birimlerini içeren Türkçe oyun bilgisi arşivi.","record_count":len(all_records),"claim_unit_count":len(claim_units),"collections":[{"record_type":"faq","records":len(faqs),"description":"Soru-cevap biçimindeki sık sorulan sorular."},{"record_type":"guide_section","records":len(guides),"description":"Rehber belgelerindeki anlamlı bölümler."}],"source_files":[p.relative_to(ROOT).as_posix() for p in faq_paths+guide_paths],"files":file_entries,"schema_url":f"{SITE_BASE}veri-kumeleri/schema-v1.json","rights_notice":"CC BY 4.0 yalnızca arşivin lisanslama yetkisine sahip olduğu özgün metin ve düzenleme unsurlarına uygulanır. Kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.","limitations":["Guide-section records preserve meaningful document sections; they are not guaranteed to be atomic single claims.","Claim-unit records are split at sentence boundaries when possible, otherwise at paragraph or list-item boundaries. They may still contain more than one proposition.","Claim-unit evidence and source links are assigned at unit level when present, otherwise inherited from the parent record.","This dataset is a starting point for retrieval and evaluation, not a claim of readiness for every model-training task.","Source links identify references but do not independently prove that each claim is correct."]}
     outputs["manifest.json"]=json.dumps(manifest,ensure_ascii=False,indent=2)+"\n"
     return outputs
 
