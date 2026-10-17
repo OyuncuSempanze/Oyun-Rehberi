@@ -3045,3 +3045,49 @@ input:focus-visible {
     transform: none;
   }
 }
+
+
+/* Veri kümeleri sayfasında bölümler arasında hızlı gezinme */
+.dataset-jump-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 19px 0 26px;
+  padding: 9px;
+  background: #101b21;
+  border: 1px solid #293e47;
+  border-radius: 9px;
+}
+
+.content a.dataset-jump-link {
+  display: inline-flex;
+  min-height: 35px;
+  align-items: center;
+  padding: 7px 10px;
+  color: #c2d4d6;
+  background: #16262d;
+  border: 1px solid #2e444c;
+  border-radius: 6px;
+  font-size: 0.77rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.content a.dataset-jump-link:hover {
+  color: var(--white);
+  background: #20383f;
+  border-color: var(--sage);
+}
+
+@media (max-width: 560px) {
+  .dataset-jump-nav {
+    gap: 6px;
+    padding: 7px;
+  }
+
+  .content a.dataset-jump-link {
+    min-height: 33px;
+    padding: 6px 8px;
+    font-size: 0.73rem;
+  }
+}
