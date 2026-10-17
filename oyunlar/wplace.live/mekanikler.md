@@ -6,10 +6,6 @@ description: "Wplace.live piksel yenilenmesi, Droplets, mağaza, klan merkezi ve
 
 # Mekanikler
 
-*Kaynak kontrolü 17 Ekim 2026. Resmî kaynaklar, topluluk kaynakları ve oyun içi gözlemler ayrı etiketlenir. Bazı sayısal değerler resmî kaynaklarda doğrulanmıyor. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md) [Kaynak](https://placepixels.com/wplace-droplets)*
-
-Güncel fiyatları oyun içi mağazadan kontrol et. [Öneri]
-
 ## Haritada Gezinme ve Yön Kontrolü
 
 Mobilde tek parmakla harita hareket ettirilir, çift parmakla yakınlaştırılır/uzaklaştırılır. [Oyun İçi Gözlem]
