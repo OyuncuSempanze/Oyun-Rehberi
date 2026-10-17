@@ -12,15 +12,23 @@ Güncel fiyatları oyun içi mağazadan kontrol et. [Öneri]
 
 ## Haritada Gezinme ve Yön Kontrolü
 
-[Oyun İçi Gözlem]
+Mobilde tek parmakla harita hareket ettirilir, çift parmakla yakınlaştırılır/uzaklaştırılır. [Oyun İçi Gözlem]
+
+PC'de mouse sağ click basılı tutularak hareket ettirilir, scroll butonu ile yakınlaştırılır/uzaklaştırılır. [Oyun İçi Gözlem]
 
 ## Piksel Yerleştirme Akışı
 
-[Oyun İçi Gözlem]
+Mobilde haritadaki piksele dokunulur, paint butonuna basılır, renk seçilir, piksellere dokunularak seçili renge boyanır, işlem bittiğinde tekrar paint butonuna basılarak harita boyanır. [Oyun İçi Gözlem]
+
+PC'de haritadaki piksele tıklanır, paint butonuna basılır, renk seçilir, piksellere tıklanarak seçili renge boyanır, işlem bittiğinde tekrar paint butonuna tıklanarak harita boyanır. [Oyun İçi Gözlem]
+*PC'de ayarlar kısmından butonlar özelleştirilebilir.* [Oyun İçi Gözlem]
 
 ## Favori Konumları Kaydetme ve Bulma
 
-[Oyun İçi Gözlem]
+Mobilde piksele dokunulur, paint butonunun hemen sağındaki yıldız butonuna dokunarak o piksel favorilere eklenir. Harita ne kadar uzaklaştırılırsa uzaklaşsın yıldız butonuna tekrardan harita üstünde dokunulduğunda o koordinata otomatik yönlendirilir. [Oyun İçi Gözlem]
+
+PC'de piksele tıklanır, paint butonunun hemen sağındaki yıldız butonuna tıklanarak o piksel favorilere eklenir. Harita ne kadar uzaklaştırılırsa uzaklaşsın yıldız butonuna tekrardan harita üstünde tıklandığında o koordinata otomatik yönlendirilir. [Oyun İçi Gözlem]
+
 
 ## Piksel yenilenmesi
 
