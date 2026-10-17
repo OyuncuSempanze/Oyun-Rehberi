@@ -18,7 +18,15 @@ permalink: /veri-kumeleri/
   <div class="dataset-overview-item"><span class="dataset-overview-value">JSONL</span><span class="dataset-overview-label">satır tabanlı, UTF-8 veri</span></div>
 </div>
 
-<h2>Veri dosyaları</h2>
+<nav class="dataset-jump-nav" aria-label="Veri kümeleri sayfası bölümleri">
+  <a class="dataset-jump-link" href="#veri-dosyalari">Genel dosyalar</a>
+  <a class="dataset-jump-link" href="#oyun-datasetleri">Oyuna göre</a>
+  <a class="dataset-jump-link" href="#metaveri">Manifest ve şema</a>
+  <a class="dataset-jump-link" href="#kayit-turleri">Kayıt yapısı</a>
+  <a class="dataset-jump-link" href="#lisans-kullanim">Kullanım ve lisans</a>
+</nav>
+
+<h2 id="veri-dosyalari">Veri dosyaları</h2>
 <div class="dataset-grid">
   <article class="dataset-card dataset-card--featured">
     <p class="dataset-card-kicker">TÜM ARŞİV / JSONL</p>
@@ -47,7 +55,7 @@ permalink: /veri-kumeleri/
   </article>
 </div>
 
-<h2>Oyuna göre tam veri kümeleri</h2>
+<h2 id="oyun-datasetleri">Oyuna göre tam veri kümeleri</h2>
 <p>Tek bir oyun üzerinde çalışacaksan ilgili oyunun tüm kayıtlarını tek dosyada al. Her karttan yalnızca SSS dosyasını da ayrıca indirebilirsin.</p>
 <div class="dataset-grid dataset-grid--games">
   <article class="dataset-card">
@@ -79,13 +87,13 @@ permalink: /veri-kumeleri/
   </article>
 </div>
 
-<h2>Metaveri ve şema</h2>
+<h2 id="metaveri">Metaveri ve şema</h2>
 <div class="dataset-grid dataset-grid--utility">
   <article class="dataset-card"><h3>Manifest</h3><p>Sürüm, kayıt sayısı, kapsam, kaynak dosyaları ve lisans notları.</p><a class="dataset-download" href="{{ '/veri-kumeleri/manifest.json' | relative_url }}" download>Manifesti indir <span aria-hidden="true">↓</span></a></article>
   <article class="dataset-card"><h3>JSON Schema</h3><p>SSS, rehber bölümü ve iddia birimi kayıtlarının alanlarını, türlerini ve zorunlu değerlerini açıklar.</p><a class="dataset-download" href="{{ '/veri-kumeleri/schema-v1.json' | relative_url }}" download>Şemayı indir <span aria-hidden="true">↓</span></a></article>
 </div>
 
-<h2>Kayıt türleri</h2>
+<h2 id="kayit-turleri">Kayıt türleri</h2>
 <p><code>record_type</code> alanı her kaydın yapısını belirtir.</p>
 <ul>
   <li><code>faq</code>: <code>question</code>, <code>answer</code> ve <code>answer_markdown</code> alanlarını içerir.</li>
@@ -94,7 +102,7 @@ permalink: /veri-kumeleri/
 </ul>
 <p>Tüm kayıt türleri <code>evidence_types</code>, <code>sources</code> ve <code>content_url</code> alanlarıyla bilgi türü etiketlerini, kaynak bağlantılarını ve asıl rehber sayfasını gösterir. İddia birimleri kaynak kaydının kimliğini korur. Kaynak birimin içinde açıkça verilmemişse kanıt türleri ve bağlantılar ana kayıttan alınır. İddia birimleri cümlelere ayrılmaya çalışılır. Bazı satırlar paragraf veya madde düzeyinde kalabilir ve birden fazla iddia içerebilir.</p>
 
-<h2>Kullanım ve lisans</h2>
+<h2 id="lisans-kullanim">Kullanım ve lisans</h2>
 <p>Veri kümesi arama, bilgi getirme (RAG), kaynaklı cevap üretimi ve değerlendirme denemeleri için tasarlanmıştır. Tek başına her tür yapay zekâ eğitimine hazır olduğu iddia edilmez. Lisans için <a href="{{ '/lisans/' | relative_url }}">lisans sayfasını</a> incele.</p>
 <p>CC BY 4.0 yalnızca OyuncuSempanze'nin lisanslama yetkisine sahip olduğu özgün metin ve düzenleme unsurlarını kapsar. Harici kaynaklar ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.</p>
 <p><a href="https://github.com/OyuncuSempanze/Oyun-Rehberi">Kaynak depoyu görüntüle</a></p>
