@@ -18,9 +18,7 @@ description: "Wplace için oyun içi gözlemlere dayalı başlangıç ve kaynak 
 
 ## Büyük Çizimleri Aşamalara Bölmek
 
-[Oyun İçi Gözlem]
-
-[Öneri]
+Büyük bir çizimin önce en dış katmanı boyanarak sınırlar belirlenmelidir, böylece çizim yapacağınız alanı önceden belirlersiniz ve griefferlara (çizim bozanlara) karşı elinizde bir report (bildirme) kozu olur. [Öneri]
 
 ## Özellikle Dikkat Edilmesi Gereken Yer
 
