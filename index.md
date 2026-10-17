@@ -6,8 +6,8 @@ description: Niş ve bağımsız oyunlar için kaynaklı Türkçe rehberler, oyu
 <section class="welcome" aria-labelledby="page-heading">
   <div class="welcome-copy">
     <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> KAYNAKLI TÜRKÇE OYUN ARŞİVİ</p>
-    <h1 id="page-heading">Oyunların <em>derinine in.</em></h1>
-    <p class="welcome-description">Oyun mekaniklerini, kuralları ve güncellemeleri Türkçe öğren. Bilginin kaynağını gör, resmî açıklamalarla oyun içi gözlemleri birbirine karıştırma.</p>
+    <h1 id="page-heading">Oyun bilgisi. <em>Kaynağıyla.</em></h1>
+    <p class="welcome-description">Rehberleri Türkçe oku, bilginin dayanağına ulaş. Resmî açıklamalarla oyun içi gözlemleri ayırt et, kaynakları izlenebilir rehberlerden yararlan.</p>
     <div class="welcome-actions">
       <a class="action-primary" href="#arsiv">Oyun arşivini keşfet <span aria-hidden="true">↓</span></a>
       <a class="action-secondary" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümelerini incele <span aria-hidden="true">↗</span></a>
@@ -37,20 +37,28 @@ description: Niş ve bağımsız oyunlar için kaynaklı Türkçe rehberler, oyu
       <p class="section-kicker">OYUN KÜTÜPHANESİ</p>
       <h2 id="archive-heading">Oyun arşivi</h2>
     </div>
-    <p class="section-description">Rehberini aç, konuya göre ilerle.</p>
+    <p class="section-description">İsim, tür veya mekanik üzerinden keşfet.</p>
   </div>
 
   <div class="archive-tools">
     <label class="archive-search">
       <span class="visually-hidden">Oyunlarda ara</span>
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
-      <input id="archive-search" type="search" placeholder="Oyun, tür veya konu ara..." autocomplete="off" aria-describedby="archive-count">
+      <input id="archive-search" type="search" placeholder="Oyun adı, tür veya konu ara..." autocomplete="off" aria-describedby="archive-count archive-help">
     </label>
     <p id="archive-count" class="archive-count" aria-live="polite">3 oyun</p>
   </div>
 
+  <div class="archive-filters" role="group" aria-label="Oyun türüne göre filtrele">
+    <button class="archive-filter is-active" type="button" data-filter="all" aria-pressed="true">Tüm oyunlar</button>
+    <button class="archive-filter" type="button" data-filter="combat" aria-pressed="false">Dövüş</button>
+    <button class="archive-filter" type="button" data-filter="pixel-map" aria-pressed="false">Piksel haritası</button>
+    <button class="archive-filter" type="button" data-filter="arcade" aria-pressed="false">Arcade</button>
+  </div>
+  <p class="archive-help" id="archive-help">Arama ve tür filtresi birlikte çalışır.</p>
+
   <div class="game-grid" id="game-grid">
-    <a class="game-card" href="{{ '/oyunlar/bloody-bastards/' | relative_url }}" data-search="Bloody Bastards fizik tabanlı dövüş silah zırh özelleştirme mekanik" aria-label="Bloody Bastards rehberini aç">
+    <a class="game-card" href="{{ '/oyunlar/bloody-bastards/' | relative_url }}" data-category="combat" data-search="Bloody Bastards fizik tabanlı dövüş silah zırh özelleştirme mekanik" aria-label="Bloody Bastards rehberini aç">
       <span class="game-card-top">
         <span class="game-emblem game-emblem--combat" aria-hidden="true">
           <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
@@ -68,7 +76,7 @@ description: Niş ve bağımsız oyunlar için kaynaklı Türkçe rehberler, oyu
       <span class="game-card-footer"><strong>Rehberi aç</strong><span aria-hidden="true">↗</span></span>
     </a>
 
-    <a class="game-card" href="{{ '/oyunlar/wplace.live/' | relative_url }}" data-search="Wplace.live wplace live ortak piksel haritası çizim kurallar harita mekanikleri güncelleme" aria-label="Wplace.live rehberini aç">
+    <a class="game-card" href="{{ '/oyunlar/wplace.live/' | relative_url }}" data-category="pixel-map" data-search="Wplace.live wplace live ortak piksel haritası çizim kurallar harita mekanikleri güncelleme" aria-label="Wplace.live rehberini aç">
       <span class="game-card-top">
         <span class="game-emblem game-emblem--pixel" aria-hidden="true">
           <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
@@ -92,7 +100,7 @@ description: Niş ve bağımsız oyunlar için kaynaklı Türkçe rehberler, oyu
       <span class="game-card-footer"><strong>Rehberi aç</strong><span aria-hidden="true">↗</span></span>
     </a>
 
-    <a class="game-card" href="{{ '/oyunlar/DATA-WING/' | relative_url }}" data-search="DATA WING hikâye odaklı arcade yarış momentum hareket seviyeler bölüm mekanikleri" aria-label="DATA WING rehberini aç">
+    <a class="game-card" href="{{ '/oyunlar/DATA-WING/' | relative_url }}" data-category="arcade" data-search="DATA WING hikâye odaklı arcade yarış momentum hareket seviyeler bölüm mekanikleri" aria-label="DATA WING rehberini aç">
       <span class="game-card-top">
         <span class="game-emblem game-emblem--arcade" aria-hidden="true">
           <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
