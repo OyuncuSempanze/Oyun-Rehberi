@@ -24,4 +24,4 @@ Oyunda rekabetçi bir taç sistemi ve liderlik tabloları bulunuyor. Resmî aç�
 
 ## Oyunu kapatıp yeniden açınca ilerleme korunuyor mu?
 
-Evet, ilerleme **korunur.**
+Evet, ilerleme **korunur.** [Oyun İçi Gözlem]
