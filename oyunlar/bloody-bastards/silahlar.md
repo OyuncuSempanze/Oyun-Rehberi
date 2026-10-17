@@ -45,6 +45,14 @@ description: "Bloody Bastards oyun içi ekipman sınıfları ve hasar türleri h
 * Her silahın/kalkanın kendine özgü ağırlığı vardır. Ağır silahlar/kalkanlar daha fazla hasar verirken veya hasarı azaltırken enerjinizi (stamina) daha fazla tüketir. [Resmî Kaynak](https://tibith.com/bloodybastards)
 * Ağır silahlar/kalkanlar, hafif silahlara/kalkanlara göre yukarı doğru kaldırıldığında biraz daha yavaş hareket eder. [Oyun İçi Gözlem]
 
+## Silah seçimi
+
+Silahın uzunluğu, rakibe ne kadar uzaktan vurabildiğini etkiliyor. Uzun silahlar mesafeyi korumak açısından avantaj sağlayabiliyor. **[Oyun İçi Gözlem]**
+
+Silahın ağırlığı enerji tüketimini etkiliyor. Ağır silahlar daha fazla enerji harcıyor. Saldırı hızı bir miktar azalıyor gibi görünse de bu fark çok belirgin değil. Güçleri de diğer silahlarla hemen hemen aynı görünüyor. **[Oyun İçi Gözlem]**
+
+Hasar türü de önemli olabiliyor. Kanabo gibi künt hasar veren silahların metal kasklı rakiplere diğer silahlara kıyasla daha fazla hasar verdiği gözlemlenmiştir. **[Oyun İçi Gözlem]**
+
 ## Kaynak
 
 [Oyunun Resmî Web Sitesi](https://tibith.com/bloodybastards)

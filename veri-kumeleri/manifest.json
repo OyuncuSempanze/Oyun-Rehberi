@@ -8,7 +8,7 @@
   "source_repository": "https://github.com/OyuncuSempanze/Oyun-Rehberi",
   "website": "https://oyuncusempanze.github.io/Oyun-Rehberi/",
   "description": "SSS kayıtları ile mekanikler, oynanış, kurallar, güncellemeler ve diğer rehber bölümlerini içeren Türkçe oyun bilgisi arşivi.",
-  "record_count": 94,
+  "record_count": 95,
   "collections": [
     {
       "record_type": "faq",
@@ -17,7 +17,7 @@
     },
     {
       "record_type": "guide_section",
-      "records": 77,
+      "records": 78,
       "description": "Rehber belgelerindeki anlamlı bölümler."
     }
   ],
@@ -44,13 +44,13 @@
       "path": "oyun-rehberi-tam-arsiv-v1.jsonl",
       "scope": "all_records",
       "format": "jsonl",
-      "records": 94
+      "records": 95
     },
     {
       "path": "oyun-rehberi-rehber-bolumleri-v1.jsonl",
       "scope": "guide_sections",
       "format": "jsonl",
-      "records": 77
+      "records": 78
     },
     {
       "path": "oyun-rehberi-sss-v1.jsonl",
@@ -64,7 +64,7 @@
       "game": "Bloody Bastards",
       "game_slug": "bloody-bastards",
       "format": "jsonl",
-      "records": 31
+      "records": 32
     },
     {
       "path": "data-wing-tam-arsiv-v1.jsonl",
