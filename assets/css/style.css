@@ -3962,3 +3962,108 @@ input:focus-visible {
     transform: none;
   }
 }
+
+
+/* Oyun simgeleri için ufak, sürekli döngü animasyonları */
+.game-emblem--combat .entry-icon {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: game-emblem-combat-drift 4.8s ease-in-out infinite;
+}
+
+@keyframes game-emblem-combat-drift {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-1px) rotate(1.2deg);
+  }
+}
+
+.game-emblem--pixel .entry-icon rect {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: game-emblem-pixel-pulse 4.4s ease-in-out infinite;
+}
+
+.game-emblem--pixel .entry-icon rect:nth-of-type(2) {
+  animation-delay: -0.35s;
+}
+
+.game-emblem--pixel .entry-icon rect:nth-of-type(3) {
+  animation-delay: -0.7s;
+}
+
+.game-emblem--pixel .entry-icon rect:nth-of-type(4) {
+  animation-delay: -1.05s;
+}
+
+.game-emblem--pixel .entry-icon rect:nth-of-type(5) {
+  animation-delay: -1.4s;
+}
+
+.game-emblem--pixel .entry-icon rect:nth-of-type(6) {
+  animation-delay: -1.75s;
+}
+
+.game-emblem--pixel .entry-icon rect:nth-of-type(7) {
+  animation-delay: -2.1s;
+}
+
+.game-emblem--pixel .entry-icon rect:nth-of-type(8) {
+  animation-delay: -2.45s;
+}
+
+.game-emblem--pixel .entry-icon rect:nth-of-type(9) {
+  animation-delay: -2.8s;
+}
+
+@keyframes game-emblem-pixel-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  45%, 58% {
+    transform: scale(0.94);
+  }
+}
+
+.game-emblem--arcade .entry-icon path:first-child {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: game-emblem-arcade-glide 3.8s ease-in-out infinite;
+}
+
+.game-emblem--arcade .entry-icon path:nth-child(2) {
+  animation: game-emblem-arcade-trail 3.8s ease-in-out infinite;
+}
+
+@keyframes game-emblem-arcade-glide {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(1.5px);
+  }
+}
+
+@keyframes game-emblem-arcade-trail {
+  0%, 100% {
+    opacity: 0.72;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .game-emblem--combat .entry-icon,
+  .game-emblem--pixel .entry-icon rect,
+  .game-emblem--arcade .entry-icon path {
+    animation: none !important;
+    transform: none !important;
+  }
+}
