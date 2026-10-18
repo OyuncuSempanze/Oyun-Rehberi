@@ -20,7 +20,7 @@ Yeni bir oyun eklemeden önce mevcut arşivde aynı oyunun bulunup bulunmadığ�
 4. **Gerçek ile öneriyi ayır.** Kişisel tavsiyeyi resmî kural gibi sunma. Doğrulanmamış iddiayı doğrulanmış bilgi olarak yazma.
 5. **Hak sahibi olmadığın materyali ekleme.** Başka bir siteden alınmış metin, ekran görüntüsü, görsel, logo veya alıntıyı izin ve lisansını kontrol etmeden depoya koyma. Bir oyunun görselinin internette bulunması, onu yeniden yayımlama hakkı vermez.
 6. **Konuya odaklan.** Reklam, spam, hakaret, kişisel bilgiler ve konu dışı içerik gönderme.
-7. **Atıf bilgisini bildir.** PR açıklamasında katkın için kullanılmasını istediğin ad veya GitHub kullanıcı adını belirt. Kabul edilen katkı sahipleri `CONTRIBUTORS.md` dosyasına eklenebilir.
+7. **Atıf bilgisini bildir.** PR açıklamasında katkın için kullanılmasını istediğin ad veya GitHub kullanıcı adını belirt. Kabul edilen anlamlı editoryal katkıların sahipleri, uygun atıf için `CONTRIBUTORS.md` dosyasına eklenir.
 
 ## Değişiklikleri nasıl önerirsin?
 
@@ -43,10 +43,11 @@ python scripts/build_dataset.py --check
 
 Bu bölüm PR gönderirken özellikle okunmalıdır.
 
-- Katkı sahibi, kendisine ait özgün içerik üzerindeki telif hakkını korur. Katkının kabul edilmesi, telif hakkının veya projenin mülkiyetinin devredildiği anlamına gelmez.
-- Oyun-Rehberi'nin özgün editoryal metinleri ve açıkça bu koşulu kabul eden katkılar **CC BY 4.0** kapsamında yayımlanır. Bir katkının lisans kapsamına alınması için PR şablonundaki lisans onay kutusunun açıkça işaretlenmesi gerekir. Bu onay verilmeyen katkı birleştirilmez.
+- Katkı sahibi, kendisine ait özgün editoryal metin üzerindeki telif hakkını korur. Katkının kabul edilmesi, telif hakkının veya projenin mülkiyetinin devredildiği anlamına gelmez.
+- Oyun-Rehberi'nin özgün editoryal metinleri ve açıkça bu koşulu kabul eden editoryal metin katkıları **CC BY 4.0** kapsamında yayımlanır. Bir katkının lisans kapsamına alınması için PR şablonundaki lisans onay kutusunun açıkça işaretlenmesi gerekir. Bu onay verilmeyen katkı birleştirilmez.
 - CC BY 4.0, uygun atıf koşullarıyla ticari kullanıma izin verir. Bu izin yalnızca Oyun-Rehberi için değildir: üçüncü kişiler de aynı içeriği lisans koşullarına uyarak ticari amaçlarla kullanabilir. Bu lisans içerik üzerinde münhasırlık sağlamaz.
 - Oyun-Rehberi ileride reklam, sponsorluk, üyelik, hizmet, özel çalışma veya başka bir yolla gelir elde ederse, bir PR'ın kabul edilmiş olması katkı sahibine otomatik olarak gelir payı, maaş, ortaklık veya projede karar verme hakkı vermez. Farklı bir ödeme ya da gelir paylaşımı ancak ayrıca ve yazılı olarak kararlaştırılırsa söz konusu olur. Bu açıklama, yürürlükteki hukuk uyarınca vazgeçilemeyen hakları ortadan kaldırmaz.
+- Bu lisans **kaynak kodu veya site arayüzüne otomatik olarak uygulanmaz**. Kod veya arayüz katkısı göndermek istiyorsan, PR açmadan önce proje sahibiyle ayrı lisans koşullarını netleştir. Ayrı bir lisans belirlenmeden kod katkısı birleştirilmemelidir.
 - Katkının CC BY 4.0 kapsamında başkaları tarafından da ticari amaçla kullanılmasını istemiyorsan bu koşullarla katkı gönderme. Proje sahibinin ticari olarak kullanabileceği ancak diğer herkesin kullanamayacağı bir lisans istenirse ayrı bir lisans sözleşmesi gerekir.
 - Katkıyı göndermeden önce içeriği lisanslama yetkin bulunduğundan emin ol. Yaşın veya yerel hukuk nedeniyle bu koşulları kabul etme yetkin konusunda şüphe varsa, katkı göndermeden önce yasal temsilcinden ya da nitelikli bir hukuk uzmanından destek al.
 
