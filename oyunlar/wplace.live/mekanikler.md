@@ -77,7 +77,7 @@ Resmî 1.7.3 yama notlarına göre bazı geri bildirim ve hata bildirimleri içi
 
 ## Prism satın alma
 
-Prism, 1.7.7 sürümünde yalnızca gerçek parayla satın alınabiliyor. Sonraki sürümlerde değişebilir. [Resmî Sürüm Notları](https://wplace.live/patch-notes) [Prism ile premium kozmetiklerin ilişkisi](https://wplace.live/patch-notes/1.5.0)
+Prism, 1.7.7 sürümünde yalnızca gerçek parayla satın alınabiliyor. [Resmî Sürüm Notları](https://wplace.live/patch-notes) [Prism ile premium kozmetiklerin ilişkisi](https://wplace.live/patch-notes/1.5.0)
 
 ## Klan kurma
 
