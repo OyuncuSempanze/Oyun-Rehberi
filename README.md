@@ -39,8 +39,14 @@ python scripts/build_dataset.py --check
 
 GitHub Actions bu kontrolü oyun rehberleri, SSS sayfaları veya veri kümesi dosyaları değiştiğinde otomatik çalıştırır.
 
+## Katkıda bulunma
+
+Oyun-Rehberi'ne kaynaklı bilgi, düzeltme veya yeni oyun rehberi önermek için [CONTRIBUTING.md](CONTRIBUTING.md) dosyasındaki kuralları oku ve bir Pull Request (PR) aç. Önerilen değişiklikler, ana dala alınmadan önce incelenir.
+
+Katkıların lisans koşulları, gelecekte gelir elde edilmesi durumunda ne anlama geldiği ve atıf süreci için [lisans açıklamasına](lisans.md), [LICENSE dosyasına](LICENSE) ve [katkı sahipleri listesine](CONTRIBUTORS.md) bak.
+
 ## Lisans
 
-OyuncuSempanze tarafından oluşturulan özgün rehber metinleri, oyun içi gözlem yazıları ve arşivin özgün seçim ve düzenlemesi [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) kapsamında lisanslanır. Lisans bütün depoya otomatik olarak uygulanmaz. Site kaynak kodu ve arayüzü, oyun ekran görüntüleri, üçüncü taraf görseller ve başka hak sahiplerine ait içerikler kapsam dışındadır.
+OyuncuSempanze tarafından oluşturulan özgün editoryal metinler ve lisans koşulunu açıkça kabul eden katkılar [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) kapsamında yayımlanır. Bu lisans atıf koşullarıyla ticari kullanıma da izin verir ve içeriği münhasır hâle getirmez. Lisans bütün depoya otomatik olarak uygulanmaz. Site kaynak kodu ve arayüzü, oyun ekran görüntüleri, üçüncü taraf görseller ve başka hak sahiplerine ait içerikler kapsam dışındadır.
 
-Ayrıntılar için [lisans kapsamı sayfasına](lisans.md) ve depodaki [LICENSE dosyasına](LICENSE) bak.
+Ayrıntılar için [lisans kapsamı sayfasına](lisans.md), depodaki [LICENSE dosyasına](LICENSE) ve [katkı kurallarına](CONTRIBUTING.md) bak.
