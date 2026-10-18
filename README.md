@@ -6,16 +6,16 @@ Oyunlar hakkında kaynaklı ve düzenli bir Türkçe bilgi arşivi. Özellikle a
 
 ## Bilgi standartları
 
-Her bilgiye, dayandığı kanıtı açıklayan uygun bir etiket eklenir. Bu etiketler resmî açıklama ile oyun içi gözlemi ayırt etmeyi ve bilginin kaynağına ulaşmayı kolaylaştırır.
+Etiketler bilginin dayanağını gösterir. Bunlar bir güvenilirlik puanı değildir ve bilginin kaynağını belirtmek için kullanılır.
 
 - **[Resmî Kaynak]** Bilginin geliştirici, yayıncı veya oyunun resmî kanalları tarafından yayımlandığını belirtir. Bağlantı, mümkün olduğunda doğrudan ilgili açıklamaya götürür.
-- **[Oyun İçi Gözlem]** Bilginin oyun deneyimi, test veya inceleme sırasında doğrudan gözlemlendiğini belirtir. Bu tür bilgiler sürüm ve platform değişiklikleriyle farklılaşabilir.
+- **[Oyun İçi Gözlem]** Bilginin oyun deneyimi sırasında doğrudan görüldüğünü veya test edildiğini belirtir. Bu bir şüphe ya da uyarı etiketi değildir.
 - **[Kaynak]** Bir iddianın dayanağını incelemek için kullanılan bağlantıyı veya bağımsız başvuru kaynağını belirtir.
-- **[Öneri]** Arşiv yazarının deneyimine, gözlemine veya genel sorun çözme ilkelerine dayanarak sunduğu tavsiyeyi belirtir. Resmî bir kural, zorunluluk veya kesin çözüm anlamına gelmez. Gerektiğinde önerinin dayanağını açıklayan diğer etiketlerle birlikte kullanılabilir.
+- **[Öneri]** Arşiv yazarının deneyimine, gözlemine veya genel sorun çözme ilkelerine dayanarak sunduğu tavsiyeyi belirtir. Resmî bir kural veya zorunluluk anlamına gelmez. Gerektiğinde önerinin dayanağını açıklayan diğer etiketlerle birlikte kullanılabilir.
 
-Bir bağlantının bulunması, iddianın kesin olarak doğrulandığını tek başına göstermez. **[Resmî Kaynak]** etiketi yalnızca resmî bağlantılar için kullanılmalı. Bilgi oyun içinde test edildiyse **[Oyun İçi Gözlem]** etiketi de eklenmeli. **[Öneri]** etiketi ise resmî bilgilerden veya doğrudan gözlemlerden farklı olarak yazarın tavsiyesini belirtir.
+Resmî açıklamalar ve oyun içi gözlemler birbirinden ayrı tutulur. **[Resmî Kaynak]** etiketi yalnızca resmî kanallar için kullanılır. Bir bilgi doğrudan oyunda kontrol edildiyse **[Oyun İçi Gözlem]** ile belirtilir. Başka kaynaklardan yararlanıldığında ilgili bağlantı, mümkün olduğunca dayandığı bilginin yanında yer alır.
 
-Sürüme göre değişebilen bilgilerde son kontrol tarihi belirtilir. Yalnızca oyun içinde görülen sürüm ve özellikler resmî yayın bilgisi gibi sunulmaz. Biliniyorsa platform ve sürüm de yazılır.
+Sürüm numarası ve kontrol tarihi, özellikle güncelleme geçmişi veya zamanla değişen fiyat ve kurallar gibi bilgiler için bağlam sağladığında belirtilir. Güncel oynanışı anlatan bir bilginin artık geçerli olmadığı kontrol edilirse ilgili bölüm güncellenir veya bilgi kaldırılır. Önceki sürümlerdeki davranış tarihsel açıdan önemliyse güncelleme geçmişinde korunabilir.
 
 ## Rehber yapısı
 
