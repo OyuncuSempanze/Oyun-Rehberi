@@ -12,7 +12,7 @@ Wplace haritası WebGL desteğine ihtiyaç duyar. Resmî hata ekranı, tarayıc�
 
 ## Destek ekibine nasıl ulaşabilirim?
 
-Resmî yama notlarına göre destek menüsü üzerinden hata bildirimi, geri bildirim ve personel hakkında bildirim gibi başvurular gönderilebilir. Destek sistemi için yayımlanan açıklamada, özelliğin 1000. seviye ve üzerindeki hesaplarla test edildiği, bu seviyenin altındaki oyuncuların e-posta yoluyla destek ekibine ulaşabileceği belirtiliyor. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.0)
+Resmî yama notlarına göre destek menüsü üzerinden hata bildirimi, geri bildirim ve personel hakkında bildirim gibi başvurular gönderilebilir. 1.7.0 yama notu, destek sisteminin o sürüm yayımlandığında 1000. seviye ve üzerindeki hesaplarla test edildiğini, daha düşük seviyedeki oyuncuların ise e-postayla ulaşabildiğini belirtiyor. [Resmî Kaynak](https://wplace.live/patch-notes/1.7.0)
 
 ## Hesap uzaklaştırmasına nasıl itiraz edilir?
 

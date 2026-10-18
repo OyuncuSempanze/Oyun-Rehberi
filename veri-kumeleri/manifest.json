@@ -8,17 +8,17 @@
   "source_repository": "https://github.com/OyuncuSempanze/Oyun-Rehberi",
   "website": "https://oyuncusempanze.github.io/Oyun-Rehberi/",
   "description": "SSS kayıtları, rehber bölümleri ve kaynak bağlantıları korunmuş daha küçük iddia birimlerini içeren Türkçe oyun bilgisi arşivi.",
-  "record_count": 95,
-  "claim_unit_count": 296,
+  "record_count": 101,
+  "claim_unit_count": 318,
   "collections": [
     {
       "record_type": "faq",
-      "records": 17,
+      "records": 19,
       "description": "Soru-cevap biçimindeki sık sorulan sorular."
     },
     {
       "record_type": "guide_section",
-      "records": 78,
+      "records": 82,
       "description": "Rehber belgelerindeki anlamlı bölümler."
     }
   ],
@@ -27,8 +27,8 @@
     "oyunlar/DATA-WING/sik-sorulan-sorular.md",
     "oyunlar/wplace.live/sik-sorulan-sorular.md",
     "oyunlar/bloody-bastards/guncellemeler.md",
-    "oyunlar/bloody-bastards/oynanis.md",
     "oyunlar/bloody-bastards/oyun-hakkinda.md",
+    "oyunlar/bloody-bastards/oynanis.md",
     "oyunlar/bloody-bastards/ozellestirme.md",
     "oyunlar/bloody-bastards/silahlar.md",
     "oyunlar/bloody-bastards/zirhlar.md",
@@ -45,19 +45,19 @@
       "path": "oyun-rehberi-tam-arsiv-v1.jsonl",
       "scope": "all_records",
       "format": "jsonl",
-      "records": 95
+      "records": 101
     },
     {
       "path": "oyun-rehberi-rehber-bolumleri-v1.jsonl",
       "scope": "guide_sections",
       "format": "jsonl",
-      "records": 78
+      "records": 82
     },
     {
       "path": "oyun-rehberi-sss-v1.jsonl",
       "scope": "faq",
       "format": "jsonl",
-      "records": 17
+      "records": 19
     },
     {
       "path": "bloody-bastards-tam-arsiv-v1.jsonl",
@@ -65,7 +65,7 @@
       "game": "Bloody Bastards",
       "game_slug": "bloody-bastards",
       "format": "jsonl",
-      "records": 32
+      "records": 35
     },
     {
       "path": "data-wing-tam-arsiv-v1.jsonl",
@@ -73,7 +73,7 @@
       "game": "DATA WING",
       "game_slug": "data-wing",
       "format": "jsonl",
-      "records": 17
+      "records": 18
     },
     {
       "path": "wplace-live-tam-arsiv-v1.jsonl",
@@ -81,7 +81,7 @@
       "game": "Wplace.live",
       "game_slug": "wplace-live",
       "format": "jsonl",
-      "records": 46
+      "records": 48
     },
     {
       "path": "bloody-bastards-sss-v1.jsonl",
@@ -89,7 +89,7 @@
       "game": "Bloody Bastards",
       "game_slug": "bloody-bastards",
       "format": "jsonl",
-      "records": 8
+      "records": 9
     },
     {
       "path": "data-wing-sss-v1.jsonl",
@@ -97,7 +97,7 @@
       "game": "DATA WING",
       "game_slug": "data-wing",
       "format": "jsonl",
-      "records": 4
+      "records": 5
     },
     {
       "path": "wplace-live-sss-v1.jsonl",
@@ -111,7 +111,7 @@
       "path": "oyun-rehberi-iddia-birimleri-v1.jsonl",
       "scope": "claim_units",
       "format": "jsonl",
-      "records": 296
+      "records": 318
     }
   ],
   "schema_url": "https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/schema-v1.json",

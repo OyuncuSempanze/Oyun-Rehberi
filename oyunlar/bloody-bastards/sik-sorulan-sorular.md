@@ -25,7 +25,19 @@ Geliştirici, oyunda yüzlerce farklı silah, kalkan, gövde, bacak ve baş ekip
 ## Çevrim dışı oynanabilir mi?
 
 **Hayır,** çevrim dışı olunduğu sürece oyuna giriş yapılamaz. [Oyun İçi Gözlem]
-## Oyundaki para birimleri ve kazanma yolları
+## Oyundaki para birimleri nasıl kazanılır ve nerede kullanılır?
+
+### Altın
+
+Altın, düşmanları öldürerek kazanılır. [Oyun İçi Gözlem]
+
+### Diamond
+
+Diamond, eşya ve oyuncu adı renklerini değiştirmek ve ekstra karakter yuvaları satın almak gibi seçeneklerde kullanılır. Bu seçeneklerin Diamond ile satın alındığı 5.0.5 sürümünde gözlemlenmiştir. [Oyun İçi Gözlem]
+
+### Aşamalı (Ranked) modun ödülleri
+
+Aşamalı (Ranked) modunda para, Diamond ve rütbe ilerlemesi kazanılabildiği gözlemlenmiştir. [Oyun İçi Gözlem]
 
 ## İlerleme ve seviye sistemi
 

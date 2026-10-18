@@ -6,8 +6,6 @@ description: "Wplace için oyun içi gözlemlere dayalı başlangıç ve kaynak 
 
 # Tavsiye
 
-*Bu belgedeki tüm tavsiyeler oyun içi gözleme dayalıdır ve tamamen özneldir. Güncellemelerle birlikte farklılıklar olabilir. [Oyun İçi Gözlem]*
-
 ## Damlacık puanları nereye harcanmalı?
 
 **1) Damlacık Puanlarını Doğru Yere Harcamak:** Birçok oyuncunun düştüğü hatalardan biridir. Ben, oyunda yeni hesap açıldığında **Kalıcı +5 Kapasite** eşyasının alınmasını doğru buluyorum. İlerleyen zamanlarda seviyeler için gereken XP miktarı artar ve damlacık kazanmanız zorlaşır. Oyunun başlarında bu eşyayı alarak kapasitenizi kalıcı olarak artırırsınız ve bu ilerleyen zamanlarda çok işe yarar. +30 Piksel geçicidir, ama +5 Kapasite kalıcıdır. [Öneri]
@@ -18,7 +16,7 @@ description: "Wplace için oyun içi gözlemlere dayalı başlangıç ve kaynak 
 
 ## Büyük Çizimleri Aşamalara Bölmek
 
-Büyük bir çizimin önce en dış katmanı boyanarak sınırlar belirlenmelidir, böylece çizim yapacağınız alanı önceden belirlersiniz ve griefferlara (çizim bozanlara) karşı elinizde bir report (bildirme) kozu olur. [Öneri]
+Büyük bir çizimde önce dış sınırı belirlemek, kullanılacak alanı önceden görmeyi kolaylaştırır. Çizim sonradan kasıtlı olarak bozulursa bu sınır, planlanan alanı açıklamaya yardımcı olabilir. Ancak sınır çizgisi tek başına kural ihlalini kanıtlamaz. [Öneri]
 
 ## Özellikle Dikkat Edilmesi Gereken Yer
 

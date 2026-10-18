@@ -28,11 +28,16 @@ PC'de piksele tıklanır, paint butonunun hemen sağındaki yıldız butonuna t�
 
 ## Piksel yenilenmesi
 
+### Ana kanvasın bekleme süresi
+
 - Ana kanvasta harcanan her piksel 30 saniye sonra yenilenir. [Oyun İçi Gözlem]
 - Ana kanvasta bu süreyi kısaltan bir seviye yükseltmesi yoktur. [Oyun İçi Gözlem]
-- Başlangıç kapasitesi 30 piksel olarak belirtilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
-- Klan HQ'sunda bekleme süresi ilgili klan yükseltmesiyle kısaltılabilir. Teknik belgede 10 ve 5 saniyelik süreler belirtilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
 - Güncel kapasite ve yenilenme süresini oyun içinden kontrol et. [Resmî Kaynak](https://wplace.live/how-to-play)
+
+### Bekleme süresi ile kapasite arasındaki fark
+
+- Başlangıç kapasitesi 30 piksel olarak belirtilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
+- Kapasite, havuzda tutulabilecek piksel hakkı miktarını belirtir. Yenilenme süresi ise harcanmış bir pikselin ne zaman geri geldiğini gösterir. [Oyun İçi Gözlem]
 
 ## Droplets
 
@@ -83,9 +88,10 @@ Prism, 1.7.7 sürümünde yalnızca gerçek parayla satın alınabiliyor. [Resm�
 
 - Klan kurma maliyeti 25.000 Droplet. [Oyun İçi Gözlem] Klan kurulunca bir Alliance Profile oluşturulur ve kurucusu belirlenir.
 
-## Klan kanvası
+## Klan kanvası ve bekleme süresi
 
 - Her klanın ana haritadan ayrı bir HQ kanvası vardır. Üyeler burada kendi piksel havuzlarını kullanır ve bu boyamalar ana kanvas haklarını etkilemez. [Resmî Kaynak](https://wplace.live/patch-notes)
+- Klan HQ'sunda bekleme süresi ilgili klan yükseltmesiyle kısaltılabilir. Teknik belgede 10 ve 5 saniyelik süreler belirtilir. [Kaynak](https://github.com/TeamRealB/Wplace-Protocol/blob/main/README_EN.md)
 
 ## Klan şablonları
 
