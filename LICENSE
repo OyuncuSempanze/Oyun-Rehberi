@@ -1,26 +1,32 @@
-Oyun-Rehberi — Original Editorial Content License
+Oyun-Rehberi — Editorial Content License
 
-Copyright © 2026 OyuncuSempanze
+Copyright © 2026 OyuncuSempanze for original editorial content created by OyuncuSempanze.
 
 SCOPE
 
-Unless an individual file or item says otherwise, this license applies only to original editorial text created for Oyun-Rehberi by OyuncuSempanze. This includes original game-guide text, written gameplay observations, explanatory descriptions, and the original selection and arrangement of the archive, to the extent copyright or database rights exist and can be licensed by the licensor.
+Unless a file or item contains a separate rights notice, this license covers original editorial text created for Oyun-Rehberi by OyuncuSempanze, including original game-guide text, written gameplay observations, explanatory descriptions, and the original selection and arrangement of the archive.
+
+It also covers original contributions from other authors only when they have been accepted into the project and the contributor has explicitly agreed to license that contribution under CC BY 4.0 through the repository's contribution process or another recorded, express agreement. Each contributor retains copyright in their own contribution. This notice applies only to copyright and database rights that the relevant rights holder is authorized to license.
 
 LICENSE TERMS
 
-The covered material is licensed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0). The official legal code is available at:
-
+Covered material is licensed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0):
 https://creativecommons.org/licenses/by/4.0/legalcode.en
 
-In brief, you may share and adapt the covered material, including for commercial purposes, provided that you give appropriate credit, link to the license, indicate changes where applicable, and do not imply endorsement by the original creator. The official legal code governs if this summary differs from it.
+You may share and adapt covered material, including for commercial purposes, provided you follow CC BY 4.0. In general, this means giving appropriate credit, linking to the license, indicating changes where applicable, and not implying endorsement by the creator. The official legal code governs if this summary differs from it.
+
+CC BY 4.0 is a public, non-exclusive license. It allows Oyun-Rehberi and other people to use covered content commercially under the same attribution terms. It does not reserve exclusive commercial rights in that content for the project.
+
+CONTRIBUTIONS AND FUTURE REVENUE
+
+Submitting a contribution does not transfer the contributor's copyright to the project owner. A contribution licensed under CC BY 4.0 may be included in Oyun-Rehberi and used commercially in accordance with that license. A contribution alone does not create project ownership, decision-making rights, or an automatic right to a share of the project's revenue. Any separate payment or revenue-sharing arrangement must be agreed separately in writing before the contribution is accepted. This summary does not override rights that cannot legally be waived.
 
 NOT COVERED BY THIS LICENSE
 
 This license does not apply to:
-
 - HTML, CSS, JavaScript, Liquid or Jekyll templates, source code, or the site's user interface and layout.
 - Game screenshots, game artwork, logos, trademarks, illustrations taken from Wplace's official guidelines, or other third-party assets and quoted material.
 - External websites, linked material, or any item carrying its own license or rights notice.
-- Material that OyuncuSempanze does not own or is not authorized to license.
+- Material that OyuncuSempanze or a contributor does not own or is not authorized to license.
 
-No permission to use third-party works or trademarks is granted by this notice.
+No permission to use third-party works or trademarks is granted by this notice. A separate notice attached to a file or item takes precedence for that material.
