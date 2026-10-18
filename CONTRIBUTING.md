@@ -7,7 +7,7 @@ Oyun-Rehberi, oyunlar hakkında kaynaklı ve düzenli bir Türkçe bilgi arşivi
 1. Büyük bir değişiklik veya yeni oyun için önce bir GitHub issue açarak önerini ve kullanacağın kaynakları anlat.
 2. Değişikliklerini kendi dalında hazırla ve `main` dalına doğrudan gönderme. Değişikliği bir Pull Request (PR) olarak aç.
 3. PR açıklamasında neyi değiştirdiğini, neden gerekli olduğunu ve bilgiyi nasıl doğruladığını belirt.
-4. Özgün metin veya başka bir yaratıcı içerik ekliyorsan PR'ı birleştirmeden önce [Katkıcı Lisans Sözleşmesi'ni](CONTRIBUTOR_LICENSE_AGREEMENT.md) oku ve PR konuşmasına şu açık kabul cümlesini yaz:
+4. Yeni özgün metin yazıyor, mevcut özgün metni yeniden yazıyor veya başka bir yaratıcı çalışma ekliyorsan PR'ı birleştirmeden önce [Katkıcı Lisans Sözleşmesi'ni](CONTRIBUTOR_LICENSE_AGREEMENT.md) oku ve PR konuşmasına şu açık kabul cümlesini yaz:
 
    > Oyun-Rehberi Katkıcı Lisans Sözleşmesi'ni (CONTRIBUTOR_LICENSE_AGREEMENT.md) okudum ve bu PR'daki katkılarım için kabul ediyorum.
 
