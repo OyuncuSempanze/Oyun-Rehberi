@@ -1,26 +1,35 @@
-Oyun-Rehberi — Original Editorial Content License
+Oyun-Rehberi — Editorial Content License
 
-Copyright © 2026 OyuncuSempanze
+Copyright © 2026 OyuncuSempanze.
 
-SCOPE
+CURRENT PUBLIC LICENSE
 
-Unless an individual file or item says otherwise, this license applies only to original editorial text created for Oyun-Rehberi by OyuncuSempanze. This includes original game-guide text, written gameplay observations, explanatory descriptions, and the original selection and arrangement of the archive, to the extent copyright or database rights exist and can be licensed by the licensor.
+Unless an individual file or item carries a different notice, original editorial text created for Oyun-Rehberi, including original game-guide text, written gameplay observations, explanatory descriptions, and the original selection and arrangement of the archive, is offered under the Creative Commons Attribution-NonCommercial 4.0 International Public License (CC BY-NC 4.0), to the extent the relevant rights are owned by or may be licensed by the licensor.
 
-LICENSE TERMS
+The official legal code is available at:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode.en
 
-The covered material is licensed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0). The official legal code is available at:
+In brief, you may share and adapt covered material for noncommercial purposes, provided you give appropriate credit, link to the license, indicate changes where applicable, and do not imply endorsement by the original creator. The official legal code governs if this summary differs from it.
 
-https://creativecommons.org/licenses/by/4.0/legalcode.en
+COMMERCIAL PERMISSION
 
-In brief, you may share and adapt the covered material, including for commercial purposes, provided that you give appropriate credit, link to the license, indicate changes where applicable, and do not imply endorsement by the original creator. The official legal code governs if this summary differs from it.
+This public license does not grant permission for commercial use of material covered by CC BY-NC 4.0. Commercial use may require a separate written license from the relevant rights holder. OyuncuSempanze may grant separate commercial permissions for material OyuncuSempanze owns or is authorized to license. The noncommercial public license does not prevent the rights holder from separately licensing the same material on commercial terms.
+
+EARLIER CC BY 4.0 DISTRIBUTIONS
+
+Some material was previously distributed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0). This change does not revoke, cancel, or narrow any license already granted. Copies and editions that were made available under CC BY 4.0 remain usable by recipients under that earlier license, subject to its terms. This notice does not promise that previously distributed copies can be recalled or that earlier permissions can be withdrawn.
 
 NOT COVERED BY THIS LICENSE
 
-This license does not apply to:
+This license does not automatically apply to:
 
 - HTML, CSS, JavaScript, Liquid or Jekyll templates, source code, or the site's user interface and layout.
-- Game screenshots, game artwork, logos, trademarks, illustrations taken from Wplace's official guidelines, or other third-party assets and quoted material.
-- External websites, linked material, or any item carrying its own license or rights notice.
+- Game screenshots, game artwork, logos, trademarks, illustrations taken from official game guidelines, and other third-party assets.
+- External websites, linked material, quotations, or any item carrying its own license or rights notice.
 - Material that OyuncuSempanze does not own or is not authorized to license.
 
-No permission to use third-party works or trademarks is granted by this notice.
+A separate license or rights notice attached to a file or item takes precedence for that material. No permission to use third-party works or trademarks is granted by this notice.
+
+CONTRIBUTIONS
+
+Contributions are accepted only under the project's Contributor License Agreement (CONTRIBUTOR_LICENSE_AGREEMENT.md). That agreement is intended to let OyuncuSempanze maintain, publish, adapt, and potentially commercialize accepted contributions, while contributors retain ownership of their own contributions. A contribution must not be merged until the contributor has explicitly acknowledged the agreement. The agreement does not grant the public a commercial-use license to contributed material.
