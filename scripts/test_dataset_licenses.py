@@ -115,12 +115,17 @@ Lisans metaverisi bulunmayan yeni kaynak dosyaları varsayılan olarak CC BY-NC 
         self.assertEqual(by_section["Eski bölüm"]["license"], "CC-BY-4.0")
         self.assertEqual(by_section["Yeni bölüm"]["license"], "CC-BY-NC-4.0")
         self.assertEqual(by_section["Yeni içerik"]["license"], "CC-BY-NC-4.0")
+        self.assertEqual(by_section["Yeni bölüm"]["additional_permissions"][0]["identifier"], "OYUN-REHBERI-AI-RETRIEVAL-1.0")
+        self.assertEqual(by_section["Yeni içerik"]["additional_permissions"][0]["url"], "https://oyuncusempanze.github.io/Oyun-Rehberi/ai-kullanim/")
+        self.assertNotIn("additional_permissions", faq)
         self.assertNotIn("dataset-license", outputs["oyun-rehberi-rehber-bolumleri-v1.jsonl"])
 
-        parent_licenses = {record["id"]: record["license"] for record in records}
+        parent_by_id = {record["id"]: record for record in records}
         self.assertTrue(claims)
         for claim in claims:
-            self.assertEqual(claim["license"], parent_licenses[claim["source_record_id"]])
+            parent = parent_by_id[claim["source_record_id"]]
+            self.assertEqual(claim["license"], parent["license"])
+            self.assertEqual(claim.get("additional_permissions", []), parent.get("additional_permissions", []))
 
         self.assertEqual(manifest["license"], "MIXED")
         self.assertEqual(
@@ -129,6 +134,12 @@ Lisans metaverisi bulunmayan yeni kaynak dosyaları varsayılan olarak CC BY-NC 
         )
         self.assertEqual(manifest["record_count"], len(records))
         self.assertEqual(manifest["claim_unit_count"], len(claims))
+        permission = manifest["additional_permissions"][0]
+        nc_records = [record for record in records if record["license"] == "CC-BY-NC-4.0"]
+        nc_claims = [claim for claim in claims if claim["license"] == "CC-BY-NC-4.0"]
+        self.assertEqual(permission["record_count"], len(nc_records))
+        self.assertEqual(permission["claim_unit_count"], len(nc_claims))
+        self.assertEqual(permission["url"], "https://oyuncusempanze.github.io/Oyun-Rehberi/ai-kullanim/")
         self.assertEqual(sum(item["records"] for item in manifest["files"] if item["scope"] == "all_records"), len(records))
         self.assertEqual(sum(item["records"] for item in manifest["files"] if item["scope"] == "claim_units"), len(claims))
 
