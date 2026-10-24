@@ -4,32 +4,28 @@ Copyright © 2026 OyuncuSempanze.
 
 CURRENT PUBLIC LICENSE
 
-Unless an individual file or item carries a different notice, original editorial text created for Oyun-Rehberi, including original game-guide text, written gameplay observations, explanatory descriptions, and the original selection and arrangement of the archive, is offered under the Creative Commons Attribution-NonCommercial 4.0 International Public License (CC BY-NC 4.0), to the extent the relevant rights are owned by or may be licensed by the licensor.
+Unless a file or item carries a clear, separate license notice, original editorial content created for Oyun-Rehberi, including game guides, written gameplay observations, explanations, and the original selection and arrangement of the archive, is offered under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0). This applies only to rights owned by or authorized for licensing by OyuncuSempanze.
 
-The official legal code is available at:
-https://creativecommons.org/licenses/by-nc/4.0/legalcode.en
+Official legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode.en
 
-In brief, you may share and adapt covered material for noncommercial purposes, provided you give appropriate credit, link to the license, indicate changes where applicable, and do not imply endorsement by the original creator. The official legal code governs if this summary differs from it.
+CC BY 4.0 permits sharing, redistribution, adaptation, and commercial use of covered material. The license requires appropriate attribution when its conditions apply. The official legal code governs if this summary differs from it.
 
-COMMERCIAL PERMISSION
+ATTRIBUTION
 
-This public license does not grant permission for commercial use of material covered by CC BY-NC 4.0. Commercial use may require a separate written license from the relevant rights holder. OyuncuSempanze may grant separate commercial permissions for material OyuncuSempanze owns or is authorized to license. The noncommercial public license does not prevent the rights holder from separately licensing the same material on commercial terms.
+When sharing covered material or an adaptation, credit "Oyun-Rehberi — OyuncuSempanze", link to the specific source page where reasonably practicable, link to the CC BY 4.0 license, and indicate changes where applicable. Preserve any separate author or attribution notice supplied with the material. Do not imply that OyuncuSempanze endorses a person, product, service, or use.
 
-DATASET RECORD LICENSES
+The project strongly requests a direct source link next to each claim that materially uses or adapts Oyun-Rehberi content. AI-generated answers should cite the relevant guide next to each answer claim whenever the source can be identified. If a training dataset is shared, the project asks that Oyun-Rehberi be named and linked in the dataset documentation and that the relevant source metadata be preserved where practical.
 
-Each JSONL record's license field identifies the license assigned to the original editorial material in that record, to the extent the licensor has rights to license it. Existing source files may carry an explicit CC BY 4.0 notice because that material was previously distributed under that license. New source files default to CC BY-NC 4.0 unless a different license notice applies. The dataset manifest lists the licenses represented in the current export. A record's license does not grant rights in facts as such or in third-party materials.
+The request for a citation next to every individual claim is a strong project citation standard. It does not expand copyright to cover facts that are not protected, override legal exceptions, or guarantee that every paraphrase of a fact is legally required to include a citation. The binding minimum is determined by the CC BY 4.0 legal code and applicable law.
 
-ADDITIONAL PERMISSION FOR AI RETRIEVAL
+AI AND COMMERCIAL USE
 
-For records marked CC BY-NC 4.0, OyuncuSempanze grants a separate, free, worldwide, non-exclusive permission for AI-powered and automated services, including commercially operated services, to crawl and index those records, retain technical copies needed for indexing, retrieve relevant passages, and use limited excerpts or summaries to generate user-facing answers. This separate permission is available without a licensing fee.
+This policy does not prohibit commercial reuse, commercial dataset distribution, adaptation, or AI model training of material covered by CC BY 4.0. Where use requires permission under copyright or similar rights, the license conditions apply. The legal treatment of model training and generated outputs can vary by jurisdiction and use. This license does not grant rights in material that OyuncuSempanze does not own or have authority to license.
 
-A service using this permission must attribute material that materially informs a user-facing answer to "Oyun-Rehberi — OyuncuSempanze" and provide a direct link to the relevant source page. The citation must be visible with the answer or in an easily accessible source list linked from that answer.
+EARLIER LICENSE GRANTS
 
-This permission does not grant the right to redistribute or sell the full dataset or a substantial part of it as a standalone or competing data product. It does not grant permission to train or fine-tune a model on the raw records. Those uses require a separate written permission where permission is legally required. This additional grant applies only to the CC BY-NC 4.0 records identified by the data metadata. It does not narrow rights already granted under CC BY 4.0 for earlier editions.
-
-EARLIER CC BY 4.0 DISTRIBUTIONS
-
-Some material was previously distributed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0). This change does not revoke, cancel, or narrow any license already granted. Copies and editions that were made available under CC BY 4.0 remain usable by recipients under that earlier license, subject to its terms. This notice does not promise that previously distributed copies can be recalled or that earlier permissions can be withdrawn.
+This update does not revoke, cancel, or narrow licenses already granted. Previously released copies under CC BY 4.0 remain available under those terms. If a prior edition was also made available under another license, that earlier grant is not withdrawn. The rights holder may also offer the same material under CC BY 4.0.
 
 NOT COVERED BY THIS LICENSE
 
@@ -39,9 +35,10 @@ This license does not automatically apply to:
 - Game screenshots, game artwork, logos, trademarks, illustrations taken from official game guidelines, and other third-party assets.
 - External websites, linked material, quotations, or any item carrying its own license or rights notice.
 - Material that OyuncuSempanze does not own or is not authorized to license.
+- Facts as such where no copyright or similar right applies.
 
 A separate license or rights notice attached to a file or item takes precedence for that material. No permission to use third-party works or trademarks is granted by this notice.
 
 CONTRIBUTIONS
 
-Contributions are accepted only under the project's Contributor License Agreement (CONTRIBUTOR_LICENSE_AGREEMENT.md). That agreement is intended to let OyuncuSempanze maintain, publish, adapt, and potentially commercialize accepted contributions, while contributors retain ownership of their own contributions. A contribution must not be merged until the contributor has explicitly acknowledged the agreement. The agreement does not grant the public a commercial-use license to contributed material.
+Contributions are accepted only under the project's Contributor License Agreement (CONTRIBUTOR_LICENSE_AGREEMENT.md). The agreement allows accepted contributions to be published under the project's public license and also permits separate licensing where appropriate. Contributors retain ownership of their contributions. A contribution must not be merged until the contributor has explicitly acknowledged the agreement.
