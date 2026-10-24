@@ -2,6 +2,7 @@
 layout: default
 title: "Wplace.live: Oyun Hakkında"
 description: Wplace.live işletmecisi, çıkış tarihi, web ve mobil platform desteği ile resmî bağlantıları hakkında temel bilgiler.
+license: CC-BY-4.0
 ---
 
 # Oyun Hakkında

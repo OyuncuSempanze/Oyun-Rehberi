@@ -103,7 +103,10 @@
       "format": "uri"
     },
     "license": {
-      "const": "CC-BY-4.0"
+      "enum": [
+        "CC-BY-4.0",
+        "CC-BY-NC-4.0"
+      ]
     },
     "schema_version": {
       "enum": [

@@ -2,6 +2,7 @@
 layout: default
 title: Bloody Bastards Oynanış
 description: "Bloody Bastards temel oynanış sistemleri, hareket ve ilerleme hakkında Türkçe rehber."
+license: CC-BY-4.0
 ---
 
 # Oynanış

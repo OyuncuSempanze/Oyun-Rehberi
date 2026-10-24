@@ -9,6 +9,19 @@ permalink: /lisans/
 
 Bu lisans değişikliğinden itibaren yayımlanan Oyun-Rehberi özgün editoryal içerikleri, aksi açıkça belirtilmedikçe **Creative Commons Atıf-GayriTicari 4.0 Uluslararası (CC BY-NC 4.0)** kapsamında sunulur. Lisans veren, lisanslama hakkına sahip olduğu materyaller için OyuncuSempanze'dir.
 
+## Veri kümesi kayıtlarının lisansı
+
+JSONL veri kümelerinde her kayıt kendi `license` alanında lisansını belirtir. `manifest.json`, geçerli dışa aktarımda bulunan lisansları ve kayıt sayılarını listeler. Daha önce CC BY 4.0 kapsamında yayımlanmış kaynakların kayıtları bu nedenle CC BY 4.0 bilgisini taşımaya devam edebilir. Bu eski izinler geriye dönük olarak iptal edilmez.
+
+Yeni kaynak dosyalarında açık bir lisans bildirim yoksa veri kümesi üreticisi CC BY-NC 4.0 kullanır. Bir dosyanın belirli bir bölümünü dosyanın varsayılan lisansından farklı yayımlamak için ilgili bölümün içine aşağıdaki HTML yorumlarından biri eklenebilir. Yorum web sayfasında görünmez ve üretilen metne aktarılmaz.
+
+```markdown
+## Yeni bölüm
+<!-- dataset-license: CC-BY-NC-4.0 -->
+```
+
+Bölüm yönergesi yalnızca ilgili başlığın altındaki içeriği etkiler. İddia birimleri üst kayıtlarının lisansını devralır. Her kayıt için gösterilen lisans yalnızca OyuncuSempanze'nin lisanslama yetkisine sahip olduğu özgün materyal için geçerlidir. Olgular ve üçüncü taraf içerikleri üzerindeki hakları kendiliğinden değiştirmez.
+
 ## Lisans kapsamına girenler
 
 Aksi açıkça belirtilmediği sürece, CC BY-NC 4.0 kapsamı OyuncuSempanze tarafından oluşturulan özgün rehber metinlerini, oyun içi gözlem yazılarını, açıklamaları ve arşivin özgün seçim ve düzenlemesini kapsar. Bu haklar, Markdown dışında JSONL ve diğer biçimlerde yayımlanan aynı editoryal içeriği de kapsayabilir. Lisans yalnızca hak sahibinin lisanslama yetkisine sahip olduğu telif ve benzeri haklar için geçerlidir.

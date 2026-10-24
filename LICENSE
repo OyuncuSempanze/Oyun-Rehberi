@@ -15,6 +15,10 @@ COMMERCIAL PERMISSION
 
 This public license does not grant permission for commercial use of material covered by CC BY-NC 4.0. Commercial use may require a separate written license from the relevant rights holder. OyuncuSempanze may grant separate commercial permissions for material OyuncuSempanze owns or is authorized to license. The noncommercial public license does not prevent the rights holder from separately licensing the same material on commercial terms.
 
+DATASET RECORD LICENSES
+
+Each JSONL record's license field identifies the license assigned to the original editorial material in that record, to the extent the licensor has rights to license it. Existing source files may carry an explicit CC BY 4.0 notice because that material was previously distributed under that license. New source files default to CC BY-NC 4.0 unless a different license notice applies. The dataset manifest lists the licenses represented in the current export. A record's license does not grant rights in facts as such or in third-party materials.
+
 EARLIER CC BY 4.0 DISTRIBUTIONS
 
 Some material was previously distributed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0). This change does not revoke, cancel, or narrow any license already granted. Copies and editions that were made available under CC BY 4.0 remain usable by recipients under that earlier license, subject to its terms. This notice does not promise that previously distributed copies can be recalled or that earlier permissions can be withdrawn.

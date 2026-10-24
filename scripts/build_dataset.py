@@ -11,11 +11,14 @@ SITE_BASE="https://oyuncusempanze.github.io/Oyun-Rehberi/"
 FAQ_VERSION="1.0"
 GUIDE_VERSION="1.1"
 CLAIM_VERSION="1.2"
-DATASET_VERSION="1.3.0"
+DATASET_VERSION="1.4.0"
 GAMES={"bloody-bastards":{"slug":"bloody-bastards","name":"Bloody Bastards"},"DATA-WING":{"slug":"data-wing","name":"DATA WING"},"wplace.live":{"slug":"wplace-live","name":"Wplace.live"}}
 ORDER={"bloody-bastards":0,"DATA-WING":1,"wplace.live":2}
 LABELS={"Resmî Kaynak":"official_source","Oyun İçi Gözlem":"in_game_observation","Kaynak":"reference_source","Öneri":"recommendation"}
 LABEL_RE=re.compile(r"\[(Resmî Kaynak|Oyun İçi Gözlem|Kaynak|Öneri)\]")
+DEFAULT_LICENSE="CC-BY-NC-4.0"
+SUPPORTED_LICENSES={"CC-BY-4.0","CC-BY-NC-4.0"}
+LICENSE_DIRECTIVE_RE=re.compile(r"<!--\s*dataset-license:\s*([^>]*?)\s*-->")
 LINK_RE=re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
 ANY_LINK_RE=re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s]+)\)")
 IMAGE_RE=re.compile(r"!\[[^\]]*\]\([^)]+\)")
@@ -82,6 +85,23 @@ def read_meta(md:str)->tuple[dict[str,str],str]:
         if row:meta[row.group(1)]=row.group(2).strip().strip("\"'")
     return meta,md[m.end():]
 
+
+def resolve_content_license(markdown:str,default_license:str)->tuple[str,str]:
+    if default_license not in SUPPORTED_LICENSES:
+        raise ValueError(f"unsupported file license: {default_license}")
+    matches=list(LICENSE_DIRECTIVE_RE.finditer(markdown))
+    if len(matches)>1:
+        raise ValueError("a content section may contain only one dataset-license directive")
+    license_value=default_license
+    if matches:
+        requested=matches[0].group(1).strip()
+        if requested not in SUPPORTED_LICENSES:
+            raise ValueError(f"unsupported dataset-license directive: {requested}")
+        license_value=requested
+    cleaned=LICENSE_DIRECTIVE_RE.sub("",markdown).strip()
+    return license_value,cleaned
+
+
 def base_record(path:Path,kind:str,version:str)->dict[str,Any]:
     g=game_for(path)
     return {"id":"","language":"tr","game":g["name"],"game_slug":g["slug"],"record_type":kind}
@@ -95,18 +115,18 @@ def faq_question(folder:str,heading:str)->str|None:
     return QUESTION_OVERRIDES.get((folder,heading))
 
 def extract_faq(path:Path)->list[dict[str,Any]]:
-    md=path.read_text(encoding="utf-8");matches=list(SECTION_RE.finditer(md));out=[]
+    md=path.read_text(encoding="utf-8");meta,_=read_meta(md);page_license=meta.get("license",DEFAULT_LICENSE);matches=list(SECTION_RE.finditer(md));out=[]
     for i,m in enumerate(matches):
         heading=m.group(1).strip();end=matches[i+1].start() if i+1<len(matches) else len(md)
-        answer_md=md[m.end():end].strip();question=faq_question(path.parent.name,heading)
+        answer_md=md[m.end():end].strip();record_license,answer_md=resolve_content_license(answer_md,page_license);question=faq_question(path.parent.name,heading)
         if not question or not plain_text(answer_md):continue
         links=extract_links(answer_md,path);record=base_record(path,"faq",FAQ_VERSION)
-        record.update({"id":f"{record['game_slug']}-{slugify(question)}","question":question,"answer":plain_text(answer_md),"answer_markdown":answer_md,"evidence_types":evidence_types(answer_md,links),"sources":links,"content_url":content_url_for(path),"license":"CC-BY-4.0","schema_version":FAQ_VERSION})
+        record.update({"id":f"{record['game_slug']}-{slugify(question)}","question":question,"answer":plain_text(answer_md),"answer_markdown":answer_md,"evidence_types":evidence_types(answer_md,links),"sources":links,"content_url":content_url_for(path),"license":record_license,"schema_version":FAQ_VERSION})
         out.append(record)
     return out
 
 def extract_guides(path:Path)->list[dict[str,Any]]:
-    md=path.read_text(encoding="utf-8");meta,body=read_meta(md)
+    md=path.read_text(encoding="utf-8");meta,body=read_meta(md);page_license=meta.get("license",DEFAULT_LICENSE)
     body=re.sub(r"(?m)^\s*#\s+.+?\n+","",body,count=1).strip()
     matches=list(SECTION_RE.finditer(body));sections=[]
     if matches:
@@ -121,10 +141,11 @@ def extract_guides(path:Path)->list[dict[str,Any]]:
     elif len(plain_text(body))>=30:sections.append(("Genel bakış",body))
     article_title=meta.get("title") or path.stem;out=[]
     for title,raw in sections:
+        record_license,raw=resolve_content_license(raw,page_license)
         section_md=IMAGE_RE.sub("",raw).strip();content=plain_text(section_md)
         if not content:continue
         links=extract_links(section_md,path);record=base_record(path,"guide_section",GUIDE_VERSION)
-        record.update({"id":f"{record['game_slug']}-{slugify(path.stem)}-{slugify(title)}","article_title":article_title,"section_title":title,"content":content,"content_markdown":section_md,"evidence_types":evidence_types(section_md,links),"sources":links,"content_url":content_url_for(path),"license":"CC-BY-4.0","schema_version":GUIDE_VERSION})
+        record.update({"id":f"{record['game_slug']}-{slugify(path.stem)}-{slugify(title)}","article_title":article_title,"section_title":title,"content":content,"content_markdown":section_md,"evidence_types":evidence_types(section_md,links),"sources":links,"content_url":content_url_for(path),"license":record_license,"schema_version":GUIDE_VERSION})
         out.append(record)
     return out
 
@@ -271,6 +292,7 @@ def validate(records:list[dict[str,Any]])->None:
         missing=COMMON-r.keys()
         if missing:raise ValueError(f"{r.get('id','?')}: missing {sorted(missing)}")
         if not isinstance(r["id"],str) or not r["id"].strip():raise ValueError("record ID must be a non-empty string")
+        if r["license"] not in SUPPORTED_LICENSES:raise ValueError(f"{r['id']}: unsupported license {r['license']}")
         if r["id"] in ids:raise ValueError(f"duplicate record ID: {r['id']}")
         ids.add(r["id"]);record_by_id[r["id"]]=r
         if r["record_type"]=="faq":
@@ -321,6 +343,17 @@ def build_outputs()->dict[str,str]:
         rows=extract_guides(p)
         if rows:guide_by_game.setdefault(game_for(p)["slug"],[]).extend(rows);guides.extend(rows)
     all_records=faqs+guides;claim_units=extract_claim_units(all_records);validate(all_records+claim_units)
+    license_counts={}
+    for row in all_records+claim_units:
+        license_counts.setdefault(row["license"],{"faq":0,"guide_section":0,"claim":0})
+        license_counts[row["license"]][row["record_type"]]+=1
+    licenses=sorted(license_counts)
+    license_urls={"CC-BY-4.0":"https://creativecommons.org/licenses/by/4.0/","CC-BY-NC-4.0":"https://creativecommons.org/licenses/by-nc/4.0/"}
+    license_entries=[]
+    for license_id in licenses:
+        counts=license_counts[license_id]
+        license_entries.append({"identifier":license_id,"url":license_urls[license_id],"record_count":counts["faq"]+counts["guide_section"],"claim_unit_count":counts["claim"]})
+    manifest_license=licenses[0] if len(licenses)==1 else "MIXED"
     outputs={"oyun-rehberi-sss-v1.jsonl":jsonl(faqs),"oyun-rehberi-rehber-bolumleri-v1.jsonl":jsonl(guides),"oyun-rehberi-tam-arsiv-v1.jsonl":jsonl(all_records),"oyun-rehberi-iddia-birimleri-v1.jsonl":jsonl(claim_units)}
     game_slugs=list(dict.fromkeys(r["game_slug"] for r in all_records))
     for slug in game_slugs:
@@ -336,7 +369,7 @@ def build_outputs()->dict[str,str]:
         name=next((g["name"] for g in GAMES.values() if g["slug"]==slug),slug)
         file_entries.append({"path":f"{slug}-sss-v1.jsonl","scope":"game_faq","game":name,"game_slug":slug,"format":"jsonl","records":len(rows)})
     file_entries.append({"path":"oyun-rehberi-iddia-birimleri-v1.jsonl","scope":"claim_units","format":"jsonl","records":len(claim_units)})
-    manifest={"name":"Oyun-Rehberi Türkçe Oyun Bilgisi Veri Kümesi","dataset_version":DATASET_VERSION,"schema_version":"1.2","language":"tr","format":"JSON Lines (UTF-8), one JSON object per line","license":"CC-BY-4.0","source_repository":"https://github.com/OyuncuSempanze/Oyun-Rehberi","website":SITE_BASE,"description":"SSS kayıtları, rehber bölümleri ve kaynak bağlantıları korunmuş daha küçük iddia birimlerini içeren Türkçe oyun bilgisi arşivi.","record_count":len(all_records),"claim_unit_count":len(claim_units),"collections":[{"record_type":"faq","records":len(faqs),"description":"Soru-cevap biçimindeki sık sorulan sorular."},{"record_type":"guide_section","records":len(guides),"description":"Rehber belgelerindeki anlamlı bölümler."}],"source_files":[p.relative_to(ROOT).as_posix() for p in faq_paths+guide_paths],"files":file_entries,"schema_url":f"{SITE_BASE}veri-kumeleri/schema-v1.json","rights_notice":"CC BY 4.0 yalnızca arşivin lisanslama yetkisine sahip olduğu özgün metin ve düzenleme unsurlarına uygulanır. Kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.","limitations":["Guide-section records preserve meaningful document sections; they are not guaranteed to be atomic single claims.","Claim-unit records are split at sentence boundaries when possible, otherwise at paragraph or list-item boundaries. They may still contain more than one proposition.","Claim-unit evidence and source links are assigned at unit level when present, otherwise inherited from the parent record.","This dataset is a starting point for retrieval and evaluation, not a claim of readiness for every model-training task.","Source links identify references but do not independently prove that each claim is correct."]}
+    manifest={"name":"Oyun-Rehberi Türkçe Oyun Bilgisi Veri Kümesi","dataset_version":DATASET_VERSION,"schema_version":"1.2","language":"tr","format":"JSON Lines (UTF-8), one JSON object per line","license":manifest_license,"licenses":license_entries,"license_counts":license_counts,"source_repository":"https://github.com/OyuncuSempanze/Oyun-Rehberi","website":SITE_BASE,"description":"SSS kayıtları, rehber bölümleri ve kaynak bağlantıları korunmuş daha küçük iddia birimlerini içeren Türkçe oyun bilgisi arşivi.","record_count":len(all_records),"claim_unit_count":len(claim_units),"collections":[{"record_type":"faq","records":len(faqs),"description":"Soru-cevap biçimindeki sık sorulan sorular."},{"record_type":"guide_section","records":len(guides),"description":"Rehber belgelerindeki anlamlı bölümler."}],"source_files":[p.relative_to(ROOT).as_posix() for p in faq_paths+guide_paths],"files":file_entries,"schema_url":f"{SITE_BASE}veri-kumeleri/schema-v1.json","rights_notice":"Her JSONL kaydının license alanı o kaydın lisans bilgisini gösterir. Daha önce CC BY 4.0 kapsamında yayımlanmış içeriklere verilmiş izinler geçerliliğini korur. Yeni kaynak dosyalarında aksi belirtilmezse CC BY-NC 4.0 varsayılan olarak kullanılır. Bölüm düzeyindeki license yönergeleri dosyanın varsayılan lisansını geçersiz kılabilir. Bu alan yalnızca OyuncuSempanze'nin lisanslama yetkisine sahip olduğu özgün içerik için geçerlidir. Olgular, kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.","limitations":["Guide-section records preserve meaningful document sections; they are not guaranteed to be atomic single claims.","Claim-unit records are split at sentence boundaries when possible, otherwise at paragraph or list-item boundaries. They may still contain more than one proposition.","Claim-unit evidence and source links are assigned at unit level when present, otherwise inherited from the parent record.","This dataset is a starting point for retrieval and evaluation, not a claim of readiness for every model-training task.","Source links identify references but do not independently prove that each claim is correct."]}
     outputs["manifest.json"]=json.dumps(manifest,ensure_ascii=False,indent=2)+"\n"
     return outputs
 

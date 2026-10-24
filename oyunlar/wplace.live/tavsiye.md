@@ -2,6 +2,7 @@
 layout: default
 title: Wplace Tavsiyeleri
 description: "Wplace için oyun içi gözlemlere dayalı başlangıç ve kaynak yönetimi tavsiyeleri."
+license: CC-BY-4.0
 ---
 
 # Tavsiye

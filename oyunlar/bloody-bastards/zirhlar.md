@@ -2,6 +2,7 @@
 layout: default
 title: Bloody Bastards Zırhları
 description: "Bloody Bastards oyunundaki zırh türleri ve belgelenmiş etkileri."
+license: CC-BY-4.0
 ---
 
 # Zırhlar Hakkında

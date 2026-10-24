@@ -2,6 +2,7 @@
 layout: default
 title: DATA WING Sık Sorulan Sorular
 description: DATA WING çevrim dışı oynama, bölüm sayısı ve taç sistemi hakkında kaynaklı bilgiler.
+license: CC-BY-4.0
 ---
 
 # Sık Sorulan Sorular

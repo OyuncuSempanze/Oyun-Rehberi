@@ -2,6 +2,7 @@
 layout: default
 title: Bloody Bastards Silah ve Hasar Türleri
 description: "Bloody Bastards oyun içi ekipman sınıfları ve hasar türleri hakkında bilgi."
+license: CC-BY-4.0
 ---
 
 # Silah ve Hasar Türleri
