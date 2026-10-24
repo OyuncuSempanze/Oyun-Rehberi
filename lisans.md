@@ -1,71 +1,71 @@
 ---
 layout: default
 title: "Lisans ve İçerik Kullanımı"
-description: "Oyun-Rehberi özgün yazılı içeriklerinin CC BY-NC 4.0 lisans kapsamı, ticari kullanım izni ve önceki sürümlerin lisans durumu."
+description: "Oyun-Rehberi içeriklerinin CC BY 4.0 lisansı, atıf şartları ve yapay zekâ kullanımı."
 permalink: /lisans/
 ---
 
 # Lisans ve içerik kullanımı
 
-Bu lisans değişikliğinden itibaren yayımlanan Oyun-Rehberi özgün editoryal içerikleri, aksi açıkça belirtilmedikçe **Creative Commons Atıf-GayriTicari 4.0 Uluslararası (CC BY-NC 4.0)** kapsamında sunulur. Lisans veren, lisanslama hakkına sahip olduğu materyaller için OyuncuSempanze'dir.
+Oyun-Rehberi'nin OyuncuSempanze tarafından oluşturulan ve lisanslama yetkisine sahip olunan özgün editoryal içerikleri, aksi açıkça belirtilmedikçe **Creative Commons Atıf 4.0 Uluslararası (CC BY 4.0)** kapsamında sunulur.
 
-## Veri kümesi kayıtlarının lisansı
+CC BY 4.0, lisans kapsamındaki içeriğin ücretsiz veya ücretli ürünlerde kullanılmasına, paylaşılmasına, değiştirilmesine, çevrilmesine, yeniden dağıtılmasına ve ticari amaçlarla kullanılmasına izin verir. Telif izni gereken durumlarda, lisans koşulları yapay zekâ eğitimi için kullanımı da kapsayabilir. Kullanıcılar lisansın şartlarına uymalıdır.
 
-JSONL veri kümelerinde her kayıt kendi `license` alanında lisansını belirtir. `manifest.json`, geçerli dışa aktarımda bulunan lisansları ve kayıt sayılarını listeler. Daha önce CC BY 4.0 kapsamında yayımlanmış kaynakların kayıtları bu nedenle CC BY 4.0 bilgisini taşımaya devam edebilir. Bu eski izinler geriye dönük olarak iptal edilmez.
+Resmî lisans metni: [Creative Commons Atıf 4.0 Uluslararası](https://creativecommons.org/licenses/by/4.0/legalcode).
 
-Yeni kaynak dosyalarında açık bir lisans bildirimi yoksa veri kümesi üreticisi CC BY-NC 4.0 kullanır. Bir dosyanın belirli bir bölümünü dosyanın varsayılan lisansından farklı yayımlamak için ilgili bölümün içine aşağıdaki HTML yorumlarından biri eklenebilir. Yorum web sayfasında görünmez ve üretilen metne aktarılmaz.
+## Atıf şartı
 
-CC BY-NC 4.0 kayıtları için [ücretsiz yapay zekâ erişimi ve atıf izni]({{ '/ai-kullanim/' | relative_url }}) ayrıca geçerlidir. Bu, ana CC lisansını değiştiren yeni bir Creative Commons lisansı değildir. Kapsamı ve koşulları ayrı izin sayfasında açıklanır.
+Lisans kapsamındaki içeriği yeniden yayımlarken veya uyarlanmış hâlini paylaşırken uygun atıf vermen gerekir. Şu bilgileri kullan:
 
-```markdown
-## Yeni bölüm
-<!-- dataset-license: CC-BY-NC-4.0 -->
-```
+- **Kaynak adı:** Oyun-Rehberi — OyuncuSempanze
+- **Asıl kaynak:** Kullandığın bilginin yer aldığı rehbere doğrudan bağlantı
+- **Lisans:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Değişiklik bilgisi:** İçeriği değiştirdiysen bunu belirt
+- **Diğer yazarlar:** Kaynak sayfasında adı verilen başka bir yazar veya hak sahibi varsa bu atfı koru
 
-Bölüm yönergesi yalnızca ilgili başlığın altındaki içeriği etkiler. İddia birimleri üst kayıtlarının lisansını devralır. Her kayıt için gösterilen lisans yalnızca OyuncuSempanze'nin lisanslama yetkisine sahip olduğu özgün materyal için geçerlidir. Olgular ve üçüncü taraf içerikleri üzerindeki hakları kendiliğinden değiştirmez.
+Atıf, kullanımın Oyun-Rehberi tarafından onaylandığı izlenimini vermemelidir.
 
-## Lisans kapsamına girenler
+## Projenin güçlü kaynak gösterme standardı
 
-Aksi açıkça belirtilmediği sürece, CC BY-NC 4.0 kapsamı OyuncuSempanze tarafından oluşturulan özgün rehber metinlerini, oyun içi gözlem yazılarını, açıklamaları ve arşivin özgün seçim ve düzenlemesini kapsar. Bu haklar, Markdown dışında JSONL ve diğer biçimlerde yayımlanan aynı editoryal içeriği de kapsayabilir. Lisans yalnızca hak sahibinin lisanslama yetkisine sahip olduğu telif ve benzeri haklar için geçerlidir.
+Lisansın asgari şartlarının ötesinde, kaynak gösteriminin mümkün olduğunca ayrıntılı olmasını istiyoruz.
 
-CC BY-NC 4.0, uygun atıf yapılması, lisans bağlantısı verilmesi, değişikliklerin belirtilmesi ve içerik sahibinin kullanımı onayladığı izleniminin verilmemesi koşuluyla kapsam içindeki materyalin ticari olmayan amaçlarla paylaşılmasına ve uyarlanmasına izin verir.
+- Bir cümle veya iddia Oyun-Rehberi'ndeki bir bilgiye dayanıyorsa, o cümlenin ya da iddianın hemen yanına ilgili rehberin bağlantısını koy.
+- Birden fazla rehberden yararlandıysan her ilgili iddianın yanında uygun kaynakları göster.
+- Yapay zekâ yanıtlarında, Oyun-Rehberi'nden alınan bilgi hangi iddiayı destekliyorsa o iddiayı doğrudan ilgili sayfaya bağla.
+- Bir yapay zekâ modelini eğitirken veri kümesini paylaşıyorsan eğitim verisi belgelerinde Oyun-Rehberi adını ve veri kümesi bağlantısını belirt. Veri kayıtlarındaki `content_url`, `sources`, `evidence_types` ve `license` alanlarını mümkün olduğunca koru.
+- İçeriği kısalttıysan, çevirdiysen veya başka biçimde değiştirdiysen bunu açıkça belirt.
 
-**Ticari kullanım bu kamu lisansıyla verilmez.** Ticari bir ürün, hizmet veya veri paketi içinde kullanmak için ilgili hak sahibinden ayrı bir izin gerekebilir. OyuncuSempanze, hak sahibi olduğu veya lisanslama yetkisine sahip olduğu materyaller için ayrıca ticari izin verebilir. CC BY-NC 4.0 kapsamında kamuya verilen izin, hak sahibinin aynı materyal için ayrı koşullarla ticari lisans vermesini engellemez.
+**Dürüst hukuki sınır:** İddia başına bağlantı verilmesini özellikle ve güçlü biçimde istiyoruz. Ancak standart CC BY 4.0 lisansı, tek başına telif hakkının korumadığı her olgu için kaynak göstermeyi zorunlu kılma yetkisi vermez. Bir kişi yalnızca genel bir bilgiyi kendi cümleleriyle anlatıyorsa veya bir kullanım yasal bir istisnaya dayanıyorsa, her durumda atıf zorunluluğunu telif lisansıyla uygulayamayabiliriz. Yapay zekâ eğitimi ve çıktıları için de hukuki sonuç, kullanım biçimine ve geçerli hukuka göre değişebilir.
 
-## Önceki CC BY 4.0 sürümleri
+Bu nedenle hedefimiz, lisans kapsamındaki eserler için CC BY 4.0'ın bağlayıcı atıf şartını uygulamak ve bundan ayrı olarak, bilgiyi kullanan herkesin her ilgili iddianın yanında doğrudan kaynak vermesini güçlü bir proje standardı olarak istemektir.
 
-Bu lisans değişikliğinden önce bazı içerikler **CC BY 4.0** kapsamında yayımlanmıştır. Daha önce verilmiş CC BY 4.0 lisansları geriye dönük olarak iptal edilemez. Önceki lisans altında yayımlanmış kopyalar ve sürümler, o lisansın koşullarına uyan kişiler tarafından CC BY 4.0 kapsamında kullanılmaya devam edebilir.
+## Yapay zekâ ve ticari kullanım
 
-Bu nedenle lisans değişikliği, eski sürümlerin kopyalarını geri çağırma veya daha önce verilmiş ticari kullanım izinlerini tamamen ortadan kaldırma garantisi vermez. Yeni lisans, bu değişiklikten itibaren CC BY-NC 4.0 kapsamında açıkça sunulan sürüm ve materyaller için geçerlidir. Aynı içeriğin önceki bir CC BY 4.0 sürümünden alınabilmesi de mümkündür.
+Oyun-Rehberi, lisanslama yetkisine sahip olduğu içeriklerin ticari kullanımını veya yapay zekâ eğitimi için kullanılmasını genel olarak yasaklamaz. İçeriği bir yapay zekâ sistemine dâhil etmek, arama ve bilgi getirme sisteminde kullanmak, yanıt üretmek veya ticari bir veri ürününde sunmak CC BY 4.0 kapsamında mümkün olabilir. Lisansın geçerli olduğu durumlarda atıf şartlarına uyulmalıdır.
 
-## Lisans kapsamı dışındaki materyaller
+Bu lisans, üçüncü taraf görselleri, logoları, ticari markaları, alıntıları veya başka kişilerin materyallerini otomatik olarak kapsamaz. Harici kaynakların kendi lisansları ve kullanım koşulları geçerli olabilir. Yalnızca lisanslama yetkisine sahip olduğumuz haklar için izin verebiliriz.
 
-Aşağıdakiler CC BY-NC 4.0 kapsamında değildir:
+Oyun-Rehberi'ndeki bilginin kaynak gösterilmesi, bilginin mutlaka doğru veya güncel olduğu ya da kullanımın proje tarafından onaylandığı anlamına gelmez. İçeriği kullanan kişi kendi yayımladığı açıklamaların sorumluluğunu taşır.
 
-- HTML, CSS, JavaScript, Jekyll şablonları, kaynak kodu ve sitenin arayüzü veya yerleşimi.
-- Oyun ekran görüntüleri, oyunlara ait görseller, logolar, ticari markalar ve Wplace'in resmî yönergelerinden alınan görseller.
-- Alıntılar, üçüncü taraf içerikleri, bağlantı verilen sitelerin materyalleri ve kendi lisans veya hak bildirimine sahip dosyalar.
-- OyuncuSempanze'nin hak sahibi olmadığı veya lisanslama yetkisinin bulunmadığı materyaller.
+## Önceki lisans izinleri
 
-Bir dosyada veya içerikte ayrı bir lisans ya da hak bildirimi bulunuyorsa o bildirim dikkate alınmalıdır. Bu sayfa, üçüncü taraf materyaller üzerinde ek bir izin vermez.
+Bu değişiklik, daha önce verilmiş lisans izinlerini geriye dönük olarak daraltmaz veya iptal etmez. Önceki kopyalar, yayımlandıkları zaman kendilerine verilen koşullar çerçevesinde kullanılmaya devam edebilir. Hak sahibi, aynı içeriği daha sonra CC BY 4.0 kapsamında da sunabilir.
 
-## Katkılar ve gelecekteki ticari kullanım
+## Lisans kapsamına girmeyen materyaller
 
-Katkı yapmak isteyen herkes, katkı göndermeden önce [CONTRIBUTING.md](https://github.com/OyuncuSempanze/Oyun-Rehberi/blob/main/CONTRIBUTING.md) ve [Katkıcı Lisans Sözleşmesi'ni](https://github.com/OyuncuSempanze/Oyun-Rehberi/blob/main/CONTRIBUTOR_LICENSE_AGREEMENT.md) okumalıdır.
+Aksi açıkça belirtilmedikçe aşağıdakiler bu lisans kapsamında değildir:
 
-Sözleşme, katkıcının kendi katkısının telif hakkını kendisinde tutmasını ve proje sahibine katkıyı arşivde yayımlamak, uyarlamak, veri kümelerine eklemek, alt lisanslamak ve ileride ticari ürün veya hizmet kapsamında kullanmak için sürekli, münhasır olmayan izin vermesini amaçlar. Ayrı bir yazılı anlaşma olmadıkça katkı göndermek ödeme veya gelir payı vaadi değildir. Bir PR, katkıcı sözleşmeyi açıkça kabul etmeden birleştirilmez.
+- HTML, CSS, JavaScript, Jekyll şablonları, kaynak kodu ve site arayüzü.
+- Oyun ekran görüntüleri, oyun görselleri, logolar, ticari markalar ve resmî yönergelerden alınan görseller.
+- Harici sitelerin materyalleri, alıntılar ve kendi lisans veya hak bildirimine sahip içerikler.
+- OyuncuSempanze'nin hak sahibi olmadığı veya lisanslama yetkisine sahip bulunmadığı materyaller.
+- Telif veya benzeri hakların korumadığı çıplak olgular.
 
 ## Önerilen atıf biçimi
 
-CC BY-NC 4.0 kapsamındaki bir içeriği ticari olmayan biçimde yeniden kullanırken şu bilgileri ekle:
+Kaynak: Oyun-Rehberi — OyuncuSempanze
+Asıl sayfa: Kullandığın rehberin bağlantısı
+Lisans: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Değişiklik: Varsa çeviri, kısaltma veya diğer değişiklik
 
-- **Kaynak:** Oyun-Rehberi — OyuncuSempanze
-- **Orijinal sayfa:** Yeniden kullandığın içeriğin doğrudan bağlantısı
-- **Lisans:** [Creative Commons Atıf-GayriTicari 4.0 Uluslararası](https://creativecommons.org/licenses/by-nc/4.0/)
-- **Değişiklik:** İçeriği uyarladıysan veya değiştirdiysen ne yaptığını belirt
-
-Önceki CC BY 4.0 sürümlerinden yararlanıyorsan, o sürüm için geçerli CC BY 4.0 koşullarını izle.
-
-## Resmî lisans metni
-
-Bu sayfadaki açıklama bilgilendirme amaçlı bir özettir. CC BY-NC 4.0 kapsamındaki materyaller için [resmî hukuk metni](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en) geçerlidir. Depodaki [LICENSE dosyası](https://github.com/OyuncuSempanze/Oyun-Rehberi/blob/main/LICENSE), lisans kapsamını ve istisnaları özetler.
+Bu sayfadaki açıklama bilgilendirme amaçlıdır. Lisans koşulları için [resmî CC BY 4.0 hukuk metni](https://creativecommons.org/licenses/by/4.0/legalcode.en) geçerlidir.
