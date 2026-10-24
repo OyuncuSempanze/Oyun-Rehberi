@@ -48,3 +48,8 @@ Her veri kaydının geçerli lisansı JSONL içindeki `license` alanında göste
 Bu izin, yalnızca OyuncuSempanze'nin lisanslama yetkisine sahip olduğu telif veya benzeri haklar için geçerlidir. Oyun hakkındaki çıplak olgular, harici kaynaklar, oyun görselleri, logolar ve üçüncü taraf materyallere otomatik olarak ek hak vermez. Hukuken izin gerektirmeyen kullanımların kapsamı da bu sayfayla değişmez.
 
 Bu bir hukuk uzmanı tarafından incelenmiş sözleşmenin yerine geçmez. Özellikle ticari AI eğitimi veya veri ürünü oluşturma planlarında, izin alınması gereken hakların ve uygulanabilir hukukun ayrıca değerlendirilmesi gerekir.
+
+## Lisans kaynakları
+
+- [CC BY-NC 4.0 resmî hukuk metni](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+- [Creative Commons'un CC lisansları ve yapay zekâ eğitimi rehberi](https://creativecommons.org/using-cc-licensed-works-for-ai-training-2/)
