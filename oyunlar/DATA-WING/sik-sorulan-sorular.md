@@ -1,6 +1,6 @@
 ---
 layout: default
-title: DATA WING Sık Sorulan Sorular
+title: "DATA WING SSS: Çevrim Dışı Oyun ve Bölümler"
 description: DATA WING çevrim dışı oynama, bölüm sayısı ve taç sistemi hakkında kaynaklı bilgiler.
 license: CC-BY-4.0
 ---

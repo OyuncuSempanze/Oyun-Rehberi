@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wplace Sık Sorulan Sorular
+title: "Wplace.live SSS: Harita Sorunları ve Hesap İtirazları"
 description: Wplace harita sorunları, destek ve hesap itirazları hakkında resmî kaynaklı bilgiler.
 license: CC-BY-4.0
 ---

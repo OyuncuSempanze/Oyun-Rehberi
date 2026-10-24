@@ -1,6 +1,6 @@
 ---
 layout: default
-title: DATA WING Türkçe Rehberi
+title: "DATA WING Türkçe Rehberi: Oynanış ve Mekanikler"
 description: DATA WING için temel bilgiler, hareket kontrolleri, momentum, duvarlardan hız kazanma ve bölüm hedefleri hakkında Türkçe rehberler.
 ---
 

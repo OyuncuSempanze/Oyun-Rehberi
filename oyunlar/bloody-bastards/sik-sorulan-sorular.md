@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bloody Bastards Sık Sorulan Sorular
+title: "Bloody Bastards SSS: Modlar, Kontroller ve İlerleme"
 description: Bloody Bastards oyun modları, kontrolleri ve ekipman çeşitliliği hakkında kaynaklı bilgiler.
 license: CC-BY-4.0
 ---

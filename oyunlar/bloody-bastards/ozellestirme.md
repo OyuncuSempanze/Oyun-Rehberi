@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bloody Bastards Özelleştirme
+title: "Bloody Bastards Özelleştirme: Karakter ve Eşya Görünümü"
 description: "Bloody Bastards karakter ve eşya görünümü için özelleştirme seçenekleri."
 license: CC-BY-4.0
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bloody Bastards Türkçe Rehberi
+title: "Bloody Bastards Türkçe Rehberi: Oynanış ve Ekipmanlar"
 description: Bloody Bastards için Türkçe oynanış, dövüş sistemi, karakter özelleştirme ve güncelleme rehberleri.
 ---
 
