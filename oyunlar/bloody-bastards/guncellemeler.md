@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bloody Bastards Güncellemeleri
+title: "Bloody Bastards Güncellemeleri ve Sürüm Notları"
 description: "Bloody Bastards için güncelleme notları ve kaynak kontrolü."
 license: CC-BY-4.0
 ---

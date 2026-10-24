@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wplace Güncellemeleri
+title: "Wplace.live Güncellemeleri: Yama Notları ve Sürümler"
 description: Wplace için resmî yama notlarından hazırlanan güncelleme özeti.
 license: CC-BY-4.0
 ---

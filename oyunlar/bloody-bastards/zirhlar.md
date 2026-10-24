@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bloody Bastards Zırhları
+title: "Bloody Bastards Zırh Rehberi: Koruma ve Ağırlık"
 description: "Bloody Bastards oyunundaki zırh türleri ve belgelenmiş etkileri."
 license: CC-BY-4.0
 ---

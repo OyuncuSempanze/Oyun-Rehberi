@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wplace Kuralları
+title: "Wplace.live Kuralları: Yasaklar ve Topluluk Rehberi"
 description: "Wplace topluluk kurallarının Türkçe özeti ve resmî kaynak bağlantıları."
 license: CC-BY-4.0
 ---

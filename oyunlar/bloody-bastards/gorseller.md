@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bloody Bastards Görselleri
+title: "Bloody Bastards Oyun İçi Görseller: Zırh ve Özelleştirme"
 description: Bloody Bastards oyun içi arayüzü, medeniyet seçimi, kasklar ve karakter özelleştirmesinden görsel örnekler.
 ---
 

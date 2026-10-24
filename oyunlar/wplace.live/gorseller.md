@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wplace.live Topluluk Kuralları ve Görsel Örnekler
+title: "Wplace.live Topluluk Kuralları ve Çizim Örnekleri"
 description: Wplace.live resmî topluluk kurallarındaki çizim, moderasyon ve harita temizliği örnekleri.
 ---
 

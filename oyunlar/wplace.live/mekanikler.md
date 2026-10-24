@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wplace.live Mekanikleri
+title: "Wplace.live Mekanikleri: Piksel, Droplets ve Klanlar"
 description: "Wplace.live piksel yenilenmesi, Droplets, mağaza, klan merkezi ve şablon sistemi hakkında Türkçe açıklamalar."
 license: CC-BY-4.0
 ---

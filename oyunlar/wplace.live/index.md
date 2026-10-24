@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wplace.live Türkçe Rehberi
+title: "Wplace.live Türkçe Rehberi: Piksel Boyama ve Kurallar"
 description: Wplace.live için piksel boyama mekanikleri, Droplets, klanlar, kurallar ve güncelleme rehberleri.
 ---
 

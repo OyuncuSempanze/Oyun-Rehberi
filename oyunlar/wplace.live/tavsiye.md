@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wplace Tavsiyeleri
+title: "Wplace.live Başlangıç Rehberi: Droplets ve Kapasite"
 description: "Wplace için oyun içi gözlemlere dayalı başlangıç ve kaynak yönetimi tavsiyeleri."
 license: CC-BY-4.0
 ---
