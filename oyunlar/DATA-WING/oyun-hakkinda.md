@@ -2,6 +2,7 @@
 layout: default
 title: "DATA WING: Oyun Hakkında"
 description: DATA WING geliştiricisi Dan Vogt, çıkış tarihi, Android ve iOS desteği ile oyunun türü hakkında kaynaklı temel bilgiler.
+license: CC-BY-4.0
 ---
 
 # Oyun Hakkında

@@ -2,6 +2,7 @@
 layout: default
 title: Wplace.live Mekanikleri
 description: "Wplace.live piksel yenilenmesi, Droplets, mağaza, klan merkezi ve şablon sistemi hakkında Türkçe açıklamalar."
+license: CC-BY-4.0
 ---
 
 # Mekanikler

@@ -2,6 +2,7 @@
 layout: default
 title: Wplace Kuralları
 description: "Wplace topluluk kurallarının Türkçe özeti ve resmî kaynak bağlantıları."
+license: CC-BY-4.0
 ---
 
 # Kurallar

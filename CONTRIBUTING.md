@@ -41,6 +41,19 @@ python scripts/build_dataset.py --check
 
 Mümkünse PR göndermeden önce iki komutu da çalıştır ve sonuçları PR açıklamasına ekle.
 
+## Veri kümesi lisans bilgileri
+
+Veri kümesi üreticisi, lisansı kaynak Markdown dosyalarından alır. Daha önce CC BY 4.0 kapsamında yayımlanmış mevcut kaynak dosyaları bu lisansı açıkça belirtir. Yeni kaynak dosyalarında `license` alanı yoksa varsayılan lisans CC BY-NC 4.0 olur.
+
+Yeni bir bölüm eklerken mevcut dosyanın lisansı eski CC BY 4.0 ise bölümün lisansı da dosya varsayılanını izler. Yeni bölümü CC BY-NC 4.0 kapsamında yayımlamak için başlığın altına şu görünmez yönergeyi ekle:
+
+```markdown
+## Yeni bölüm
+<!-- dataset-license: CC-BY-NC-4.0 -->
+```
+
+Yönergede yalnızca `CC-BY-4.0` veya `CC-BY-NC-4.0` kullanılabilir. Aynı bölümde birden fazla yönerge kullanma. İddia birimleri üst kaydın lisansını devralır. JSONL dosyalarını elle düzenleme. Kaynak Markdown değiştikten sonra veri kümesini yeniden üret ve `python scripts/build_dataset.py --check` komutunu çalıştır.
+
 ## Lisans ve gelecekteki ticari kullanım
 
 Oyun-Rehberi'nin bu lisans değişikliğinden itibaren CC BY-NC 4.0 kapsamında yayımlanan özgün editoryal içerikleri, bu lisansın koşullarına uygun ticari olmayan kullanım için paylaşılabilir ve uyarlanabilir. Ticari kullanım için ilgili hak sahibinden ayrı izin alınması gerekir.

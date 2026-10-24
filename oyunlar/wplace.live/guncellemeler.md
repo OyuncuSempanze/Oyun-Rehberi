@@ -2,6 +2,7 @@
 layout: default
 title: Wplace Güncellemeleri
 description: Wplace için resmî yama notlarından hazırlanan güncelleme özeti.
+license: CC-BY-4.0
 ---
 
 # Güncellemeler

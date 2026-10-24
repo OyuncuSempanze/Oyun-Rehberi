@@ -2,6 +2,7 @@
 layout: default
 title: Wplace Sık Sorulan Sorular
 description: Wplace harita sorunları, destek ve hesap itirazları hakkında resmî kaynaklı bilgiler.
+license: CC-BY-4.0
 ---
 
 # Sık Sorulan Sorular

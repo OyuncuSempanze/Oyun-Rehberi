@@ -2,6 +2,7 @@
 layout: default
 title: DATA WING Mekanikleri
 description: "DATA WING hareket, momentum, bölüm hedefleri ve seviye mekanikleri hakkında Türkçe rehber."
+license: CC-BY-4.0
 ---
 
 # Mekanikler
