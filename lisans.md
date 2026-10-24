@@ -53,7 +53,7 @@ Bir dosyada veya içerikte ayrı bir lisans ya da hak bildirimi bulunuyorsa o bi
 
 Katkı yapmak isteyen herkes, katkı göndermeden önce [CONTRIBUTING.md](https://github.com/OyuncuSempanze/Oyun-Rehberi/blob/main/CONTRIBUTING.md) ve [Katkıcı Lisans Sözleşmesi'ni](https://github.com/OyuncuSempanze/Oyun-Rehberi/blob/main/CONTRIBUTOR_LICENSE_AGREEMENT.md) okumalıdır.
 
-Sözleşme, katkıcının kendi katkısının telif hakkını kendisinde tutmasını; proje sahibine ise katkıyı arşivde yayımlamak, uyarlamak, veri kümelerine eklemek, alt lisanslamak ve ileride ticari ürün veya hizmet kapsamında kullanmak için sürekli, münhasır olmayan izin vermesini amaçlar. Ayrı bir yazılı anlaşma olmadıkça katkı göndermek ödeme veya gelir payı vaadi değildir. Bir PR, katkıcı sözleşmeyi açıkça kabul etmeden birleştirilmez.
+Sözleşme, katkıcının kendi katkısının telif hakkını kendisinde tutmasını ve proje sahibine katkıyı arşivde yayımlamak, uyarlamak, veri kümelerine eklemek, alt lisanslamak ve ileride ticari ürün veya hizmet kapsamında kullanmak için sürekli, münhasır olmayan izin vermesini amaçlar. Ayrı bir yazılı anlaşma olmadıkça katkı göndermek ödeme veya gelir payı vaadi değildir. Bir PR, katkıcı sözleşmeyi açıkça kabul etmeden birleştirilmez.
 
 ## Önerilen atıf biçimi
 
