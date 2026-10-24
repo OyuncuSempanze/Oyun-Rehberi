@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression tests for Markdown-derived dataset license metadata."""
+"""Regression tests for the project's CC BY 4.0 dataset licensing policy."""
 from __future__ import annotations
 
 import json
@@ -12,29 +12,29 @@ import build_dataset as builder
 
 
 class DatasetLicenseTests(unittest.TestCase):
-    def test_section_directive_overrides_default_and_is_removed(self) -> None:
-        markdown = """<!-- dataset-license: CC-BY-NC-4.0 -->
-This is a section whose license is explicitly overridden."""
-        license_id, cleaned = builder.resolve_content_license(markdown, "CC-BY-4.0")
+    def test_new_content_defaults_to_cc_by_4_0(self) -> None:
+        self.assertEqual(builder.DEFAULT_LICENSE, "CC-BY-4.0")
+        self.assertEqual(builder.SUPPORTED_LICENSES, {"CC-BY-4.0"})
 
-        self.assertEqual(license_id, "CC-BY-NC-4.0")
-        self.assertNotIn("dataset-license", cleaned)
-        self.assertIn("explicitly overridden", cleaned)
-
-    def test_unsupported_or_duplicate_directives_are_rejected(self) -> None:
+    def test_noncommercial_license_is_rejected(self) -> None:
         with self.assertRaises(ValueError):
-            builder.resolve_content_license(
-                "<!-- dataset-license: CC0-1.0 -->\nContent.", "CC-BY-4.0"
-            )
+            builder.resolve_content_license("Content.", "CC-BY-NC-4.0")
 
         with self.assertRaises(ValueError):
             builder.resolve_content_license(
-                "<!-- dataset-license: CC-BY-4.0 -->\n"
                 "<!-- dataset-license: CC-BY-NC-4.0 -->\nContent.",
                 "CC-BY-4.0",
             )
 
-    def test_exports_preserve_legacy_license_and_track_new_content(self) -> None:
+    def test_duplicate_section_directives_are_rejected(self) -> None:
+        with self.assertRaises(ValueError):
+            builder.resolve_content_license(
+                "<!-- dataset-license: CC-BY-4.0 -->\n"
+                "<!-- dataset-license: CC-BY-4.0 -->\nContent.",
+                "CC-BY-4.0",
+            )
+
+    def test_exports_use_cc_by_4_0_and_have_no_extra_permissions(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             game_dir = root / "oyunlar" / "bloody-bastards"
@@ -51,7 +51,7 @@ license: CC-BY-4.0
 
 ## Eski soru?
 
-Bu eski yanıt veri kümesi lisans testinde kullanılacak kadar uzun ve açıklayıcıdır. [Oyun İçi Gözlem]
+Bu yanıt, veri kümesi lisans testinde kullanılacak kadar uzun ve açıklayıcı bir metin içerir. [Oyun İçi Gözlem]
 """,
                 encoding="utf-8",
             )
@@ -67,12 +67,11 @@ license: CC-BY-4.0
 
 ## Eski bölüm
 
-Bu bölüm önceki lisans altında yayımlanan metni temsil eden yeterince uzun bir açıklamadır. [Oyun İçi Gözlem]
+Bu bölüm, açıkça CC BY 4.0 lisansı taşıyan kaynak metindeki uzun bir açıklamayı temsil eder. [Oyun İçi Gözlem]
 
 ## Yeni bölüm
 
-<!-- dataset-license: CC-BY-NC-4.0 -->
-Bu bölüm, eski lisanslı bir dosyaya sonradan eklenen ve farklı lisansla yayımlanan yeni içeriği temsil eder. [Oyun İçi Gözlem]
+Bu bölüm aynı dosyaya sonradan eklenmiştir ve dosyanın varsayılan lisansını devralır. [Oyun İçi Gözlem]
 """,
                 encoding="utf-8",
             )
@@ -87,7 +86,7 @@ title: Yeni rehber
 
 ## Yeni içerik
 
-Lisans metaverisi bulunmayan yeni kaynak dosyaları varsayılan olarak CC BY-NC 4.0 lisansını kullanmalıdır. [Oyun İçi Gözlem]
+Lisans metaverisi bulunmayan yeni kaynak dosyaları varsayılan olarak CC BY 4.0 lisansını kullanmalıdır. [Oyun İçi Gözlem]
 """,
                 encoding="utf-8",
             )
@@ -108,16 +107,19 @@ Lisans metaverisi bulunmayan yeni kaynak dosyaları varsayılan olarak CC BY-NC 
             if line.strip()
         ]
         manifest = json.loads(outputs["manifest.json"])
-        by_section = {record.get("section_title"): record for record in records if record["record_type"] == "guide_section"}
+        guides = {
+            record.get("section_title"): record
+            for record in records
+            if record["record_type"] == "guide_section"
+        }
         faq = next(record for record in records if record["record_type"] == "faq")
 
         self.assertEqual(faq["license"], "CC-BY-4.0")
-        self.assertEqual(by_section["Eski bölüm"]["license"], "CC-BY-4.0")
-        self.assertEqual(by_section["Yeni bölüm"]["license"], "CC-BY-NC-4.0")
-        self.assertEqual(by_section["Yeni içerik"]["license"], "CC-BY-NC-4.0")
-        self.assertEqual(by_section["Yeni bölüm"]["additional_permissions"][0]["identifier"], "OYUN-REHBERI-AI-RETRIEVAL-1.0")
-        self.assertEqual(by_section["Yeni içerik"]["additional_permissions"][0]["url"], "https://oyuncusempanze.github.io/Oyun-Rehberi/ai-kullanim/")
+        self.assertEqual(guides["Eski bölüm"]["license"], "CC-BY-4.0")
+        self.assertEqual(guides["Yeni bölüm"]["license"], "CC-BY-4.0")
+        self.assertEqual(guides["Yeni içerik"]["license"], "CC-BY-4.0")
         self.assertNotIn("additional_permissions", faq)
+        self.assertNotIn("additional_permissions", guides["Yeni içerik"])
         self.assertNotIn("dataset-license", outputs["oyun-rehberi-rehber-bolumleri-v1.jsonl"])
 
         parent_by_id = {record["id"]: record for record in records}
@@ -125,23 +127,24 @@ Lisans metaverisi bulunmayan yeni kaynak dosyaları varsayılan olarak CC BY-NC 
         for claim in claims:
             parent = parent_by_id[claim["source_record_id"]]
             self.assertEqual(claim["license"], parent["license"])
-            self.assertEqual(claim.get("additional_permissions", []), parent.get("additional_permissions", []))
+            self.assertNotIn("additional_permissions", claim)
 
-        self.assertEqual(manifest["license"], "MIXED")
+        self.assertEqual(manifest["license"], "CC-BY-4.0")
         self.assertEqual(
             {item["identifier"] for item in manifest["licenses"]},
-            {"CC-BY-4.0", "CC-BY-NC-4.0"},
+            {"CC-BY-4.0"},
         )
         self.assertEqual(manifest["record_count"], len(records))
         self.assertEqual(manifest["claim_unit_count"], len(claims))
-        permission = manifest["additional_permissions"][0]
-        nc_records = [record for record in records if record["license"] == "CC-BY-NC-4.0"]
-        nc_claims = [claim for claim in claims if claim["license"] == "CC-BY-NC-4.0"]
-        self.assertEqual(permission["record_count"], len(nc_records))
-        self.assertEqual(permission["claim_unit_count"], len(nc_claims))
-        self.assertEqual(permission["url"], "https://oyuncusempanze.github.io/Oyun-Rehberi/ai-kullanim/")
-        self.assertEqual(sum(item["records"] for item in manifest["files"] if item["scope"] == "all_records"), len(records))
-        self.assertEqual(sum(item["records"] for item in manifest["files"] if item["scope"] == "claim_units"), len(claims))
+        self.assertNotIn("additional_permissions", manifest)
+        self.assertEqual(
+            sum(item["records"] for item in manifest["files"] if item["scope"] == "all_records"),
+            len(records),
+        )
+        self.assertEqual(
+            sum(item["records"] for item in manifest["files"] if item["scope"] == "claim_units"),
+            len(claims),
+        )
 
 
 if __name__ == "__main__":

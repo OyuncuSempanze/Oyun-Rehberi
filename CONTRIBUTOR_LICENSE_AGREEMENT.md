@@ -20,7 +20,7 @@ Katkıcı, Katkı üzerindeki sahip olduğu telif ve benzeri hakları elinde tut
 - Katkı'yı düzenlemek, uyarlamak, tercüme etmek, kısaltmak, birleştirmek ve türev çalışmalar oluşturmak.
 - Katkı'yı Oyun-Rehberi'nin Markdown sayfalarına, web sitesine, JSONL ve diğer veri kümelerine, arşivlerine, yedeklerine ve gelecekteki sürümlerine eklemek.
 - Katkı'yı Proje'nin mevcut veya gelecekteki sürümleri, ticari ürünleri, hizmetleri, abonelikleri, lisanslı veri paketleri ve benzeri faaliyetleri kapsamında kullanmak.
-- Katkı'yı ve türevlerini üçüncü kişilere alt lisansla sunmak veya bunları CC BY-NC 4.0 dâhil kamu lisansları altında ve ayrıca ticari ya da başka sözleşme koşullarıyla lisanslamak.
+- Katkı'yı ve türevlerini üçüncü kişilere alt lisansla sunmak veya bunları CC BY 4.0 gibi kamu lisansları altında yayımlamak. Ayrıca uygun olduğunda aynı katkı için ayrı ticari veya başka sözleşme koşullarıyla izin vermek.
 
 Bu izin, proje sahibinin Katkı'yı ticari amaçlarla kullanabilmesini ve bu kullanım için ayrıca izin vermesini kapsar. Bu sözleşme tek başına katkıcıya ödeme yapılacağı veya gelecekte elde edilen gelirden pay verileceği anlamına gelmez. Farklı bir ödeme veya gelir paylaşımı ancak önceden yapılmış ayrı bir yazılı anlaşmayla kararlaştırılır.
 
@@ -47,6 +47,12 @@ Katkıcı, elinden geldiği ölçüde ve Katkı'yı sunarken:
 
 Katkıcı bu koşulları kabul etmiyorsa özgün içeriği PR yoluyla projeye sunmamalıdır. Sadece fikir, hata bildirimi veya kaynak bağlantısı paylaşabilir.
 
-## 6. Kapsam ve hukuki değerlendirme
+## 6. Kamuya açık lisans ve atıf
+
+Kabul edilen katkılar, proje sahibinin lisanslama yetkisi kapsamında kamuya CC BY 4.0 lisansıyla yayımlanabilir. Bu lisans ticari kullanıma, yeniden dağıtıma, uyarlamaya ve telif izni gereken durumlarda yapay zekâ eğitimi için kullanıma izin verir. Kamu lisansının atıf şartları geçerlidir.
+
+Katkıcı kendi telif hakkını korumaya devam eder. Kaynakta katkıcının adı veya ayrı bir atıf bildirimi verilmişse yeniden kullanımda bu bilgi korunmalıdır. Proje ayrıca Oyun-Rehberi'nin ilgili sayfasına doğrudan bağlantı verilmesini ister. Daha önce verilmiş kamu lisansı izinleri geriye dönük olarak daraltılmaz.
+
+## 7. Kapsam ve hukuki değerlendirme
 
 Bu metin, proje için amaçlanan katkı politikasını açıklar. Uygulanabilirliği, belirli bir katkıya veya kişiye nasıl uygulanacağı ve farklı ülkelerdeki hukuki sonuçları somut duruma göre değişebilir. Ticari faaliyet başlamadan veya bu sözleşmeye dayanılarak önemli haklar kullanılmadan önce uygun bir hukuk uzmanından değerlendirme alınmalıdır.

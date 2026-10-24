@@ -104,8 +104,7 @@
     },
     "license": {
       "enum": [
-        "CC-BY-4.0",
-        "CC-BY-NC-4.0"
+        "CC-BY-4.0"
       ]
     },
     "schema_version": {
@@ -158,26 +157,6 @@
         "unit",
         "parent_record"
       ]
-    },
-    "additional_permissions": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "identifier",
-          "url"
-        ],
-        "properties": {
-          "identifier": {
-            "const": "OYUN-REHBERI-AI-RETRIEVAL-1.0"
-          },
-          "url": {
-            "const": "https://oyuncusempanze.github.io/Oyun-Rehberi/ai-kullanim/"
-          }
-        }
-      }
     }
   },
   "allOf": [
@@ -257,44 +236,6 @@
         "properties": {
           "schema_version": {
             "const": "1.2"
-          }
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "license": {
-            "const": "CC-BY-NC-4.0"
-          }
-        },
-        "required": [
-          "license"
-        ]
-      },
-      "then": {
-        "required": [
-          "additional_permissions"
-        ],
-        "properties": {
-          "additional_permissions": {
-            "type": "array",
-            "contains": {
-              "type": "object",
-              "required": [
-                "identifier",
-                "url"
-              ],
-              "properties": {
-                "identifier": {
-                  "const": "OYUN-REHBERI-AI-RETRIEVAL-1.0"
-                },
-                "url": {
-                  "const": "https://oyuncusempanze.github.io/Oyun-Rehberi/ai-kullanim/"
-                }
-              }
-            },
-            "minContains": 1
           }
         }
       }

@@ -1,6 +1,6 @@
 {
   "name": "Oyun-Rehberi Türkçe Oyun Bilgisi Veri Kümesi",
-  "dataset_version": "1.5.0",
+  "dataset_version": "1.6.0",
   "schema_version": "1.2",
   "language": "tr",
   "format": "JSON Lines (UTF-8), one JSON object per line",
@@ -130,23 +130,12 @@
     }
   ],
   "schema_url": "https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/schema-v1.json",
-  "rights_notice": "Her JSONL kaydının license alanı o kaydın lisans bilgisini gösterir. Daha önce CC BY 4.0 kapsamında yayımlanmış içeriklere verilmiş izinler geçerliliğini korur. Yeni kaynak dosyalarında aksi belirtilmezse CC BY-NC 4.0 varsayılan olarak kullanılır. CC BY-NC 4.0 kayıtları için ai-kullanim/ sayfasında açıklanan ek izin, kullanıcıya sunulan yapay zekâ yanıtlarında kaynak göstererek ücretsiz bilgi getirme kullanımına izin verir. Bu izin toplu veri kümesi yeniden dağıtımı, tek başına veri ürünü olarak satışı veya ham kayıtlarla model eğitimi izni vermez. Lisanslar yalnızca OyuncuSempanze'nin yetkili olduğu haklar için geçerlidir. Olgular, kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.",
+  "rights_notice": "Her JSONL kaydının license alanı, proje tarafından lisanslanabilen özgün editoryal içeriğin lisansını belirtir. Yeni kaynak dosyalarında aksi belirtilmediğinde CC BY 4.0 uygulanır. CC BY 4.0, lisans kapsamındaki içeriğin ticari kullanımına, paylaşımına, uyarlanmasına ve telif izni gereken durumlarda yapay zekâ eğitimi için kullanılmasına izin verir. Bu kullanımlarda lisansın gerektirdiği atıf koşulları geçerlidir. Proje, her ilgili iddianın yanında doğrudan kaynak bağlantısı verilmesini özellikle ister. Bu güçlü atıf talebi, telif hakkının korumadığı olgular üzerinde tek başına hak oluşturmaz ve uygulanabilir hukuki istisnaları ortadan kaldırmaz. Daha önce verilmiş lisans izinleri geriye dönük olarak daraltılmaz. Üçüncü taraf materyaller ve başka hak sahiplerinin katkıları kendi hak ve koşullarına tabidir.",
   "limitations": [
     "Guide-section records preserve meaningful document sections. They are not guaranteed to be atomic single claims.",
     "Claim-unit records are split at sentence boundaries when possible, otherwise at paragraph or list-item boundaries. They may still contain more than one proposition.",
     "Claim-unit evidence and source links are assigned at unit level when present, otherwise inherited from the parent record.",
     "This dataset is a starting point for retrieval and evaluation, not a claim of readiness for every model-training task.",
     "Source links identify references but do not independently prove that each claim is correct."
-  ],
-  "additional_permissions": [
-    {
-      "identifier": "OYUN-REHBERI-AI-RETRIEVAL-1.0",
-      "name": "Free AI retrieval and answer attribution permission",
-      "url": "https://oyuncusempanze.github.io/Oyun-Rehberi/ai-kullanim/",
-      "applies_to_license": "CC-BY-NC-4.0",
-      "record_count": 0,
-      "claim_unit_count": 0,
-      "summary": "Free crawling, indexing, retrieval and user-facing answer generation with source attribution for CC BY-NC 4.0 records. This permission does not grant bulk dataset redistribution, resale as a standalone product or model training on raw records."
-    }
   ]
 }

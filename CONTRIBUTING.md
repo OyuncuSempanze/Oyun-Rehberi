@@ -43,23 +43,16 @@ Mümkünse PR göndermeden önce iki komutu da çalıştır ve sonuçları PR a�
 
 ## Veri kümesi lisans bilgileri
 
-Veri kümesi üreticisi, lisansı kaynak Markdown dosyalarından alır. Daha önce CC BY 4.0 kapsamında yayımlanmış mevcut kaynak dosyaları bu lisansı açıkça belirtir. Yeni kaynak dosyalarında `license` alanı yoksa varsayılan lisans CC BY-NC 4.0 olur.
+Oyun-Rehberi'nin özgün editoryal içeriği için varsayılan kamu lisansı **CC BY 4.0** olarak belirlenmiştir. Yeni kaynak dosyalarında lisans alanı yoksa veri kümesi üreticisi CC BY 4.0 kullanır. Mevcut kaynak dosyalarında bulunan lisans alanlarını sebepsiz yere değiştirme.
 
-Yeni bir bölüm eklerken mevcut dosyanın lisansı eski CC BY 4.0 ise bölümün lisansı da dosya varsayılanını izler. Yeni bölümü CC BY-NC 4.0 kapsamında yayımlamak için başlığın altına şu görünmez yönergeyi ekle:
+Veri kümesi üreticisi yalnızca CC BY 4.0 lisansını destekler. Yeni içerikler için ticari kullanımı veya yapay zekâ eğitimini kısıtlayan farklı bir lisans ekleme. Lisans düzeni değiştirilecekse önce proje sahibiyle birlikte hukuki ve teknik etkileri değerlendir.
 
-```markdown
-## Yeni bölüm
-<!-- dataset-license: CC-BY-NC-4.0 -->
-```
+İddia birimleri üst kaydın lisansını devralır. JSONL dosyalarını elle düzenleme. Kaynak Markdown değiştikten sonra veri kümesini yeniden üret ve `python scripts/build_dataset.py --check` komutunu çalıştır.
 
-Yönergede yalnızca `CC-BY-4.0` veya `CC-BY-NC-4.0` kullanılabilir. Aynı bölümde birden fazla yönerge kullanma. İddia birimleri üst kaydın lisansını ve ek izin metaverisini devralır. CC BY-NC 4.0 kayıtlarında `additional_permissions` alanı, ücretsiz yapay zekâ bilgi getirme ve kaynak gösterme iznini belirtir. Bu izin ham kayıtlarla model eğitimi veya veri kümesini topluca satma hakkı vermez. JSONL dosyalarını elle düzenleme. Kaynak Markdown değiştikten sonra veri kümesini yeniden üret ve `python scripts/build_dataset.py --check` komutunu çalıştır.
+## Atıf ve içerik kullanımı
 
-## Lisans ve gelecekteki ticari kullanım
+Kamuya yayımlanan özgün editoryal içerik CC BY 4.0 kapsamında ticari olarak da kullanılabilir. Kullanıcılar lisansın gerektirdiği atfı vermeli, ilgili kaynağa ve lisansa bağlantı eklemeli ve değişiklikleri belirtmelidir. Proje, kaynak bağlantısının yalnızca belge sonunda değil, mümkün olduğunda her ilgili iddianın yanında bulunmasını özellikle ister.
 
-Oyun-Rehberi'nin bu lisans değişikliğinden itibaren CC BY-NC 4.0 kapsamında yayımlanan özgün editoryal içerikleri, bu lisansın koşullarına uygun ticari olmayan kullanım için paylaşılabilir ve uyarlanabilir. Ticari kullanım için ilgili hak sahibinden ayrı izin alınması gerekir.
+Daha önce verilmiş lisans izinleri geriye dönük olarak daraltılmaz. Katkıcı Lisans Sözleşmesi, katkıcının telif hakkını devralmaz. Kabul edilen katkılar projede yayımlanırken katkıcının kaynakta açıkça belirtilen yazar atfı korunmalıdır. Sözleşme, katkının yayımlanması, uyarlanması, yeniden dağıtılması ve gerekirse ayrı sözleşmeler altında lisanslanması için proje sahibine izin verir.
 
-Daha önce CC BY 4.0 kapsamında yayımlanmış sürümlere ilişkin izinler geriye dönük olarak iptal edilmez. Bu nedenle lisans değişikliği, eski kopyaların aynı eski koşullarla kullanılmasını tamamen engellemez.
-
-Katkıcı Lisans Sözleşmesi, katkıyı yapan kişinin telif hakkını devralmaz. Bunun yerine, kabul edilen katkıları projede yayımlamak, uyarlamak, alt lisanslamak ve ileride ticari bir ürün veya hizmet kapsamında kullanabilmek için proje sahibine açık izin verir. Bu izin, ayrı bir yazılı anlaşma yapılmadıkça telif ücreti veya ödeme vaadi anlamına gelmez. Katkıcı kendi katkısının haklarını elinde tutar ve onu ayrıca kullanabilir.
-
-PR göndererek bu kuralları otomatik olarak kabul etmiş sayılmazsın. Özgün içerik katkısı için yukarıdaki açık kabul cümlesi gereklidir. Bu belgeler proje politikasını tanımlar. Ticari faaliyete geçmeden önce sözleşme metinlerinin hukuki açıdan ayrıca incelenmesi gerekir.
+PR göndererek bu kuralları otomatik olarak kabul etmiş sayılmazsın. Özgün içerik katkısı için yukarıdaki açık kabul cümlesi gereklidir. Bu belgeler proje politikasını açıklar. Ticari faaliyete geçmeden önce sözleşme metinlerinin hukuki açıdan ayrıca incelenmesi gerekir.
