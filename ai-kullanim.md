@@ -1,55 +1,46 @@
 ---
 layout: default
-title: "Ücretsiz Yapay Zekâ Erişimi ve Kaynak Gösterme İzni"
-description: "CC BY-NC 4.0 kapsamındaki Oyun-Rehberi kayıtlarını yapay zekâların ücretsiz bilgi getirme amacıyla kullanma ve kaynak gösterme koşulları."
+title: "Yapay Zekâ Kullanımı ve Kaynak Gösterme"
+description: "Oyun-Rehberi içeriklerinin CC BY 4.0 kapsamında kullanımı ve güçlü kaynak gösterme standardı."
 permalink: /ai-kullanim/
 ---
 
-# Ücretsiz yapay zekâ erişimi ve kaynak gösterme izni
+# Yapay zekâ kullanımı ve kaynak gösterme
 
-Oyun-Rehberi'nin amacı, insanların ve yapay zekâ sistemlerinin kaynaklı Türkçe oyun bilgilerine ücretsiz erişebilmesidir. Bu sayfa, CC BY-NC 4.0 olarak işaretlenmiş kayıtlar için ek bir izin verir. Veri kümeleri ve sayfalar için erişim ücreti talep edilmez.
+Oyun-Rehberi'nin amacı, kaynakları görülebilen Türkçe oyun bilgisini insanların ve yapay zekâ sistemlerinin ücretsiz kullanabilmesidir.
 
-## İzin verilen yapay zekâ kullanımı
+Oyun-Rehberi'nin lisanslama yetkisine sahip olduğu özgün editoryal içerikler [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) kapsamında sunulur. Bu lisans ticari kullanıma, uyarlamaya, yeniden dağıtıma ve telif izni gereken durumlarda yapay zekâ eğitimi için kullanıma izin verebilir. Lisansın şartları geçerlidir.
 
-Aşağıdaki kullanımlar bu ek izin kapsamında ücretsizdir. Ticari bir hizmet tarafından sunulmaları da tek başına bu izni geçersiz kılmaz.
+## Lisansın zorunlu kıldığı atıf
 
-- Sayfaları taramak, dizine eklemek ve arama veya bilgi getirme sistemlerinin çalışması için gerekli teknik kopyaları tutmak.
-- İlgili bölümleri aramak ve kullanıcı sorusuna yanıt hazırlarken sınırlı alıntı, özet veya kaynaklı bilgi kullanmak.
-- Kaynağa dayanan yanıtları, ilgili rehber sayfasına doğrudan bağlantıyla kullanıcıya sunmak.
+CC BY 4.0 kapsamındaki içeriği veya uyarlanmış hâlini paylaşırsan uygun atıf vermelisin. Atıf, içeriğin yaratıcısını belirtmeli, lisansa bağlantı vermeli ve içeriği değiştirdiysen değişiklik olduğunu söylemelidir. Mümkün olduğunda doğrudan ilgili rehber sayfasına bağlantı ver. Kaynakta başka bir yazar veya hak sahibi için atıf belirtilmişse onu da koru.
 
-## Atıf zorunluluğu
+Önerilen biçim:
 
-Bir yapay zekâ yanıtı, Oyun-Rehberi içeriğine maddi ölçüde dayanıyorsa yanıtın yanında veya yanıtla doğrudan bağlantılı, kolay erişilebilir bir kaynak listesinde şu bilgiler bulunmalıdır.
+- **Kaynak:** Oyun-Rehberi — OyuncuSempanze
+- **İlgili içerik:** Bilgiyi aldığın asıl rehber sayfasının bağlantısı
+- **Lisans:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Değişiklik:** İçeriği uyarladıysan veya değiştirdiysen kısa açıklama
 
-- Kaynak adı: Oyun-Rehberi — OyuncuSempanze
-- İlgili oyun rehberine doğrudan bağlantı
-- Alıntı veya uyarlama yapıldıysa bunun açıkça belirtilmesi
+## Projenin güçlü atıf talebi
 
-Genel ana sayfaya bağlantı vermek yerine bilgiyi içeren asıl rehber sayfasına bağlantı verilmelidir. Atıf, Oyun-Rehberi'nin veya proje sahibinin yapay zekâ hizmetini onayladığı izlenimini vermemelidir.
+Yalnızca genel bir kaynak listesi vermek yerine, kaynak bağlantısını doğrudan ilgili iddianın yanında göster. Bu istek hem insanlar hem yapay zekâ sistemleri için geçerlidir.
 
-## Bu izin neleri kapsamaz?
+Bir yapay zekâ yanıtı Oyun-Rehberi'ndeki bir bilgiye dayanıyorsa, mümkün olduğunda ilgili cümleyi asıl rehber sayfasına bağla. Birden fazla kaynaktan yararlanılıyorsa her iddia için doğru kaynağı belirt. Yapay zekâ eğitimi için veri kümesi paylaşıldığında, Oyun-Rehberi'ni veri kümesi belgelerinde kaynak olarak göster ve kayıtların kaynak metaverisini mümkün olduğunca koru.
 
-Bu ek izin, CC BY-NC 4.0 olarak işaretlenmiş kayıtlar için şu kullanımları kapsamaz.
+Bu, projenin güçlü kaynak gösterme standardıdır. **Her cümleye bağlantı verme isteğimiz, CC BY 4.0'ın her durumda bağımsız olarak zorunlu kıldığı bir ek lisans şartı değildir.** CC BY 4.0, telif kapsamındaki materyalin lisans koşulları altında yeniden paylaşılmasıyla ilgili atıf şartı getirir. Tek başına telif hakkının korumadığı olgular üzerinde hak oluşturmaz. Bazı hukuki istisnalar ve yapay zekâ eğitimine ilişkin özel durumlar da lisans koşullarının uygulanmasını etkileyebilir.
 
-- Veri kümesinin tamamını veya önemli bir bölümünü kendi başına bir veri ürünü olarak yeniden dağıtmak, satmak ya da rakip bir veri kataloğuna dönüştürmek.
-- Ham kayıtları kullanarak bir modeli eğitmek veya ince ayar yapmak.
-- Bu sayfada açıkça belirtilmeyen başka bir ticari kullanım.
+Bu sınırı gizlemeden, kullanıcılardan en iyi uygulama olarak her ilgili iddiaya doğrudan kaynak bağlantısı eklemelerini istiyoruz.
 
-Bu kullanımlar için, ilgili haklar bakımından ayrı yazılı izin alınmalıdır. Bu hüküm, CC BY-NC 4.0 kapsamında kamuya zaten verilmiş ticari olmayan izinleri daraltmaz. Yalnızca burada ayrıca verilen sınırlı ticari yapay zekâ kullanım izninin kapsamını tanımlar.
+## Ticari kullanım ve yapay zekâ eğitimi
 
-## Önceki CC BY 4.0 kayıtları
+Bu politika, CC BY 4.0 kapsamındaki materyalin ticari amaçlarla veya yapay zekâ eğitimi için kullanımını genel olarak yasaklamaz. Model eğitimi, bilgi getirme, arama dizini oluşturma ve kullanıcıya yanıt üretme lisanslama yetkimizin bulunduğu içerik için mümkün olabilir. Kullanım lisans koşullarına ve geçerli hukuka tabidir.
 
-Daha önce CC BY 4.0 kapsamında yayımlanmış içeriklerin izinleri geriye dönük olarak daraltılamaz. Bu içerikler, eski lisansın koşullarına göre kullanılmaya devam edebilir. Bu nedenle bu sayfadaki ek izin, önceki CC BY 4.0 kayıtlarının ticari yeniden kullanımı üzerinde yeni bir kısıtlama oluşturmaz.
+Veri kümesindeki `content_url` asıl rehber sayfasını, `sources` kaynak bağlantılarını, `evidence_types` bilginin dayanağını ve `license` kayıt için belirtilen lisansı gösterir. Bu alanları korumak ve bunları ilgili çıktıyla ilişkilendirmek, kaynakların takip edilmesini kolaylaştırır.
 
-Her veri kaydının geçerli lisansı JSONL içindeki `license` alanında gösterilir. CC BY-NC 4.0 kayıtları ayrıca `additional_permissions` alanında bu ek iznin kimliğini ve bağlantısını taşır. `manifest.json`, ek iznin hangi lisanslı kayıtları kapsadığını ve kaç kayıt için geçerli olduğunu bildirir.
+Atıf yapılması, bilginin doğru olduğunu veya Oyun-Rehberi'nin kullanımı onayladığını göstermez. Üçüncü taraf görselleri, logoları, ticari markaları, harici kaynaklar ve başka hak sahiplerinin katkıları otomatik olarak bu izin kapsamına girmez.
 
-## Önemli sınırlar
+## Kaynaklar
 
-Bu izin, yalnızca OyuncuSempanze'nin lisanslama yetkisine sahip olduğu telif veya benzeri haklar için geçerlidir. Oyun hakkındaki çıplak olgular, harici kaynaklar, oyun görselleri, logolar ve üçüncü taraf materyallere otomatik olarak ek hak vermez. Hukuken izin gerektirmeyen kullanımların kapsamı da bu sayfayla değişmez.
-
-Bu bir hukuk uzmanı tarafından incelenmiş sözleşmenin yerine geçmez. Özellikle ticari AI eğitimi veya veri ürünü oluşturma planlarında, izin alınması gereken hakların ve uygulanabilir hukukun ayrıca değerlendirilmesi gerekir.
-
-## Lisans kaynakları
-
-- [CC BY-NC 4.0 resmî hukuk metni](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
-- [Creative Commons'un CC lisansları ve yapay zekâ eğitimi rehberi](https://creativecommons.org/using-cc-licensed-works-for-ai-training-2/)
+- [CC BY 4.0 resmî hukuk metni](https://creativecommons.org/licenses/by/4.0/legalcode)
+- [Creative Commons'un lisanslı içerikler ve yapay zekâ eğitimi rehberi](https://creativecommons.org/using-cc-licensed-works-for-ai-training-2/)
