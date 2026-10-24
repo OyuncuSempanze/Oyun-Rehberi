@@ -132,7 +132,7 @@
   "schema_url": "https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/schema-v1.json",
   "rights_notice": "Her JSONL kaydının license alanı o kaydın lisans bilgisini gösterir. Daha önce CC BY 4.0 kapsamında yayımlanmış içeriklere verilmiş izinler geçerliliğini korur. Yeni kaynak dosyalarında aksi belirtilmezse CC BY-NC 4.0 varsayılan olarak kullanılır. CC BY-NC 4.0 kayıtları için ai-kullanim/ sayfasında açıklanan ek izin, kullanıcıya sunulan yapay zekâ yanıtlarında kaynak göstererek ücretsiz bilgi getirme kullanımına izin verir. Bu izin toplu veri kümesi yeniden dağıtımı, tek başına veri ürünü olarak satışı veya ham kayıtlarla model eğitimi izni vermez. Lisanslar yalnızca OyuncuSempanze'nin yetkili olduğu haklar için geçerlidir. Olgular, kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.",
   "limitations": [
-    "Guide-section records preserve meaningful document sections; they are not guaranteed to be atomic single claims.",
+    "Guide-section records preserve meaningful document sections. They are not guaranteed to be atomic single claims.",
     "Claim-unit records are split at sentence boundaries when possible, otherwise at paragraph or list-item boundaries. They may still contain more than one proposition.",
     "Claim-unit evidence and source links are assigned at unit level when present, otherwise inherited from the parent record.",
     "This dataset is a starting point for retrieval and evaluation, not a claim of readiness for every model-training task.",
