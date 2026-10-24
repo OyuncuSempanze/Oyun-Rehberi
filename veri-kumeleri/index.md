@@ -6,7 +6,7 @@ permalink: /veri-kumeleri/
 ---
 
 <section class="dataset-hero" aria-labelledby="dataset-heading">
-  <p class="dataset-kicker">VERİ KÜMELERİ / SÜRÜM 1.4.0</p>
+  <p class="dataset-kicker">VERİ KÜMELERİ / SÜRÜM 1.5.0</p>
   <h1 id="dataset-heading">Türkçe oyun bilgisi, makine tarafından işlenebilir biçimde</h1>
   <p class="dataset-lead">Oyun-Rehberi'nin soru-cevap kayıtlarını, rehber bölümlerini ve arama için daha küçük iddia birimlerini indir. Kaynak bağlantıları ve bilgi türü etiketleri kayıtlarda korunur.</p>
   <p>Dosyaları kendi GitHub depomuzda tutuyoruz. Hugging Face hesabı veya harici veri servisi gerekmiyor.</p>
@@ -104,5 +104,6 @@ permalink: /veri-kumeleri/
 
 <h2 id="lisans-kullanim">Kullanım ve lisans</h2>
 <p>Veri kümesi arama, bilgi getirme (RAG), kaynaklı cevap üretimi ve değerlendirme denemeleri için tasarlanmıştır. Tek başına her tür yapay zekâ eğitimine hazır olduğu iddia edilmez. Lisans için <a href="{{ '/lisans/' | relative_url }}">lisans sayfasını</a> incele.</p>
-<p>Her kaydın lisansı JSONL içindeki <code>license</code> alanında belirtilir. <code>manifest.json</code>, mevcut sürümdeki lisansları ve kayıt sayılarını listeler. Daha önce CC BY 4.0 kapsamında yayımlanmış kayıtların eski izinleri korunur. Yeni kaynak dosyalarında aksi belirtilmediğinde varsayılan lisans CC BY-NC 4.0 olur. Kaynak bağlantıları, olgular ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.</p>
+<p>Her kaydın lisansı JSONL içindeki <code>license</code> alanında belirtilir. <code>manifest.json</code>, mevcut sürümdeki lisansları, kayıt sayılarını ve ek izinleri listeler. Daha önce CC BY 4.0 kapsamında yayımlanmış kayıtların eski izinleri korunur. Yeni kaynak dosyalarında aksi belirtilmediğinde varsayılan lisans CC BY-NC 4.0 olur. Kaynak bağlantıları, olgular ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.</p>
+<p>CC BY-NC 4.0 kayıtları, ticari yapay zekâ hizmetlerinin de veri için ücret ödemeden bilgi getirme ve kaynaklı yanıt üretme amacıyla kullanabileceği ek bir izin taşır. Bu yanıtlar, bilgiyi Oyun-Rehberi'nden aldığını belirtmeli ve ilgili rehber sayfasına bağlantı vermelidir. İzin, veri kümesinin tamamını veya önemli bir bölümünü bağımsız veri ürünü olarak yeniden satmayı ya da ham kayıtlarla model eğitmeyi kapsamaz. <a href="{{ '/ai-kullanim/' | relative_url }}">Yapay zekâ kullanımı ve atıf koşullarını oku</a>.</p>
 <p><a href="https://github.com/OyuncuSempanze/Oyun-Rehberi">Kaynak depoyu görüntüle</a></p>
