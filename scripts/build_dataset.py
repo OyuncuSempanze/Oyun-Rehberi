@@ -11,13 +11,15 @@ SITE_BASE="https://oyuncusempanze.github.io/Oyun-Rehberi/"
 FAQ_VERSION="1.0"
 GUIDE_VERSION="1.1"
 CLAIM_VERSION="1.2"
-DATASET_VERSION="1.4.0"
+DATASET_VERSION="1.5.0"
 GAMES={"bloody-bastards":{"slug":"bloody-bastards","name":"Bloody Bastards"},"DATA-WING":{"slug":"data-wing","name":"DATA WING"},"wplace.live":{"slug":"wplace-live","name":"Wplace.live"}}
 ORDER={"bloody-bastards":0,"DATA-WING":1,"wplace.live":2}
 LABELS={"Resmî Kaynak":"official_source","Oyun İçi Gözlem":"in_game_observation","Kaynak":"reference_source","Öneri":"recommendation"}
 LABEL_RE=re.compile(r"\[(Resmî Kaynak|Oyun İçi Gözlem|Kaynak|Öneri)\]")
 DEFAULT_LICENSE="CC-BY-NC-4.0"
 SUPPORTED_LICENSES={"CC-BY-4.0","CC-BY-NC-4.0"}
+AI_PERMISSION_ID="OYUN-REHBERI-AI-RETRIEVAL-1.0"
+AI_PERMISSION_URL="https://oyuncusempanze.github.io/Oyun-Rehberi/ai-kullanim/"
 LICENSE_DIRECTIVE_RE=re.compile(r"<!--\s*dataset-license:\s*([^>]*?)\s*-->")
 LINK_RE=re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
 ANY_LINK_RE=re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s]+)\)")
@@ -102,6 +104,12 @@ def resolve_content_license(markdown:str,default_license:str)->tuple[str,str]:
     return license_value,cleaned
 
 
+def additional_permissions_for(license_id:str)->list[dict[str,str]]:
+    if license_id=="CC-BY-NC-4.0":
+        return [{"identifier":AI_PERMISSION_ID,"url":AI_PERMISSION_URL}]
+    return []
+
+
 def base_record(path:Path,kind:str,version:str)->dict[str,Any]:
     g=game_for(path)
     return {"id":"","language":"tr","game":g["name"],"game_slug":g["slug"],"record_type":kind}
@@ -122,6 +130,8 @@ def extract_faq(path:Path)->list[dict[str,Any]]:
         if not question or not plain_text(answer_md):continue
         links=extract_links(answer_md,path);record=base_record(path,"faq",FAQ_VERSION)
         record.update({"id":f"{record['game_slug']}-{slugify(question)}","question":question,"answer":plain_text(answer_md),"answer_markdown":answer_md,"evidence_types":evidence_types(answer_md,links),"sources":links,"content_url":content_url_for(path),"license":record_license,"schema_version":FAQ_VERSION})
+        permissions=additional_permissions_for(record_license)
+        if permissions:record["additional_permissions"]=permissions
         out.append(record)
     return out
 
@@ -146,6 +156,8 @@ def extract_guides(path:Path)->list[dict[str,Any]]:
         if not content:continue
         links=extract_links(section_md,path);record=base_record(path,"guide_section",GUIDE_VERSION)
         record.update({"id":f"{record['game_slug']}-{slugify(path.stem)}-{slugify(title)}","article_title":article_title,"section_title":title,"content":content,"content_markdown":section_md,"evidence_types":evidence_types(section_md,links),"sources":links,"content_url":content_url_for(path),"license":record_license,"schema_version":GUIDE_VERSION})
+        permissions=additional_permissions_for(record_license)
+        if permissions:record["additional_permissions"]=permissions
         out.append(record)
     return out
 
@@ -244,6 +256,8 @@ def extract_claim_units(records:list[dict[str,Any]])->list[dict[str,Any]]:
                 "license":parent["license"],
                 "schema_version":CLAIM_VERSION
             })
+            if parent.get("additional_permissions"):
+                row["additional_permissions"]=[dict(permission) for permission in parent["additional_permissions"]]
             out.append(row)
     return out
 
@@ -293,6 +307,19 @@ def validate(records:list[dict[str,Any]])->None:
         if missing:raise ValueError(f"{r.get('id','?')}: missing {sorted(missing)}")
         if not isinstance(r["id"],str) or not r["id"].strip():raise ValueError("record ID must be a non-empty string")
         if r["license"] not in SUPPORTED_LICENSES:raise ValueError(f"{r['id']}: unsupported license {r['license']}")
+        permissions=r.get("additional_permissions",[])
+        if not isinstance(permissions,list):raise ValueError(f"{r['id']}: additional_permissions must be a list")
+        for permission in permissions:
+            if not isinstance(permission,dict) or set(permission)!={"identifier","url"} or not isinstance(permission.get("identifier"),str) or not isinstance(permission.get("url"),str):
+                raise ValueError(f"{r['id']}: malformed additional permission")
+            parsed_permission=urlparse(permission["url"])
+            if parsed_permission.scheme!="https" or not parsed_permission.netloc:
+                raise ValueError(f"{r['id']}: additional permission URL must use HTTPS")
+        has_ai_permission=any(permission.get("identifier")==AI_PERMISSION_ID and permission.get("url")==AI_PERMISSION_URL for permission in permissions)
+        if r["license"]=="CC-BY-NC-4.0" and not has_ai_permission:
+            raise ValueError(f"{r['id']}: CC BY-NC 4.0 record is missing the AI retrieval permission")
+        if r["license"]=="CC-BY-4.0" and any(permission.get("identifier")==AI_PERMISSION_ID for permission in permissions):
+            raise ValueError(f"{r['id']}: AI retrieval permission is only for CC BY-NC 4.0 records")
         if r["id"] in ids:raise ValueError(f"duplicate record ID: {r['id']}")
         ids.add(r["id"]);record_by_id[r["id"]]=r
         if r["record_type"]=="faq":
@@ -348,6 +375,8 @@ def build_outputs()->dict[str,str]:
         license_counts.setdefault(row["license"],{"faq":0,"guide_section":0,"claim":0})
         license_counts[row["license"]][row["record_type"]]+=1
     licenses=sorted(license_counts)
+    nc_counts=license_counts.get("CC-BY-NC-4.0",{"faq":0,"guide_section":0,"claim":0})
+    ai_permission_entry={"identifier":AI_PERMISSION_ID,"name":"Free AI retrieval and answer attribution permission","url":AI_PERMISSION_URL,"applies_to_license":"CC-BY-NC-4.0","record_count":nc_counts["faq"]+nc_counts["guide_section"],"claim_unit_count":nc_counts["claim"],"summary":"Free crawling, indexing, retrieval and user-facing answer generation with source attribution for CC BY-NC 4.0 records. This permission does not grant bulk dataset redistribution, resale as a standalone product or model training on raw records."}
     license_urls={"CC-BY-4.0":"https://creativecommons.org/licenses/by/4.0/","CC-BY-NC-4.0":"https://creativecommons.org/licenses/by-nc/4.0/"}
     license_entries=[]
     for license_id in licenses:
@@ -369,7 +398,7 @@ def build_outputs()->dict[str,str]:
         name=next((g["name"] for g in GAMES.values() if g["slug"]==slug),slug)
         file_entries.append({"path":f"{slug}-sss-v1.jsonl","scope":"game_faq","game":name,"game_slug":slug,"format":"jsonl","records":len(rows)})
     file_entries.append({"path":"oyun-rehberi-iddia-birimleri-v1.jsonl","scope":"claim_units","format":"jsonl","records":len(claim_units)})
-    manifest={"name":"Oyun-Rehberi Türkçe Oyun Bilgisi Veri Kümesi","dataset_version":DATASET_VERSION,"schema_version":"1.2","language":"tr","format":"JSON Lines (UTF-8), one JSON object per line","license":manifest_license,"licenses":license_entries,"license_counts":license_counts,"source_repository":"https://github.com/OyuncuSempanze/Oyun-Rehberi","website":SITE_BASE,"description":"SSS kayıtları, rehber bölümleri ve kaynak bağlantıları korunmuş daha küçük iddia birimlerini içeren Türkçe oyun bilgisi arşivi.","record_count":len(all_records),"claim_unit_count":len(claim_units),"collections":[{"record_type":"faq","records":len(faqs),"description":"Soru-cevap biçimindeki sık sorulan sorular."},{"record_type":"guide_section","records":len(guides),"description":"Rehber belgelerindeki anlamlı bölümler."}],"source_files":[p.relative_to(ROOT).as_posix() for p in faq_paths+guide_paths],"files":file_entries,"schema_url":f"{SITE_BASE}veri-kumeleri/schema-v1.json","rights_notice":"Her JSONL kaydının license alanı o kaydın lisans bilgisini gösterir. Daha önce CC BY 4.0 kapsamında yayımlanmış içeriklere verilmiş izinler geçerliliğini korur. Yeni kaynak dosyalarında aksi belirtilmezse CC BY-NC 4.0 varsayılan olarak kullanılır. Bölüm düzeyindeki license yönergeleri dosyanın varsayılan lisansını geçersiz kılabilir. Bu alan yalnızca OyuncuSempanze'nin lisanslama yetkisine sahip olduğu özgün içerik için geçerlidir. Olgular, kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.","limitations":["Guide-section records preserve meaningful document sections; they are not guaranteed to be atomic single claims.","Claim-unit records are split at sentence boundaries when possible, otherwise at paragraph or list-item boundaries. They may still contain more than one proposition.","Claim-unit evidence and source links are assigned at unit level when present, otherwise inherited from the parent record.","This dataset is a starting point for retrieval and evaluation, not a claim of readiness for every model-training task.","Source links identify references but do not independently prove that each claim is correct."]}
+    manifest={"name":"Oyun-Rehberi Türkçe Oyun Bilgisi Veri Kümesi","dataset_version":DATASET_VERSION,"schema_version":"1.2","language":"tr","format":"JSON Lines (UTF-8), one JSON object per line","license":manifest_license,"licenses":license_entries,"license_counts":license_counts,"additional_permissions":[ai_permission_entry],"source_repository":"https://github.com/OyuncuSempanze/Oyun-Rehberi","website":SITE_BASE,"description":"SSS kayıtları, rehber bölümleri ve kaynak bağlantıları korunmuş daha küçük iddia birimlerini içeren Türkçe oyun bilgisi arşivi.","record_count":len(all_records),"claim_unit_count":len(claim_units),"collections":[{"record_type":"faq","records":len(faqs),"description":"Soru-cevap biçimindeki sık sorulan sorular."},{"record_type":"guide_section","records":len(guides),"description":"Rehber belgelerindeki anlamlı bölümler."}],"source_files":[p.relative_to(ROOT).as_posix() for p in faq_paths+guide_paths],"files":file_entries,"schema_url":f"{SITE_BASE}veri-kumeleri/schema-v1.json","rights_notice":"Her JSONL kaydının license alanı o kaydın lisans bilgisini gösterir. Daha önce CC BY 4.0 kapsamında yayımlanmış içeriklere verilmiş izinler geçerliliğini korur. Yeni kaynak dosyalarında aksi belirtilmezse CC BY-NC 4.0 varsayılan olarak kullanılır. CC BY-NC 4.0 kayıtları için ai-kullanim/ sayfasında açıklanan ek izin, kullanıcıya sunulan yapay zekâ yanıtlarında kaynak göstererek ücretsiz bilgi getirme kullanımına izin verir. Bu izin toplu veri kümesi yeniden dağıtımı, tek başına veri ürünü olarak satışı veya ham kayıtlarla model eğitimi izni vermez. Lisanslar yalnızca OyuncuSempanze'nin yetkili olduğu haklar için geçerlidir. Olgular, kaynak bağlantıları ve üçüncü taraf materyaller kendi hak ve koşullarına tabi olabilir.","limitations":["Guide-section records preserve meaningful document sections; they are not guaranteed to be atomic single claims.","Claim-unit records are split at sentence boundaries when possible, otherwise at paragraph or list-item boundaries. They may still contain more than one proposition.","Claim-unit evidence and source links are assigned at unit level when present, otherwise inherited from the parent record.","This dataset is a starting point for retrieval and evaluation, not a claim of readiness for every model-training task.","Source links identify references but do not independently prove that each claim is correct."]}
     outputs["manifest.json"]=json.dumps(manifest,ensure_ascii=False,indent=2)+"\n"
     return outputs
 
