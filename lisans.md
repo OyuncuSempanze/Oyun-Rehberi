@@ -13,7 +13,9 @@ Bu lisans değişikliğinden itibaren yayımlanan Oyun-Rehberi özgün editoryal
 
 JSONL veri kümelerinde her kayıt kendi `license` alanında lisansını belirtir. `manifest.json`, geçerli dışa aktarımda bulunan lisansları ve kayıt sayılarını listeler. Daha önce CC BY 4.0 kapsamında yayımlanmış kaynakların kayıtları bu nedenle CC BY 4.0 bilgisini taşımaya devam edebilir. Bu eski izinler geriye dönük olarak iptal edilmez.
 
-Yeni kaynak dosyalarında açık bir lisans bildirim yoksa veri kümesi üreticisi CC BY-NC 4.0 kullanır. Bir dosyanın belirli bir bölümünü dosyanın varsayılan lisansından farklı yayımlamak için ilgili bölümün içine aşağıdaki HTML yorumlarından biri eklenebilir. Yorum web sayfasında görünmez ve üretilen metne aktarılmaz.
+Yeni kaynak dosyalarında açık bir lisans bildirimi yoksa veri kümesi üreticisi CC BY-NC 4.0 kullanır. Bir dosyanın belirli bir bölümünü dosyanın varsayılan lisansından farklı yayımlamak için ilgili bölümün içine aşağıdaki HTML yorumlarından biri eklenebilir. Yorum web sayfasında görünmez ve üretilen metne aktarılmaz.
+
+CC BY-NC 4.0 kayıtları için [ücretsiz yapay zekâ erişimi ve atıf izni]({{ '/ai-kullanim/' | relative_url }}) ayrıca geçerlidir. Bu, ana CC lisansını değiştiren yeni bir Creative Commons lisansı değildir. Kapsamı ve koşulları ayrı izin sayfasında açıklanır.
 
 ```markdown
 ## Yeni bölüm
@@ -51,7 +53,7 @@ Bir dosyada veya içerikte ayrı bir lisans ya da hak bildirimi bulunuyorsa o bi
 
 Katkı yapmak isteyen herkes, katkı göndermeden önce [CONTRIBUTING.md](https://github.com/OyuncuSempanze/Oyun-Rehberi/blob/main/CONTRIBUTING.md) ve [Katkıcı Lisans Sözleşmesi'ni](https://github.com/OyuncuSempanze/Oyun-Rehberi/blob/main/CONTRIBUTOR_LICENSE_AGREEMENT.md) okumalıdır.
 
-Sözleşme, katkıcının kendi katkısının telif hakkını kendisinde tutmasını; proje sahibine ise katkıyı arşivde yayımlamak, uyarlamak, veri kümelerine eklemek, alt lisanslamak ve ileride ticari ürün veya hizmet kapsamında kullanmak için sürekli, münhasır olmayan izin vermesini amaçlar. Ayrı bir yazılı anlaşma olmadıkça katkı göndermek ödeme veya gelir payı vaadi değildir. Bir PR, katkıcı sözleşmeyi açıkça kabul etmeden birleştirilmez.
+Sözleşme, katkıcının kendi katkısının telif hakkını kendisinde tutmasını ve proje sahibine katkıyı arşivde yayımlamak, uyarlamak, veri kümelerine eklemek, alt lisanslamak ve ileride ticari ürün veya hizmet kapsamında kullanmak için sürekli, münhasır olmayan izin vermesini amaçlar. Ayrı bir yazılı anlaşma olmadıkça katkı göndermek ödeme veya gelir payı vaadi değildir. Bir PR, katkıcı sözleşmeyi açıkça kabul etmeden birleştirilmez.
 
 ## Önerilen atıf biçimi
 

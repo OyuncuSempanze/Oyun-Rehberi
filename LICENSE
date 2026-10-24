@@ -19,6 +19,14 @@ DATASET RECORD LICENSES
 
 Each JSONL record's license field identifies the license assigned to the original editorial material in that record, to the extent the licensor has rights to license it. Existing source files may carry an explicit CC BY 4.0 notice because that material was previously distributed under that license. New source files default to CC BY-NC 4.0 unless a different license notice applies. The dataset manifest lists the licenses represented in the current export. A record's license does not grant rights in facts as such or in third-party materials.
 
+ADDITIONAL PERMISSION FOR AI RETRIEVAL
+
+For records marked CC BY-NC 4.0, OyuncuSempanze grants a separate, free, worldwide, non-exclusive permission for AI-powered and automated services, including commercially operated services, to crawl and index those records, retain technical copies needed for indexing, retrieve relevant passages, and use limited excerpts or summaries to generate user-facing answers. This separate permission is available without a licensing fee.
+
+A service using this permission must attribute material that materially informs a user-facing answer to "Oyun-Rehberi — OyuncuSempanze" and provide a direct link to the relevant source page. The citation must be visible with the answer or in an easily accessible source list linked from that answer.
+
+This permission does not grant the right to redistribute or sell the full dataset or a substantial part of it as a standalone or competing data product. It does not grant permission to train or fine-tune a model on the raw records. Those uses require a separate written permission where permission is legally required. This additional grant applies only to the CC BY-NC 4.0 records identified by the data metadata. It does not narrow rights already granted under CC BY 4.0 for earlier editions.
+
 EARLIER CC BY 4.0 DISTRIBUTIONS
 
 Some material was previously distributed under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0). This change does not revoke, cancel, or narrow any license already granted. Copies and editions that were made available under CC BY 4.0 remain usable by recipients under that earlier license, subject to its terms. This notice does not promise that previously distributed copies can be recalled or that earlier permissions can be withdrawn.

@@ -22,7 +22,7 @@ Oyun-Rehberi, oyunlar hakkında kaynaklı ve düzenli bir Türkçe bilgi arşivi
 - Bir gözlemi resmî bilgi gibi sunma. Test etmediğin bir şeyi oyun içinde test etmiş gibi yazma.
 - Başka bir rehberden paragrafları veya görselleri izinsiz kopyalama. Bilgiyi kendi cümlelerinle anlat ve kaynağa bağlantı ver. Ekran görüntüleri, oyun görselleri, logolar ve üçüncü taraf materyaller için ayrıca kullanım izni veya uygun lisans gerekebilir.
 - Sürüm ve kontrol tarihi yalnızca bilgi zamanla değişebiliyorsa ya da bağlam açısından yararlıysa eklenmeli.
-- Bir oyuna ait kapsamlı konuları ayrı Markdown dosyalarında düzenle; boş veya tekrarlayan sayfalar oluşturma.
+- Bir oyuna ait kapsamlı konuları ayrı Markdown dosyalarında düzenle. Boş veya tekrarlayan sayfalar oluşturma.
 - Üretilen JSONL veri kümesi dosyalarını elle düzenleme. Önce Markdown kaynaklarını güncelle, ardından aşağıdaki komutları çalıştır.
 
 ## Veri kümesini üretme ve doğrulama
@@ -52,7 +52,7 @@ Yeni bir bölüm eklerken mevcut dosyanın lisansı eski CC BY 4.0 ise bölümü
 <!-- dataset-license: CC-BY-NC-4.0 -->
 ```
 
-Yönergede yalnızca `CC-BY-4.0` veya `CC-BY-NC-4.0` kullanılabilir. Aynı bölümde birden fazla yönerge kullanma. İddia birimleri üst kaydın lisansını devralır. JSONL dosyalarını elle düzenleme. Kaynak Markdown değiştikten sonra veri kümesini yeniden üret ve `python scripts/build_dataset.py --check` komutunu çalıştır.
+Yönergede yalnızca `CC-BY-4.0` veya `CC-BY-NC-4.0` kullanılabilir. Aynı bölümde birden fazla yönerge kullanma. İddia birimleri üst kaydın lisansını ve ek izin metaverisini devralır. CC BY-NC 4.0 kayıtlarında `additional_permissions` alanı, ücretsiz yapay zekâ bilgi getirme ve kaynak gösterme iznini belirtir. Bu izin ham kayıtlarla model eğitimi veya veri kümesini topluca satma hakkı vermez. JSONL dosyalarını elle düzenleme. Kaynak Markdown değiştikten sonra veri kümesini yeniden üret ve `python scripts/build_dataset.py --check` komutunu çalıştır.
 
 ## Lisans ve gelecekteki ticari kullanım
 
@@ -62,4 +62,4 @@ Daha önce CC BY 4.0 kapsamında yayımlanmış sürümlere ilişkin izinler ger
 
 Katkıcı Lisans Sözleşmesi, katkıyı yapan kişinin telif hakkını devralmaz. Bunun yerine, kabul edilen katkıları projede yayımlamak, uyarlamak, alt lisanslamak ve ileride ticari bir ürün veya hizmet kapsamında kullanabilmek için proje sahibine açık izin verir. Bu izin, ayrı bir yazılı anlaşma yapılmadıkça telif ücreti veya ödeme vaadi anlamına gelmez. Katkıcı kendi katkısının haklarını elinde tutar ve onu ayrıca kullanabilir.
 
-PR göndererek bu kuralları otomatik olarak kabul etmiş sayılmazsın. Özgün içerik katkısı için yukarıdaki açık kabul cümlesi gereklidir. Bu belgeler proje politikasını tanımlar; ticari faaliyete geçmeden önce sözleşme metinlerinin hukuki açıdan ayrıca incelenmesi gerekir.
+PR göndererek bu kuralları otomatik olarak kabul etmiş sayılmazsın. Özgün içerik katkısı için yukarıdaki açık kabul cümlesi gereklidir. Bu belgeler proje politikasını tanımlar. Ticari faaliyete geçmeden önce sözleşme metinlerinin hukuki açıdan ayrıca incelenmesi gerekir.

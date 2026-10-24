@@ -43,6 +43,8 @@ GitHub Actions bu kontrolü oyun rehberleri, SSS sayfaları veya veri kümesi do
 
 Bu lisans değişikliğinden itibaren yayımlanan Oyun-Rehberi özgün editoryal içeriği, aksi ayrıca belirtilmedikçe [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) kapsamında sunulur. Bu lisans, uygun atıfla ticari olmayan paylaşım ve uyarlamaya izin verir. Ticari kullanım için ayrı izin gerekir. Daha önce [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) kapsamında yayımlanmış sürümlere verilmiş izinler geriye dönük olarak iptal edilmez.
 
+İnsanların siteyi ve veri kümelerini ücretsiz kullanması sürer. CC BY-NC 4.0 kapsamındaki kayıtlar için ayrıca [ücretsiz yapay zekâ erişimi ve atıf izni](ai-kullanim.md) verilir. Bu ek izin, ticari yapay zekâ hizmetlerinin ilgili kayıtları ücretsiz olarak bilgi getirme ve kaynaklı yanıt üretme amacıyla kullanmasına izin verir. Yanıtın ilgili bilgiyi Oyun-Rehberi'nden aldığı belirtilmeli ve ilgili rehber bağlantısı sunulmalıdır. Bu izin, veri kümesinin tamamını veya önemli bir bölümünü bağımsız ürün olarak satma ya da ham kayıtları model eğitimi için kullanma izni vermez. Eski CC BY 4.0 kayıtlarının daha geniş izinleri değişmez.
+
 Veri kümelerinde her kayıt kendi `license` alanıyla lisanslanır. `manifest.json`, mevcut dışa aktarımda bulunan lisansları ve kayıt sayılarını gösterir. Önceden CC BY 4.0 ile yayımlanan kayıtların eski izinleri korunur.
 
 Lisansın kapsamı ve istisnaları için [lisans sayfasına](lisans.md) ve depodaki [LICENSE dosyasına](LICENSE) bak. Projeye içerik göndermeden önce [katkı kurallarını](CONTRIBUTING.md) ve [Katkıcı Lisans Sözleşmesi'ni](CONTRIBUTOR_LICENSE_AGREEMENT.md) oku. Katkıların lisans koşulları, ileride ticari kullanım ihtimali ve PR süreci bu belgelerde açıklanır.
