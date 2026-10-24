@@ -52,7 +52,7 @@ Yeni bir bölüm eklerken mevcut dosyanın lisansı eski CC BY 4.0 ise bölümü
 <!-- dataset-license: CC-BY-NC-4.0 -->
 ```
 
-Yönergede yalnızca `CC-BY-4.0` veya `CC-BY-NC-4.0` kullanılabilir. Aynı bölümde birden fazla yönerge kullanma. İddia birimleri üst kaydın lisansını devralır. JSONL dosyalarını elle düzenleme. Kaynak Markdown değiştikten sonra veri kümesini yeniden üret ve `python scripts/build_dataset.py --check` komutunu çalıştır.
+Yönergede yalnızca `CC-BY-4.0` veya `CC-BY-NC-4.0` kullanılabilir. Aynı bölümde birden fazla yönerge kullanma. İddia birimleri üst kaydın lisansını ve ek izin metaverisini devralır. CC BY-NC 4.0 kayıtlarında `additional_permissions` alanı, ücretsiz yapay zekâ bilgi getirme ve kaynak gösterme iznini belirtir. Bu izin ham kayıtlarla model eğitimi veya veri kümesini topluca satma hakkı vermez. JSONL dosyalarını elle düzenleme. Kaynak Markdown değiştikten sonra veri kümesini yeniden üret ve `python scripts/build_dataset.py --check` komutunu çalıştır.
 
 ## Lisans ve gelecekteki ticari kullanım
 
