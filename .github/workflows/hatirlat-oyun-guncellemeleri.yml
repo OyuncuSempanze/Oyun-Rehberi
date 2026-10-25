@@ -147,7 +147,7 @@ jobs:
                     owner,
                     repo,
                     issue_number: reminder.number,
-                    body: `Yeni kontrol zamanı gelen oyunlar var: ${newlyDue.map(game => game.name).join(", ")}. Hatırlatmanın güncel listesi için issue açıklamasını incele.`
+                    body: `Yeni kontrol zamanı gelen oyunlar var: ${newlyDue.map(game => game.name).join(", ")}. Güncel liste için hatırlatma açıklamasını incele.`
                   });
                 }
 
