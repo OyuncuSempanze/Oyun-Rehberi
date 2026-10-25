@@ -16,7 +16,7 @@ description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
       <input id="archive-search" type="search" placeholder="Oyun ara..." autocomplete="off" aria-describedby="archive-count">
     </label>
-    <p id="archive-count" class="archive-count" aria-live="polite">3 oyun</p>
+    <p id="archive-count" class="archive-count" aria-live="polite">4 oyun</p>
   </div>
 
   <div class="archive-filters" role="group" aria-label="Oyun türüne göre filtrele">
@@ -24,6 +24,7 @@ description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
     <button class="archive-filter" type="button" data-filter="combat" aria-pressed="false">Dövüş</button>
     <button class="archive-filter" type="button" data-filter="pixel-map" aria-pressed="false">Piksel haritası</button>
     <button class="archive-filter" type="button" data-filter="arcade" aria-pressed="false">Arcade</button>
+    <button class="archive-filter" type="button" data-filter="incremental" aria-pressed="false">Boşta ilerleme</button>
   </div>
 
   <div class="game-grid" id="game-grid">
@@ -73,6 +74,20 @@ description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
       </span>
       <span class="game-card-title">DATA WING</span>
       <span class="game-card-description">Hareket ve bölüm mekanikleri.</span>
+    </a>
+    <a class="game-card" href="{{ '/oyunlar/antimatter-dimensions/' | relative_url }}" data-category="incremental" data-search="Antimatter Dimensions idle boşta ilerleme sayı üretimi geliştirmeler Infinity" aria-label="Antimatter Dimensions rehberini aç">
+      <span class="game-card-top">
+        <span class="game-emblem" aria-hidden="true">
+          <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
+            <ellipse cx="24" cy="24" rx="17" ry="7" fill="none" stroke="currentColor" stroke-width="2"/>
+            <ellipse cx="24" cy="24" rx="17" ry="7" transform="rotate(60 24 24)" fill="none" stroke="#c3a15c" stroke-width="2"/>
+            <ellipse cx="24" cy="24" rx="17" ry="7" transform="rotate(120 24 24)" fill="none" stroke="currentColor" stroke-width="2" opacity=".65"/>
+            <circle cx="24" cy="24" r="3.5" fill="#c3a15c"/>
+          </svg>
+        </span>
+      </span>
+      <span class="game-card-title">Antimatter Dimensions</span>
+      <span class="game-card-description">Sayı üretimi ve aşamalı ilerleme.</span>
     </a>
   </div>
 
