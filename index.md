@@ -1,13 +1,13 @@
 ---
 title: Kaynaklı Türkçe Oyun Arşivi
-description: Niş ve bağımsız oyunlar için kaynaklı Türkçe rehberler, oyun içi gözlemler ve güncelleme kayıtları.
+description: Kaynakları izlenebilir Türkçe oyun rehberleri, oyun içi gözlemler ve indirilebilir yapılandırılmış veri kümeleri.
 ---
 
 <section class="welcome" aria-labelledby="page-heading">
   <div class="welcome-copy">
     <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> KAYNAKLI TÜRKÇE OYUN ARŞİVİ</p>
     <h1 id="page-heading">Oyun bilgisi. <em>Kaynağıyla.</em></h1>
-    <p class="welcome-description">Rehberleri Türkçe oku, bilginin dayanağına ulaş. Resmî açıklamalarla oyun içi gözlemleri ayırt et, kaynakları izlenebilir rehberlerden yararlan.</p>
+    <p class="welcome-description">Kaynakları izlenebilir Türkçe oyun rehberleri ve oyun içi gözlemler. Resmî açıklamalarla gözlemleri ayır, kaynak ilişkilerini koruyan indirilebilir veri kümelerini de incele.</p>
     <div class="welcome-actions">
       <a class="action-primary" href="#arsiv">Oyun arşivini keşfet <span aria-hidden="true">↓</span></a>
       <a class="action-secondary" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümelerini incele <span aria-hidden="true">↗</span></a>
