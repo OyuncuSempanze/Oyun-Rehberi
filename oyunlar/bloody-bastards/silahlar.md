@@ -11,7 +11,7 @@ license: CC-BY-4.0
 
 **Çift Elli Silahlar:**
 * Bu silahlar diğerlerine nazaran daha ağırdır ve **enerjinizi** (stamina) çabuk tüketir. [Oyun İçi Gözlem]
-* Tek elli silahlara göre **daha fazla hasar** verir ve **uzundur**.
+* Tek elli silahlara göre **daha fazla hasar** verir ve **uzundur**. [Oyun İçi Gözlem]
 * Ek bir **silah** veya **kalkan** kuşanamazsınız. [Oyun İçi Gözlem]
 
 ## Tek Elli Silahlar
