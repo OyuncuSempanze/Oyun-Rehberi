@@ -32,8 +32,8 @@ description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
         <span class="game-emblem game-emblem--combat" aria-hidden="true">
           <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
             <path d="M13 10L35 37 M35 10L13 37" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
-            <path d="M8 8L17 17 M31 30L40 40 M40 8L31 17 M17 30L8 40" fill="none" stroke="#f2ba72" stroke-width="2.3" stroke-linecap="square"/>
-            <circle cx="24" cy="24" r="3" fill="#f2ba72"/>
+            <path d="M8 8L17 17 M31 30L40 40 M40 8L31 17 M17 30L8 40" fill="none" stroke="#c3a15c" stroke-width="2.3" stroke-linecap="square"/>
+            <circle cx="24" cy="24" r="3" fill="#c3a15c"/>
           </svg>
         </span>
       </span>
@@ -46,13 +46,13 @@ description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
         <span class="game-emblem game-emblem--pixel" aria-hidden="true">
           <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
             <rect x="8" y="8" width="9" height="9" fill="currentColor"/>
-            <rect x="20" y="8" width="9" height="9" fill="#f2ba72"/>
+            <rect x="20" y="8" width="9" height="9" fill="#c3a15c"/>
             <rect x="32" y="8" width="9" height="9" fill="currentColor" opacity=".45"/>
-            <rect x="8" y="20" width="9" height="9" fill="#f2ba72" opacity=".65"/>
+            <rect x="8" y="20" width="9" height="9" fill="#c3a15c" opacity=".65"/>
             <rect x="20" y="20" width="9" height="9" fill="currentColor"/>
             <rect x="32" y="20" width="9" height="9" fill="currentColor" opacity=".45"/>
             <rect x="8" y="32" width="9" height="9" fill="currentColor" opacity=".45"/>
-            <rect x="20" y="32" width="9" height="9" fill="#f2ba72" opacity=".7"/>
+            <rect x="20" y="32" width="9" height="9" fill="#c3a15c" opacity=".7"/>
             <rect x="32" y="32" width="9" height="9" fill="currentColor"/>
           </svg>
         </span>
@@ -66,7 +66,7 @@ description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
         <span class="game-emblem game-emblem--arcade" aria-hidden="true">
           <svg class="entry-icon" viewBox="0 0 48 48" focusable="false">
             <path d="M7 24L25 10V19H41V29H25V38Z" fill="currentColor"/>
-            <path d="M6 15H15 M4 24H15 M6 33H15" fill="none" stroke="#f2ba72" stroke-width="2" stroke-linecap="round"/>
+            <path d="M6 15H15 M4 24H15 M6 33H15" fill="none" stroke="#c3a15c" stroke-width="2" stroke-linecap="round"/>
             <path d="M25 19V29" stroke="#0c1115" stroke-width="1.5"/>
           </svg>
         </span>

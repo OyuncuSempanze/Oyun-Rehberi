@@ -4528,61 +4528,119 @@ body {
   color: var(--text);
 }
 
-@keyframes icon-color-shift {
+/* Koyu altın renk ve ritimli oyun simgeleri */
+@keyframes emblem-frame-shift {
   0%, 100% {
-    filter: hue-rotate(0deg) saturate(1) brightness(1);
+    border-color: #393830;
+    background-color: #242420;
   }
 
-  50% {
-    filter: hue-rotate(105deg) saturate(1.9) brightness(1.22);
+  28%, 48% {
+    border-color: var(--accent);
+    background-color: #342d1e;
   }
 }
 
-@keyframes emblem-frame-shift {
-  0%, 100% {
-    border-color: #3b4244;
-    background-color: #24292b;
+@keyframes gold-stroke-pulse {
+  0%, 18% {
+    stroke: var(--accent);
+    opacity: 1;
   }
 
-  50% {
-    border-color: #a4ba90;
-    background-color: #3c4734;
+  28%, 100% {
+    stroke: #8b887e;
+    opacity: 0.75;
+  }
+}
+
+@keyframes gold-fill-pulse {
+  0%, 18% {
+    fill: var(--accent);
+    opacity: 1;
+  }
+
+  28%, 100% {
+    fill: #8b887e;
+    opacity: 0.75;
+  }
+}
+
+@keyframes pixel-gold-rhythm {
+  0%, 4%, 18% {
+    fill: var(--accent);
+    opacity: 1;
+  }
+
+  28%, 100% {
+    fill: #6f6a60;
+    opacity: 0.62;
   }
 }
 
 .game-emblem--combat,
 .game-emblem--pixel,
 .game-emblem--arcade {
-  animation: emblem-frame-shift 2.8s ease-in-out infinite;
+  animation: emblem-frame-shift 3.2s ease-in-out infinite;
 }
 
 .game-emblem--pixel {
-  animation-delay: -0.9s;
+  animation-delay: 0.25s;
 }
 
 .game-emblem--arcade {
-  animation-delay: -1.8s;
+  animation-delay: 0.5s;
 }
 
-.game-emblem--combat .entry-icon,
-.game-emblem--pixel .entry-icon,
-.game-emblem--arcade .entry-icon {
-  animation: icon-color-shift 2.8s ease-in-out infinite;
-  transform: none;
-  will-change: filter;
+/* Bloody Bastards: ana çizgiler, ardından ayrıntılar */
+.game-emblem--combat .entry-icon path:first-child {
+  stroke: #8b887e;
+  animation: gold-stroke-pulse 3.2s steps(1, end) infinite;
 }
 
-.game-emblem--pixel .entry-icon {
-  animation-delay: -0.9s;
+.game-emblem--combat .entry-icon path:nth-child(2) {
+  stroke: #8b887e;
+  animation: gold-stroke-pulse 3.2s steps(1, end) infinite;
+  animation-delay: 0.55s;
 }
 
-.game-emblem--arcade .entry-icon {
-  animation-delay: -1.8s;
+.game-emblem--combat .entry-icon circle {
+  fill: var(--accent);
+  animation: gold-fill-pulse 3.2s steps(1, end) infinite;
+  animation-delay: 0.55s;
 }
 
-.game-emblem--pixel .entry-icon rect,
-.game-emblem--arcade .entry-icon path {
-  animation: none;
+/* Wplace.live: 2 üst, 2 alt, 1 orta şeklinde döngü */
+.game-emblem--pixel .entry-icon rect {
+  fill: #6f6a60;
+  opacity: 0.62;
+  animation: pixel-gold-rhythm 3.2s ease-in-out infinite;
+}
+
+.game-emblem--pixel .entry-icon rect:nth-of-type(1),
+.game-emblem--pixel .entry-icon rect:nth-of-type(2) {
+  animation-delay: 0s;
+}
+
+.game-emblem--pixel .entry-icon rect:nth-of-type(8),
+.game-emblem--pixel .entry-icon rect:nth-of-type(9) {
+  animation-delay: 0.8s;
+}
+
+.game-emblem--pixel .entry-icon rect:nth-of-type(5) {
+  animation-delay: 1.6s;
+}
+
+/* DATA WING: ana şekil, ardından iz çizgileri */
+.game-emblem--arcade .entry-icon path:first-child {
+  fill: #8b887e;
+  animation: gold-fill-pulse 3.2s steps(1, end) infinite;
+  animation-delay: 0.25s;
+}
+
+.game-emblem--arcade .entry-icon path:nth-child(2) {
+  stroke: #8b887e;
+  animation: gold-stroke-pulse 3.2s steps(1, end) infinite;
+  animation-delay: 0.8s;
 }
 
 @media (max-width: 900px) {
@@ -4765,4 +4823,109 @@ body {
   font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: normal;
+}
+
+
+/* Ana renk paleti: koyu yüzeyler ve mat altın */
+:root {
+  --background: #10110f;
+  --wall: #171816;
+  --panel: #1e201d;
+  --panel-hover: #29271f;
+  --line: #34342e;
+  --line-light: #514b3e;
+  --text: #e4e3dc;
+  --muted: #b1aea4;
+  --quiet: #858279;
+  --sage: #c3a15c;
+  --brass: #c3a15c;
+  --white: #f5f2e9;
+  --accent: #c3a15c;
+}
+
+/* Bağlantılar ve indirme kontrolleri aynı vurgu rengini kullanır */
+.content a:not(.game-entry) {
+  color: var(--accent);
+  text-decoration-color: #72603a;
+}
+
+.content a:not(.game-entry):hover {
+  color: #e0c47e;
+  text-decoration-color: var(--accent);
+}
+
+.site-header nav a,
+.site-footer a {
+  color: var(--muted);
+}
+
+.site-header nav a:hover,
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+.content a.dataset-promo-download,
+.content a.dataset-download {
+  color: #17150f;
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.content a.dataset-promo-download:hover,
+.content a.dataset-download:hover {
+  color: #17150f;
+  background: #d7b86d;
+  border-color: #d7b86d;
+}
+
+.content a.dataset-promo-link,
+.content a.dataset-secondary-link {
+  color: var(--accent);
+  background: transparent;
+  border-color: var(--line-light);
+}
+
+.content a.dataset-promo-link:hover,
+.content a.dataset-secondary-link:hover {
+  color: #e0c47e;
+  background: var(--panel-hover);
+  border-color: var(--accent);
+}
+
+.brand-mark {
+  border-color: var(--line-light);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .game-emblem--combat,
+  .game-emblem--pixel,
+  .game-emblem--arcade,
+  .game-emblem--combat .entry-icon *,
+  .game-emblem--pixel .entry-icon *,
+  .game-emblem--arcade .entry-icon * {
+    animation: none !important;
+  }
+
+  .game-emblem--pixel .entry-icon rect {
+    fill: #6f6a60;
+    opacity: 0.62;
+  }
+
+  .game-emblem--pixel .entry-icon rect:nth-of-type(1),
+  .game-emblem--pixel .entry-icon rect:nth-of-type(2),
+  .game-emblem--pixel .entry-icon rect:nth-of-type(5),
+  .game-emblem--pixel .entry-icon rect:nth-of-type(8),
+  .game-emblem--pixel .entry-icon rect:nth-of-type(9) {
+    fill: var(--accent);
+    opacity: 1;
+  }
+
+  .game-emblem--combat .entry-icon path:first-child,
+  .game-emblem--combat .entry-icon path:nth-child(2),
+  .game-emblem--arcade .entry-icon path:first-child {
+    stroke: var(--accent);
+    fill: var(--accent);
+    opacity: 1;
+  }
 }
