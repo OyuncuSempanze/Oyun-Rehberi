@@ -16,7 +16,7 @@ Bu sürüm oyunların mağaza sayfalarını veya yama notlarını otomatik olara
 
 1. Hatırlatmadaki resmî kaynakları aç ve önceki kontrol tarihinden sonra yeni sürüm veya önemli bir değişiklik olup olmadığına bak.
 2. Değişiklik varsa ilgili rehberi güncelle. Değişiklik yoksa rehbere dokunmak gerekmez.
-3. `.github/oyun-guncelleme-takibi.json` dosyasındaki ilgili oyunun `last_checked` alanını kontrolü yaptığın Türkiye tarihine göre `YYYY-AA-GG` biçiminde değiştir.
+3. `.github/oyun-guncelleme-takibi.json` dosyasındaki ilgili oyunun `last_checked` alanını kontrolü yaptığın Türkiye tarihine göre `YYYY-MM-DD` biçiminde değiştir.
 4. Değişiklikleri ana dala aldıktan sonra takip sistemi bir sonraki çalışmasında zamanı gelmeyen oyunları hatırlatma listesinden çıkarır. Kontrol edilecek oyun kalmadığında açık hatırlatmayı otomatik kapatır.
 
 Örnek olarak `"last_checked": "2026-10-25"` kullanılır. İlk kontrol tarihi henüz bilinmiyorsa alan `null` kalır.
