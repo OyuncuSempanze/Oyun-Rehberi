@@ -4374,7 +4374,6 @@ body *:not(code):not(pre):not(kbd):not(samp) {
 }
 
 .dataset-card--featured {
-  grid-column: auto;
   padding: 19px;
 }
 
