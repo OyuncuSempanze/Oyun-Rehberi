@@ -8,7 +8,7 @@
   {% if page.robots %}
   <meta name="robots" content="{{ page.robots | escape }}">
   {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261025-simple">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261025-minimal2">
 </head>
 <body>
   <a class="skip-link" href="#main-content">İçeriğe geç</a>
@@ -33,7 +33,6 @@
         </nav>
       </div>
 
-      <p class="site-description">{{ site.description }}</p>
     </header>
 
     {% assign game_label = '' %}
@@ -70,10 +69,9 @@
     </main>
 
     <footer class="site-footer">
-      <span class="footer-note">Kaynaklar ve oyun içi gözlemler birbirinden ayrı tutulur.</span>
       <div class="footer-links">
-        <a href="https://github.com/OyuncuSempanze/Oyun-Rehberi">Kaynak depo ↗</a>
-        <a href="{{ '/lisans/' | relative_url }}">Lisans: CC BY 4.0</a>
+        <a href="https://github.com/OyuncuSempanze/Oyun-Rehberi">GitHub</a>
+        <a href="{{ '/lisans/' | relative_url }}">Lisans</a>
       </div>
     </footer>
   </div>
