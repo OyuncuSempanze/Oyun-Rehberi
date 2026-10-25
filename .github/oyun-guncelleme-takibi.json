@@ -1,0 +1,50 @@
+{
+  "issue_title": "Oyun güncelleme kontrolü",
+  "timezone": "Europe/Istanbul",
+  "games": [
+    {
+      "id": "bloody-bastards",
+      "name": "Bloody Bastards",
+      "last_checked": "2026-10-17",
+      "interval_days": 30,
+      "sources": [
+        {
+          "label": "Google Play sürüm bilgisi",
+          "url": "https://play.google.com/store/apps/details?id=com.tibith.badboxing"
+        },
+        {
+          "label": "Geliştiricinin resmî sitesi",
+          "url": "https://tibith.com/bloodybastards"
+        }
+      ]
+    },
+    {
+      "id": "data-wing",
+      "name": "DATA WING",
+      "last_checked": null,
+      "interval_days": 90,
+      "sources": [
+        {
+          "label": "Google Play sürüm bilgisi",
+          "url": "https://play.google.com/store/apps/details?id=com.DanVogt.DATAWING"
+        },
+        {
+          "label": "Geliştiricinin resmî sayfası",
+          "url": "https://www.danvogt.info/datawing.html"
+        }
+      ]
+    },
+    {
+      "id": "wplace-live",
+      "name": "Wplace.live",
+      "last_checked": "2026-10-17",
+      "interval_days": 7,
+      "sources": [
+        {
+          "label": "Resmî yama notları",
+          "url": "https://wplace.live/patch-notes"
+        }
+      ]
+    }
+  ]
+}
