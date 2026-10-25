@@ -145,7 +145,7 @@ a {
 
 .brand-title {
   color: var(--white);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-size: 1.55rem;
   letter-spacing: -0.035em;
   line-height: 1.2;
@@ -249,7 +249,7 @@ a:focus-visible {
 
 .content h1 {
   margin: 0 0 25px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-size: clamp(1.9rem, 4.2vw, 2.55rem);
   font-weight: 500;
   letter-spacing: -0.04em;
@@ -259,7 +259,7 @@ a:focus-visible {
 .content h2 {
   margin: 34px 0 15px;
   padding-bottom: 9px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-size: clamp(1.4rem, 3vw, 1.7rem);
   font-weight: 500;
   border-bottom: 1px solid var(--line);
@@ -446,7 +446,7 @@ a:focus-visible {
   margin: 0 0 15px;
   padding: 0;
   border: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-size: clamp(2.25rem, 4.6vw, 3.4rem);
   font-weight: 500;
   letter-spacing: -0.055em;
@@ -509,7 +509,7 @@ a:focus-visible {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-size: 1.65rem;
   font-weight: 500;
   letter-spacing: -0.035em;
@@ -590,7 +590,7 @@ a:focus-visible {
 
 .entry-title {
   color: var(--white);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-size: 1.35rem;
   font-weight: 500;
   letter-spacing: -0.025em;
@@ -1006,7 +1006,7 @@ a:focus-visible {
   margin: 0 0 8px;
   padding: 0;
   border: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-size: clamp(1.25rem, 2.8vw, 1.65rem);
   font-weight: 500;
   letter-spacing: -0.025em;
@@ -1116,7 +1116,7 @@ a:focus-visible {
 .content .dataset-card h3 {
   margin: 0 0 8px;
   color: var(--white);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-size: 1.28rem;
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -1259,7 +1259,7 @@ nav a.nav-cta:hover {
   margin: 0 0 8px;
   padding: 0;
   border: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-size: clamp(1.35rem, 2.8vw, 1.85rem);
   font-weight: 500;
   letter-spacing: -0.03em;
@@ -1442,7 +1442,7 @@ nav a.nav-cta:hover {
 .dataset-overview-value {
   flex: 0 0 auto;
   color: var(--sage);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-size: 1.18rem;
   line-height: 1.2;
   white-space: nowrap;
@@ -1545,7 +1545,7 @@ body {
     radial-gradient(ellipse at 12% 0, rgb(68 143 132 / 12%), transparent 35%),
     radial-gradient(ellipse at 95% 12%, rgb(71 99 145 / 10%), transparent 30%),
     var(--background);
-  font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.68;
 }
 
