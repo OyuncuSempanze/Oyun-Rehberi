@@ -14,21 +14,6 @@ description: Kaynakları izlenebilir Türkçe oyun rehberleri, oyun içi gözlem
     </div>
   </div>
 
-  <aside class="welcome-aside" aria-label="Arşivin yaklaşımı">
-    <p class="aside-kicker">ARŞİVİN YAKLAŞIMI</p>
-    <div class="approach-row">
-      <span class="approach-number">01</span>
-      <span><strong>Kaynak görünür</strong><small>Bilginin dayanağına ulaş.</small></span>
-    </div>
-    <div class="approach-row">
-      <span class="approach-number">02</span>
-      <span><strong>Bilgi türü belirtilir</strong><small>Resmî açıklama ve oyun içi gözlem ayrılır.</small></span>
-    </div>
-    <div class="approach-row">
-      <span class="approach-number">03</span>
-      <span><strong>Veri dışa aktarılabilir</strong><small>İnsanlar ve araçlar için açık dosyalar.</small></span>
-    </div>
-  </aside>
 </section>
 
 <section class="archive" id="arsiv" aria-labelledby="archive-heading">
@@ -132,32 +117,6 @@ description: Kaynakları izlenebilir Türkçe oyun rehberleri, oyun içi gözlem
   <div class="dataset-promo-actions">
     <a class="dataset-promo-download" href="{{ '/veri-kumeleri/oyun-rehberi-tam-arsiv-v1.jsonl' | relative_url }}" download>Tam veri kümesini indir <span aria-hidden="true">↓</span></a>
     <a class="dataset-promo-link" href="{{ '/veri-kumeleri/' | relative_url }}">Tüm veri dosyaları <span aria-hidden="true">↗</span></a>
-  </div>
-</section>
-
-<section class="archive-principles" id="ilkeler" aria-labelledby="principles-heading">
-  <div class="section-heading">
-    <div>
-      <p class="section-kicker">BİLGİ STANDARTLARI</p>
-      <h2 id="principles-heading">Bilgi kadar dayanağı da önemli</h2>
-    </div>
-  </div>
-  <div class="principle-grid">
-    <article class="principle-card">
-      <span class="principle-mark" aria-hidden="true">01</span>
-      <h3>Kaynağı takip et</h3>
-      <p>Mevcut olduğunda bilginin dayandığı resmî açıklama veya başvuru bağlantısı sunulur.</p>
-    </article>
-    <article class="principle-card">
-      <span class="principle-mark" aria-hidden="true">02</span>
-      <h3>Bilgi türünü ayırt et</h3>
-      <p>Resmî açıklamalar, oyun içi gözlemler ve yazar tavsiyeleri aynı şeymiş gibi gösterilmez.</p>
-    </article>
-    <article class="principle-card">
-      <span class="principle-mark" aria-hidden="true">03</span>
-      <h3>Veriyi yeniden kullan</h3>
-      <p>İçerikler, uygun kullanım alanları ve lisans sınırları açıklanan açık dosyalarla paylaşılır.</p>
-    </article>
   </div>
 </section>
 
