@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Veri kümeleri
-description: Kaynak bağlantıları ve bilgi türleri korunmuş, indirilebilir Türkçe oyun bilgisi veri kümeleri.
+description: Türkçe oyun rehberleri ve JSONL veri kümeleri.
 permalink: /veri-kumeleri/
 ---
 
@@ -22,22 +22,21 @@ permalink: /veri-kumeleri/
   <article class="dataset-card dataset-card--featured">
     <h3>Tam arşiv</h3>
     <p>Tüm rehber ve SSS kayıtları.</p>
-    <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-tam-arsiv-v1.jsonl' | relative_url }}" download>Tam veri kümesini indir <span aria-hidden="true">↓</span></a>
+    <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-tam-arsiv-v1.jsonl' | relative_url }}" download>İndir</a>
   </article>
   <article class="dataset-card">
     <h3>Rehber bölümleri</h3>
     <p>Mekanik, kural, oynanış ve güncelleme kayıtları.</p>
-    <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-rehber-bolumleri-v1.jsonl' | relative_url }}" download>Rehber bölümlerini indir <span aria-hidden="true">↓</span></a>
+    <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-rehber-bolumleri-v1.jsonl' | relative_url }}" download>İndir</a>
   </article>
   <article class="dataset-card">
     <h3>İddia birimleri</h3>
     <p>Arama için daha küçük metin parçaları. Bazı kayıtlar birden fazla iddia içerebilir.</p>
-    <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-iddia-birimleri-v1.jsonl' | relative_url }}" download>İddia birimlerini indir <span aria-hidden="true">↓</span></a>
+    <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-iddia-birimleri-v1.jsonl' | relative_url }}" download>İndir</a>
   </article>
   <article class="dataset-card">
     <h3>SSS</h3>
-    <p></p>
-    <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-sss-v1.jsonl' | relative_url }}" download>SSS veri kümesini indir <span aria-hidden="true">↓</span></a>
+    <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-sss-v1.jsonl' | relative_url }}" download>İndir</a>
   </article>
 </div>
 
@@ -69,10 +68,10 @@ permalink: /veri-kumeleri/
   </article>
 </div>
 
-<h2 id="metaveri">Metaveri ve şema</h2>
+<h2 id="metaveri">Metaveri</h2>
 <div class="dataset-grid dataset-grid--utility">
-  <article class="dataset-card"><h3>Manifest</h3><p>Sürüm, kapsam, kayıt sayısı ve lisans.</p><a class="dataset-download" href="{{ '/veri-kumeleri/manifest.json' | relative_url }}" download>Manifesti indir <span aria-hidden="true">↓</span></a></article>
-  <article class="dataset-card"><h3>JSON Schema</h3><p>Kayıt alanları ve zorunlu değerler.</p><a class="dataset-download" href="{{ '/veri-kumeleri/schema-v1.json' | relative_url }}" download>Şemayı indir <span aria-hidden="true">↓</span></a></article>
+  <article class="dataset-card"><h3>Manifest</h3><p>Sürüm, kapsam, kayıt sayısı ve lisans.</p><a class="dataset-download" href="{{ '/veri-kumeleri/manifest.json' | relative_url }}" download>İndir</a></article>
+  <article class="dataset-card"><h3>JSON Schema</h3><p>Kayıt alanları ve zorunlu değerler.</p><a class="dataset-download" href="{{ '/veri-kumeleri/schema-v1.json' | relative_url }}" download>İndir</a></article>
 </div>
 
 <h2 id="kayit-turleri">Kayıt türleri</h2>
