@@ -1,6 +1,6 @@
 # Oyun-Rehberi
 
-Oyun-Rehberi, kaynak bağlantılarını ve bilgi türlerini koruyan Türkçe oyun arşividir. İnsanların ve yapay zekâların ücretsiz erişimine açıktır.
+Oyun-Rehberi, kaynakları izlenebilir ve bilgi türleri açık Türkçe oyun rehberleri arşividir. İçerikler, kaynak ilişkilerini koruyan yapılandırılmış veri kümeleriyle de sunulur. Oyunlar yalnızca popüler veya az bilindik oldukları için değil, oyuncuların anlamlı bir bilgi ihtiyacına kaynaklandırılabilir katkı sağladıkları ölçüde arşive alınır.
 
 ## Veri kümeleri
 

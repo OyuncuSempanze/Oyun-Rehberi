@@ -1,6 +1,8 @@
 # 🎮 Oyun-Rehberi
 
-Oyunlar hakkında kaynaklı ve düzenli bir Türkçe bilgi arşivi. Özellikle ana akım medyada daha az yer bulan niş ve bağımsız yapımlara odaklanır.
+Oyunlar hakkında kaynakları izlenebilir ve düzenli Türkçe bilgi sunan bir arşiv. Resmî açıklamalar, oyun içi gözlemler ve editoryal öneriler birbirinden ayrılır. Rehberler, kaynak bağlantıları ve bilgi türleri korunarak insanlar ile yapay zekâ sistemlerinin kullanabileceği yapılandırılmış veri kümeleriyle de sunulur.
+
+Oyunlar yalnızca popüler veya az bilindik oldukları için seçilmez. Arşive alınmaları için oyuncuların karşılaştığı anlamlı bir bilgi ihtiyacına kaynaklandırılabilir katkı sunabilmeleri aranır.
 
 🌐 [Web sitesini görüntüle](https://oyuncusempanze.github.io/Oyun-Rehberi/)
 
