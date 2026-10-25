@@ -1,4 +1,4 @@
-name: Validate dataset
+name: Oyun-Rehberi otomatik kalite kontrolü
 
 on:
   push:
@@ -17,31 +17,77 @@ on:
       - "scripts/test_dataset_licenses.py"
       - "veri-kumeleri/**"
       - ".github/workflows/validate-dataset.yml"
+  schedule:
+    # Her pazar Türkiye saatiyle 11.00 (08.00 UTC).
+    - cron: "0 8 * * 0"
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
   validate:
-    name: Validate dataset, schema and local links
+    name: Veri kümesi ve bağlantı denetimi
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Depoyu indir
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Python ortamını hazırla
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: Test dataset license inheritance
+      - name: Lisans kurallarını test et
+        id: license_tests
         run: python scripts/test_dataset_licenses.py
 
-      - name: Check exports and local Markdown links
+      - name: Veri kümesi dosyalarını ve yerel Markdown bağlantılarını denetle
+        id: dataset_check
         run: python scripts/build_dataset.py --check
 
-      - name: Install JSON Schema validator
-        run: python -m pip install jsonschema
+      - name: JSON Schema denetleyicisini kur
+        id: schema_install
+        run: python -m pip install --disable-pip-version-check --quiet jsonschema
 
-      - name: Validate JSONL records against the schema
+      - name: JSONL kayıtlarını şemaya göre doğrula
+        id: schema_check
         run: python scripts/validate_dataset_schema.py
+
+      - name: Türkçe sonuç özeti oluştur
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          LICENSE_TESTS: ${{ steps.license_tests.outcome }}
+          DATASET_CHECK: ${{ steps.dataset_check.outcome }}
+          SCHEMA_INSTALL: ${{ steps.schema_install.outcome }}
+          SCHEMA_CHECK: ${{ steps.schema_check.outcome }}
+        run: |
+          durum() {
+            case "$1" in
+              success) echo "Başarılı" ;;
+              failure) echo "Başarısız" ;;
+              cancelled) echo "İptal edildi" ;;
+              skipped) echo "Çalıştırılmadı" ;;
+              *) echo "Bilinmiyor" ;;
+            esac
+          }
+
+          {
+            echo "## Oyun-Rehberi otomatik kalite kontrolü"
+            echo ""
+            if [ "$JOB_STATUS" = "success" ]; then
+              echo "**Genel sonuç:** Tüm kontroller başarıyla tamamlandı."
+            else
+              echo "**Genel sonuç:** En az bir adım tamamlanamadı. Aşağıdaki durumları incele ve başarısız adımın günlüklerini aç."
+            fi
+            echo ""
+            echo "| Kontrol | Sonuç |"
+            echo "| --- | --- |"
+            echo "| Lisans kuralları testleri | $(durum "$LICENSE_TESTS") |"
+            echo "| Veri kümesi dosyaları ve yerel bağlantılar | $(durum "$DATASET_CHECK") |"
+            echo "| Şema denetleyicisinin kurulumu | $(durum "$SCHEMA_INSTALL") |"
+            echo "| JSONL kayıtlarının şemaya uygunluğu | $(durum "$SCHEMA_CHECK") |"
+            echo ""
+            echo "Bu denetim, kaynakların güncel olduğunu garanti etmez. Veri kümesi tutarlılığını, lisans kurallarını, yerel Markdown bağlantılarını ve kayıt şemasını kontrol eder."
+          } >> "$GITHUB_STEP_SUMMARY"
