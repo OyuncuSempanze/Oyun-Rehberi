@@ -20,21 +20,25 @@ permalink: /veri-kumeleri/
 <h2 id="veri-dosyalari">Dosyalar</h2>
 <div class="dataset-grid">
   <article class="dataset-card dataset-card--featured">
+    <div class="dataset-labels" aria-label="Veri kümesi türü"><span class="dataset-label dataset-label--format">JSONL</span><span class="dataset-label dataset-label--primary">Tüm kayıtlar</span></div>
     <h3>Tam arşiv</h3>
     <p>Tüm rehber ve SSS kayıtları.</p>
     <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-tam-arsiv-v1.jsonl' | relative_url }}" download>İndir</a>
   </article>
   <article class="dataset-card">
+    <div class="dataset-labels" aria-label="Veri kümesi türü"><span class="dataset-label dataset-label--format">JSONL</span><span class="dataset-label">Rehber kayıtları</span></div>
     <h3>Rehber bölümleri</h3>
     <p>Mekanik, kural, oynanış ve güncelleme kayıtları.</p>
     <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-rehber-bolumleri-v1.jsonl' | relative_url }}" download>İndir</a>
   </article>
   <article class="dataset-card">
+    <div class="dataset-labels" aria-label="Veri kümesi türü"><span class="dataset-label dataset-label--format">JSONL</span><span class="dataset-label">İddia birimleri</span></div>
     <h3>İddia birimleri</h3>
     <p>Arama için daha küçük metin parçaları. Bazı kayıtlar birden fazla iddia içerebilir.</p>
     <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-iddia-birimleri-v1.jsonl' | relative_url }}" download>İndir</a>
   </article>
   <article class="dataset-card">
+    <div class="dataset-labels" aria-label="Veri kümesi türü"><span class="dataset-label dataset-label--format">JSONL</span><span class="dataset-label">Soru-cevap</span></div>
     <h3>SSS</h3>
     <a class="dataset-download" href="{{ '/veri-kumeleri/oyun-rehberi-sss-v1.jsonl' | relative_url }}" download>İndir</a>
   </article>
@@ -43,6 +47,7 @@ permalink: /veri-kumeleri/
 <h2 id="oyun-datasetleri">Oyuna göre</h2>
 <div class="dataset-grid dataset-grid--games">
   <article class="dataset-card">
+    <div class="dataset-labels" aria-label="Veri kümesi türü"><span class="dataset-label dataset-label--format">JSONL</span><span class="dataset-label">Oyun arşivi</span></div>
     <h3>Bloody Bastards</h3>
     <p>Dövüş, ekipman ve güncellemeler.</p>
     <div class="dataset-card-links">
@@ -51,6 +56,7 @@ permalink: /veri-kumeleri/
     </div>
   </article>
   <article class="dataset-card">
+    <div class="dataset-labels" aria-label="Veri kümesi türü"><span class="dataset-label dataset-label--format">JSONL</span><span class="dataset-label">Oyun arşivi</span></div>
     <h3>DATA WING</h3>
     <p>Hareket ve bölüm mekanikleri.</p>
     <div class="dataset-card-links">
@@ -59,6 +65,7 @@ permalink: /veri-kumeleri/
     </div>
   </article>
   <article class="dataset-card">
+    <div class="dataset-labels" aria-label="Veri kümesi türü"><span class="dataset-label dataset-label--format">JSONL</span><span class="dataset-label">Oyun arşivi</span></div>
     <h3>Wplace.live</h3>
     <p>Harita kuralları ve güncellemeler.</p>
     <div class="dataset-card-links">
@@ -70,8 +77,8 @@ permalink: /veri-kumeleri/
 
 <h2 id="metaveri">Metaveri</h2>
 <div class="dataset-grid dataset-grid--utility">
-  <article class="dataset-card"><h3>Manifest</h3><p>Sürüm, kapsam, kayıt sayısı ve lisans.</p><a class="dataset-download" href="{{ '/veri-kumeleri/manifest.json' | relative_url }}" download>İndir</a></article>
-  <article class="dataset-card"><h3>JSON Schema</h3><p>Kayıt alanları ve zorunlu değerler.</p><a class="dataset-download" href="{{ '/veri-kumeleri/schema-v1.json' | relative_url }}" download>İndir</a></article>
+  <article class="dataset-card"><div class="dataset-labels" aria-label="Dosya türü"><span class="dataset-label dataset-label--format">JSON</span><span class="dataset-label dataset-label--utility">Sürüm bilgisi</span></div><h3>Manifest</h3><p>Sürüm, kapsam, kayıt sayısı ve lisans.</p><a class="dataset-download" href="{{ '/veri-kumeleri/manifest.json' | relative_url }}" download>İndir</a></article>
+  <article class="dataset-card"><div class="dataset-labels" aria-label="Dosya türü"><span class="dataset-label dataset-label--format">JSON</span><span class="dataset-label dataset-label--utility">Veri yapısı</span></div><h3>JSON Schema</h3><p>Kayıt alanları ve zorunlu değerler.</p><a class="dataset-download" href="{{ '/veri-kumeleri/schema-v1.json' | relative_url }}" download>İndir</a></article>
 </div>
 
 <h2 id="kayit-turleri">Kayıt türleri</h2>

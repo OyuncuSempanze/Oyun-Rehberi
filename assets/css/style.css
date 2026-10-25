@@ -4850,3 +4850,110 @@ body {
     opacity: 1;
   }
 }
+
+
+/* Kaynak türlerini sıradan metinden ayıran etiket sistemi */
+.source-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 3px;
+  padding: 2px 7px;
+  border: 1px solid var(--line-light);
+  border-radius: 3px;
+  font-size: 0.72em;
+  font-weight: 650;
+  line-height: 1.5;
+  vertical-align: 0.08em;
+  white-space: nowrap;
+  text-decoration: none !important;
+}
+
+.source-tag::before {
+  width: 5px;
+  height: 5px;
+  flex: 0 0 5px;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+}
+
+.source-tag--official {
+  color: #dfbd72;
+  background: #292419;
+  border-color: #5a4a2d;
+}
+
+.source-tag--observation {
+  color: #d0c19b;
+  background: #29271f;
+  border-color: #514a3a;
+}
+
+.source-tag--reference {
+  color: #c3c0b6;
+  background: #252521;
+  border-color: #48473f;
+}
+
+.source-tag--recommendation {
+  color: #c6b7a0;
+  background: #29251f;
+  border-color: #514536;
+}
+
+.content a.source-tag:hover {
+  filter: brightness(1.13);
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Veri kümesi kartlarındaki tür etiketleri */
+.dataset-labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 11px;
+}
+
+.dataset-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 23px;
+  padding: 3px 7px;
+  color: var(--muted);
+  background: #242520;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  line-height: 1.35;
+}
+
+.dataset-label--format {
+  color: #d1cec3;
+  background: #242520;
+  border-color: #49483f;
+}
+
+.dataset-label--primary {
+  color: #dfbd72;
+  background: #292419;
+  border-color: #5a4a2d;
+}
+
+.dataset-label--utility {
+  color: #c6b7a0;
+  background: #29251f;
+  border-color: #514536;
+}
+
+@media (max-width: 560px) {
+  .source-tag {
+    margin: 2px 2px;
+    padding: 2px 6px;
+    font-size: 0.7em;
+  }
+}

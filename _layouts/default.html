@@ -8,7 +8,7 @@
   {% if page.robots %}
   <meta name="robots" content="{{ page.robots | escape }}">
   {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261025-simple-loop">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261025-source-tags">
 </head>
 <body>
   <a class="skip-link" href="#main-content">İçeriğe geç</a>
@@ -74,5 +74,57 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    (() => {
+      const labelTypes = {
+        "Resmî Kaynak": "official",
+        "Oyun İçi Gözlem": "observation",
+        "Kaynak": "reference",
+        "Öneri": "recommendation"
+      };
+      const content = document.querySelector(".content");
+      if (!content) return;
+
+      content.querySelectorAll("a").forEach((link) => {
+        const label = link.textContent.trim().replace(/^\[|\]$/g, "");
+        if (Object.prototype.hasOwnProperty.call(labelTypes, label)) {
+          link.classList.add("source-tag", "source-tag--" + labelTypes[label]);
+        }
+      });
+
+      const pattern = /\[(Resmî Kaynak|Oyun İçi Gözlem|Kaynak|Öneri)\]/g;
+      const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT, {
+        acceptNode(node) {
+          const parent = node.parentElement;
+          if (!parent || parent.closest("a, code, pre, script, style, svg")) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          return /\[(Resmî Kaynak|Oyun İçi Gözlem|Kaynak|Öneri)\]/.test(node.nodeValue)
+            ? NodeFilter.FILTER_ACCEPT
+            : NodeFilter.FILTER_REJECT;
+        }
+      });
+
+      const nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+
+      nodes.forEach((node) => {
+        const fragment = document.createDocumentFragment();
+        let lastIndex = 0;
+        for (const match of node.nodeValue.matchAll(pattern)) {
+          fragment.append(document.createTextNode(node.nodeValue.slice(lastIndex, match.index)));
+          const badge = document.createElement("span");
+          badge.className = "source-tag source-tag--" + labelTypes[match[1]];
+          badge.textContent = match[1];
+          fragment.append(badge);
+          lastIndex = match.index + match[0].length;
+        }
+        fragment.append(document.createTextNode(node.nodeValue.slice(lastIndex)));
+        node.replaceWith(fragment);
+      });
+    })();
+  </script>
+
 </body>
 </html>
