@@ -9,22 +9,22 @@
     {
       "identifier": "CC-BY-4.0",
       "url": "https://creativecommons.org/licenses/by/4.0/",
-      "record_count": 105,
-      "claim_unit_count": 322
+      "record_count": 102,
+      "claim_unit_count": 323
     }
   ],
   "license_counts": {
     "CC-BY-4.0": {
       "faq": 19,
-      "guide_section": 86,
-      "claim": 322
+      "guide_section": 83,
+      "claim": 323
     }
   },
   "source_repository": "https://github.com/OyuncuSempanze/Oyun-Rehberi",
   "website": "https://oyuncusempanze.github.io/Oyun-Rehberi/",
   "description": "SSS kayıtları, rehber bölümleri ve kaynak bağlantıları korunmuş daha küçük iddia birimlerini içeren Türkçe oyun bilgisi arşivi.",
-  "record_count": 105,
-  "claim_unit_count": 322,
+  "record_count": 102,
+  "claim_unit_count": 323,
   "collections": [
     {
       "record_type": "faq",
@@ -33,7 +33,7 @@
     },
     {
       "record_type": "guide_section",
-      "records": 86,
+      "records": 83,
       "description": "Rehber belgelerindeki anlamlı bölümler."
     }
   ],
@@ -61,13 +61,13 @@
       "path": "oyun-rehberi-tam-arsiv-v1.jsonl",
       "scope": "all_records",
       "format": "jsonl",
-      "records": 105
+      "records": 102
     },
     {
       "path": "oyun-rehberi-rehber-bolumleri-v1.jsonl",
       "scope": "guide_sections",
       "format": "jsonl",
-      "records": 86
+      "records": 83
     },
     {
       "path": "oyun-rehberi-sss-v1.jsonl",
@@ -105,7 +105,7 @@
       "game": "Antimatter Dimensions",
       "game_slug": "antimatter-dimensions",
       "format": "jsonl",
-      "records": 4
+      "records": 1
     },
     {
       "path": "bloody-bastards-sss-v1.jsonl",
@@ -135,7 +135,7 @@
       "path": "oyun-rehberi-iddia-birimleri-v1.jsonl",
       "scope": "claim_units",
       "format": "jsonl",
-      "records": 322
+      "records": 323
     }
   ],
   "schema_url": "https://oyuncusempanze.github.io/Oyun-Rehberi/veri-kumeleri/schema-v1.json",
