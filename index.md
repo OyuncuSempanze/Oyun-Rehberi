@@ -3,22 +3,11 @@ title: Kaynaklı Türkçe Oyun Arşivi
 description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
 ---
 
-<section class="welcome" aria-labelledby="page-heading">
-  <div class="welcome-copy">
-    <h1 id="page-heading">Oyun bilgisi. <em>Kaynağıyla.</em></h1>
-    <div class="welcome-actions">
-      <a class="action-primary" href="#arsiv">Oyunlar</a>
-      <a class="action-secondary" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümeleri</a>
-    </div>
-  </div>
 
-</section>
 
 <section class="archive" id="arsiv" aria-labelledby="archive-heading">
   <div class="section-heading">
-    <div>
-      <h2 id="archive-heading">Oyunlar</h2>
-    </div>
+    <h1 id="archive-heading">Oyunlar</h1>
   </div>
 
   <div class="archive-tools">
@@ -93,7 +82,6 @@ description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
 <section class="dataset-promo" aria-labelledby="dataset-promo-heading">
   <div class="dataset-promo-copy">
     <h2 id="dataset-promo-heading">Veri kümeleri</h2>
-    <p>Rehber ve SSS kayıtlarını indir.</p>
   </div>
   <div class="dataset-promo-actions">
     <a class="dataset-promo-download" href="{{ '/veri-kumeleri/oyun-rehberi-tam-arsiv-v1.jsonl' | relative_url }}" download>Tam arşivi indir</a>

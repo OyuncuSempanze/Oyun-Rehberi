@@ -4530,11 +4530,11 @@ body {
 
 @keyframes icon-color-shift {
   0%, 100% {
-    filter: hue-rotate(0deg) saturate(1);
+    filter: hue-rotate(0deg) saturate(1) brightness(1);
   }
 
   50% {
-    filter: hue-rotate(-38deg) saturate(1.75) brightness(1.18);
+    filter: hue-rotate(105deg) saturate(1.9) brightness(1.22);
   }
 }
 
@@ -4545,39 +4545,39 @@ body {
   }
 
   50% {
-    border-color: #776b54;
-    background-color: #302c25;
+    border-color: #a4ba90;
+    background-color: #3c4734;
   }
 }
 
 .game-emblem--combat,
 .game-emblem--pixel,
 .game-emblem--arcade {
-  animation: emblem-frame-shift 3.4s ease-in-out infinite;
+  animation: emblem-frame-shift 2.8s ease-in-out infinite;
 }
 
 .game-emblem--pixel {
-  animation-delay: -1.1s;
+  animation-delay: -0.9s;
 }
 
 .game-emblem--arcade {
-  animation-delay: -2.2s;
+  animation-delay: -1.8s;
 }
 
 .game-emblem--combat .entry-icon,
 .game-emblem--pixel .entry-icon,
 .game-emblem--arcade .entry-icon {
-  animation: icon-color-shift 3.4s ease-in-out infinite;
+  animation: icon-color-shift 2.8s ease-in-out infinite;
   transform: none;
   will-change: filter;
 }
 
 .game-emblem--pixel .entry-icon {
-  animation-delay: -1.1s;
+  animation-delay: -0.9s;
 }
 
 .game-emblem--arcade .entry-icon {
-  animation-delay: -2.2s;
+  animation-delay: -1.8s;
 }
 
 .game-emblem--pixel .entry-icon rect,
@@ -4744,4 +4744,25 @@ body {
     scroll-behavior: auto !important;
     transition: none !important;
   }
+}
+
+
+/* Düz arka plan ve sade ana başlık */
+body {
+  background: var(--background);
+}
+
+.site-header,
+.content,
+.site-footer {
+  background: var(--wall);
+}
+
+.content .section-heading h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: normal;
 }
