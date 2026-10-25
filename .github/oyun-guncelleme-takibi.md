@@ -4,7 +4,7 @@ Bu takip sistemi, arşivdeki her oyunu sürekli elle kontrol etmek zorunda kalma
 
 ## Sistem ne yapar?
 
-GitHub Actions her pazartesi Türkiye saatiyle 11.00 civarında takip dosyasını inceler. Kontrol zamanı gelen oyun varsa depoda **Oyun güncelleme kontrolü** başlıklı bir GitHub Issue oluşturur veya açık olan hatırlatmayı günceller. Yeni bir oyun kontrol sırasına girdiğinde açık hatırlatmaya Türkçe bir yorum da eklenir.
+GitHub Actions her pazartesi Türkiye saatiyle 11.00 civarında takip dosyasını inceler. Kontrol zamanı gelen oyun varsa depoda **Oyun güncelleme kontrolü** başlıklı bir GitHub Issue oluşturur veya açık olan hatırlatmayı günceller. Yeni bir oyun kontrol sırasına girdiğinde açık hatırlatmaya Türkçe bir yorum da eklenir. E-posta veya telefon bildirimi alıp almaman GitHub bildirim ve depo izleme ayarlarına bağlıdır.
 
 Bir oyun için kontrol tarihi boş bırakılmışsa ilk kontrol gerekir. Takip aralığı oyunun değişme sıklığına göre belirlenmiştir. Bu aralıklar başlangıç değerleridir ve deneyime göre değiştirilebilir.
 
