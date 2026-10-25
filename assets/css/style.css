@@ -4460,7 +4460,7 @@ body {
 }
 
 .dataset-card--featured {
-  grid-column: 1 / -1;
+  grid-column: auto;
 }
 
 .dataset-card-kicker {
@@ -4556,12 +4556,28 @@ body {
   animation: emblem-frame-shift 3.4s ease-in-out infinite;
 }
 
+.game-emblem--pixel {
+  animation-delay: -1.1s;
+}
+
+.game-emblem--arcade {
+  animation-delay: -2.2s;
+}
+
 .game-emblem--combat .entry-icon,
 .game-emblem--pixel .entry-icon,
 .game-emblem--arcade .entry-icon {
   animation: icon-color-shift 3.4s ease-in-out infinite;
   transform: none;
   will-change: filter;
+}
+
+.game-emblem--pixel .entry-icon {
+  animation-delay: -1.1s;
+}
+
+.game-emblem--arcade .entry-icon {
+  animation-delay: -2.2s;
 }
 
 .game-emblem--pixel .entry-icon rect,
