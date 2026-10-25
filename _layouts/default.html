@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b1116">
+  <meta name="theme-color" content="#111416">
   {% seo %}
   {% if page.robots %}
   <meta name="robots" content="{{ page.robots | escape }}">
   {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261025-simple">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261025-minimal2">
 </head>
 <body>
   <a class="skip-link" href="#main-content">İçeriğe geç</a>
@@ -19,7 +19,6 @@
         <a class="brand" href="{{ '/' | relative_url }}" aria-label="Oyun-Rehberi ana sayfası">
           <span class="brand-mark" aria-hidden="true"><span class="brand-hatch"></span></span>
           <span class="brand-copy">
-            <span class="brand-kicker">OYUNCUSEMPANZE</span>
             <span class="brand-title">{{ site.title }}</span>
           </span>
         </a>
@@ -28,12 +27,11 @@
           {% unless page.url == '/' %}
           <a href="{{ '/' | relative_url }}">Ana sayfa</a>
           {% endunless %}
-          <a href="{{ '/' | relative_url }}#arsiv">Oyun arşivi <span aria-hidden="true">↗</span></a>
-          <a class="nav-cta" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümeleri <span aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}#arsiv">Oyunlar</a>
+          <a class="nav-cta" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümeleri</a>
         </nav>
       </div>
 
-      <p class="site-description">{{ site.description }}</p>
     </header>
 
     {% assign game_label = '' %}
@@ -70,10 +68,9 @@
     </main>
 
     <footer class="site-footer">
-      <span class="footer-note">Kaynaklar ve oyun içi gözlemler birbirinden ayrı tutulur.</span>
       <div class="footer-links">
-        <a href="https://github.com/OyuncuSempanze/Oyun-Rehberi">Kaynak depo ↗</a>
-        <a href="{{ '/lisans/' | relative_url }}">Lisans: CC BY 4.0</a>
+        <a href="https://github.com/OyuncuSempanze/Oyun-Rehberi">GitHub</a>
+        <a href="{{ '/lisans/' | relative_url }}">Lisans</a>
       </div>
     </footer>
   </div>
