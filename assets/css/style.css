@@ -4528,119 +4528,40 @@ body {
   color: var(--text);
 }
 
-/* Koyu altın renk ve ritimli oyun simgeleri */
-@keyframes emblem-frame-shift {
-  0%, 100% {
-    border-color: #393830;
-    background-color: #242420;
-  }
-
-  28%, 48% {
-    border-color: var(--accent);
-    background-color: #342d1e;
-  }
-}
-
-@keyframes gold-stroke-pulse {
-  0%, 18% {
-    stroke: var(--accent);
-    opacity: 1;
-  }
-
-  28%, 100% {
-    stroke: #8b887e;
-    opacity: 0.75;
-  }
-}
-
-@keyframes gold-fill-pulse {
-  0%, 18% {
+/* Wplace.live simgesinde sade, keskin ve döngüsel vurgu */
+@keyframes pixel-gold-step {
+  0%, 24.99% {
     fill: var(--accent);
     opacity: 1;
   }
 
-  28%, 100% {
-    fill: #8b887e;
-    opacity: 0.75;
-  }
-}
-
-@keyframes pixel-gold-rhythm {
-  0%, 4%, 18% {
-    fill: var(--accent);
-    opacity: 1;
-  }
-
-  28%, 100% {
+  25%, 100% {
     fill: #6f6a60;
     opacity: 0.62;
   }
 }
 
-.game-emblem--combat,
-.game-emblem--pixel,
-.game-emblem--arcade {
-  animation: emblem-frame-shift 3.2s ease-in-out infinite;
-}
-
-.game-emblem--pixel {
-  animation-delay: 0.25s;
-}
-
-.game-emblem--arcade {
-  animation-delay: 0.5s;
-}
-
-/* Bloody Bastards: ana çizgiler, ardından ayrıntılar */
-.game-emblem--combat .entry-icon path:first-child {
-  stroke: #8b887e;
-  animation: gold-stroke-pulse 3.2s steps(1, end) infinite;
-}
-
-.game-emblem--combat .entry-icon path:nth-child(2) {
-  stroke: #8b887e;
-  animation: gold-stroke-pulse 3.2s steps(1, end) infinite;
-  animation-delay: 0.55s;
-}
-
-.game-emblem--combat .entry-icon circle {
-  fill: var(--accent);
-  animation: gold-fill-pulse 3.2s steps(1, end) infinite;
-  animation-delay: 0.55s;
-}
-
-/* Wplace.live: 2 üst, 2 alt, 1 orta şeklinde döngü */
+/* Yalnızca piksel simgesi hareket eder. Diğer simgeler sabit kalır. */
 .game-emblem--pixel .entry-icon rect {
   fill: #6f6a60;
   opacity: 0.62;
-  animation: pixel-gold-rhythm 3.2s ease-in-out infinite;
+  animation: pixel-gold-step 3.2s steps(1, end) infinite;
 }
 
+/* 2 üst kare */
 .game-emblem--pixel .entry-icon rect:nth-of-type(1),
 .game-emblem--pixel .entry-icon rect:nth-of-type(2) {
   animation-delay: 0s;
 }
 
+/* 2 alt kare, ardından orta kare */
 .game-emblem--pixel .entry-icon rect:nth-of-type(8),
 .game-emblem--pixel .entry-icon rect:nth-of-type(9) {
-  animation-delay: 0.8s;
+  animation-delay: -2.4s;
 }
 
 .game-emblem--pixel .entry-icon rect:nth-of-type(5) {
-  animation-delay: 1.6s;
-}
-
-/* DATA WING: ana şekil, ardından iz çizgileri */
-.game-emblem--arcade .entry-icon path:first-child {
-  fill: #8b887e;
-  animation: gold-fill-pulse 3.2s steps(1, end) infinite;
-  animation-delay: 0.25s;
-}
-
-.game-emblem--arcade .entry-icon path:nth-child(2) {
-  stroke: #8b887e;
-  animation: gold-stroke-pulse 3.2s steps(1, end) infinite;
-  animation-delay: 0.8s;
+  animation-delay: -1.6s;
 }
 
 @media (max-width: 900px) {
