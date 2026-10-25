@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b1116">
+  <meta name="theme-color" content="#111416">
   {% seo %}
   {% if page.robots %}
   <meta name="robots" content="{{ page.robots | escape }}">
@@ -19,7 +19,6 @@
         <a class="brand" href="{{ '/' | relative_url }}" aria-label="Oyun-Rehberi ana sayfası">
           <span class="brand-mark" aria-hidden="true"><span class="brand-hatch"></span></span>
           <span class="brand-copy">
-            <span class="brand-kicker">OYUNCUSEMPANZE</span>
             <span class="brand-title">{{ site.title }}</span>
           </span>
         </a>
@@ -28,8 +27,8 @@
           {% unless page.url == '/' %}
           <a href="{{ '/' | relative_url }}">Ana sayfa</a>
           {% endunless %}
-          <a href="{{ '/' | relative_url }}#arsiv">Oyun arşivi <span aria-hidden="true">↗</span></a>
-          <a class="nav-cta" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümeleri <span aria-hidden="true">↗</span></a>
+          <a href="{{ '/' | relative_url }}#arsiv">Oyunlar</a>
+          <a class="nav-cta" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümeleri</a>
         </nav>
       </div>
 
