@@ -3987,6 +3987,24 @@ body {
   line-height: 1.65;
 }
 
+body *:not(code):not(pre):not(kbd):not(samp) {
+  font-family: inherit;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
+.brand-title,
+.entry-title,
+.game-card-title,
+.content .dataset-promo h2,
+.content .dataset-hero h1 {
+  font-weight: 600;
+}
+
 .brand-title,
 .content h1,
 .content h2,
