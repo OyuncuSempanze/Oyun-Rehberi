@@ -2,8 +2,8 @@ name: Oyun güncelleme hatırlatıcısı
 
 on:
   schedule:
-    # Her pazartesi Türkiye saatiyle 11.00 (08.00 UTC).
-    - cron: "0 8 * * 1"
+    # Her pazartesi Türkiye saatiyle 11.17 (08.17 UTC).
+    - cron: "17 8 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -118,7 +118,7 @@ jobs:
                   "2. Değişiklik varsa ilgili rehberi güncelle. Değişiklik yoksa rehberi değiştirmek gerekmez.",
                   "3. `.github/oyun-guncelleme-takibi.json` dosyasındaki oyunun `last_checked` alanını kontrol yaptığın Türkiye tarihiyle güncelle ve değişikliği ana dala al.",
                   "",
-                  "Kontrol tarihi güncellendiğinde bu hatırlatma, takip aralığı dolmamışsa otomatik olarak kapanır."
+                  "Listedeki bütün oyunların kontrol tarihi güncellendiğinde ve hiçbiri için kontrol gerekmiyorsa hatırlatma otomatik olarak kapanır."
                 ].join("\n")
               : [
                   "<!-- oyun-guncelleme-takibi due-games: -->",
