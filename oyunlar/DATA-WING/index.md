@@ -17,12 +17,12 @@ description: DATA WING için temel bilgiler, hareket kontrolleri, momentum, duva
 </div>
 
 <nav class="guide-toc" aria-label="DATA WING rehber konuları">
-  <a class="guide-topic" href="oyun-hakkinda.html"><span class="guide-topic-number">01</span><span class="guide-topic-copy"><strong>Oyun hakkında</strong><small>Temel bilgiler ve genel bakış.</small></span><span class="guide-topic-arrow" aria-hidden="true">↗</span></a>
-  <a class="guide-topic" href="mekanikler.html"><span class="guide-topic-number">02</span><span class="guide-topic-copy"><strong>Mekanikler</strong><small>Hareket, momentum ve bölüm hedefleri.</small></span><span class="guide-topic-arrow" aria-hidden="true">↗</span></a>
-  <a class="guide-topic" href="sik-sorulan-sorular.html"><span class="guide-topic-number">03</span><span class="guide-topic-copy"><strong>Sık sorulan sorular</strong><small>Kısa yanıtlar ve pratik bilgiler.</small></span><span class="guide-topic-arrow" aria-hidden="true">↗</span></a>
+  <a class="guide-topic" href="oyun-hakkinda.html"><span class="guide-topic-number">01</span><span class="guide-topic-copy"><strong>Oyun hakkında</strong><small>Temel bilgiler ve genel bakış.</small></span></a>
+  <a class="guide-topic" href="mekanikler.html"><span class="guide-topic-number">02</span><span class="guide-topic-copy"><strong>Mekanikler</strong><small>Hareket, momentum ve bölüm hedefleri.</small></span></a>
+  <a class="guide-topic" href="sik-sorulan-sorular.html"><span class="guide-topic-number">03</span><span class="guide-topic-copy"><strong>Sık sorulan sorular</strong><small>Kısa yanıtlar ve pratik bilgiler.</small></span></a>
 </nav>
 
 <aside class="guide-dataset-note">
   <span class="guide-dataset-copy"><strong>Veri kümeleri de mevcut</strong><small>Bu oyuna ait rehber ve SSS kayıtlarını indirilebilir dosyalar olarak incele.</small></span>
-  <a class="guide-dataset-link" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümelerini aç <span aria-hidden="true">↗</span></a>
+  <a class="guide-dataset-link" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümelerini aç </a>
 </aside>
