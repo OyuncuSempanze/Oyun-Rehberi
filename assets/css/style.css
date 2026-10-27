@@ -5222,3 +5222,60 @@ body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; transition: none !important; }
 }
+
+
+/* Rehber girişleri ve yardımcı paneller için açık zemin kontrastı */
+.content .guide-hero {
+  color: #2e4057;
+  background: #dce5f0 !important;
+  border: 1px solid #a4b6ca !important;
+  border-left: 3px solid #d7b84e !important;
+  border-radius: 3px !important;
+  box-shadow: inset 1px 1px rgb(255 255 255 / 55%) !important;
+}
+.content .guide-hero h1 { color: #263f68 !important; }
+.content .guide-hero-eyebrow { color: #80651f !important; }
+.content .guide-summary { color: #465b73 !important; }
+.content .guide-meta span {
+  color: #405873 !important;
+  background: #e7edf5 !important;
+  border-color: #b1bfd0 !important;
+  border-radius: 2px !important;
+}
+.content a.guide-topic {
+  color: #2e4057 !important;
+  background: #edf1f6 !important;
+  border-color: #a4b6ca !important;
+  border-radius: 2px !important;
+  box-shadow: inset 1px 1px #fff !important;
+  transform: none !important;
+}
+.content a.guide-topic:hover { color: #263f68 !important; background: #dce6f2 !important; }
+.content .guide-topic-number,
+.content .principle-mark {
+  color: #31558c !important;
+  background: #e9eef5 !important;
+  border-color: #a4b6ca !important;
+  border-radius: 2px !important;
+}
+.content .guide-topic-arrow { display: none !important; }
+.content .guide-topic-copy strong,
+.content .guide-dataset-copy strong { color: #263f68 !important; }
+.content .guide-topic-copy small,
+.content .guide-dataset-copy small { color: #465b73 !important; }
+.content .guide-dataset-note,
+.content .principle-card {
+  color: #465b73 !important;
+  background: #dce5f0 !important;
+  border-color: #a4b6ca !important;
+  border-radius: 3px !important;
+  box-shadow: inset 1px 1px rgb(255 255 255 / 55%) !important;
+}
+.content .principle-card h3 { color: #263f68 !important; }
+.content .principle-card p { color: #465b73 !important; }
+.content .archive-empty {
+  color: #465b73 !important;
+  background: #dce5f0 !important;
+  border-color: #a4b6ca !important;
+}
+.content .source-tag::before { display: none !important; }
