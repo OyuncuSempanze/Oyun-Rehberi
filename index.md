@@ -7,7 +7,7 @@ description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
 
 <section class="archive" id="arsiv" aria-labelledby="archive-heading">
   <div class="section-heading">
-    <h1 id="archive-heading">Oyunlar</h1>
+    <h1 id="archive-heading">🎮 Oyunlar</h1>
   </div>
 
   <div class="archive-tools">
@@ -96,7 +96,7 @@ description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
 
 <section class="dataset-promo" aria-labelledby="dataset-promo-heading">
   <div class="dataset-promo-copy">
-    <h2 id="dataset-promo-heading">Veri kümeleri</h2>
+    <h2 id="dataset-promo-heading">📦 Veri kümeleri</h2>
   </div>
   <div class="dataset-promo-actions">
     <a class="dataset-promo-download" href="{{ '/veri-kumeleri/oyun-rehberi-tam-arsiv-v1.jsonl' | relative_url }}" download>Tam arşivi indir</a>
