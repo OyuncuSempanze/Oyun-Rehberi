@@ -5754,3 +5754,12 @@ body {
   box-shadow: none;
   cursor: not-allowed;
 }
+
+
+.content .game-card-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 0 0 9px;
+}
+.content .game-card-categories .game-card-category { margin: 0; }
