@@ -8,7 +8,7 @@
   {% if page.robots %}
   <meta name="robots" content="{{ page.robots | escape }}">
   {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261027-retro-web">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261028-classic">
 </head>
 <body>
   <a class="skip-link" href="#main-content">İçeriğe geç</a>
@@ -17,9 +17,8 @@
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="{{ '/' | relative_url }}" aria-label="Oyun-Rehberi ana sayfası">
-          <span class="brand-mark" aria-hidden="true"><span class="brand-hatch"></span></span>
           <span class="brand-copy">
-            <span class="brand-title">🎮 {{ site.title }}</span>
+            <span class="brand-title">{{ site.title }}</span>
           </span>
         </a>
 
@@ -34,7 +33,6 @@
 
     </header>
 
-    <div class="retro-status-bar"><span class="retro-smile" aria-hidden="true">🙂</span><span>Kaynaklı oyun arşivi · Türkçe rehberler · Açık bilgi</span></div>
 
     {% assign game_label = '' %}
     {% assign game_path = '' %}
