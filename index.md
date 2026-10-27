@@ -13,7 +13,6 @@ description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
   <div class="archive-tools">
     <label class="archive-search">
       <span class="visually-hidden">Oyunlarda ara</span>
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
       <input id="archive-search" type="search" placeholder="Oyun ara..." autocomplete="off" aria-describedby="archive-count">
     </label>
     <p id="archive-count" class="archive-count" aria-live="polite">4 oyun</p>
