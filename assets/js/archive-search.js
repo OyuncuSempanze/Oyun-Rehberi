@@ -22,7 +22,8 @@
         `${card.dataset.search || ""} ${card.textContent || ""}`
       );
       const matchesQuery = searchableText.includes(query);
-      const matchesCategory = activeFilter === "all" || card.dataset.category === activeFilter;
+      const categories = (card.dataset.category || "").split(/\s+/).filter(Boolean);
+      const matchesCategory = activeFilter === "all" || categories.includes(activeFilter);
       const matches = matchesQuery && matchesCategory;
 
       card.hidden = !matches;
