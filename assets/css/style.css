@@ -5745,3 +5745,12 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .content a.game-card, .content a.home-button, .archive-filter { transition: none !important; }
 }
+
+
+.archive-filter:disabled {
+  color: #8290a1;
+  background: #e9edf3;
+  border-color: #c6d0dc;
+  box-shadow: none;
+  cursor: not-allowed;
+}
