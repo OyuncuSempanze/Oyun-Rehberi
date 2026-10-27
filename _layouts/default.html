@@ -8,7 +8,7 @@
   {% if page.robots %}
   <meta name="robots" content="{{ page.robots | escape }}">
   {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261027-minimal1">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261027-minimal2">
 </head>
 <body>
   <a class="skip-link" href="#main-content">İçeriğe geç</a>
@@ -16,22 +16,21 @@
   <div class="site">
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Oyun-Rehberi ana sayfası">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Oyun Rehberi ana sayfası">
           <span class="brand-copy">
-            <span class="brand-title">{{ site.title }}</span>
+            <span class="brand-title">Oyun Rehberi</span>
           </span>
         </a>
-
-        <nav aria-label="Ana gezinme">
-          {% unless page.url == '/' %}
-          <a href="{{ '/' | relative_url }}">Ana sayfa</a>
-          {% endunless %}
-          <a href="{{ '/' | relative_url }}#arsiv">Oyunlar</a>
-          <a class="nav-cta" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümeleri</a>
-        </nav>
       </div>
-
     </header>
+
+    <nav class="site-main-nav" aria-label="Ana gezinme">
+      {% unless page.url == '/' %}
+      <a href="{{ '/' | relative_url }}">Ana sayfa</a>
+      {% endunless %}
+      <a href="{{ '/' | relative_url }}#arsiv">Oyunlar</a>
+      <a href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümeleri</a>
+    </nav>
 
 
     {% assign game_label = '' %}
