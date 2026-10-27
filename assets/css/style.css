@@ -6055,3 +6055,57 @@ html, body {
   .site-main-nav { gap: 3px; padding: 7px 8px; }
   .site-main-nav a { padding: 5px 8px; font-size: 0.76rem; }
 }
+
+
+/* Oyun başlığını sayaçtan bağımsız ortala ve sayfa durumunu göster */
+.content .home-section-heading {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+.content .home-section-heading h2 {
+  grid-column: 2 !important;
+  justify-self: center !important;
+  text-align: center !important;
+}
+.content .home-section-heading .archive-count {
+  grid-column: 3 !important;
+  justify-self: end !important;
+  padding: 0 !important;
+  color: #667589 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+  text-decoration: none !important;
+}
+.site-main-nav a {
+  color: #365477 !important;
+  background: #f3f6fa !important;
+  border-color: #d1dae5 !important;
+}
+.site-main-nav a:hover {
+  color: #263f68 !important;
+  background: #e7edf5 !important;
+  border-color: #becbdc !important;
+}
+.site-main-nav a.is-active,
+.site-main-nav a.is-active:hover {
+  color: #fff !important;
+  background: #365b91 !important;
+  border-color: #2c4c7b !important;
+  font-weight: 700 !important;
+}
+@media (max-width: 440px) {
+  .content .home-section-heading {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) !important;
+  }
+  .content .home-section-heading h2 {
+    font-size: 1.15rem !important;
+  }
+  .content .home-section-heading .archive-count {
+    font-size: 0.72rem !important;
+  }
+}
