@@ -8,7 +8,7 @@
   {% if page.robots %}
   <meta name="robots" content="{{ page.robots | escape }}">
   {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261027-minimal2">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=20261027-minimal3">
 </head>
 <body>
   <a class="skip-link" href="#main-content">İçeriğe geç</a>
@@ -28,8 +28,8 @@
       {% unless page.url == '/' %}
       <a href="{{ '/' | relative_url }}">Ana sayfa</a>
       {% endunless %}
-      <a href="{{ '/' | relative_url }}#arsiv">Oyunlar</a>
-      <a href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümeleri</a>
+      <a href="{{ '/' | relative_url }}#arsiv"{% if page.url == '/' or page.url contains '/oyunlar/' %} class="is-active" aria-current="page"{% endif %}>Oyunlar</a>
+      <a href="{{ '/veri-kumeleri/' | relative_url }}"{% if page.url contains '/veri-kumeleri/' %} class="is-active" aria-current="page"{% endif %}>Veri kümeleri</a>
     </nav>
 
 
