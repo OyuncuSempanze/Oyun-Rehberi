@@ -6000,3 +6000,58 @@ html, body {
 @media (prefers-reduced-motion: reduce) {
   .archive-filter, .content a.game-card { transition: none !important; }
 }
+
+
+/* Başlığı ortala, gezinmeyi üst şeritten ayır */
+.site-header {
+  padding: 22px 16px !important;
+  background: var(--portal-blue, #365b91) !important;
+}
+.site-header .header-inner {
+  justify-content: center !important;
+  gap: 0 !important;
+}
+.site-header .brand {
+  justify-content: center !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+.site-header .brand-title {
+  color: #fff !important;
+  font-size: clamp(1.9rem, 5vw, 2.65rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.2 !important;
+}
+.site-main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #e5ebf2;
+  border-bottom: 1px solid #c7d1dc;
+}
+.site-main-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 5px 10px;
+  color: #365477 !important;
+  background: transparent !important;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  text-decoration: none !important;
+}
+.site-main-nav a:hover {
+  color: #263f68 !important;
+  background: #d9e2ee !important;
+  border-color: #c5d0de;
+}
+@media (max-width: 620px) {
+  .site-header { padding: 19px 12px !important; }
+  .site-main-nav { gap: 3px; padding: 7px 8px; }
+  .site-main-nav a { padding: 5px 8px; font-size: 0.76rem; }
+}
