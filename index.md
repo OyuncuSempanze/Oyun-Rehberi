@@ -71,7 +71,7 @@ description: Kaynaklı Türkçe oyun rehberleri ve indirilebilir veri kümeleri.
         </a>
 
         <a class="game-card" href="{{ '/oyunlar/DATA-WING/' | relative_url }}" data-category="racing arcade" data-search="DATA WING yarış arcade momentum hareket seviyeler bölüm mekanikleri">
-          <span class="game-card-category">Yarış ve Arcade</span>
+          <span class="game-card-categories"><span class="game-card-category">Yarış</span><span class="game-card-category">Arcade</span></span>
           <span class="game-card-title">DATA WING</span>
           <span class="game-card-description">Hareket, hız ve bölüm mekanikleri.</span>
           <span class="game-card-link">Rehberi aç</span>
