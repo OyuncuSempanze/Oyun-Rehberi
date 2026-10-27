@@ -3,11 +3,6 @@ title: Oyun Rehberi
 description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
 ---
 
-<section class="home-welcome" aria-labelledby="welcome-title">
-  <h1 id="welcome-title">Oyun Rehberi</h1>
-  <p>Oyunlar hakkında kaynaklı Türkçe bilgiler.</p>
-</section>
-
 <section class="archive" id="arsiv" aria-labelledby="archive-heading">
   <div class="section-heading home-section-heading">
     <h2 id="archive-heading">Oyunlar</h2>
