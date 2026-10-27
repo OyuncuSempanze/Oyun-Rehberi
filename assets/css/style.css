@@ -4960,7 +4960,7 @@ body {
 
 
 
-/* RETRO WEB SKIN — sakin, klasik portal görünümü */
+/* Klasik web görünümü ve kontrast düzeltmeleri */
 :root {
   color-scheme: light;
   --background: #c9d4e1;
@@ -4969,11 +4969,11 @@ body {
   --panel-hover: #d9e4f1;
   --line: #a6b8cc;
   --line-light: #859db8;
-  --text: #23364d;
+  --text: #26384f;
   --muted: #4d6078;
   --quiet: #65768a;
   --sage: #3b5998;
-  --brass: #f1c64c;
+  --brass: #80651f;
   --white: #243e65;
   --accent: #31558c;
   font-family: Verdana, Arial, sans-serif;
@@ -4987,6 +4987,8 @@ body {
   line-height: 1.6;
 }
 .site {
+  width: min(1000px, calc(100% - 24px));
+  margin: 18px auto;
   background: #e8edf4;
   border: 1px solid #8da2bb;
   border-top: 0;
@@ -4999,11 +5001,9 @@ body {
 }
 .brand { color: #fff; }
 .brand-title { color: #fff; font-family: Verdana, Arial, sans-serif; font-size: 1.35rem; font-weight: 700; letter-spacing: -0.035em; }
-.brand-mark { background: #2f4b83; border-color: #7e96bd; }
-.brand-hatch, .brand-hatch::before, .brand-hatch::after { border-color: #f2ce62; background-color: #f2ce62; }
-.brand-hatch { background: transparent; border-color: #f2ce62; }
+.site-header nav { gap: 5px; }
 .site-header nav a {
-  min-height: 32px;
+  min-height: 31px;
   padding: 6px 9px;
   color: #f2f5fb;
   background: #304d82;
@@ -5012,119 +5012,213 @@ body {
   font-size: 0.77rem;
   text-decoration: none;
 }
-.site-header nav a span { color: #ffda68; }
 .site-header nav a:hover { color: #fff; background: #4969a5; }
-.site-header nav a.nav-cta { color: #263f70; background: #f3d879; border-color: #fff0ae; font-weight: 700; }
-.retro-status-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px clamp(19px, 3.8vw, 36px);
-  color: #3a506a;
-  background: #d7e1ee;
-  border-bottom: 1px solid #b2c2d5;
-  font-size: 0.73rem;
-}
-.retro-status-bar .retro-smile { font-size: 1.15rem; line-height: 1; }
+.site-header nav a.nav-cta { color: #263f70; background: #f3d879; border-color: #e4c45f; font-weight: 700; }
+.site-header nav a.nav-cta:hover { color: #20365d; background: #ffe39a; }
 .breadcrumbs { color: #65788e; background: #dbe4ef; border-bottom-color: #b5c4d5; }
 .breadcrumbs a { color: #31558c; text-decoration: underline; }
 .breadcrumbs a:hover { color: #203e70; }
 .breadcrumbs span { color: #7d6420; }
 .content {
+  min-height: 360px;
   color: #2e4057;
   background: #e8edf4;
 }
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 { color: #263f68; }
-.content h2 { border-bottom-color: #b7c5d6; }
-.content a:not(.game-entry) { color: #254f91; text-decoration-color: #7896bd; }
-.content a:not(.game-entry):hover { color: #17386d; }
+.content p,
+.content li,
+.content dd,
+.content dt,
+.content figcaption,
+.content small,
+.content label,
+.content summary,
+.content .entry-description,
+.content .entry-category,
+.content .game-card-description,
+.content .section-description,
+.content .welcome-description,
+.content .archive-note,
+.content .dataset-lead,
+.content .dataset-promo p,
+.content .dataset-card p,
+.content .dataset-card-meta,
+.content .dataset-overview-label,
+.content .guide-topic-copy span,
+.content .guide-dataset-copy small,
+.content .approach-row p,
+.content .principle-card p {
+  color: #465b73 !important;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
+.content .entry-title,
+.content .game-card-title,
+.content .dataset-card h3,
+.content .guide-topic-copy strong,
+.content .guide-dataset-copy strong,
+.content .approach-row strong,
+.content .principle-card h3,
+.content .dataset-promo h2,
+.content .dataset-hero h1 {
+  color: #263f68 !important;
+}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 { font-family: Verdana, Arial, sans-serif; }
+.content h1 { font-size: clamp(1.75rem, 4vw, 2.35rem); font-weight: 700; letter-spacing: -0.035em; }
+.content h2 { border-bottom-color: #b7c5d6; font-size: 1.45rem; font-weight: 700; letter-spacing: -0.02em; }
+.content h3 { font-size: 1.1rem; font-weight: 700; }
+.content a:not(.game-entry) { color: #254f91; text-decoration-color: #7896bd; text-underline-offset: 2px; }
+.content a:not(.game-entry):hover { color: #17386d; text-decoration-color: #3b5998; }
 .content th { color: #fff; background: #3b5998; }
 .content th, .content td { border-color: #acbbcd; }
 .content tr:nth-child(even) { background: #dfe7f0; }
-.content blockquote { color: #475d75; background: #dce5f0; border-left: 3px solid #e6bd45; }
+.content blockquote { color: #475d75; background: #dce5f0; border-left: 3px solid #d7b84e; }
 .content code { color: #314c72; background: #d8e1ec; border-color: #b4c2d2; }
-.content pre { background: #dce4ee; border-color: #b4c2d2; }
-.welcome {
-  background: #d8e3f0;
-  border: 1px solid #9db1c9;
-  box-shadow: inset 1px 1px #f4f7fb, inset -1px -1px #c2d0e0;
-  animation: none;
+.content pre { color: #314c72; background: #dce4ee; border-color: #b4c2d2; }
+.content pre code { color: #314c72; background: transparent; }
+.content img { background: #dce5f0; border-color: #aab9cc; }
+.content .welcome,
+.content .dataset-promo,
+.content .dataset-hero,
+.content .dataset-card,
+.content .dataset-card--featured,
+.content .guide-topic,
+.content .guide-dataset-note,
+.content .principle-card,
+.content .dataset-overview-item,
+.content .dataset-jump-nav,
+.content .archive-empty,
+.content .archive-count {
+  color: #2e4057;
+  background: #dce5f0;
+  border-color: #a4b6ca;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px rgb(255 255 255 / 55%);
 }
-.welcome::before { width: 4px; background: #f0c84e; opacity: 1; }
-.eyebrow, .section-kicker, .dataset-kicker, .dataset-card-kicker { color: #80651f; }
-.status-dot { background: #f1c84b; box-shadow: 0 0 0 3px rgb(241 200 75 / 22%); animation: none; }
-.content .welcome h1 { color: #243f6a; font-family: Verdana, Arial, sans-serif; font-weight: 700; letter-spacing: -0.04em; }
-.welcome h1 em { color: #3b5998; }
-.welcome-description { color: #4b5d73; }
-.archive { margin-top: 27px; }
-.section-heading { border-bottom-color: #b5c4d5; }
-.content .section-heading h2 { color: #263f68; font-family: Verdana, Arial, sans-serif; font-size: 1.45rem; font-weight: 700; }
-.section-description { color: #5e7187; }
-.archive-search, .search-box input, .select-wrap select, .text-field {
+.content .welcome { padding: clamp(20px, 3vw, 30px); }
+.content .welcome h1 { color: #243f6a !important; font-weight: 700; letter-spacing: -0.04em; }
+.content .welcome h1 em { color: #3b5998 !important; }
+.content .welcome-description { color: #4b5d73 !important; }
+.content .section-heading { border-bottom-color: #b5c4d5; }
+.content .section-heading h2 { color: #263f68 !important; }
+.archive { margin-top: 25px; }
+.archive-tools { gap: 10px; }
+.archive-search {
+  min-height: 42px;
   color: #26384f;
   background: #f2f4f7;
   border: 1px solid #9dafc4;
   border-radius: 2px;
   box-shadow: inset 1px 1px 2px rgb(44 64 88 / 7%);
 }
-.archive-search input, .search-box input { color: #26384f; }
-.archive-search input::placeholder, .search-box input::placeholder, .text-field::placeholder { color: #718096; }
-.archive-filter, .filter-chip {
+.archive-search:focus-within { border-color: #5878a9; box-shadow: 0 0 0 2px rgb(59 89 152 / 12%); }
+.archive-search svg { stroke: #4d6078; }
+.archive-search input { color: #26384f !important; background: transparent; }
+.archive-search input::placeholder { color: #718096; }
+.archive-count { padding: 6px 9px; color: #3d5574 !important; background: #dfe7f0; border: 1px solid #a5b7ca; border-radius: 2px; }
+.archive-filters { gap: 5px; }
+.archive-filter {
   color: #315078;
   background: #e3eaf3;
   border: 1px solid #a2b4ca;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: inset 1px 1px rgb(255 255 255 / 65%);
 }
-.archive-filter:hover, .filter-chip:hover { color: #203f73; background: #d3dfef; border-color: #758eaf; }
-.archive-filter.is-active, .filter-chip.active { color: #fff; background: #3b5998; border-color: #2e4779; box-shadow: inset 1px 1px rgb(255 255 255 / 12%); }
+.archive-filter:hover { color: #203f73; background: #d3dfef; border-color: #758eaf; }
+.archive-filter.is-active { color: #fff; background: #3b5998; border-color: #2e4779; }
+.game-grid { display: block; margin: 0; background: #edf1f6; border: 1px solid #a4b5c8; }
 .content a.game-card {
+  display: block;
+  min-height: 0;
+  padding: 13px 15px;
   color: #293e5b;
-  background: #f0f3f7;
-  border: 1px solid #a4b5c8;
-  border-radius: 3px;
+  background: #edf1f6;
+  border: 0;
+  border-bottom: 1px solid #c1ccda;
+  border-radius: 0;
   box-shadow: inset 1px 1px #fff;
   text-decoration: none;
-  transition: background 120ms ease, border-color 120ms ease;
+  transition: background 120ms ease;
 }
-.content a.game-card:hover { background: #dce6f2; border-color: #6c87ae; transform: none; }
-.game-card-title { color: #284a7f; font-family: Verdana, Arial, sans-serif; font-weight: 700; letter-spacing: 0; }
-.game-card-description { color: #53667d; }
-.game-emblem { background: #dce5f0; border-color: #a5b7cc; }
-.dataset-promo, .dataset-hero, .dataset-card, .dataset-card--featured {
-  color: #2e4057;
-  background: #dce5f0;
-  border-color: #a4b6ca;
-  border-radius: 3px;
-  box-shadow: inset 1px 1px rgb(255 255 255 / 70%);
-}
-.content .dataset-promo h2, .content .dataset-hero h1, .content .dataset-card h3 { color: #284675; font-family: Verdana, Arial, sans-serif; font-weight: 700; letter-spacing: -0.02em; }
-.dataset-promo p:not(.section-kicker), .dataset-hero p:last-child, .dataset-card p:not(.dataset-card-kicker) { color: #50637a; }
+.content a.game-card:last-child { border-bottom: 0; }
+.content a.game-card:hover { color: #263f68; background: #dce6f2; border-color: #a4b5c8; box-shadow: inset 1px 1px #fff; transform: none; }
+.game-card-title { display: block; margin: 0 0 3px; color: #284a7f !important; font-family: Verdana, Arial, sans-serif; font-size: 1.05rem; font-weight: 700; letter-spacing: 0; }
+.game-card-description { display: block; color: #53667d !important; font-size: 0.82rem; line-height: 1.55; }
+.content a.game-entry { color: #293e5b; }
+.entry-title { color: #284a7f !important; }
+.entry-category, .entry-description { color: #53667d !important; }
+.game-emblem, .entry-emblem { color: #31558c; background: #dce5f0; border-color: #a5b7cc; border-radius: 2px; }
+.dataset-promo, .dataset-hero, .dataset-card, .dataset-card--featured { padding: 18px; background: #dce5f0; border: 1px solid #a4b6ca; border-radius: 3px; }
+.dataset-promo { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 16px; }
+.content .dataset-promo h2, .content .dataset-hero h1, .content .dataset-card h3 { color: #284675 !important; font-family: Verdana, Arial, sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+.dataset-promo p:not(.section-kicker), .dataset-hero p:last-child, .dataset-card p:not(.dataset-card-kicker) { color: #50637a !important; }
 .content a.dataset-promo-download, .content a.dataset-download {
-  color: #fff;
-  background: #3b5998;
-  border: 1px solid #2e4779;
+  color: #fff !important;
+  background: #3b5998 !important;
+  border: 1px solid #2e4779 !important;
   border-radius: 2px;
   box-shadow: inset 1px 1px rgb(255 255 255 / 22%);
+  font-weight: 700;
 }
-.content a.dataset-promo-download:hover, .content a.dataset-download:hover { color: #fff; background: #4969a5; border-color: #203e70; }
-.content a.dataset-promo-link, .content a.dataset-secondary-link {
-  color: #31558c;
-  background: #e9eef5;
-  border-color: #a4b6ca;
+.content a.dataset-promo-download:hover, .content a.dataset-download:hover { color: #fff !important; background: #4969a5 !important; border-color: #203e70 !important; }
+.content a.dataset-promo-link, .content a.dataset-secondary-link, .content a.guide-dataset-link, .content a.dataset-jump-link, .content a.action-secondary {
+  color: #31558c !important;
+  background: #e9eef5 !important;
+  border: 1px solid #a4b6ca !important;
   border-radius: 2px;
 }
-.content a.dataset-promo-link:hover, .content a.dataset-secondary-link:hover { color: #203f73; background: #d2deec; border-color: #718bad; }
-.source-tag { border-radius: 2px; }
-.source-tag--official { color: #785a13; background: #f8edc7; border-color: #d7c16e; }
-.source-tag--observation { color: #4b5b6d; background: #dce6f0; border-color: #aab9ca; }
-.source-tag--reference { color: #31558c; background: #e2eaf5; border-color: #a5b6ca; }
-.source-tag--recommendation { color: #66563b; background: #eee5d2; border-color: #cbbb9c; }
-.dataset-label { color: #415871; background: #e3eaf2; border-color: #adbdcf; border-radius: 2px; }
+.content a.dataset-promo-link:hover, .content a.dataset-secondary-link:hover, .content a.guide-dataset-link:hover, .content a.dataset-jump-link:hover, .content a.action-secondary:hover {
+  color: #203f73 !important;
+  background: #d2deec !important;
+  border-color: #718bad !important;
+}
+.content a.action-primary {
+  color: #fff !important;
+  background: #3b5998 !important;
+  border: 1px solid #2e4779 !important;
+  border-radius: 2px;
+}
+.content a.action-primary:hover { color: #fff !important; background: #4969a5 !important; }
+.content .dataset-overview-value { color: #31558c !important; }
+.content .dataset-overview-label { color: #50637a !important; }
+.content .guide-topic-number, .content .principle-mark { color: #31558c; background: #e9eef5; border-color: #a4b6ca; border-radius: 2px; }
+.content .game-tags span, .content .guide-meta span, .content .dataset-card-meta span, .content .dataset-promo-meta span, .content .dataset-label {
+  color: #405873;
+  background: #e7edf5;
+  border: 1px solid #b1bfd0;
+  border-radius: 2px;
+}
+.content .source-tag { border-radius: 2px; }
+.content .source-tag--official { color: #785a13; background: #f8edc7; border-color: #d7c16e; }
+.content .source-tag--observation { color: #4b5b6d; background: #dce6f0; border-color: #aab9ca; }
+.content .source-tag--reference { color: #31558c; background: #e2eaf5; border-color: #a5b6ca; }
+.content .source-tag--recommendation { color: #66563b; background: #eee5d2; border-color: #cbbb9c; }
 .site-footer { color: #5c6e82; background: #d8e2ee; border-top: 1px solid #a9bacd; }
 .site-footer a { color: #31558c; text-decoration: underline; }
 .site-footer a:hover { color: #203f73; }
+.skip-link { color: #fff; background: #3b5998; }
+@media (max-width: 900px) {
+  .site { width: calc(100% - 24px); margin: 12px auto; }
+  .content { padding: 20px; }
+}
 @media (max-width: 560px) {
-  .retro-status-bar { padding: 7px 15px; font-size: 0.68rem; }
-  .site-header nav a { min-height: 30px; padding: 5px 6px; font-size: 0.66rem; }
+  .site { width: calc(100% - 10px); margin: 5px auto; }
+  .site-header { padding: 15px; }
+  .content { padding: 15px 12px 20px; }
+  .site-header nav { gap: 5px; }
+  .site-header nav a { min-height: 32px; padding: 6px 7px; font-size: 0.72rem; }
+  .content .welcome { padding: 17px 13px 19px; }
+  .archive { margin-top: 20px; }
+  .archive-tools { align-items: center; gap: 7px; }
+  .archive-search { min-height: 40px; }
+  .archive-filters { margin-bottom: 12px; }
+  .content a.game-card { padding: 12px 10px; }
+  .dataset-promo { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .site-footer { justify-content: flex-start; flex-wrap: wrap; padding: 12px 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; transition: none !important; }
 }
