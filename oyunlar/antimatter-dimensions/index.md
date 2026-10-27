@@ -17,10 +17,10 @@ description: "Antimatter Dimensions hakkında temel bilgiler ve ilerleme sisteml
 </div>
 
 <nav class="guide-toc" aria-label="Antimatter Dimensions rehber konuları">
-  <a class="guide-topic" href="oyun-hakkinda.html"><span class="guide-topic-number">01</span><span class="guide-topic-copy"><strong>Oyun hakkında</strong><small>Temel bilgiler, platformlar ve kaynaklar.</small></span><span class="guide-topic-arrow" aria-hidden="true">↗</span></a>
+  <a class="guide-topic" href="oyun-hakkinda.html"><span class="guide-topic-number">01</span><span class="guide-topic-copy"><strong>Oyun hakkında</strong><small>Temel bilgiler, platformlar ve kaynaklar.</small></span></a>
 </nav>
 
 <aside class="guide-dataset-note">
   <span class="guide-dataset-copy"><strong>Veri kümeleri de mevcut</strong><small>Bu oyuna ait rehber kayıtlarını indirilebilir dosyalar olarak incele.</small></span>
-  <a class="guide-dataset-link" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümelerini aç <span aria-hidden="true">↗</span></a>
+  <a class="guide-dataset-link" href="{{ '/veri-kumeleri/' | relative_url }}">Veri kümelerini aç </a>
 </aside>
