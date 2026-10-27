@@ -48,7 +48,7 @@ description: Kaynaklı Türkçe oyun rehberleri ve indirilebilir veri kümeleri.
 
       <div class="archive-filters" role="group" aria-label="Oyun türüne göre filtrele">
         <button class="archive-filter is-active" type="button" data-filter="all" aria-pressed="true">Tümü</button>
-        <button class="archive-filter" type="button" data-filter="strategy" aria-pressed="false">Strateji</button>
+        <button class="archive-filter" type="button" data-filter="strategy" aria-pressed="false" disabled title="Arşivde henüz strateji oyunu yok">Strateji</button>
         <button class="archive-filter" type="button" data-filter="racing" aria-pressed="false">Yarış</button>
         <button class="archive-filter" type="button" data-filter="action" aria-pressed="false">Aksiyon</button>
         <button class="archive-filter" type="button" data-filter="arcade" aria-pressed="false">Arcade</button>
@@ -71,7 +71,7 @@ description: Kaynaklı Türkçe oyun rehberleri ve indirilebilir veri kümeleri.
         </a>
 
         <a class="game-card" href="{{ '/oyunlar/DATA-WING/' | relative_url }}" data-category="racing arcade" data-search="DATA WING yarış arcade momentum hareket seviyeler bölüm mekanikleri">
-          <span class="game-card-category">Yarış · Arcade</span>
+          <span class="game-card-category">Yarış ve Arcade</span>
           <span class="game-card-title">DATA WING</span>
           <span class="game-card-description">Hareket, hız ve bölüm mekanikleri.</span>
           <span class="game-card-link">Rehberi aç</span>
