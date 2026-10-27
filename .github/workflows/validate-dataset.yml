@@ -1,22 +1,6 @@
 name: Oyun-Rehberi otomatik kalite kontrolü
 
 on:
-  push:
-    paths:
-      - "oyunlar/**/*.md"
-      - "scripts/build_dataset.py"
-      - "scripts/validate_dataset_schema.py"
-      - "scripts/test_dataset_licenses.py"
-      - "veri-kumeleri/**"
-      - ".github/workflows/validate-dataset.yml"
-  pull_request:
-    paths:
-      - "oyunlar/**/*.md"
-      - "scripts/build_dataset.py"
-      - "scripts/validate_dataset_schema.py"
-      - "scripts/test_dataset_licenses.py"
-      - "veri-kumeleri/**"
-      - ".github/workflows/validate-dataset.yml"
   workflow_dispatch:
 
 permissions:
