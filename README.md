@@ -4,11 +4,15 @@ Oyun-Rehberi, kaynakları belirtilmiş Türkçe oyun rehberleri sunar. Resmî bi
 
 🌐 [Web sitesini görüntüle](https://oyuncusempanze.github.io/Oyun-Rehberi/)
 
-> **Geçici bilgilendirme**
+> **Geçici Proje Arası**
 >
-> Oyun-Rehberi şu anda bakım ve içerik güncellemesi sürecine ara vermiştir. Mevcut rehberler ve veri kümeleri erişime açık kalacaktır ancak yeni içerik eklenmeyecek ve mevcut bilgiler düzenli olarak güncellenmeyecektir. Bu nedenle özellikle oyun güncellemelerine, fiyatlara ve değişebilen kurallara bağlı bilgiler zamanla güncelliğini yitirebilir.
+> Oyun-Rehberi'nin geliştirilmesine ve içerik güncellemelerine geçici olarak ara verilmiştir.
 >
-> Bu, projenin kalıcı olarak kapatıldığı anlamına gelmez. İleride yeniden çalışmaya başlanırsa bu duyuru kaldırılacak veya güncellenecektir.
+> Mevcut rehberler ve veri kümeleri erişime açık kalacaktır. Ancak yeni içerik eklenmeyecek ve mevcut bilgiler düzenli olarak güncellenmeyecektir. Bu nedenle rehberlerdeki bazı bilgiler zamanla güncelliğini yitirebilir. İçerikler güncel oyun bilgisi olarak değerlendirilmemelidir.
+>
+> Projenin yeniden ne zaman aktif hâle geleceğine ilişkin belirlenmiş bir tarih yoktur. İleride yeniden geliştirilmesi hâlinde bu duyuru güncellenecektir.
+>
+> Bu bir proje kapanışı değil, süresiz bir geliştirme arasıdır.
 
 ## Bilgi standartları
 
