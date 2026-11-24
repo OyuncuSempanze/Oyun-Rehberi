@@ -3,6 +3,12 @@ title: Oyun Rehberi
 description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
 ---
 
+<div class="archive-notice" role="status">
+  <strong>Geçici bilgilendirme</strong>
+  <p>Oyun-Rehberi şu anda bakım ve içerik güncellemesi sürecine ara vermiştir. Mevcut rehberler ve veri kümeleri erişime açık kalacaktır ancak yeni içerik eklenmeyecek ve mevcut bilgiler düzenli olarak güncellenmeyecektir. Bu nedenle özellikle oyun güncellemelerine, fiyatlara ve değişebilen kurallara bağlı bilgiler zamanla güncelliğini yitirebilir.</p>
+  <p>Bu, projenin kalıcı olarak kapatıldığı anlamına gelmez. İleride yeniden çalışmaya başlanırsa bu duyuru kaldırılacak veya güncellenecektir.</p>
+</div>
+
 <section class="archive" id="arsiv" aria-labelledby="archive-heading">
   <div class="section-heading home-section-heading">
     <h2 id="archive-heading">Oyunlar</h2>
