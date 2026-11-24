@@ -4,9 +4,11 @@ description: Kaynaklı Türkçe oyun rehberleri ve veri kümeleri.
 ---
 
 <div class="archive-notice" role="status">
-  <strong>Geçici bilgilendirme</strong>
-  <p>Oyun-Rehberi şu anda bakım ve içerik güncellemesi sürecine ara vermiştir. Mevcut rehberler ve veri kümeleri erişime açık kalacaktır ancak yeni içerik eklenmeyecek ve mevcut bilgiler düzenli olarak güncellenmeyecektir. Bu nedenle özellikle oyun güncellemelerine, fiyatlara ve değişebilen kurallara bağlı bilgiler zamanla güncelliğini yitirebilir.</p>
-  <p>Bu, projenin kalıcı olarak kapatıldığı anlamına gelmez. İleride yeniden çalışmaya başlanırsa bu duyuru kaldırılacak veya güncellenecektir.</p>
+  <strong>Geçici Proje Arası</strong>
+  <p>Oyun-Rehberi'nin geliştirilmesine ve içerik güncellemelerine geçici olarak ara verilmiştir.</p>
+  <p>Mevcut rehberler ve veri kümeleri erişime açık kalacaktır. Ancak yeni içerik eklenmeyecek ve mevcut bilgiler düzenli olarak güncellenmeyecektir. Bu nedenle rehberlerdeki bazı bilgiler zamanla güncelliğini yitirebilir. İçerikler güncel oyun bilgisi olarak değerlendirilmemelidir.</p>
+  <p>Projenin yeniden ne zaman aktif hâle geleceğine ilişkin belirlenmiş bir tarih yoktur. İleride yeniden geliştirilmesi hâlinde bu duyuru güncellenecektir.</p>
+  <p>Bu bir proje kapanışı değil, süresiz bir geliştirme arasıdır.</p>
 </div>
 
 <section class="archive" id="arsiv" aria-labelledby="archive-heading">
